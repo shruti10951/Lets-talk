@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:id="@+id/login_container"
+android:padding="40dp"
+android:background="@drawable/animation_colors"
+tools:context=".RegistrationActivity">
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:src="@drawable/lets_talk_logo"
+    android:layout_marginBottom="20dp"
+    />
+
+<EditText
+    android:id="@+id/user_mail"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="30dp"
+    android:backgroundTint="#fff"
+    android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
+    android:drawablePadding="10dp"
+    android:hint="Email"
+    android:inputType="textPersonName"
+    android:textColor="#ffffff"
+    android:textColorHighlight="#FFFFFF"
+    android:textColorHint="#FFFEFE"
+    android:textSize="20sp" />
+
+<EditText
+    android:id="@+id/user_name"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="20dp"
+    android:backgroundTint="#fff"
+    android:drawableLeft="@drawable/ic_baseline_person_24"
+    android:drawablePadding="10dp"
+    android:hint="Username"
+    android:inputType="textPersonName"
+    android:textColor="#ffffff"
+    android:textColorHighlight="#FFFFFF"
+    android:textColorHint="#FFFEFE"
+    android:textSize="20sp" />
+
+
+<EditText
+    android:id="@+id/user_password"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="20dp"
+    android:backgroundTint="#fff"
+    android:drawableLeft="@drawable/ic_baseline_lock_24"
+    android:drawablePadding="10dp"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:textColor="#ffffff"
+    android:textColorHighlight="#FFFFFF"
+    android:textColorHint="#FFFFFF"
+    android:textSize="20sp" />
+
+<EditText
+    android:id="@+id/user_password_confirm"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="20dp"
+    android:backgroundTint="#fff"
+    android:drawableLeft="@drawable/ic_baseline_lock_24"
+    android:drawablePadding="10dp"
+    android:hint="Confirm Password"
+    android:inputType="textPassword"
+    android:textColor="#ffffff"
+    android:textColorHighlight="#FFFFFF"
+    android:textColorHint="#FFFFFF"
+    android:textSize="20sp" />
+
+<Button
+    android:id="@+id/sign_btn"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:layout_marginTop="30dp"
+    android:text="Sign Up"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp"
+    android:textStyle="bold|italic"
+    app:backgroundTint="#000F3C" />
+
+<TextView
+    android:id="@+id/to_login_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:text="Have account? Log in now!"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp" />
+
+
+</LinearLayout>
