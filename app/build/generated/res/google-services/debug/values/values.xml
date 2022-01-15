@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">954997008536-ct9tppa3lmi2ldck6rpoq0h1med3bpsh.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">954997008536</string>
+    <string name="google_api_key" translatable="false">AIzaSyCPi3VujoRKLF0ygGXR8T2ri_VvTS3TpW4</string>
+    <string name="google_app_id" translatable="false">1:954997008536:android:f94f500cf3d5d965f208ed</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCPi3VujoRKLF0ygGXR8T2ri_VvTS3TpW4</string>
+    <string name="google_storage_bucket" translatable="false">let-s-talk-b6c5f.appspot.com</string>
+    <string name="project_id" translatable="false">let-s-talk-b6c5f</string>
+</resources>
