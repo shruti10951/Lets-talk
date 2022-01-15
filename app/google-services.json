@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "954997008536",
+    "project_id": "let-s-talk-b6c5f",
+    "storage_bucket": "let-s-talk-b6c5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954997008536:android:f94f500cf3d5d965f208ed",
+        "android_client_info": {
+          "package_name": "com.vidyalankar.letstalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954997008536-ct9tppa3lmi2ldck6rpoq0h1med3bpsh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPi3VujoRKLF0ygGXR8T2ri_VvTS3TpW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954997008536-ct9tppa3lmi2ldck6rpoq0h1med3bpsh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
