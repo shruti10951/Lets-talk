@@ -2235,6 +2235,7 @@ int id position 0x7f080154
 int id postLayout 0x7f080155
 int id progress_circular 0x7f080156
 int id progress_horizontal 0x7f080157
+int id progressbar 0x7f0801f0
 int id radio 0x7f080158
 int id ratio 0x7f080159
 int id rectangles 0x7f08015a

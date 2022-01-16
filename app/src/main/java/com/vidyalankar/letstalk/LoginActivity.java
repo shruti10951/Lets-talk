@@ -15,6 +15,9 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -62,6 +65,7 @@ public class LoginActivity extends AppCompatActivity {
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 login();
             }
         });
@@ -106,6 +110,22 @@ public class LoginActivity extends AppCompatActivity {
 
 
     }
+
+//    StringRequest stringRequest = new StringRequest(Request.Method.POST, URLS.login_api,
+//            new Response.Listener<String>() {
+//                @Override
+//                public void onResponse(String response) {
+//
+//                }
+//            },
+//            new Response.ErrorListener() {
+//                @Override
+//                public void onErrorResponse(VolleyError error) {
+//
+//                }
+//            }
+//
+//    );//end of the string
 
 
     @Override
