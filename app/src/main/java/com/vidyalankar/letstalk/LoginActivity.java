@@ -18,14 +18,14 @@ import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     LinearLayout mLoginContainer;
     AnimationDrawable mAnimationDrawable;
 
-    EditText email_et, password_et;
+    EditText user_email_login, user_password_login;
     Button login_btn;
-    TextView sign_up_btn, forgot_pass_btn;
+    TextView sign_up_text, forgot_pass_text;
     ProgressBar mProgressBar;
 
     private FirebaseAuth mAuth;
@@ -36,73 +36,49 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-//        ActionBar actionBar = getSupportActionBar();
-//        actionBar.setTitle("Login to Account");
-//        actionBar.setDisplayShowHomeEnabled(true);
-//        actionBar.setDisplayHomeAsUpEnabled(true);
-
         mLoginContainer= (LinearLayout) findViewById(R.id.login_container);
         mAnimationDrawable= (AnimationDrawable) mLoginContainer.getBackground();
         mAnimationDrawable.setEnterFadeDuration(2000);
         mAnimationDrawable.setExitFadeDuration(2000);
 
         mAuth = FirebaseAuth.getInstance();
-        email_et= (EditText) findViewById(R.id.email);
-        login_btn= (Button) findViewById(R.id.login_btn);
-        password_et= (EditText) findViewById(R.id.user_password);
-        sign_up_btn= (TextView) findViewById(R.id.sign_up_btn);
-        forgot_pass_btn= (TextView) findViewById(R.id.forgot_pas_btn);
 
-        mProgressBar= new ProgressBar(this);
+        user_email_login= (EditText) findViewById(R.id.user_email_login);
+        login_btn= (Button) findViewById(R.id.login_btn);
+        user_password_login= (EditText) findViewById(R.id.user_password_login);
+        sign_up_text= (TextView) findViewById(R.id.sign_up_text);
+        forgot_pass_text= (TextView) findViewById(R.id.forgot_pas_text);
+
+        mProgressBar= (ProgressBar) findViewById(R.id.progress_bar_login);
 
         if (mAuth != null) {
             currentUser = mAuth.getCurrentUser();
         }
 
-        login_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                login();
-            }
-        });
-
-        sign_up_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-                Intent signUpIntent= new Intent(LoginActivity.this, RegistrationActivity.class);
-                startActivity(signUpIntent);
-
-            }
-        });
-
-        forgot_pass_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+        sign_up_text.setOnClickListener(this);
+        login_btn.setOnClickListener(this);
+        forgot_pass_text.setOnClickListener(this);
 
     }
 
     private void login()
     {
-        String email= email_et.getText().toString();
-        String password= password_et.getText().toString();
+        String email= user_email_login.getText().toString();
+        String password= user_password_login.getText().toString();
 
         if(TextUtils.isEmpty(email))
         {
-            email_et.setError("Please enter username!");
-            email_et.requestFocus();
+            user_email_login.setError("Please enter username!");
+            user_email_login.requestFocus();
             return;
         }
         if(TextUtils.isEmpty(password))
         {
-            password_et.setError("Please enter password!");
-            password_et.requestFocus();
+            user_password_login.setError("Please enter password!");
+            user_password_login.requestFocus();
             return;
         }
-        mAuth.signInWithEmailAndPassword(email,password);
+
 
 
     }
@@ -124,6 +100,16 @@ public class LoginActivity extends AppCompatActivity {
         if(mAnimationDrawable != null && mAnimationDrawable.isRunning())
         {
             mAnimationDrawable.stop();
+        }
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId())
+        {
+            case R.id.sign_up_text:
+                startActivity(new Intent(this, RegistrationActivity.class));
+                break;
         }
     }
 }

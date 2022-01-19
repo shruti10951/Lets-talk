@@ -19,12 +19,12 @@ tools:context=".RegistrationActivity">
     />
 
 <EditText
-    android:id="@+id/user_mail"
+    android:id="@+id/user_reg_email"
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:layout_marginTop="30dp"
     android:backgroundTint="#fff"
-    android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
+    android:drawableLeft="@drawable/email"
     android:drawablePadding="10dp"
     android:hint="Email"
     android:inputType="textPersonName"
@@ -34,12 +34,12 @@ tools:context=".RegistrationActivity">
     android:textSize="20sp" />
 
 <EditText
-    android:id="@+id/user_name"
+    android:id="@+id/username_reg"
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:layout_marginTop="20dp"
     android:backgroundTint="#fff"
-    android:drawableLeft="@drawable/ic_baseline_person_24"
+    android:drawableLeft="@drawable/profile"
     android:drawablePadding="10dp"
     android:hint="Username"
     android:inputType="textPersonName"
@@ -50,12 +50,12 @@ tools:context=".RegistrationActivity">
 
 
 <EditText
-    android:id="@+id/user_password"
+    android:id="@+id/user_reg_password"
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:layout_marginTop="20dp"
     android:backgroundTint="#fff"
-    android:drawableLeft="@drawable/ic_baseline_lock_24"
+    android:drawableLeft="@drawable/password_lock"
     android:drawablePadding="10dp"
     android:hint="Password"
     android:inputType="textPassword"
@@ -65,12 +65,12 @@ tools:context=".RegistrationActivity">
     android:textSize="20sp" />
 
 <EditText
-    android:id="@+id/user_password_confirm"
+    android:id="@+id/user_reg_password_confirm"
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:layout_marginTop="20dp"
     android:backgroundTint="#fff"
-    android:drawableLeft="@drawable/ic_baseline_lock_24"
+    android:drawableLeft="@drawable/password_lock"
     android:drawablePadding="10dp"
     android:hint="Confirm Password"
     android:inputType="textPassword"
@@ -80,7 +80,7 @@ tools:context=".RegistrationActivity">
     android:textSize="20sp" />
 
 <Button
-    android:id="@+id/sign_btn"
+    android:id="@+id/sign_up_reg_btn"
     android:layout_width="match_parent"
     android:layout_height="58dp"
     android:layout_marginTop="30dp"
@@ -91,7 +91,7 @@ tools:context=".RegistrationActivity">
     app:backgroundTint="#000F3C" />
 
 <TextView
-    android:id="@+id/to_login_btn"
+    android:id="@+id/reg_to_login_btn"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
@@ -99,6 +99,17 @@ tools:context=".RegistrationActivity">
     android:text="Have account? Log in now!"
     android:textColor="#FFFFFF"
     android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/reg_progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="324dp"
+        android:layout_height="53dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+
+    </ProgressBar>
 
 
 </LinearLayout>

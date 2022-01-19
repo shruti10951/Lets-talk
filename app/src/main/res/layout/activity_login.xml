@@ -20,12 +20,12 @@
 
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/user_email_login"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
         android:backgroundTint="#fff"
-        android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
+        android:drawableLeft="@drawable/email"
         android:drawablePadding="10dp"
         android:hint="Email"
         android:inputType="textPersonName"
@@ -36,12 +36,12 @@
 
 
     <EditText
-        android:id="@+id/user_password"
+        android:id="@+id/user_password_login"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#fff"
-        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawableLeft="@drawable/password_lock"
         android:drawablePadding="10dp"
         android:hint="Password"
         android:inputType="textPassword"
@@ -62,7 +62,7 @@
         app:backgroundTint="#000F3C" />
 
     <TextView
-        android:id="@+id/sign_up_btn"
+        android:id="@+id/sign_up_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -72,7 +72,7 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/forgot_pas_btn"
+        android:id="@+id/forgot_pas_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -80,6 +80,17 @@
         android:text="Forgot Password?"
         android:textColor="#FDFDFD"
         android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_login"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="324dp"
+        android:layout_height="53dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+
+    </ProgressBar>
 
 
 </LinearLayout>

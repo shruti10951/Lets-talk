@@ -1,16 +1,18 @@
-com/vidyalankar/letstalk/RegistrationActivity.java
- com.vidyalankar.letstalk.RegistrationActivity
+com/vidyalankar/letstalk/MainActivity.java
+ com.vidyalankar.letstalk.MainActivity
+ com.vidyalankar.letstalk.MainActivity$1
 com/vidyalankar/letstalk/BuildConfig.java
  com.vidyalankar.letstalk.BuildConfig
 com/vidyalankar/letstalk/DashboardActivity.java
  com.vidyalankar.letstalk.DashboardActivity
-com/vidyalankar/letstalk/LoginActivity.java
- com.vidyalankar.letstalk.LoginActivity
- com.vidyalankar.letstalk.LoginActivity$1
- com.vidyalankar.letstalk.LoginActivity$2
- com.vidyalankar.letstalk.LoginActivity$3
+com/vidyalankar/letstalk/User.java
+ com.vidyalankar.letstalk.User
 com/vidyalankar/letstalk/SplashScreen.java
  com.vidyalankar.letstalk.SplashScreen
  com.vidyalankar.letstalk.SplashScreen$1
-com/vidyalankar/letstalk/MainActivity.java
- com.vidyalankar.letstalk.MainActivity
+com/vidyalankar/letstalk/RegistrationActivity.java
+ com.vidyalankar.letstalk.RegistrationActivity
+ com.vidyalankar.letstalk.RegistrationActivity$1
+ com.vidyalankar.letstalk.RegistrationActivity$1$1
+com/vidyalankar/letstalk/LoginActivity.java
+ com.vidyalankar.letstalk.LoginActivity

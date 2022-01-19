@@ -1176,6 +1176,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color light_coral
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1278,6 +1279,7 @@ color purple_700
 color radiobutton_themeable_attribute_color
 color ripple_material_dark
 color ripple_material_light
+color rose
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -1809,6 +1811,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable calm_down
 drawable color1
 drawable color2
 drawable color3
@@ -1838,11 +1841,10 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable email
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
-drawable ic_baseline_alternate_email_24
-drawable ic_baseline_lock_24
-drawable ic_baseline_person_24
+drawable ic_baseline_chat_bubble_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -1851,6 +1853,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable info
 drawable lets_talk_logo
 drawable lets_talk_logo_dark
 drawable logo
@@ -1874,6 +1877,7 @@ drawable mtrl_navigation_bar_item_background
 drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
+drawable music
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -1887,11 +1891,17 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable password_lock
+drawable profile
+drawable setting
 drawable splash_screen
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable wellness_center
+drawable widgets
+drawable woman
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1906,6 +1916,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id about
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2000,6 +2011,7 @@ id browser_actions_menu_view
 id buttonPanel
 id cache_measures
 id callMeasure
+id calm_down
 id cancel_button
 id carryVelocity
 id center
@@ -2072,7 +2084,6 @@ id easeOut
 id east
 id edit_query
 id elastic
-id email
 id end
 id endToStart
 id enterAlways
@@ -2090,7 +2101,7 @@ id fixed
 id flip
 id floating
 id forever
-id forgot_pas_btn
+id forgot_pas_text
 id fragment_container_view_tag
 id frost
 id ghost_view
@@ -2103,6 +2114,7 @@ id grouping
 id groups
 id guideline
 id header_title
+id help
 id hideable
 id home
 id homeAsUp
@@ -2142,6 +2154,8 @@ id listMode
 id list_item
 id login_btn
 id login_container
+id main_drawer_layout
+id main_nav_view
 id masked
 id match_constraint
 id match_parent
@@ -2164,6 +2178,7 @@ id material_timepicker_mode_button
 id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
+id melodies
 id message
 id middle
 id mini
@@ -2234,11 +2249,15 @@ id percent
 id pin
 id position
 id postLayout
+id profile
+id progress_bar_login
 id progress_circular
 id progress_horizontal
 id radio
 id ratio
 id rectangles
+id reg_progress_bar
+id reg_to_login_btn
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2269,14 +2288,15 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id setting
 id sharedValueSet
 id sharedValueUnset
 id shortcut
 id showCustom
 id showHome
 id showTitle
-id sign_btn
-id sign_up_btn
+id sign_up_reg_btn
+id sign_up_text
 id sin
 id skipCollapsed
 id skipped
@@ -2348,7 +2368,6 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
-id to_login_btn
 id toggle
 id top
 id topPanel
@@ -2366,10 +2385,15 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user_email_login
+id user_iv
 id user_mail
 id user_name
-id user_password
-id user_password_confirm
+id user_password_login
+id user_reg_email
+id user_reg_password
+id user_reg_password_confirm
+id username_reg
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -2378,6 +2402,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id wellness_center
 id west
 id wide
 id withText
@@ -2522,6 +2547,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout nav_header
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -2549,6 +2575,7 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu example_menu
 menu example_menu2
+menu nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -2589,6 +2616,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string close
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
 string common_google_play_services_enable_title
@@ -2675,6 +2703,7 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string open
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
