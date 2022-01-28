@@ -22,6 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
+
 public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener {
 
     LinearLayout mLoginContainer;
@@ -137,37 +138,34 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
 
         mProgressBar.setVisibility(View.VISIBLE);
 
-        mAuth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful())
-                        {
-                            User user= new User(username, email);
+        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful())
+                {
+                    User user= new User(username, email);
 
-                            FirebaseDatabase.getInstance().
-                                    getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                @Override
-                                public void onComplete(@NonNull Task<Void> task) {
-                                    if(task.isSuccessful())
-                                    {
-                                        Toast.makeText(RegistrationActivity.this,"User has been registered successfully!", Toast.LENGTH_LONG).show();
-                                        mProgressBar.setVisibility(View.GONE);
-                                    }
-                                    else {
-                                        Toast.makeText(RegistrationActivity.this, "Failed to register! Try again!", Toast.LENGTH_LONG).show();
-                                        mProgressBar.setVisibility(View.GONE);
-                                    }
-                                }
-                            });
-                        }
-                        else {
-                            Toast.makeText(RegistrationActivity.this, "Failed to register! Try again!", Toast.LENGTH_LONG).show();
+                    FirebaseDatabase.getInstance()
+                            .getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                            .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if(task.isSuccessful())
+                            {
+                                Toast.makeText(RegistrationActivity.this,"User has been registered successfully!", Toast.LENGTH_LONG).show();
+                            }else
+                            {
+                                Toast.makeText(RegistrationActivity.this, "Failed to register!", Toast.LENGTH_LONG).show();
+                            }
                             mProgressBar.setVisibility(View.GONE);
                         }
-                    }
-                });
+                    });
+                }else{
+                    Toast.makeText(RegistrationActivity.this, "Failed to register user!", Toast.LENGTH_LONG).show();
+                    mProgressBar.setVisibility(View.GONE);
+                }
+            }
+        });
 
     }
 }

@@ -1,5 +1,6 @@
 package com.vidyalankar.letstalk;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,7 +15,11 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -63,23 +68,47 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private void login()
     {
-        String email= user_email_login.getText().toString();
-        String password= user_password_login.getText().toString();
+        String email= user_email_login.getText().toString().trim();
+        String password= user_password_login.getText().toString().trim();
 
-        if(TextUtils.isEmpty(email))
+        if(email.isEmpty())
         {
             user_email_login.setError("Please enter username!");
             user_email_login.requestFocus();
             return;
         }
-        if(TextUtils.isEmpty(password))
+        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches())
+        {
+            user_email_login.setError("Please enter valid email!");
+            user_email_login.requestFocus();
+            return;
+        }
+        if(password.isEmpty())
         {
             user_password_login.setError("Please enter password!");
             user_password_login.requestFocus();
             return;
         }
+        if(password.length()<6)
+        {
+            user_password_login.setError("Min password length is 6 characters!");
+            user_password_login.requestFocus();
+            return;
+        }
+        mProgressBar.setVisibility(View.VISIBLE);
 
-
+        mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful())
+                {
+                    //redirect to dashboard
+                    startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
+                }else{
+                    Toast.makeText(LoginActivity.this, "Failed to Login! Please check your credentials!", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
 
     }
 
@@ -109,6 +138,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         {
             case R.id.sign_up_text:
                 startActivity(new Intent(this, RegistrationActivity.class));
+                break;
+            case R.id.login_btn:
+                login();
                 break;
         }
     }

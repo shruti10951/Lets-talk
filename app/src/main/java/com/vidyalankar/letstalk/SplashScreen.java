@@ -33,7 +33,7 @@ public class SplashScreen extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 } else {
-                    Intent mainIntent = new Intent(SplashScreen.this, DashboardActivity.class);
+                    Intent mainIntent = new Intent(SplashScreen.this, LoginActivity.class);
                     mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(mainIntent);
                     finish();
