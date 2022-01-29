@@ -62,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
                 } else if (item.getItemId() == R.id.about) {
                     Toast.makeText(MainActivity.this, "About Let's Talk", Toast.LENGTH_LONG).show();
                     return true;
+                } else if (item.getItemId() == R.id.logout) {
+                    Toast.makeText(MainActivity.this, "Log Out", Toast.LENGTH_LONG).show();
+                    return true;
                 } else {
                     Toast.makeText(MainActivity.this, "Error", Toast.LENGTH_LONG).show();
                 }

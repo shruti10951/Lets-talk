@@ -1,19 +1,34 @@
-com/vidyalankar/letstalk/User.java
- com.vidyalankar.letstalk.User
-com/vidyalankar/letstalk/BuildConfig.java
- com.vidyalankar.letstalk.BuildConfig
 com/vidyalankar/letstalk/RegistrationActivity.java
  com.vidyalankar.letstalk.RegistrationActivity
  com.vidyalankar.letstalk.RegistrationActivity$1
  com.vidyalankar.letstalk.RegistrationActivity$1$1
+com/vidyalankar/letstalk/BuildConfig.java
+ com.vidyalankar.letstalk.BuildConfig
 com/vidyalankar/letstalk/DashboardActivity.java
  com.vidyalankar.letstalk.DashboardActivity
+ com.vidyalankar.letstalk.DashboardActivity$1
+com/vidyalankar/letstalk/ForgotPassword.java
+ com.vidyalankar.letstalk.ForgotPassword
+ com.vidyalankar.letstalk.ForgotPassword$1
+ com.vidyalankar.letstalk.ForgotPassword$2
+com/vidyalankar/letstalk/ProfileFragment.java
+ com.vidyalankar.letstalk.ProfileFragment
+com/vidyalankar/letstalk/User.java
+ com.vidyalankar.letstalk.User
 com/vidyalankar/letstalk/LoginActivity.java
  com.vidyalankar.letstalk.LoginActivity
  com.vidyalankar.letstalk.LoginActivity$1
 com/vidyalankar/letstalk/SplashScreen.java
  com.vidyalankar.letstalk.SplashScreen
  com.vidyalankar.letstalk.SplashScreen$1
+com/vidyalankar/letstalk/HomeFragment.java
+ com.vidyalankar.letstalk.HomeFragment
+com/vidyalankar/letstalk/ChatListFragment.java
+ com.vidyalankar.letstalk.ChatListFragment
 com/vidyalankar/letstalk/MainActivity.java
  com.vidyalankar.letstalk.MainActivity
  com.vidyalankar.letstalk.MainActivity$1
+com/vidyalankar/letstalk/AddPostFragment.java
+ com.vidyalankar.letstalk.AddPostFragment
+com/vidyalankar/letstalk/UsersFragment.java
+ com.vidyalankar.letstalk.UsersFragment

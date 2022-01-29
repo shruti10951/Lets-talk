@@ -23,6 +23,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.LetsTalk" >
         <activity
+            android:name="com.vidyalankar.letstalk.ForgotPassword"
+            android:exported="true" />
+        <activity
             android:name="com.vidyalankar.letstalk.DashboardActivity"
             android:exported="true" />
         <activity
@@ -126,6 +129,13 @@
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
     </application>
 
 </manifest>

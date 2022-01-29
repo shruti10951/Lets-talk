@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/profile" android:title="Profile" android:icon="@drawable/profile"></item>
-    <item android:id="@+id/setting" android:title="Setting" android:icon="@drawable/setting"></item>
-    <item android:id="@+id/wellness_center" android:title="Wellness Center" android:icon="@drawable/wellness_center"></item>
-    <item android:id="@+id/melodies" android:title="Calm Melodies" android:icon="@drawable/music"></item>
-    <item android:id="@+id/calm_down" android:title="Help Me Calm Down" android:icon="@drawable/calm_down"></item>
+    <item android:id="@+id/profile" android:title="Profile" android:icon="@drawable/profile_icon"></item>
+    <item android:id="@+id/setting" android:title="Setting" android:icon="@drawable/setting_icon"></item>
+    <item android:id="@+id/wellness_center" android:title="Wellness Center" android:icon="@drawable/wellness_center_icon"></item>
+    <item android:id="@+id/melodies" android:title="Calm Melodies" android:icon="@drawable/music_icon"></item>
+    <item android:id="@+id/calm_down" android:title="Help Me Calm Down" android:icon="@drawable/calm_down_icon"></item>
     <item android:id="@+id/help" android:title="I Need Help!" android:icon="@drawable/widgets"></item>
-    <item android:id="@+id/about" android:title="About Let's Talk" android:icon="@drawable/info"></item>
+    <item android:id="@+id/about" android:title="About Let's Talk" android:icon="@drawable/info_icon"></item>
+    <item android:id="@+id/logout" android:title="Log Out" android:icon="@drawable/logout_icon"></item>
 
 
 
