@@ -2634,6 +2634,7 @@ int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
 int id CTRL 0x7f080003
 int id FUNCTION 0x7f080004
+int id INeedHelpFragment 0x7f080228
 int id META 0x7f080005
 int id NO_DEBUG 0x7f080006
 int id SHIFT 0x7f080007
@@ -2643,7 +2644,7 @@ int id SHOW_PROGRESS 0x7f08000a
 int id SYM 0x7f08000b
 int id TOP_END 0x7f08000c
 int id TOP_START 0x7f08000d
-int id about 0x7f08000e
+int id aboutLetsTalkFragment 0x7f080229
 int id accelerate 0x7f08000f
 int id accessibility_action_clickable_span 0x7f080010
 int id accessibility_custom_action_0 0x7f080011
@@ -2742,7 +2743,7 @@ int id browser_actions_menu_view 0x7f08006d
 int id buttonPanel 0x7f08006e
 int id cache_measures 0x7f08006f
 int id callMeasure 0x7f080070
-int id calm_down 0x7f080071
+int id calmMelodiesFragment 0x7f08022a
 int id cancel_action 0x7f080072
 int id cancel_button 0x7f080073
 int id carryVelocity 0x7f080074
@@ -2817,6 +2818,7 @@ int id dragLeft 0x7f0800b8
 int id dragRight 0x7f0800b9
 int id dragStart 0x7f0800ba
 int id dragUp 0x7f0800bb
+int id drawer_navigation 0x7f08022b
 int id dropdown_menu 0x7f0800bc
 int id easeIn 0x7f0800bd
 int id easeInOut 0x7f0800be
@@ -2857,7 +2859,7 @@ int id grouping 0x7f0800e0
 int id groups 0x7f0800e1
 int id guideline 0x7f0800e2
 int id header_title 0x7f0800e3
-int id help 0x7f0800e4
+int id helpMeCalmDownFragment 0x7f08022c
 int id hideable 0x7f0800e5
 int id home 0x7f0800e6
 int id homeAsUp 0x7f0800e7
@@ -2925,7 +2927,6 @@ int id material_timepicker_ok_button 0x7f080124
 int id material_timepicker_view 0x7f080125
 int id material_value_index 0x7f080126
 int id media_actions 0x7f080127
-int id melodies 0x7f080128
 int id message 0x7f080129
 int id middle 0x7f08012a
 int id mini 0x7f08012b
@@ -3000,7 +3001,6 @@ int id percent 0x7f08016f
 int id pin 0x7f080170
 int id position 0x7f080171
 int id postLayout 0x7f080172
-int id profile 0x7f080173
 int id profileFragment 0x7f080174
 int id progress_bar_login 0x7f080175
 int id progress_bar_reset_pass 0x7f080176
@@ -3043,7 +3043,7 @@ int id search_voice_btn 0x7f08019a
 int id select_dialog_listview 0x7f08019b
 int id selected 0x7f08019c
 int id selection_type 0x7f08019d
-int id setting 0x7f08019e
+int id settingFragment 0x7f08022d
 int id sharedValueSet 0x7f08019f
 int id sharedValueUnset 0x7f0801a0
 int id shortcut 0x7f0801a1
@@ -3166,7 +3166,7 @@ int id view_tree_saved_state_registry_owner 0x7f080215
 int id view_tree_view_model_store_owner 0x7f080216
 int id visible 0x7f080217
 int id visible_removing_fragment_view_tag 0x7f080218
-int id wellness_center 0x7f080219
+int id wellnessCenterFragment 0x7f08022e
 int id west 0x7f08021a
 int id wide 0x7f08021b
 int id withText 0x7f08021c
@@ -3288,11 +3288,17 @@ int layout design_navigation_menu 0x7f0b0030
 int layout design_navigation_menu_item 0x7f0b0031
 int layout design_text_input_end_icon 0x7f0b0032
 int layout design_text_input_start_icon 0x7f0b0033
+int layout fragment_about_lets_talk 0x7f0b008a
 int layout fragment_add_post 0x7f0b0034
+int layout fragment_calm_melodies 0x7f0b008b
 int layout fragment_chat_list 0x7f0b0035
+int layout fragment_help_me_calm_down 0x7f0b0090
 int layout fragment_home 0x7f0b0036
+int layout fragment_i_need_help 0x7f0b008d
 int layout fragment_profile 0x7f0b0037
+int layout fragment_setting 0x7f0b008e
 int layout fragment_users 0x7f0b0038
+int layout fragment_wellness_center 0x7f0b008f
 int layout m3_alert_dialog 0x7f0b0039
 int layout m3_alert_dialog_actions 0x7f0b003a
 int layout m3_alert_dialog_title 0x7f0b003b
@@ -3381,6 +3387,7 @@ int menu nav_menu 0x7f0c0003
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001
 int navigation dashboard_menu 0x7f0e0000
+int navigation drawer_navigation 0x7f0e0001
 int plurals mtrl_badge_content_description 0x7f0f0000
 int string abc_action_bar_home_description 0x7f100000
 int string abc_action_bar_up_description 0x7f100001

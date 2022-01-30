@@ -6,31 +6,27 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/profile"
-            android:icon="@drawable/profile_icon"
-            android:title="Profile" />
-        <item
-            android:id="@+id/setting"
+            android:id="@+id/settingFragment"
             android:icon="@drawable/setting_icon"
             android:title="Setting" />
         <item
-            android:id="@+id/wellness_center"
+            android:id="@+id/wellnessCenterFragment"
             android:icon="@drawable/wellness_center_icon"
             android:title="Wellness Center" />
         <item
-            android:id="@+id/melodies"
+            android:id="@+id/calmMelodiesFragment"
             android:icon="@drawable/music_icon"
             android:title="Calm Melodies" />
         <item
-            android:id="@+id/calm_down"
+            android:id="@+id/helpMeCalmDownFragment"
             android:icon="@drawable/calm_down_icon"
             android:title="Help Me Calm Down" />
         <item
-            android:id="@+id/help"
+            android:id="@+id/INeedHelpFragment"
             android:icon="@drawable/widgets"
             android:title="I Need Help!" />
         <item
-            android:id="@+id/about"
+            android:id="@+id/aboutLetsTalkFragment"
             android:icon="@drawable/info_icon"
             android:title="About Let's Talk" />
 

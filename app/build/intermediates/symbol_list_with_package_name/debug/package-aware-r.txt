@@ -2635,6 +2635,7 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id INeedHelpFragment
 id META
 id NO_DEBUG
 id SHIFT
@@ -2644,7 +2645,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
-id about
+id aboutLetsTalkFragment
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2743,7 +2744,7 @@ id browser_actions_menu_view
 id buttonPanel
 id cache_measures
 id callMeasure
-id calm_down
+id calmMelodiesFragment
 id cancel_action
 id cancel_button
 id carryVelocity
@@ -2818,6 +2819,7 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id drawer_navigation
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -2858,7 +2860,7 @@ id grouping
 id groups
 id guideline
 id header_title
-id help
+id helpMeCalmDownFragment
 id hideable
 id home
 id homeAsUp
@@ -2926,7 +2928,6 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id media_actions
-id melodies
 id message
 id middle
 id mini
@@ -3001,7 +3002,6 @@ id percent
 id pin
 id position
 id postLayout
-id profile
 id profileFragment
 id progress_bar_login
 id progress_bar_reset_pass
@@ -3044,7 +3044,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
-id setting
+id settingFragment
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3167,7 +3167,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
-id wellness_center
+id wellnessCenterFragment
 id west
 id wide
 id withText
@@ -3289,11 +3289,17 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_about_lets_talk
 layout fragment_add_post
+layout fragment_calm_melodies
 layout fragment_chat_list
+layout fragment_help_me_calm_down
 layout fragment_home
+layout fragment_i_need_help
 layout fragment_profile
+layout fragment_setting
 layout fragment_users
+layout fragment_wellness_center
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3382,6 +3388,7 @@ menu nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation dashboard_menu
+navigation drawer_navigation
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
