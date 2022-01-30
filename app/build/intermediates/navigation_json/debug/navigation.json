@@ -3,5 +3,10 @@
     "name": "dashboard_menu",
     "navigationXmlIds": [],
     "deepLinks": []
+  },
+  {
+    "name": "drawer_navigation",
+    "navigationXmlIds": [],
+    "deepLinks": []
   }
 ]

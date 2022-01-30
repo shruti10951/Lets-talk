@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_navigation"
+    app:startDestination="@id/settingFragment">
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.vidyalankar.letstalk.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/aboutLetsTalkFragment"
+        android:name="com.vidyalankar.letstalk.AboutLetsTalkFragment"
+        android:label="fragment_about_lets_talk"
+        tools:layout="@layout/fragment_about_lets_talk" />
+    <fragment
+        android:id="@+id/wellnessCenterFragment"
+        android:name="com.vidyalankar.letstalk.WellnessCenterFragment"
+        android:label="fragment_wellness_center"
+        tools:layout="@layout/fragment_wellness_center" />
+    <fragment
+        android:id="@+id/calmMelodiesFragment"
+        android:name="com.vidyalankar.letstalk.CalmMelodiesFragment"
+        android:label="fragment_calm_melodies"
+        tools:layout="@layout/fragment_calm_melodies" />
+    <fragment
+        android:id="@+id/helpMeCalmDownFragment"
+        android:name="com.vidyalankar.letstalk.HelpMeCalmDownFragment"
+        android:label="fragment_help_me_calm_down"
+        tools:layout="@layout/fragment_help_me_calm_down" />
+    <fragment
+        android:id="@+id/INeedHelpFragment"
+        android:name="com.vidyalankar.letstalk.INeedHelpFragment"
+        android:label="fragment_i_need_help"
+        tools:layout="@layout/fragment_i_need_help" />
+</navigation>

@@ -2,20 +2,27 @@ package com.vidyalankar.letstalk;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.widget.Switch;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
-public class DashboardActivity extends AppCompatActivity {
+public class DashboardActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout dashboard_drawer;
 
@@ -35,13 +42,73 @@ public class DashboardActivity extends AppCompatActivity {
         dashboard_drawer.addDrawerListener(dashboard_toggle);
         dashboard_toggle.syncState();
 
-        BottomNavigationView dashboardNavigation = findViewById(R.id.bottomNavigationView);
-        dashboardNavigation.setOnItemSelectedListener(navListener);
+        BottomNavigationView dashboardBottomNavigation = findViewById(R.id.bottomNavigationView);
+        dashboardBottomNavigation.setOnItemSelectedListener(navListener);
 
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragmentContainerView2, new HomeFragment()).commit();
+        if(savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragmentContainerView2, new HomeFragment()).commit();
+        }
+
+
+        NavigationView dashboardNavigation = findViewById(R.id.dashboard_nav_view);
+        dashboardNavigation.setNavigationItemSelectedListener(this);
 
     }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId())
+        {
+            case R.id.settingFragment:
+                getSupportFragmentManager().beginTransaction().
+                        replace(R.id.dashboard_fragment_container,new SettingFragment()).addToBackStack(null).commit();
+                break;
+            case R.id.wellnessCenterFragment:
+                getSupportFragmentManager().beginTransaction().
+                        replace(R.id.dashboard_fragment_container,new WellnessCenterFragment()).addToBackStack(null).commit();
+                break;
+            case R.id.calmMelodiesFragment:
+                getSupportFragmentManager().beginTransaction().
+                        replace(R.id.dashboard_fragment_container,new CalmMelodiesFragment()).addToBackStack(null).commit();
+                break;
+            case R.id.helpMeCalmDownFragment:
+                getSupportFragmentManager().beginTransaction().
+                        replace(R.id.dashboard_fragment_container,new HelpMeCalmDownFragment()).addToBackStack(null).commit();
+                break;
+            case R.id.INeedHelpFragment:
+                getSupportFragmentManager().beginTransaction().
+                        replace(R.id.dashboard_fragment_container,new INeedHelpFragment()).addToBackStack(null).commit();
+                break;
+            case R.id.aboutLetsTalkFragment:
+                getSupportFragmentManager().beginTransaction().
+                        replace(R.id.dashboard_fragment_container,new AboutLetsTalkFragment()).addToBackStack(null).commit();
+                break;
+            case R.id.logout:
+                logoutUser();
+                break;
+        }
+        dashboard_drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+    public void logoutUser()
+    {
+        AlertDialog.Builder builder= new AlertDialog.Builder(DashboardActivity.this);
+
+        builder.setMessage("Are you sure you want to log out?")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Toast.makeText(DashboardActivity.this, "Logging out successful...", Toast.LENGTH_LONG).show();
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
+            }
+        }).setNegativeButton("No",null);
+        AlertDialog alert= builder.create();
+        alert.show();
+    }
+
 
     @Override
     public void onBackPressed() {
