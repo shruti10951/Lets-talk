@@ -2,17 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="160dp"
+    android:layout_height="176dp"
+    android:gravity="bottom"
     android:background="@color/blue_bg"
-    android:layout_margin="20dp">
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_margin="8dp"
+    android:padding="16dp">
 
     <ImageView
         android:id="@+id/user_iv"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_marginLeft="4dp"
         android:src="@drawable/woman"
-        android:layout_below="@+id/user_iv"></ImageView>
+        android:layout_below="@+id/user_iv" />
 
     <TextView
         android:layout_width="wrap_content"

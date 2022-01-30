@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
 
-    <item android:id="@+id/profile" android:title="Profile" android:icon="@drawable/profile"></item>
-    <item android:id="@+id/setting" android:title="Setting" android:icon="@drawable/setting"></item>
-    <item android:id="@+id/wellness_center" android:title="Wellness Center" android:icon="@drawable/wellness_center"></item>
-    <item android:id="@+id/melodies" android:title="Calm Melodies" android:icon="@drawable/music"></item>
-    <item android:id="@+id/calm_down" android:title="Help Me Calm Down" android:icon="@drawable/calm_down"></item>
-    <item android:id="@+id/help" android:title="I Need Help!" android:icon="@drawable/widgets"></item>
-    <item android:id="@+id/about" android:title="About Let's Talk" android:icon="@drawable/info"></item>
+    <group android:checkableBehavior="single">
 
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/setting_icon"
+            android:title="Setting" />
+        <item
+            android:id="@+id/wellness_center"
+            android:icon="@drawable/wellness_center_icon"
+            android:title="Wellness Center" />
+        <item
+            android:id="@+id/melodies"
+            android:icon="@drawable/music_icon"
+            android:title="Calm Melodies" />
+        <item
+            android:id="@+id/calm_down"
+            android:icon="@drawable/calm_down_icon"
+            android:title="Help Me Calm Down" />
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/widgets"
+            android:title="I Need Help!" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/info_icon"
+            android:title="About Let's Talk" />
 
+    </group>
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout_icon"
+        android:title="Log Out" />
 
 </menu>
