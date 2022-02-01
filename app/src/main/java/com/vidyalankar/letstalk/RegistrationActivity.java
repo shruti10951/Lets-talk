@@ -20,7 +20,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 
 public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener {
@@ -35,6 +39,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
 
     private FirebaseAuth mAuth;
     FirebaseUser currentUser;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,6 +109,8 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         String username= username_et.getText().toString().trim();
         String password_confirm= user_reg_password_confirm.getText().toString().trim();
 
+        Query usernameQuery= FirebaseDatabase.getInstance().getReference().child("Users").orderByChild("username").equalTo(username);
+
         if(email.isEmpty())
         {
             user_mail_reg.setError("Email is required!");
@@ -135,36 +142,60 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
             user_reg_password.requestFocus();
             return;
         }
+        if(!password.equals(password_confirm))
+        {
+            user_reg_password_confirm.setError("Password did not match!");
+            user_reg_password_confirm.requestFocus();
+            return;
+        }
 
         mProgressBar.setVisibility(View.VISIBLE);
 
-        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        usernameQuery.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful())
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.getChildrenCount()>0)
                 {
-                    User user= new User(username, email);
-
-                    FirebaseDatabase.getInstance()
-                            .getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                            .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Void> task) {
-                            if(task.isSuccessful())
-                            {
-                                Toast.makeText(RegistrationActivity.this,"User has been registered successfully!", Toast.LENGTH_LONG).show();
-                                startActivity(new Intent(RegistrationActivity.this, DashboardActivity.class));
-                            }else
-                            {
-                                Toast.makeText(RegistrationActivity.this, "Failed to register!", Toast.LENGTH_LONG).show();
-                            }
-                            mProgressBar.setVisibility(View.GONE);
-                        }
-                    });
-                }else{
-                    Toast.makeText(RegistrationActivity.this, "Failed to register user!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(RegistrationActivity.this, "choose a different username", Toast.LENGTH_LONG).show();
                     mProgressBar.setVisibility(View.GONE);
                 }
+                else{
+
+                    mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(task.isSuccessful())
+                            {
+                                User user= new User(username, email);
+
+                                FirebaseDatabase.getInstance()
+                                        .getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                        .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+                                        if(task.isSuccessful())
+                                        {
+                                            Toast.makeText(RegistrationActivity.this,"User has been registered successfully!", Toast.LENGTH_LONG).show();
+                                            startActivity(new Intent(RegistrationActivity.this, SetProfile.class));
+                                        }else
+                                        {
+                                            Toast.makeText(RegistrationActivity.this, "Failed to register!", Toast.LENGTH_LONG).show();
+                                        }
+                                        mProgressBar.setVisibility(View.GONE);
+                                    }
+                                });
+                            }else{
+                                Toast.makeText(RegistrationActivity.this, "Failed to register user!", Toast.LENGTH_LONG).show();
+                                mProgressBar.setVisibility(View.GONE);
+                            }
+                        }
+                    });
+
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(RegistrationActivity.this, "Failed to register database!", Toast.LENGTH_LONG).show();
             }
         });
 

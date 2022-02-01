@@ -116,7 +116,17 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         {
             dashboard_drawer.closeDrawer(GravityCompat.START);
         }else {
-            super.onBackPressed();
+            AlertDialog.Builder builder= new AlertDialog.Builder(DashboardActivity.this);
+
+            builder.setTitle("Exit?").setMessage("Are you sure?")
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            DashboardActivity.super.onBackPressed();
+                        }
+                    }).setNegativeButton("No",null);
+            AlertDialog alert= builder.create();
+            alert.show();
         }
     }
 
