@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292"
+        app:layout_constraintVertical_bias="0.435"
         app:srcCompat="@drawable/lets_talk_logo_dark" />
 
     <TextView
@@ -25,15 +25,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="56dp"
         android:fontFamily="cursive"
         android:text="We are here for you!"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#ff7d7d"
-        android:textSize="40sp"
+        android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.785" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2754,6 +2754,8 @@ id center_vertical
 id chain
 id chain2
 id chains
+id change_profile
+id change_profile_pic
 id chatListFragment
 id checkbox
 id checked
@@ -2773,6 +2775,7 @@ id collapseActionView
 id compress
 id confirm_button
 id constraint
+id constraintLayout
 id container
 id content
 id contentPanel
@@ -3003,6 +3006,9 @@ id pin
 id position
 id postLayout
 id profileFragment
+id profile_email
+id profile_pic
+id profile_username
 id progress_bar_login
 id progress_bar_reset_pass
 id progress_circular
@@ -3023,6 +3029,7 @@ id row_index_key
 id rtl
 id save_non_transition_alpha
 id save_overlay_view
+id save_profile
 id sawtooth
 id scale
 id screen
@@ -3042,6 +3049,7 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id select_dialog_listview
+id select_profile_pic
 id selected
 id selection_type
 id settingFragment
@@ -3270,6 +3278,7 @@ layout activity_forgot_password
 layout activity_login
 layout activity_main
 layout activity_registration
+layout activity_set_profile
 layout activity_splash_screen
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

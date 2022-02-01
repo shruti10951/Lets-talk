@@ -108,34 +108,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 if(task.isSuccessful())
                 {
 
-//                    FirebaseUser user= mAuth.getCurrentUser();
-//
-//                    if(task.getResult().getAdditionalUserInfo().isNewUser())
-//                    {
-//                        String email= user.getEmail();
-//                        String uid= user.getUid();
-//                        HashMap<Object, String> hashMap = new HashMap<>();
-//                        hashMap.put("email", email);
-//                        hashMap.put("uid", uid);
-//                        hashMap.put("username", "");
-//                        hashMap.put("onlineStatus", "online");
-//                        hashMap.put("typingTo", "noOne");
-//                        hashMap.put("phone", "");
-//                        hashMap.put("image", "");
-//
-//                        FirebaseDatabase database= FirebaseDatabase.getInstance();
-//
-//                        //storing the value in Database in "Users" node
-//                        DatabaseReference reference= database.getReference("Users");
-//
-//                        //storing the value in firebase
-//                        reference.child(uid).setValue(hashMap);
-//                    }
-
                     Toast.makeText(LoginActivity.this, "Login successfull!", Toast.LENGTH_LONG).show();
 
                     //redirect to dashboard
-                    startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
+                    startActivity(new Intent(LoginActivity.this, SetProfile.class));
                     finish();
                 }else{
                     Toast.makeText(LoginActivity.this, "Failed to Login! Please check your credentials!", Toast.LENGTH_LONG).show();
