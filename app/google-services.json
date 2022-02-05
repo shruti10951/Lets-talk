@@ -1,13 +1,14 @@
 {
   "project_info": {
     "project_number": "382547254953",
+    "firebase_url": "https://let-s-talk-51904-default-rtdb.firebaseio.com",
     "project_id": "let-s-talk-51904",
     "storage_bucket": "let-s-talk-51904.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:382547254953:android:0a113b597ee6119c2413b8",
+        "mobilesdk_app_id": "1:382547254953:android:855d6e8ae5e7fda62413b8",
         "android_client_info": {
           "package_name": "com.vidyalankar.letstalk"
         }

@@ -176,7 +176,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                                         if(task.isSuccessful())
                                         {
                                             Toast.makeText(RegistrationActivity.this,"User has been registered successfully!", Toast.LENGTH_LONG).show();
-                                            startActivity(new Intent(RegistrationActivity.this, SetProfile.class));
+                                            startActivity(new Intent(RegistrationActivity.this, DashboardActivity.class));
                                         }else
                                         {
                                             Toast.makeText(RegistrationActivity.this, "Failed to register!", Toast.LENGTH_LONG).show();
