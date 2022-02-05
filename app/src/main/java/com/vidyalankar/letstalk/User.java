@@ -4,15 +4,10 @@ import android.net.Uri;
 
 public class User {
 
-    public String username, email, image;
-    public Uri profileImage;
+    public String username, email, userID;
 
     public User() {
 
-    }
-    public User(Uri profileImage)
-    {
-        this.profileImage= profileImage;
     }
     public User(String username, String email)
     {
@@ -33,10 +28,6 @@ public class User {
         return email;
     }
 
-    public String getImage() {
-        return image;
-    }
-
     public void setUsername(String username) {
         this.username = username;
     }
@@ -45,7 +36,4 @@ public class User {
         this.email = email;
     }
 
-    public void setImage(String image) {
-        this.image = image;
-    }
 }

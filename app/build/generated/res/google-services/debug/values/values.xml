@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="default_web_client_id" translatable="false">382547254953-hsoivm5vos43cpqidsoksk7m1hfd7v1p.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://let-s-talk-51904-default-rtdb.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">382547254953</string>
     <string name="google_api_key" translatable="false">AIzaSyCoNrH3QPOE9QDbcyNQvTxTObsZcnJD8xw</string>
-    <string name="google_app_id" translatable="false">1:382547254953:android:0a113b597ee6119c2413b8</string>
+    <string name="google_app_id" translatable="false">1:382547254953:android:855d6e8ae5e7fda62413b8</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCoNrH3QPOE9QDbcyNQvTxTObsZcnJD8xw</string>
     <string name="google_storage_bucket" translatable="false">let-s-talk-51904.appspot.com</string>
     <string name="project_id" translatable="false">let-s-talk-51904</string>
