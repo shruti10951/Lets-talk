@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="176dp"
@@ -9,10 +10,12 @@
     android:layout_margin="8dp"
     android:padding="16dp">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/user_iv"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
+        android:layout_width="@dimen/_65hsdp"
+        android:layout_height="@dimen/_65hsdp"
+        app:civ_border_width="@dimen/_2font_ssp"
+        app:civ_border_color="@color/rose"
         android:layout_marginLeft="4dp"
         android:src="@drawable/woman"
         android:layout_below="@+id/user_iv" />

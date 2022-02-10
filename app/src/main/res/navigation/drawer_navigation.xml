@@ -7,32 +7,32 @@
 
     <fragment
         android:id="@+id/settingFragment"
-        android:name="com.vidyalankar.letstalk.SettingFragment"
+        android:name="com.vidyalankar.letstalk.fragments.SettingFragment"
         android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" />
     <fragment
         android:id="@+id/aboutLetsTalkFragment"
-        android:name="com.vidyalankar.letstalk.AboutLetsTalkFragment"
+        android:name="com.vidyalankar.letstalk.fragments.AboutLetsTalkFragment"
         android:label="fragment_about_lets_talk"
         tools:layout="@layout/fragment_about_lets_talk" />
     <fragment
         android:id="@+id/wellnessCenterFragment"
-        android:name="com.vidyalankar.letstalk.WellnessCenterFragment"
+        android:name="com.vidyalankar.letstalk.fragments.WellnessCenterFragment"
         android:label="fragment_wellness_center"
         tools:layout="@layout/fragment_wellness_center" />
     <fragment
         android:id="@+id/calmMelodiesFragment"
-        android:name="com.vidyalankar.letstalk.CalmMelodiesFragment"
+        android:name="com.vidyalankar.letstalk.fragments.CalmMelodiesFragment"
         android:label="fragment_calm_melodies"
         tools:layout="@layout/fragment_calm_melodies" />
     <fragment
         android:id="@+id/helpMeCalmDownFragment"
-        android:name="com.vidyalankar.letstalk.HelpMeCalmDownFragment"
+        android:name="com.vidyalankar.letstalk.fragments.HelpMeCalmDownFragment"
         android:label="fragment_help_me_calm_down"
         tools:layout="@layout/fragment_help_me_calm_down" />
     <fragment
         android:id="@+id/INeedHelpFragment"
-        android:name="com.vidyalankar.letstalk.INeedHelpFragment"
+        android:name="com.vidyalankar.letstalk.fragments.INeedHelpFragment"
         android:label="fragment_i_need_help"
         tools:layout="@layout/fragment_i_need_help" />
 </navigation>

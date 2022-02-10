@@ -26,19 +26,19 @@
             android:name="com.vidyalankar.letstalk.SetProfile"
             android:exported="true" />
         <activity
-            android:name="com.vidyalankar.letstalk.ForgotPassword"
+            android:name="com.vidyalankar.letstalk.activities.ForgotPassword"
             android:exported="true" />
         <activity
-            android:name="com.vidyalankar.letstalk.DashboardActivity"
+            android:name="com.vidyalankar.letstalk.activities.DashboardActivity"
             android:exported="true" />
         <activity
-            android:name="com.vidyalankar.letstalk.LoginActivity"
+            android:name="com.vidyalankar.letstalk.activities.LoginActivity"
             android:exported="true" />
         <activity
-            android:name="com.vidyalankar.letstalk.RegistrationActivity"
+            android:name="com.vidyalankar.letstalk.activities.RegistrationActivity"
             android:exported="true" />
         <activity
-            android:name="com.vidyalankar.letstalk.SplashScreen"
+            android:name="com.vidyalankar.letstalk.activities.SplashScreen"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

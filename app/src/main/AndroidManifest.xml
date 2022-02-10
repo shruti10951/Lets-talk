@@ -16,19 +16,19 @@
             android:name=".SetProfile"
             android:exported="true" />
         <activity
-            android:name=".ForgotPassword"
+            android:name=".activities.ForgotPassword"
             android:exported="true" />
         <activity
-            android:name=".DashboardActivity"
+            android:name=".activities.DashboardActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".RegistrationActivity"
+            android:name=".activities.RegistrationActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".activities.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
