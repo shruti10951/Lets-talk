@@ -3395,6 +3395,7 @@ drawable notification_bg_low_normal
 drawable notification_bg_low_pressed
 drawable notification_bg_normal
 drawable notification_bg_normal_pressed
+drawable notification_icon
 drawable notification_icon_background
 drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
@@ -3407,6 +3408,7 @@ drawable setting_icon
 drawable splash_screen
 drawable test_custom_background
 drawable test_level_drawable
+drawable toolbar_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable wellness_center_icon
@@ -3536,7 +3538,6 @@ id center_vertical
 id chain
 id chain2
 id chains
-id chatListFragment
 id checkbox
 id checked
 id chip
@@ -3775,9 +3776,14 @@ id noState
 id none
 id normal
 id north
+id notificationFragment
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id notification_message
+id notification_profile_user
+id notification_recycler
+id notification_time
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3895,6 +3901,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id tabLayoutDashNotif
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3922,8 +3929,8 @@ id textStart
 id textTop
 id textView
 id textView2
+id textView3
 id textView4
-id textView5
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3956,8 +3963,8 @@ id up
 id useLogo
 id user_email_login
 id user_iv
-id user_mail
-id user_name
+id user_mail_dash_nav
+id user_name_dash_nav
 id user_password_login
 id user_reg_email
 id user_reg_password
@@ -3966,6 +3973,7 @@ id username_reg
 id usersFragment
 id vertical_only
 id view_offset_helper
+id view_pager_notif
 id view_transition
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
@@ -4097,12 +4105,14 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_about_lets_talk
 layout fragment_add_post
+layout fragment_all_notification
 layout fragment_calm_melodies
-layout fragment_chat_list
+layout fragment_chat
 layout fragment_edit_profile
 layout fragment_help_me_calm_down
 layout fragment_home
 layout fragment_i_need_help
+layout fragment_notification
 layout fragment_profile
 layout fragment_setting
 layout fragment_users
@@ -4159,6 +4169,7 @@ layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
 layout notification_media_cancel_action
+layout notification_recycler_view
 layout notification_template_big_media
 layout notification_template_big_media_custom
 layout notification_template_big_media_narrow

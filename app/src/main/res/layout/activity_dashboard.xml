@@ -47,6 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:elevation="4dp"
+            android:background="@drawable/toolbar_bg"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
 

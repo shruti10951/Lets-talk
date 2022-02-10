@@ -13,16 +13,24 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.vidyalankar.letstalk.fragments.AboutLetsTalkFragment;
 import com.vidyalankar.letstalk.fragments.AddPostFragment;
 import com.vidyalankar.letstalk.fragments.CalmMelodiesFragment;
-import com.vidyalankar.letstalk.fragments.ChatListFragment;
+import com.vidyalankar.letstalk.fragments.NotificationFragment;
 import com.vidyalankar.letstalk.fragments.HelpMeCalmDownFragment;
 import com.vidyalankar.letstalk.fragments.HomeFragment;
 import com.vidyalankar.letstalk.fragments.INeedHelpFragment;
@@ -31,11 +39,16 @@ import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.fragments.SettingFragment;
 import com.vidyalankar.letstalk.fragments.UsersFragment;
 import com.vidyalankar.letstalk.fragments.WellnessCenterFragment;
+import com.vidyalankar.letstalk.model.User;
 
 public class DashboardActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout dashboard_drawer;
 
+    FirebaseUser user;
+    DatabaseReference reference;
+
+    String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +59,10 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         setSupportActionBar(dashboard_toolbar);
 
         dashboard_drawer= findViewById(R.id.dashboard_layout);
+
+        user= FirebaseAuth.getInstance().getCurrentUser();
+        userID= user.getUid();
+        reference= FirebaseDatabase.getInstance().getReference("Users");
 
         ActionBarDrawerToggle dashboard_toggle= new ActionBarDrawerToggle(this, dashboard_drawer, dashboard_toolbar,
                 R.string.open,R.string.close);
@@ -60,8 +77,29 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
                     .replace(R.id.fragmentContainerView2, new HomeFragment()).commit();
         }
 
-
         NavigationView dashboardNavigation = findViewById(R.id.dashboard_nav_view);
+        View hView= dashboardNavigation.getHeaderView(0);
+        TextView userNameDashNav= (TextView) hView.findViewById(R.id.user_name_dash_nav);
+        TextView userEmailDashNav= (TextView) hView.findViewById(R.id.user_mail_dash_nav);
+        reference.child(userID).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                User userProfile= snapshot.getValue(User.class);
+                if(userProfile!=null)
+                {
+                    String userName= userProfile.username;
+                    String userEmail= userProfile.email;
+
+                    userNameDashNav.setText(userName);
+                    userEmailDashNav.setText(userEmail);
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
         dashboardNavigation.setNavigationItemSelectedListener(this);
 
     }
@@ -156,8 +194,8 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
                 case R.id.addPostFragment:
                     selectedFragment= new AddPostFragment();
                     break;
-                case R.id.chatListFragment:
-                    selectedFragment= new ChatListFragment();
+                case R.id.notificationFragment:
+                    selectedFragment= new NotificationFragment();
                     break;
                 case R.id.profileFragment:
                     selectedFragment= new ProfileFragment();
