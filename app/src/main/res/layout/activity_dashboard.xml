@@ -7,8 +7,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:gravity="center"
-    tools:context=".DashboardActivity"
-    tools:openDrawer="start">
+    tools:context=".activities.DashboardActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -27,7 +26,7 @@
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView2"
             android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="409dp"
+            android:layout_width="match_parent"
             android:layout_height="673dp"
             app:defaultNavHost="true"
             app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
@@ -47,10 +46,11 @@
             android:id="@+id/dashboard_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/blue_bg"
             android:elevation="4dp"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+        </androidx.appcompat.widget.Toolbar>
 
         <FrameLayout
             android:id="@+id/dashboard_fragment_container"
@@ -64,6 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        app:itemIconTint="@color/blue_bg"
         android:background="@color/rose"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu" />

@@ -44,32 +44,32 @@
 27-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:17:13-36
 28        <activity
 28-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:18:9-20:39
-29            android:name="com.vidyalankar.letstalk.ForgotPassword"
-29-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:19:13-43
+29            android:name="com.vidyalankar.letstalk.activities.ForgotPassword"
+29-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:19:13-54
 30            android:exported="true" />
 30-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:20:13-36
 31        <activity
 31-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:21:9-23:39
-32            android:name="com.vidyalankar.letstalk.DashboardActivity"
-32-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:22:13-46
+32            android:name="com.vidyalankar.letstalk.activities.DashboardActivity"
+32-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:22:13-57
 33            android:exported="true" />
 33-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:23:13-36
 34        <activity
 34-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:24:9-26:39
-35            android:name="com.vidyalankar.letstalk.LoginActivity"
-35-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:25:13-42
+35            android:name="com.vidyalankar.letstalk.activities.LoginActivity"
+35-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:25:13-53
 36            android:exported="true" />
 36-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:26:13-36
 37        <activity
 37-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:27:9-29:39
-38            android:name="com.vidyalankar.letstalk.RegistrationActivity"
-38-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:28:13-49
+38            android:name="com.vidyalankar.letstalk.activities.RegistrationActivity"
+38-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:28:13-60
 39            android:exported="true" />
 39-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:29:13-36
 40        <activity
 40-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:30:9-38:20
-41            android:name="com.vidyalankar.letstalk.SplashScreen"
-41-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:31:13-41
+41            android:name="com.vidyalankar.letstalk.activities.SplashScreen"
+41-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:31:13-52
 42            android:exported="true" >
 42-->C:\Users\Admin\Lets-talk\app\src\main\AndroidManifest.xml:32:13-36
 43            <intent-filter>

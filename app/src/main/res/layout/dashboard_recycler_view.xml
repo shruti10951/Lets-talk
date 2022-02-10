@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_border">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_user"
+        android:layout_width="@dimen/_40hsdp"
+        android:layout_height="@dimen/_40hsdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/woman"
+        app:civ_border_color="@color/rose"
+        app:civ_border_width="@dimen/_2font_ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Amrita2004"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_user"
+        app:layout_constraintStart_toEndOf="@+id/profile_user"
+        app:layout_constraintTop_toTopOf="@+id/profile_user" />
+
+    <ImageView
+        android:id="@+id/rv_three_dots"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_user"
+        app:srcCompat="@drawable/ic_more_three_dots" />
+
+
+    <TextView
+        android:id="@+id/rv_post"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/color2"
+        android:paddingTop="@dimen/_20font_ssp"
+        android:paddingBottom="@dimen/_20font_ssp"
+        android:paddingStart="@dimen/_20font_ssp"
+        android:paddingEnd="@dimen/_20font_ssp"
+        android:scaleType="centerCrop"
+        android:text="Hello This is a post!"
+        android:textColor="@color/blue_bg"
+        android:textSize="@dimen/_15font_ssp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_user"
+        app:riv_corner_radius="10dip"
+        app:riv_mutate_background="true" />
+
+    <ImageView
+        android:id="@+id/rv_save_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:drawableTint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/rv_post"
+        app:layout_constraintTop_toTopOf="@+id/rv_post"
+        app:srcCompat="@drawable/bookmark" />
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/like_icon"
+        android:drawablePadding="10dp"
+        android:drawableTint="#000000"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_post"
+        android:paddingBottom="@dimen/_5font_ssp"/>
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/comment_icon"
+        android:drawablePadding="10dp"
+        android:drawableTint="#000000"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="52"
+        app:layout_constraintStart_toEndOf="@id/like"
+        app:layout_constraintTop_toBottomOf="@+id/rv_post"
+        android:paddingBottom="@dimen/_5font_ssp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
