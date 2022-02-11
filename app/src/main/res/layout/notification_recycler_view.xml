@@ -5,6 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/notification_profile_user"
+        android:layout_width="@dimen/_45hsdp"
+        android:layout_height="@dimen/_45hsdp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/woman"
+        app:civ_border_color="@color/rose"
+        app:civ_border_width="@dimen/_2font_ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/notification_message"

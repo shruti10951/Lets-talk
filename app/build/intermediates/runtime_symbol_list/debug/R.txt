@@ -3634,6 +3634,7 @@ int id fitToContents 0x7f0800d9
 int id fixed 0x7f0800da
 int id flip 0x7f0800db
 int id floating 0x7f0800dc
+int id follow_btn_user_rv 0x7f080241
 int id forever 0x7f0800dd
 int id forgot_pas_text 0x7f0800de
 int id fragmentContainerView2 0x7f0800df
@@ -3927,7 +3928,6 @@ int id textSpacerNoTitle 0x7f0801fe
 int id textStart 0x7f0801ff
 int id textTop 0x7f080200
 int id textView 0x7f080201
-int id textView2 0x7f080202
 int id textView3 0x7f080203
 int id textView4 0x7f080204
 int id text_input_end_icon 0x7f080205
@@ -3968,8 +3968,11 @@ int id user_password_login 0x7f080227
 int id user_reg_email 0x7f080228
 int id user_reg_password 0x7f080229
 int id user_reg_password_confirm 0x7f08022a
+int id user_rv_name 0x7f080242
+int id user_rv_profile 0x7f080243
 int id username_reg 0x7f08022b
 int id usersFragment 0x7f08022c
+int id users_show_rv 0x7f080244
 int id vertical_only 0x7f08022d
 int id view_offset_helper 0x7f08022e
 int id view_pager_notif 0x7f08022f
@@ -4199,6 +4202,7 @@ int layout text_view_with_line_height_from_layout 0x7f0b0092
 int layout text_view_with_line_height_from_style 0x7f0b0093
 int layout text_view_with_theme_line_height 0x7f0b0094
 int layout text_view_without_line_height 0x7f0b0095
+int layout users_recycler_view 0x7f0b0096
 int menu dashboard_menu 0x7f0c0000
 int menu example_menu 0x7f0c0001
 int menu example_menu2 0x7f0c0002

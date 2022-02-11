@@ -26,29 +26,6 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         this.context = context;
     }
 
-    @NonNull
-    @Override
-    public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
-        View view= LayoutInflater.from(context).inflate(R.layout.notification_recycler_view, parent, false);
-        return new viewHolder(view);
-    }
-
-    @Override
-    public void onBindViewHolder(@NonNull viewHolder holder, int position) {
-
-        NotificationModel notificationModel= list.get(position);
-        holder.profile.setImageResource(notificationModel.getProfile());
-        holder.notificationMessage.setText(Html.fromHtml(notificationModel.getNotificationMessage()));
-        holder.time.setText(notificationModel.getTime());
-
-    }
-
-    @Override
-    public int getItemCount() {
-        return list.size();
-    }
-
     public class viewHolder extends RecyclerView.ViewHolder{
 
         ImageView profile;
@@ -62,6 +39,29 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             notificationMessage= itemView.findViewById(R.id.notification_message);
             time= itemView.findViewById(R.id.notification_time);
         }
+    }
+
+
+    @Override
+    public void onBindViewHolder(@NonNull viewHolder holder, int position) {
+
+        NotificationModel notificationModel= list.get(position);
+        holder.profile.setImageResource(notificationModel.getProfilePic());
+        holder.notificationMessage.setText(Html.fromHtml(notificationModel.getNotificationMessage()));
+        holder.time.setText(notificationModel.getTime());
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return list.size();
+    }
+    @NonNull
+    @Override
+    public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
+        View view= LayoutInflater.from(context).inflate(R.layout.notification_recycler_view, parent, false);
+        return new viewHolder(view);
     }
 
 }
