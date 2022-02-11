@@ -28,7 +28,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginLeft="4dp"
         android:text="userName"
-        android:id="@+id/user_name">
+        android:id="@+id/user_name_dash_nav">
     </TextView>
 
     <TextView
@@ -38,7 +38,7 @@
         android:textStyle="bold"
         android:layout_marginLeft="4dp"
         android:text="name@gmail.com"
-        android:id="@+id/user_mail">
+        android:id="@+id/user_mail_dash_nav">
     </TextView>
 
 </LinearLayout>

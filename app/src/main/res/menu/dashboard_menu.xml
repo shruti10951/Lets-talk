@@ -14,9 +14,9 @@
         android:icon="@drawable/add_post_icon"
         android:title="Add Post" />
     <item
-        android:id="@+id/chatListFragment"
-        android:icon="@drawable/chat_icon"
-        android:title="Chats" />
+        android:id="@+id/notificationFragment"
+        android:icon="@drawable/notification_icon"
+        android:title="Notification" />
     <item
         android:id="@+id/profileFragment"
         android:icon="@drawable/profile_icon"
