@@ -4,13 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,9 +29,6 @@ import com.vidyalankar.letstalk.model.User;
 
 public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener {
 
-    LinearLayout mLoginContainer;
-    AnimationDrawable mAnimationDrawable;
-
     EditText user_mail_reg, username_et, user_reg_password, user_reg_password_confirm;
     Button sign_up_reg_btn;
     TextView reg_to_login_btn;
@@ -48,10 +43,6 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        mLoginContainer= (LinearLayout) findViewById(R.id.login_container);
-        mAnimationDrawable= (AnimationDrawable) mLoginContainer.getBackground();
-        mAnimationDrawable.setEnterFadeDuration(5000);
-        mAnimationDrawable.setExitFadeDuration(2000);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -73,24 +64,6 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
 
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        if(mAnimationDrawable != null && !mAnimationDrawable.isRunning()) {
-            mAnimationDrawable.start();
-        }
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        if(mAnimationDrawable != null && mAnimationDrawable.isRunning())
-        {
-            mAnimationDrawable.stop();
-        }
-    }
 
     @Override
     public void onClick(View view) {
