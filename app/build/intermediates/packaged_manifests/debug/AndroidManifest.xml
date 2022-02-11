@@ -23,9 +23,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.LetsTalk" >
         <activity
-            android:name="com.vidyalankar.letstalk.SetProfile"
-            android:exported="true" />
-        <activity
             android:name="com.vidyalankar.letstalk.activities.ForgotPassword"
             android:exported="true" />
         <activity
@@ -107,6 +104,11 @@
                 android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.vidyalankar.letstalk.com.squareup.picasso"
+            android:exported="false" />
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"

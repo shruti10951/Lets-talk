@@ -4,7 +4,7 @@ import android.net.Uri;
 
 public class User {
 
-    public String username, email, userID;
+    public String username, email, userID, profilePic;
 
     public User() {
 
@@ -14,6 +14,23 @@ public class User {
         this.username= username;
         this.email= email;
     }
+
+    public String getUserID() {
+        return userID;
+    }
+
+    public void setUserID(String userID) {
+        this.userID = userID;
+    }
+
+    public String getProfilePic() {
+        return profilePic;
+    }
+
+    public void setProfilePic(String profilePic) {
+        this.profilePic = profilePic;
+    }
+
     public User(String email)
     {
         this.email= email;

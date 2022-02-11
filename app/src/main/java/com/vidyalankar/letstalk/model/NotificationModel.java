@@ -2,21 +2,22 @@ package com.vidyalankar.letstalk.model;
 
 public class NotificationModel {
 
-    int profile;
+    int profilePic;
     String notificationMessage, time;
 
-    public NotificationModel(int profile, String notificationMessage, String time) {
-        this.profile = profile;
+    public NotificationModel(int profilePic, String notificationMessage, String time) {
+
+        this.profilePic = profilePic;
         this.notificationMessage = notificationMessage;
         this.time = time;
     }
 
-    public int getProfile() {
-        return profile;
+    public int getProfilePic() {
+        return profilePic;
     }
 
-    public void setProfile(int profile) {
-        this.profile = profile;
+    public void setProfilePic(int profilePic) {
+        this.profilePic = profilePic;
     }
 
     public String getNotificationMessage() {

@@ -3635,6 +3635,7 @@ id fitToContents
 id fixed
 id flip
 id floating
+id follow_btn_user_rv
 id forever
 id forgot_pas_text
 id fragmentContainerView2
@@ -3928,7 +3929,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView2
 id textView3
 id textView4
 id text_input_end_icon
@@ -3969,8 +3969,11 @@ id user_password_login
 id user_reg_email
 id user_reg_password
 id user_reg_password_confirm
+id user_rv_name
+id user_rv_profile
 id username_reg
 id usersFragment
+id users_show_rv
 id vertical_only
 id view_offset_helper
 id view_pager_notif
@@ -4200,6 +4203,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout users_recycler_view
 menu dashboard_menu
 menu example_menu
 menu example_menu2

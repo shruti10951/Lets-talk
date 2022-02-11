@@ -13,9 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LetsTalk">
         <activity
-            android:name=".SetProfile"
-            android:exported="true" />
-        <activity
             android:name=".activities.ForgotPassword"
             android:exported="true" />
         <activity
