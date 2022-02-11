@@ -29,7 +29,6 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.vidyalankar.letstalk.R;
-import com.vidyalankar.letstalk.model.Profile;
 
 
 public class EditProfile extends Fragment {
@@ -62,8 +61,8 @@ public class EditProfile extends Fragment {
         progressBar.setVisibility(View.GONE);
 
         user= FirebaseAuth.getInstance().getCurrentUser();
-        reference= FirebaseDatabase.getInstance().getReference().child("ProfilePic");
-        storageRef= FirebaseStorage.getInstance().getReference().child("ProfilePic");
+        reference= FirebaseDatabase.getInstance().getReference().child("profile_pic");
+        storageRef= FirebaseStorage.getInstance().getReference().child("profile_pic").child(user.getUid());
 
         edited_profile_image.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,9 +94,9 @@ public class EditProfile extends Fragment {
                    fileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                        @Override
                        public void onSuccess(Uri uri) {
-                            Profile profile= new Profile(user.getUid(), uri.toString());
-                            FirebaseDatabase.getInstance().getReference().child("Profile").setValue(profile);
+                            FirebaseDatabase.getInstance().getReference().child("Users").child(user.getUid()).child("profilePic").setValue(uri.toString());
                             progressBar.setVisibility(View.GONE);
+
                             Toast.makeText(getActivity(), "Image uploaded", Toast.LENGTH_LONG).show();
                        }
                    });

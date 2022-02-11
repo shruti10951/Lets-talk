@@ -1,6 +1,7 @@
 package com.vidyalankar.letstalk.adapter;
 
 import android.content.Context;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,7 +39,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
 
         NotificationModel notificationModel= list.get(position);
         holder.profile.setImageResource(notificationModel.getProfile());
-        holder.notificationMessage.setText(notificationModel.getNotificationMessage());
+        holder.notificationMessage.setText(Html.fromHtml(notificationModel.getNotificationMessage()));
         holder.time.setText(notificationModel.getTime());
 
     }

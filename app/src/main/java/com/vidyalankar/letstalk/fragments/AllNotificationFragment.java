@@ -40,29 +40,29 @@ public class AllNotificationFragment extends Fragment {
         recyclerView= view.findViewById(R.id.notification_recycler);
         list= new ArrayList<>();
         list.add(new NotificationModel(R.drawable.woman,
-                "Amrita2004 just commented on a post", "just now"));
+                "<b>Amrita2004</b> just commented on a post", "just now"));
         list.add(new NotificationModel(R.drawable.woman,
-                "Manali2004 just like on a post", "2 hours ago"));
+                "<b>Manali2004</b> just like on a post", "2 hours ago"));
         list.add(new NotificationModel(R.drawable.woman,
-                "Amrita2004 just commented on a post", "just now"));
+                "<b>Amrita2004</b> just commented on a post", "just now"));
         list.add(new NotificationModel(R.drawable.woman,
-                "Manali2004 just commented on a post", "just now"));
+                "<b>Manali2004</b> just commented on a post", "just now"));
         list.add(new NotificationModel(R.drawable.woman,
-                "Aditi2003 just coomented on a post", "just now"));
+                "<b>Aditi2003</b> just commented on a post", "just now"));
         list.add(new NotificationModel(R.drawable.woman,
-                "Amrita2004 just coomented on a post", "just now"));
+                "<b>Amrita2004</b> just commented on a post", "just now"));
         list.add(new NotificationModel(R.drawable.woman,
-                "Amrita2004 just coomented on a post", "just now"));
+                "<b>Amrita2004</b> just commented on a post", "just now"));
         list.add(new NotificationModel(R.drawable.woman,
-                "Amrita2004 just coomented on a post", "just now"));
+                "<b>Amrita2004</b> just commented on a post", "just now"));
         list.add(new NotificationModel(R.drawable.woman,
-                "Amrita2004 just coomented on a post", "just now"));
+                "<b>Amrita2004</b> just commented on a post", "just now"));
         list.add(new NotificationModel(R.drawable.woman,
-                "Amrita2004 just coomented on a post", "just now"));
+                "<b>Amrita2004</b> just commented on a post", "just now"));
         list.add(new NotificationModel(R.drawable.woman,
-                "Amrita2004 just coomented on a post", "just now"));
+                "<b>Amrita2004</b> just commented on a post", "just now"));
         list.add(new NotificationModel(R.drawable.woman,
-                "Amrita2004 just  qwdeasbhbdqwuasi on a post", "just now"));
+                "<b>Amrita2004</b> liked your post", "just now"));
 
         NotificationAdapter adapter= new NotificationAdapter(list, getContext());
         LinearLayoutManager layoutManager= new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
