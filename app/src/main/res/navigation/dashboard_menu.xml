@@ -30,14 +30,14 @@
         android:name="com.vidyalankar.letstalk.fragments.AddPostFragment"
         android:label="fragment_add_post"
         tools:layout="@layout/fragment_add_post" />
-    <fragment
-        android:id="@+id/editProfile"
-        android:name="com.vidyalankar.letstalk.EditProfile2"
-        android:label="fragment_edit_profile"
-        tools:layout="@layout/fragment_edit_profile2" />
-    <fragment
-        android:id="@+id/editProfile2"
-        android:name="com.vidyalankar.letstalk.fragments.EditProfile"
-        android:label="fragment_edit_profile"
-        tools:layout="@layout/fragment_edit_profile" />
+<!--    <fragment-->
+<!--        android:id="@+id/editProfile"-->
+<!--        android:name="com.vidyalankar.letstalk.EditProfile2"-->
+<!--        android:label="fragment_edit_profile"-->
+<!--        tools:layout="@layout/fragment_edit_profile2" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/editProfile2"-->
+<!--        android:name="com.vidyalankar.letstalk.fragments.EditProfile"-->
+<!--        android:label="fragment_edit_profile"-->
+<!--        tools:layout="@layout/fragment_edit_profile" />-->
 </navigation>

@@ -7,6 +7,7 @@ INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-41:1
 MERGED from [androidx.navigation:navigation-ui:2.4.0] C:\Users\apurv\.gradle\caches\transforms-3\07d33cf9a1ab2777deb3cdb23b98038e\transformed\navigation-ui-2.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\apurv\.gradle\caches\transforms-3\fe39a6fe0cf1e11d14d46368177bc6be\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\apurv\.gradle\caches\transforms-3\f78f52b550b8fb12ffd54c1d7f3b7063\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.florent37:diagonallayout:1.0.9] C:\Users\apurv\.gradle\caches\transforms-3\88dbbeec4b6e2d4cdb83773aa67c102a\transformed\jetified-diagonallayout-1.0.9\AndroidManifest.xml:2:1-11:12
 MERGED from [com.hardik.hsdp:scalablesize-android:1.0.1] C:\Users\apurv\.gradle\caches\transforms-3\13bd5acf8f5516c397648efb62212ff3\transformed\jetified-scalablesize-android-1.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\apurv\.gradle\caches\transforms-3\e75fd00c2855210e0fe94a52e121861c\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\apurv\.gradle\caches\transforms-3\50ab76fc0cdd46561e35e9a801ab98e0\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -225,6 +226,8 @@ MERGED from [com.google.android.material:material:1.5.0] C:\Users\apurv\.gradle\
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\apurv\.gradle\caches\transforms-3\fe39a6fe0cf1e11d14d46368177bc6be\transformed\material-1.5.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\apurv\.gradle\caches\transforms-3\f78f52b550b8fb12ffd54c1d7f3b7063\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\apurv\.gradle\caches\transforms-3\f78f52b550b8fb12ffd54c1d7f3b7063\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.florent37:diagonallayout:1.0.9] C:\Users\apurv\.gradle\caches\transforms-3\88dbbeec4b6e2d4cdb83773aa67c102a\transformed\jetified-diagonallayout-1.0.9\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.florent37:diagonallayout:1.0.9] C:\Users\apurv\.gradle\caches\transforms-3\88dbbeec4b6e2d4cdb83773aa67c102a\transformed\jetified-diagonallayout-1.0.9\AndroidManifest.xml:7:5-9:41
 MERGED from [com.hardik.hsdp:scalablesize-android:1.0.1] C:\Users\apurv\.gradle\caches\transforms-3\13bd5acf8f5516c397648efb62212ff3\transformed\jetified-scalablesize-android-1.0.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.hardik.hsdp:scalablesize-android:1.0.1] C:\Users\apurv\.gradle\caches\transforms-3\13bd5acf8f5516c397648efb62212ff3\transformed\jetified-scalablesize-android-1.0.1\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\apurv\.gradle\caches\transforms-3\e75fd00c2855210e0fe94a52e121861c\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41

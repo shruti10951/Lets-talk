@@ -410,6 +410,9 @@ attr deltaPolarAngle
 attr deltaPolarRadius
 attr deriveConstraintsFrom
 attr destination
+attr diagonal_angle
+attr diagonal_direction
+attr diagonal_position
 attr dialogCornerRadius
 attr dialogPreferredPadding
 attr dialogTheme
@@ -1354,6 +1357,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color greyTrans
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color light_coral
@@ -3339,6 +3343,7 @@ drawable email_icon
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable home_icon
+drawable ic_baseline_add_a_photo_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -3531,6 +3536,7 @@ id callMeasure
 id calmMelodiesFragment
 id cancel_action
 id cancel_button
+id cardView
 id carryVelocity
 id center
 id center_horizontal
@@ -3538,6 +3544,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id changeProfile
 id checkbox
 id checked
 id chip
@@ -3589,6 +3596,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id diagonalLayout
 id dialog_button
 id dimensions
 id direct
@@ -3611,11 +3619,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id editProfile
-id editProfile2
-id edit_profile
 id edit_query
-id edited_profile_pic
 id elastic
 id email_reset_password
 id end
@@ -3639,6 +3643,7 @@ id forever
 id forgot_pas_text
 id fragmentContainerView2
 id fragment_container_view_tag
+id friendRV
 id frost
 id ghost_view
 id ghost_view_holder
@@ -3693,6 +3698,7 @@ id like
 id line1
 id line3
 id linear
+id linearLayout3
 id listMode
 id list_item
 id locale
@@ -3806,8 +3812,6 @@ id position
 id postLayout
 id profileFragment
 id profile_email
-id profile_pic
-id profile_progressBar
 id profile_user
 id profile_username
 id progress_bar_login
@@ -3833,7 +3837,6 @@ id rv_post
 id rv_save_post
 id rv_three_dots
 id rv_user_name
-id save_edited_profile
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3928,9 +3931,15 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView10
+id textView13
+id textView14
 id textView2
 id textView3
 id textView4
+id textView7
+id textView8
+id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3972,6 +3981,8 @@ id user_reg_password_confirm
 id username_reg
 id usersFragment
 id vertical_only
+id view3
+id view4
 id view_offset_helper
 id view_pager_notif
 id view_transition
@@ -4108,7 +4119,6 @@ layout fragment_add_post
 layout fragment_all_notification
 layout fragment_calm_melodies
 layout fragment_chat
-layout fragment_edit_profile
 layout fragment_help_me_calm_down
 layout fragment_home
 layout fragment_i_need_help
@@ -4117,6 +4127,7 @@ layout fragment_profile
 layout fragment_setting
 layout fragment_users
 layout fragment_wellness_center
+layout friend_rv_sample
 layout hsdp_layout
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -4209,6 +4220,8 @@ mipmap ic_launcher_round
 navigation dashboard_menu
 navigation drawer_navigation
 plurals mtrl_badge_content_description
+string _6
+string _9
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -4267,11 +4280,13 @@ string common_signin_button_text
 string common_signin_button_text_long
 string default_web_client_id
 string define_roundedimageview
+string edit_profile
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string firebase_database_url
+string friends
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -4371,6 +4386,7 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
+string my_friends
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string open
@@ -4379,9 +4395,12 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string photos
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
+string user_gmail_com
+string username
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -5457,6 +5476,7 @@ styleable ConstraintSet android_orientation android_id android_visibility androi
 styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable CustomAttribute attributeName customBoolean customColorDrawableValue customColorValue customDimension customFloatValue customIntegerValue customPixelDimension customReference customStringValue methodName
+styleable DiagonalLayout diagonal_angle diagonal_direction diagonal_position
 styleable DialogFragmentNavigator android_name
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable DrawerLayout elevation
