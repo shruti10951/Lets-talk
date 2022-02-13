@@ -42,7 +42,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
         User user= list.get(position);
         Picasso.get()
                 .load(user.getProfilePic())
-                .placeholder(R.drawable.woman)
+                .placeholder(R.drawable.user_profile_default)
                 .into(holder.profile_image);
 
         holder.username.setText(user.getUsername());

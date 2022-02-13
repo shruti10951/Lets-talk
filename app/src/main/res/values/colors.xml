@@ -11,4 +11,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="light_coral">#F08080</color>
     <color name="rose">#E8ADAA</color>
+    <color name="greyTrans">#7F000000</color>
 </resources>

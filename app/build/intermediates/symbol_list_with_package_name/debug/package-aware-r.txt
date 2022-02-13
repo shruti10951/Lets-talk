@@ -410,6 +410,9 @@ attr deltaPolarAngle
 attr deltaPolarRadius
 attr deriveConstraintsFrom
 attr destination
+attr diagonal_angle
+attr diagonal_direction
+attr diagonal_position
 attr dialogCornerRadius
 attr dialogPreferredPadding
 attr dialogTheme
@@ -1354,6 +1357,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color greyTrans
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color light_coral
@@ -3289,8 +3293,10 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add_photo_icon
 drawable add_post_icon
 drawable animation_colors
+drawable arrow_back_icon
 drawable avd_hide_password
 drawable avd_show_password
 drawable bookmark
@@ -3376,6 +3382,7 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable message_bg_chat
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -3404,6 +3411,7 @@ drawable notify_panel_notification_icon_bg
 drawable password_lock_icon
 drawable profile_icon
 drawable search_icon
+drawable send_icon
 drawable setting_icon
 drawable splash_screen
 drawable test_custom_background
@@ -3411,6 +3419,7 @@ drawable test_level_drawable
 drawable toolbar_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable user_profile_default
 drawable wellness_center_icon
 drawable widgets
 drawable woman
@@ -3508,6 +3517,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back_btn_chat_detailed
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3531,6 +3541,7 @@ id callMeasure
 id calmMelodiesFragment
 id cancel_action
 id cancel_button
+id cardView
 id carryVelocity
 id center
 id center_horizontal
@@ -3538,6 +3549,13 @@ id center_vertical
 id chain
 id chain2
 id chains
+id changeProfile
+id chat_detailed_rv
+id chat_rv
+id chat_user_rv_last_msg
+id chat_user_rv_name
+id chat_user_rv_profile
+id chat_user_rv_time
 id checkbox
 id checked
 id chip
@@ -3589,6 +3607,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id diagonalLayout
 id dialog_button
 id dimensions
 id direct
@@ -3613,9 +3632,8 @@ id easeOut
 id east
 id editProfile
 id editProfile2
-id edit_profile
+id editTextTextPersonName
 id edit_query
-id edited_profile_pic
 id elastic
 id email_reset_password
 id end
@@ -3694,6 +3712,8 @@ id like
 id line1
 id line3
 id linear
+id linearLayout
+id linearLayout3
 id listMode
 id list_item
 id locale
@@ -3806,9 +3826,8 @@ id pin
 id position
 id postLayout
 id profileFragment
+id profileProgressBar
 id profile_email
-id profile_pic
-id profile_progressBar
 id profile_user
 id profile_username
 id progress_bar_login
@@ -3834,7 +3853,6 @@ id rv_post
 id rv_save_post
 id rv_three_dots
 id rv_user_name
-id save_edited_profile
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3858,6 +3876,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sendMsgBtn
 id settingFragment
 id sharedValueSet
 id sharedValueUnset
@@ -3929,8 +3948,11 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView3
+id textView13
+id textView14
 id textView4
+id textView7
+id textView8
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3945,6 +3967,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -3966,15 +3989,19 @@ id user_iv
 id user_mail_dash_nav
 id user_name_dash_nav
 id user_password_login
+id user_profile_chat_detailed
 id user_reg_email
 id user_reg_password
 id user_reg_password_confirm
 id user_rv_name
 id user_rv_profile
+id username_chat_detailed
 id username_reg
 id usersFragment
 id users_show_rv
 id vertical_only
+id view3
+id view4
 id view_offset_helper
 id view_pager_notif
 id view_transition
@@ -4089,6 +4116,7 @@ layout activity_registration
 layout activity_splash_screen
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout chat_users_recycler_view
 layout custom_dialog
 layout dashboard_recycler_view
 layout design_bottom_navigation_item
@@ -4111,7 +4139,7 @@ layout fragment_add_post
 layout fragment_all_notification
 layout fragment_calm_melodies
 layout fragment_chat
-layout fragment_edit_profile
+layout fragment_detailed_chat
 layout fragment_help_me_calm_down
 layout fragment_home
 layout fragment_i_need_help
@@ -5461,6 +5489,7 @@ styleable ConstraintSet android_orientation android_id android_visibility androi
 styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable CustomAttribute attributeName customBoolean customColorDrawableValue customColorValue customDimension customFloatValue customIntegerValue customPixelDimension customReference customStringValue methodName
+styleable DiagonalLayout diagonal_angle diagonal_direction diagonal_position
 styleable DialogFragmentNavigator android_name
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable DrawerLayout elevation

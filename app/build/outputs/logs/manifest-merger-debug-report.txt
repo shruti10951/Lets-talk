@@ -8,6 +8,7 @@ MERGED from [androidx.navigation:navigation-ui:2.4.0] C:\Users\Admin\.gradle\cac
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\Admin\.gradle\caches\transforms-3\12500e3d6b4e74aa3edc6654afd509d4\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\Admin\.gradle\caches\transforms-3\6bfd3b70425edfc10d010b0e2930a228\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.hardik.hsdp:scalablesize-android:1.0.1] C:\Users\Admin\.gradle\caches\transforms-3\56da84f8ba446ffe93bbe68b5960f501\transformed\jetified-scalablesize-android-1.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.florent37:diagonallayout:1.0.9] C:\Users\Admin\.gradle\caches\transforms-3\a852e7c7423535fb65adec4e468cd35a\transformed\jetified-diagonallayout-1.0.9\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\Admin\.gradle\caches\transforms-3\853ca4a5e68c0b34c12cca4ae7deeef4\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Admin\.gradle\caches\transforms-3\933f199c94fc7f3e7e520456622bbd68\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment:2.4.0] C:\Users\Admin\.gradle\caches\transforms-3\ead50129fcc67fe183197915340c2c39\transformed\navigation-fragment-2.4.0\AndroidManifest.xml:17:1-24:12
@@ -225,6 +226,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\Admin\.g
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\Admin\.gradle\caches\transforms-3\6bfd3b70425edfc10d010b0e2930a228\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [com.hardik.hsdp:scalablesize-android:1.0.1] C:\Users\Admin\.gradle\caches\transforms-3\56da84f8ba446ffe93bbe68b5960f501\transformed\jetified-scalablesize-android-1.0.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.hardik.hsdp:scalablesize-android:1.0.1] C:\Users\Admin\.gradle\caches\transforms-3\56da84f8ba446ffe93bbe68b5960f501\transformed\jetified-scalablesize-android-1.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.florent37:diagonallayout:1.0.9] C:\Users\Admin\.gradle\caches\transforms-3\a852e7c7423535fb65adec4e468cd35a\transformed\jetified-diagonallayout-1.0.9\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.florent37:diagonallayout:1.0.9] C:\Users\Admin\.gradle\caches\transforms-3\a852e7c7423535fb65adec4e468cd35a\transformed\jetified-diagonallayout-1.0.9\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\Admin\.gradle\caches\transforms-3\853ca4a5e68c0b34c12cca4ae7deeef4\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\Admin\.gradle\caches\transforms-3\853ca4a5e68c0b34c12cca4ae7deeef4\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Admin\.gradle\caches\transforms-3\933f199c94fc7f3e7e520456622bbd68\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
