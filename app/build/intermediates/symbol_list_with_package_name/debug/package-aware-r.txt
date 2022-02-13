@@ -3643,7 +3643,6 @@ id forever
 id forgot_pas_text
 id fragmentContainerView2
 id fragment_container_view_tag
-id friendRV
 id frost
 id ghost_view
 id ghost_view_holder
@@ -3811,6 +3810,7 @@ id pin
 id position
 id postLayout
 id profileFragment
+id profileProgressBar
 id profile_email
 id profile_user
 id profile_username
@@ -3931,7 +3931,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView10
 id textView13
 id textView14
 id textView2
@@ -4127,7 +4126,6 @@ layout fragment_profile
 layout fragment_setting
 layout fragment_users
 layout fragment_wellness_center
-layout friend_rv_sample
 layout hsdp_layout
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

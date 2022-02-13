@@ -9,15 +9,11 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -38,17 +34,15 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.vidyalankar.letstalk.R;
-import com.vidyalankar.letstalk.adapter.FriendAdapter;
-import com.vidyalankar.letstalk.model.FriendModel;
 import com.vidyalankar.letstalk.model.User;
 
 
-import java.util.ArrayList;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 
 public class ProfileFragment extends Fragment {
 
-    ImageView profilePic;
+    CircleImageView profilePic;
     TextView userNameTextView, userEmailTextView;
     ImageView editProfile;
 
@@ -63,8 +57,6 @@ public class ProfileFragment extends Fragment {
     ProgressBar progressBar;
     String userID;
 
-    RecyclerView recyclerView;
-    ArrayList<FriendModel> list;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -75,29 +67,14 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        final View view = inflater.inflate(R.layout.fragment_profile, container, false);
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        recyclerView = view.findViewById(R.id.friendRV);
-
-        list = new ArrayList<>();
-
-        list.add(new FriendModel(R.drawable.profile_icon));
-        list.add(new FriendModel(R.drawable.profile_icon));
-        list.add(new FriendModel(R.drawable.profile_icon));
-        list.add(new FriendModel(R.drawable.profile_icon));
-        list.add(new FriendModel(R.drawable.profile_icon));
-
-        FriendAdapter adapter = new FriendAdapter(list, getContext());
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
-        recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setAdapter(adapter);
-
-
-        profilePic = (ImageView) view.findViewById(R.id.profile_user);
+        profilePic = (CircleImageView) view.findViewById(R.id.profile_user);
         userNameTextView = (TextView) view.findViewById(R.id.profile_username);
         userEmailTextView = (TextView) view.findViewById(R.id.profile_email);
         editProfile = (ImageView) view.findViewById(R.id.changeProfile);
 
+        progressBar=(ProgressBar) view.findViewById(R.id.profileProgressBar);
         user = FirebaseAuth.getInstance().getCurrentUser();
         userID = user.getUid();
         reference = FirebaseDatabase.getInstance().getReference("Users");
@@ -127,15 +104,30 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 mGetContent.launch("image/*");
-                save_profileImage();
+
             }
         });
+
+
 
         // Inflate the layout for this fragment
 
 
         return view;
     }
+
+    ActivityResultLauncher<String> mGetContent = registerForActivityResult(new ActivityResultContracts.GetContent(), new ActivityResultCallback<Uri>() {
+        @Override
+        public void onActivityResult(Uri result) {
+            if(result!= null)
+            {
+                profilePic.setImageURI(result);
+                imageUri= result;
+                save_profileImage();
+            }
+        }
+    });
+
         private void save_profileImage() {
 
             progressBar.setVisibility(View.VISIBLE);
@@ -172,15 +164,15 @@ public class ProfileFragment extends Fragment {
 
 
 
-        ActivityResultLauncher<String> mGetContent = registerForActivityResult(new ActivityResultContracts.GetContent(), new ActivityResultCallback<Uri>() {
-            @Override
-            public void onActivityResult(Uri result) {
-                if(result!= null)
-                {
-                    editProfile.setImageURI(result);
-                    imageUri= result;
-                }
-            }
-        });
-
+//    private void save_profileImage(){
+//        Intent intent=new Intent();
+//        intent.setType("image/*");
+//        intent.setAction(Intent.ACTION_GET_CONTENT);
+//        startActivity(intent,11);
+//    }
+//
+//    @Override
+//    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//    }
 }
