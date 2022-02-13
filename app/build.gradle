@@ -68,4 +68,8 @@ dependencies {
     //picasso library
     implementation 'com.squareup.picasso:picasso:2.71828'
 
+    //diagonal layout for photo
+    implementation 'com.github.florent37:diagonallayout:1.0.9'
+
+
 }
