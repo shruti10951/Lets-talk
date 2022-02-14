@@ -7,60 +7,60 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import com.github.florent37.diagonallayout.DiagonalLayout;
 import com.vidyalankar.letstalk.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link WellnessCenterFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class WellnessCenterFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    DiagonalLayout sleep, nutrition, stress, mindfulness;
 
     public WellnessCenterFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment WellnessCenterFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static WellnessCenterFragment newInstance(String param1, String param2) {
-        WellnessCenterFragment fragment = new WellnessCenterFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_wellness_center, container, false);
+        View view= inflater.inflate(R.layout.fragment_wellness_center, container, false);
+
+        sleep= view.findViewById(R.id.sleep_diagonal_layout);
+        stress= view.findViewById(R.id.stress_diagonal_layout);
+        nutrition= view.findViewById(R.id.nutrition_diagonal_layout);
+        mindfulness= view.findViewById(R.id.mindfulness_diagonal_layout);
+
+        sleep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new SleepWellnessCenterFragment()).commit();
+            }
+        });
+        stress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new StressWellnessCenterFragment()).commit();
+            }
+        });
+        mindfulness.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new MindfulnessWellnessCenterFragment()).commit();
+            }
+        });
+        nutrition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new NutritionWellnessCenterFragment()).commit();
+            }
+        });
+
+        return view;
     }
 }

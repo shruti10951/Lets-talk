@@ -110,8 +110,8 @@ public class ProfileFragment extends Fragment {
                 FriendsFragment nextFrag= new FriendsFragment();
 
                 getActivity().getSupportFragmentManager().beginTransaction()
-                        .remove(ProfileFragment.this)
                         .replace(R.id.fragmentContainerView2, new FriendsFragment())
+                        .remove(ProfileFragment.this)
                         //.replace(((ViewGroup)getView().getParent()).getId(), nextFrag, "findThisFragment")
                         .addToBackStack(null)
                         .commit();

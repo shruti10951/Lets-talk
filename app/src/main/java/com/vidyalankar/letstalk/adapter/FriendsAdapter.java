@@ -41,7 +41,7 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.viewHold
 //                .load(friendsModel.getProfilepic())
 //                .placeholder(R.drawable.profile_icon)
 //                .into(holder.profile_image);
-//        holder.username.setText(user.getUsername());
+//        holder.username.setText(friendsModel.getUsername());
 
     }
 

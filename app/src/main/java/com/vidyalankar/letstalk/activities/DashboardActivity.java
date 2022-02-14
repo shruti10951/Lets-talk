@@ -110,36 +110,34 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+        Fragment selectedFragment= null;
+
         switch (item.getItemId())
         {
             case R.id.settingFragment:
-                getSupportFragmentManager().beginTransaction().
-                        replace(R.id.dashboard_fragment_container,new SettingFragment()).addToBackStack(null).commit();
+                selectedFragment= new SettingFragment();
                 break;
             case R.id.wellnessCenterFragment:
-                getSupportFragmentManager().beginTransaction().
-                        replace(R.id.dashboard_fragment_container,new WellnessCenterFragment()).addToBackStack(null).commit();
+                selectedFragment= new WellnessCenterFragment();
                 break;
             case R.id.calmMelodiesFragment:
-                getSupportFragmentManager().beginTransaction().
-                        replace(R.id.dashboard_fragment_container,new CalmMelodiesFragment()).addToBackStack(null).commit();
+                selectedFragment= new CalmMelodiesFragment();
                 break;
             case R.id.helpMeCalmDownFragment:
-                getSupportFragmentManager().beginTransaction().
-                        replace(R.id.dashboard_fragment_container,new HelpMeCalmDownFragment()).addToBackStack(null).commit();
+                selectedFragment= new HelpMeCalmDownFragment();
                 break;
             case R.id.INeedHelpFragment:
-                getSupportFragmentManager().beginTransaction().
-                        replace(R.id.dashboard_fragment_container,new INeedHelpFragment()).addToBackStack(null).commit();
+                selectedFragment= new INeedHelpFragment();
                 break;
             case R.id.aboutLetsTalkFragment:
-                getSupportFragmentManager().beginTransaction().
-                        replace(R.id.dashboard_fragment_container,new AboutLetsTalkFragment()).addToBackStack(null).commit();
+                selectedFragment= new AboutLetsTalkFragment();
                 break;
             case R.id.logout:
                 logoutUser();
                 break;
         }
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, selectedFragment).commit();
         dashboard_drawer.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -169,7 +167,8 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         if(dashboard_drawer.isDrawerOpen(GravityCompat.START))
         {
             dashboard_drawer.closeDrawer(GravityCompat.START);
-        }else if(test!= null && test.isVisible()){
+        }
+        else {
             AlertDialog.Builder builder= new AlertDialog.Builder(DashboardActivity.this);
 
             builder.setTitle("Exit?").setMessage("Are you sure?")
@@ -181,10 +180,6 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
                     }).setNegativeButton("No",null);
             AlertDialog alert= builder.create();
             alert.show();
-        }
-        else {
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragmentContainerView2, new HomeFragment()).commit();
         }
     }
 

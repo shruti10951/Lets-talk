@@ -4,20 +4,20 @@ public class FriendsModel {
 
     private String followedBy;
     private long followedAt;
-//    private String username;
-//    int profilepic;
+    private String username;
+    int profilepic;
 
-//    public String getUsername() {
-//        return username;
-//    }
-//
+    public String getUsername() {
+        return username;
+    }
+
 //    public void setUsername(String username) {
 //        this.username = username;
 //    }
 //
-//    public int getProfilepic() {
-//        return profilepic;
-//    }
+    public int getProfilepic() {
+        return profilepic;
+    }
 //
 //    public void setProfilepic(int profilepic) {
 //        this.profilepic = profilepic;

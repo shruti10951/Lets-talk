@@ -3383,6 +3383,7 @@ drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
 drawable message_bg_chat
+drawable mindfulness_drawer_option
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -3408,12 +3409,15 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable nutrition_drawer_option
 drawable password_lock_icon
 drawable profile_icon
 drawable search_icon
 drawable send_icon
 drawable setting_icon
+drawable sleep_drawer_option
 drawable splash_screen
+drawable stress_drawer_option
 drawable test_custom_background
 drawable test_level_drawable
 drawable toolbar_bg
@@ -3577,6 +3581,9 @@ id compress
 id confirm_button
 id constraint
 id constraintLayout
+id constraintLayout1
+id constraintLayout2
+id constraintLayout3
 id container
 id content
 id contentPanel
@@ -3590,7 +3597,6 @@ id custom
 id customPanel
 id cut
 id dark
-id dashboard_fragment_container
 id dashboard_layout
 id dashboard_menu
 id dashboard_nav_view
@@ -3607,7 +3613,6 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
-id diagonalLayout
 id dialog_button
 id dimensions
 id direct
@@ -3751,6 +3756,8 @@ id material_value_index
 id media_actions
 id message
 id middle
+id mindfulness_diagonal_layout
+id minflness_textview
 id mini
 id mirror
 id month_grid
@@ -3809,6 +3816,8 @@ id notification_message
 id notification_profile_user
 id notification_recycler
 id notification_time
+id nutrition_diagonal_layout
+id nutrition_textview
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3894,6 +3903,8 @@ id sign_up_text
 id sin
 id skipCollapsed
 id skipped
+id sleep_diagonal_layout
+id sleep_textview
 id slide
 id sliding_pane_detail_container
 id sliding_pane_layout
@@ -3922,6 +3933,8 @@ id staticLayout
 id staticPostLayout
 id status_bar_latest_event_content
 id stop
+id stress_diagonal_layout
+id stress_textview
 id stretch
 id submenuarrow
 id submit_area
@@ -3946,16 +3959,17 @@ id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
 id test_radiobutton_app_button_tint
 id text
+id text1234
 id text2
 id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView13
 id textView14
 id textView4
+id textView7
 id textView8
 id text_input_end_icon
 id text_input_error_icon
@@ -4005,6 +4019,7 @@ id username_reg
 id usersFragment
 id users_show_rv
 id vertical_only
+id view
 id view3
 id view4
 id view_offset_helper
@@ -4149,9 +4164,13 @@ layout fragment_friends
 layout fragment_help_me_calm_down
 layout fragment_home
 layout fragment_i_need_help
+layout fragment_mindfulness_wellness_center
 layout fragment_notification
+layout fragment_nutrition_wellness_center
 layout fragment_profile
 layout fragment_setting
+layout fragment_sleep_wellness_center
+layout fragment_stress_wellness_center
 layout fragment_users
 layout fragment_wellness_center
 layout friends_recycler_view
