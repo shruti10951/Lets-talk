@@ -1,5 +1,6 @@
 package com.vidyalankar.letstalk.fragments;
 
+import android.app.FragmentManager;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -43,7 +44,7 @@ import com.vidyalankar.letstalk.model.User;
 public class ProfileFragment extends Fragment {
 
     ImageView profilePic;
-    TextView userNameTextView, userEmailTextView;
+    TextView userNameTextView, userEmailTextView, friendsTextView;
     ImageView editProfile;
     ProgressBar progressBar;
 
@@ -68,6 +69,7 @@ public class ProfileFragment extends Fragment {
         profilePic= (ImageView) view.findViewById(R.id.profile_user);
         userNameTextView= (TextView) view.findViewById(R.id.profile_username);
         userEmailTextView= (TextView) view.findViewById(R.id.profile_email);
+        friendsTextView= (TextView) view.findViewById(R.id.friends_profile);
         editProfile= (ImageView) view.findViewById(R.id.changeProfile);
         progressBar= (ProgressBar) view.findViewById(R.id.profileProgressBar);
 
@@ -101,14 +103,25 @@ public class ProfileFragment extends Fragment {
             }
         });
 
+        friendsTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FriendsFragment nextFrag= new FriendsFragment();
+
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .remove(ProfileFragment.this)
+                        .replace(R.id.fragmentContainerView2, new FriendsFragment())
+                        //.replace(((ViewGroup)getView().getParent()).getId(), nextFrag, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
+                Toast.makeText(getActivity(), "Your friends are here to help you!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         editProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                FragmentTransaction fragmentTransaction= getFragmentManager().beginTransaction();
-//                fragmentTransaction.replace(R.id.fragmentContainerView2, new EditProfile());
-//                fragmentTransaction.addToBackStack(null);
-//                Toast.makeText(getActivity(), "Edit your profile...", Toast.LENGTH_LONG).show();
-//                fragmentTransaction.commit();
                 mGetContent.launch("image/*");
             }
         });

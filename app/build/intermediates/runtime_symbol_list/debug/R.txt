@@ -3657,6 +3657,10 @@ int id forever 0x7f0800e8
 int id forgot_pas_text 0x7f0800e9
 int id fragmentContainerView2 0x7f0800ea
 int id fragment_container_view_tag 0x7f0800eb
+int id friend_rv_username 0x7f08025a
+int id friends_profile 0x7f08025b
+int id friends_rv 0x7f08025c
+int id friends_rv_profile 0x7f08025d
 int id frost 0x7f0800ec
 int id ghost_view 0x7f0800ed
 int id ghost_view_holder 0x7f0800ee
@@ -3827,6 +3831,7 @@ int id postLayout 0x7f080192
 int id profileFragment 0x7f080193
 int id profileProgressBar 0x7f080194
 int id profile_email 0x7f080195
+int id profile_fragment_for_transaction 0x7f08025f
 int id profile_user 0x7f080197
 int id profile_username 0x7f080198
 int id progress_bar_login 0x7f080199
@@ -3950,7 +3955,6 @@ int id textView 0x7f08020f
 int id textView13 0x7f080210
 int id textView14 0x7f080211
 int id textView4 0x7f080212
-int id textView7 0x7f080213
 int id textView8 0x7f080214
 int id text_input_end_icon 0x7f080216
 int id text_input_error_icon 0x7f080217
@@ -3967,6 +3971,7 @@ int id titleDividerNoCustom 0x7f080221
 int id title_template 0x7f080222
 int id toggle 0x7f080223
 int id toolbar 0x7f080224
+int id toolbar2 0x7f080260
 int id top 0x7f080225
 int id topPanel 0x7f080226
 int id touch_outside 0x7f080227
@@ -4139,6 +4144,7 @@ int layout fragment_all_notification 0x7f0b0038
 int layout fragment_calm_melodies 0x7f0b0039
 int layout fragment_chat 0x7f0b003a
 int layout fragment_detailed_chat 0x7f0b003b
+int layout fragment_friends 0x7f0b0099
 int layout fragment_help_me_calm_down 0x7f0b003d
 int layout fragment_home 0x7f0b003e
 int layout fragment_i_need_help 0x7f0b003f
@@ -4147,6 +4153,7 @@ int layout fragment_profile 0x7f0b0041
 int layout fragment_setting 0x7f0b0042
 int layout fragment_users 0x7f0b0043
 int layout fragment_wellness_center 0x7f0b0044
+int layout friends_recycler_view 0x7f0b009a
 int layout hsdp_layout 0x7f0b0045
 int layout m3_alert_dialog 0x7f0b0046
 int layout m3_alert_dialog_actions 0x7f0b0047

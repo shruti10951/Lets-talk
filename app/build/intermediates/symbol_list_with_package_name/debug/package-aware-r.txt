@@ -3658,6 +3658,10 @@ id forever
 id forgot_pas_text
 id fragmentContainerView2
 id fragment_container_view_tag
+id friend_rv_username
+id friends_profile
+id friends_rv
+id friends_rv_profile
 id frost
 id ghost_view
 id ghost_view_holder
@@ -3828,6 +3832,7 @@ id postLayout
 id profileFragment
 id profileProgressBar
 id profile_email
+id profile_fragment_for_transaction
 id profile_user
 id profile_username
 id progress_bar_login
@@ -3951,7 +3956,6 @@ id textView
 id textView13
 id textView14
 id textView4
-id textView7
 id textView8
 id text_input_end_icon
 id text_input_error_icon
@@ -3968,6 +3972,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar
+id toolbar2
 id top
 id topPanel
 id touch_outside
@@ -4140,6 +4145,7 @@ layout fragment_all_notification
 layout fragment_calm_melodies
 layout fragment_chat
 layout fragment_detailed_chat
+layout fragment_friends
 layout fragment_help_me_calm_down
 layout fragment_home
 layout fragment_i_need_help
@@ -4148,6 +4154,7 @@ layout fragment_profile
 layout fragment_setting
 layout fragment_users
 layout fragment_wellness_center
+layout friends_recycler_view
 layout hsdp_layout
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
