@@ -7,15 +7,21 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
+import com.vidyalankar.letstalk.model.FriendsModel;
 import com.vidyalankar.letstalk.model.User;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
 
@@ -26,8 +32,6 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
         this.context = context;
         this.list = list;
     }
-
-
 
     @NonNull
     @Override
@@ -44,13 +48,36 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
                 .load(user.getProfilePic())
                 .placeholder(R.drawable.user_profile_default)
                 .into(holder.profile_image);
-
         holder.username.setText(user.getUsername());
 
         holder.follow_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                FriendsModel friendsModel = new FriendsModel();
+                friendsModel.setFollowedBy(FirebaseAuth.getInstance().getUid());
+                friendsModel.setFollowedAt(new Date().getTime());
 
+                FirebaseDatabase.getInstance().getReference()
+                        .child("Users")
+                        .child(user.getUserID())
+                        .child("followers")
+                        .child(FirebaseAuth.getInstance().getUid())
+                        .setValue(friendsModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+                        FirebaseDatabase.getInstance().getReference()
+                                .child("Users")
+                                .child(user.getUserID())
+                                .child("followerCount")
+                                .setValue(user.getFollowerCount()+1)
+                                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void unused) {
+                                        Toast.makeText(context, "You followed "+ user.getUsername() + list.size() , Toast.LENGTH_SHORT).show();
+                                    }
+                                });
+                    }
+                });
             }
         });
     }

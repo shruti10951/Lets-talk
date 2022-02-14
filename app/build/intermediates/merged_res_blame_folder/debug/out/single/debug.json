@@ -36,6 +36,10 @@
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\add_photo_icon.xml"
     },
     {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_friends.xml.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_friends.xml"
+    },
+    {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_home.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
@@ -142,6 +146,10 @@
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_wellness_center_icon.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\wellness_center_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_friends_recycler_view.xml.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\friends_recycler_view.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_add_post.xml.flat",

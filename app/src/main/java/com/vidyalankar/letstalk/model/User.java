@@ -5,14 +5,22 @@ import android.net.Uri;
 public class User {
 
     public String username, email, userID, profilePic;
+    int followerCount;
 
     public User() {
-
     }
     public User(String username, String email)
     {
         this.username= username;
         this.email= email;
+    }
+
+    public int getFollowerCount() {
+        return followerCount;
+    }
+
+    public void setFollowerCount(int followerCount) {
+        this.followerCount = followerCount;
     }
 
     public String getUserID() {

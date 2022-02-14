@@ -9,11 +9,14 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +33,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.vidyalankar.letstalk.fragments.AboutLetsTalkFragment;
 import com.vidyalankar.letstalk.fragments.AddPostFragment;
 import com.vidyalankar.letstalk.fragments.CalmMelodiesFragment;
+import com.vidyalankar.letstalk.fragments.FriendsFragment;
 import com.vidyalankar.letstalk.fragments.NotificationFragment;
 import com.vidyalankar.letstalk.fragments.HelpMeCalmDownFragment;
 import com.vidyalankar.letstalk.fragments.HomeFragment;
@@ -157,13 +161,15 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         alert.show();
     }
 
+//INCOMPLETE!!!! --->>>
 
     @Override
     public void onBackPressed() {
+        android.app.Fragment test= getFragmentManager().findFragmentById(R.id.fragmentContainerView2);
         if(dashboard_drawer.isDrawerOpen(GravityCompat.START))
         {
             dashboard_drawer.closeDrawer(GravityCompat.START);
-        }else {
+        }else if(test!= null && test.isVisible()){
             AlertDialog.Builder builder= new AlertDialog.Builder(DashboardActivity.this);
 
             builder.setTitle("Exit?").setMessage("Are you sure?")
@@ -176,7 +182,13 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
             AlertDialog alert= builder.create();
             alert.show();
         }
+        else {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragmentContainerView2, new HomeFragment()).commit();
+        }
     }
+
+    //SOLVE THIS!!! <<<----
 
     private NavigationBarView.OnItemSelectedListener navListener= new NavigationBarView.OnItemSelectedListener() {
         @Override
