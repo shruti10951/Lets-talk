@@ -34,7 +34,7 @@ public class MindfulnessWellnessCenterFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_mindfulness_wellness_center, container, false);
-        text1234= view.findViewById(R.id.text1234);
+        text1234= view.findViewById(R.id.mindfulness_article_text);
 
         String text= "";
         try {

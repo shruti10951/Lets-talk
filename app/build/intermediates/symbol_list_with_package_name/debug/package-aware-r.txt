@@ -3299,8 +3299,10 @@ drawable animation_colors
 drawable arrow_back_icon
 drawable avd_hide_password
 drawable avd_show_password
+drawable background_profile
 drawable bookmark
 drawable bookmark_saved
+drawable breathing_option
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3344,6 +3346,7 @@ drawable design_snackbar_background
 drawable email_icon
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable help_calm_down
 drawable home_icon
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
@@ -3411,6 +3414,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable nutrition_drawer_option
 drawable password_lock_icon
+drawable post_wallpaper
 drawable profile_icon
 drawable search_icon
 drawable send_icon
@@ -3424,6 +3428,7 @@ drawable toolbar_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user_profile_default
+drawable wallpaper_header
 drawable wellness_center_icon
 drawable widgets
 drawable woman
@@ -3756,6 +3761,7 @@ id material_value_index
 id media_actions
 id message
 id middle
+id mindfulness_article_text
 id mindfulness_diagonal_layout
 id minflness_textview
 id mini
@@ -3816,6 +3822,7 @@ id notification_message
 id notification_profile_user
 id notification_recycler
 id notification_time
+id nutrition_article_text
 id nutrition_diagonal_layout
 id nutrition_textview
 id off
@@ -3903,8 +3910,8 @@ id sign_up_text
 id sin
 id skipCollapsed
 id skipped
+id sleep_article_text
 id sleep_diagonal_layout
-id sleep_textview
 id slide
 id sliding_pane_detail_container
 id sliding_pane_layout
@@ -3933,6 +3940,7 @@ id staticLayout
 id staticPostLayout
 id status_bar_latest_event_content
 id stop
+id stress_article_text
 id stress_diagonal_layout
 id stress_textview
 id stretch
@@ -3959,7 +3967,6 @@ id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
 id test_radiobutton_app_button_tint
 id text
-id text1234
 id text2
 id textEnd
 id textSpacerNoButtons
@@ -4020,6 +4027,7 @@ id usersFragment
 id users_show_rv
 id vertical_only
 id view
+id view2
 id view3
 id view4
 id view_offset_helper
