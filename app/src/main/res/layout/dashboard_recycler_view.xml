@@ -3,8 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/layout_border">
+    android:layout_marginTop="@dimen/_15font_ssp"
+    android:layout_marginBottom="@dimen/_15font_ssp"
+    android:background="@drawable/post_wallpaper"
+    android:layout_height="wrap_content">
 
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -14,7 +16,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/woman"
-        app:civ_border_color="@color/rose"
+        app:civ_border_color="@color/white"
         app:civ_border_width="@dimen/_2font_ssp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Amrita2004"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/profile_user"
@@ -40,7 +42,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/profile_user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/profile_user"
-        app:srcCompat="@drawable/ic_more_three_dots" />
+        app:srcCompat="@drawable/ic_more_three_dots"
+        app:tint="#FFFFFF" />
 
 
     <TextView
@@ -48,14 +51,13 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_marginTop="16dp"
-        android:background="@drawable/color2"
-        android:paddingTop="@dimen/_20font_ssp"
-        android:paddingBottom="@dimen/_20font_ssp"
         android:paddingStart="@dimen/_20font_ssp"
+        android:paddingTop="@dimen/_20font_ssp"
         android:paddingEnd="@dimen/_20font_ssp"
+        android:paddingBottom="@dimen/_20font_ssp"
         android:scaleType="centerCrop"
         android:text="Hello This is a post!"
-        android:textColor="@color/blue_bg"
+        android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
         android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,9 +71,9 @@
         android:id="@+id/rv_save_post"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="16dp"
-        android:drawableTint="#000000"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        android:drawableTint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/rv_post"
         app:layout_constraintTop_toTopOf="@+id/rv_post"
         app:srcCompat="@drawable/bookmark" />
@@ -84,8 +86,8 @@
         android:layout_marginTop="16dp"
         android:drawableLeft="@drawable/like_icon"
         android:drawablePadding="10dp"
-        android:drawableTint="#000000"
-        android:textColor="@color/black"
+        android:drawableTint="#FFFFFF"
+        android:textColor="@color/white"
         android:gravity="center"
         android:text="234"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,13 +102,13 @@
         android:layout_marginTop="16dp"
         android:drawableLeft="@drawable/comment_icon"
         android:drawablePadding="10dp"
-        android:drawableTint="#000000"
-        android:textColor="@color/black"
+        android:drawableTint="#FFFFFF"
+        android:textColor="@color/white"
         android:gravity="center"
         android:text="52"
         app:layout_constraintStart_toEndOf="@id/like"
         app:layout_constraintTop_toBottomOf="@+id/rv_post"
-        android:paddingBottom="@dimen/_5font_ssp"/>
+        android:paddingBottom="@dimen/_10font_ssp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

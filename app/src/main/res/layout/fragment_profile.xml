@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:diagonal="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_fragment_for_transaction"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.ProfileFragment"
-    xmlns:diagonal="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/profile_fragment_for_transaction">
+    tools:context=".fragments.ProfileFragment">
+
 
     <TextView
         android:id="@+id/profile_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="userName"
-        android:textSize="15dp"
-        android:textColor="@color/black"
         android:fontFamily="serif"
+        android:text="userName"
+        android:textColor="@color/black"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
@@ -43,7 +44,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.github.florent37.diagonallayout.DiagonalLayout
-            android:id="@+id/diagonalLayout"
+            android:id="@+id/sleep_diagonal_layout"
             android:layout_width="match_parent"
             android:layout_height="230dp"
             android:elevation="30dp"
@@ -56,8 +57,7 @@
                 android:id="@+id/constraintLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/color1"
+                android:background="@drawable/background_profile"
                 android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -68,11 +68,11 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <View
-                android:id="@+id/view3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/greyTrans" />
+<!--            <View-->
+<!--                android:id="@+id/view3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/greyTrans" />-->
 
 
         </com.github.florent37.diagonallayout.DiagonalLayout>
@@ -80,10 +80,10 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_user"
-        android:layout_width="121dp"
-        android:layout_height="@dimen/_90hsdp"
+        android:layout_width="@dimen/_105hsdp"
+        android:layout_height="@dimen/_105hsdp"
         android:src="@drawable/woman"
-        app:civ_border_color="@color/rose"
+        app:civ_border_color="@color/white"
         app:civ_border_width="@dimen/_2font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -131,8 +131,8 @@
                 android:id="@+id/friends_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Friends"
                 android:fontFamily="serif"
+                android:text="Friends"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toStartOf="@+id/view4"
@@ -166,8 +166,8 @@
                 android:id="@+id/textView8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Posts"
                 android:fontFamily="serif"
+                android:text="Posts"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -190,20 +190,19 @@
     </androidx.cardview.widget.CardView>
 
 
-
     <ProgressBar
         android:id="@+id/profileProgressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.557"
-        android:visibility="gone"/>
+        app:layout_constraintVertical_bias="0.557" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

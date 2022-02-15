@@ -1,6 +1,5 @@
 package com.vidyalankar.letstalk.fragments;
 
-import android.app.FragmentManager;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -10,13 +9,11 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -59,7 +56,6 @@ public class ProfileFragment extends Fragment {
     public ProfileFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -110,8 +106,8 @@ public class ProfileFragment extends Fragment {
                 FriendsFragment nextFrag= new FriendsFragment();
 
                 getActivity().getSupportFragmentManager().beginTransaction()
-                        .remove(ProfileFragment.this)
                         .replace(R.id.fragmentContainerView2, new FriendsFragment())
+                        .remove(ProfileFragment.this)
                         //.replace(((ViewGroup)getView().getParent()).getId(), nextFrag, "findThisFragment")
                         .addToBackStack(null)
                         .commit();

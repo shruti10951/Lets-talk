@@ -80,7 +80,7 @@ public class FriendsFragment extends Fragment {
         database.getReference()
                 .child("Users")
                 .child(auth.getUid())
-                .child("Followers")
+                .child("followers")
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {

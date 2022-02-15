@@ -47,16 +47,17 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:elevation="4dp"
+            app:titleTextColor="@color/black"
             android:background="@drawable/toolbar_bg"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
 
         </androidx.appcompat.widget.Toolbar>
 
-        <FrameLayout
-            android:id="@+id/dashboard_fragment_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+<!--        <FrameLayout-->
+<!--            android:id="@+id/dashboard_fragment_container"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
 
     </LinearLayout>
 
@@ -65,8 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:itemIconTint="@color/blue_bg"
-        android:background="@color/rose"
+        app:itemIconTint="@color/black"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu" />
 
