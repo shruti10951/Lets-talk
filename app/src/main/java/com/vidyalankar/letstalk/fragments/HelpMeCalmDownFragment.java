@@ -30,7 +30,7 @@ public class HelpMeCalmDownFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_help_me_calm_down, container, false);
 
-        breathing_option= view.findViewById(R.id.breathing_option);
+        breathing_option= view.findViewById(R.id.yoga_one_option);
         yoga_option= view.findViewById(R.id.yoga_option);
 
         breathing_option.setOnClickListener(new View.OnClickListener() {

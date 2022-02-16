@@ -137,7 +137,7 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
                 logoutUser();
                 break;
         }
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, selectedFragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, selectedFragment).addToBackStack(null).commit();
         dashboard_drawer.closeDrawer(GravityCompat.START);
         return true;
     }
