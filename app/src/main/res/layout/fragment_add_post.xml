@@ -4,18 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/create_post_background"
     tools:context=".fragments.AddPostFragment">
 
-
-    <TextView
-        android:id="@+id/yoga_one_point_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Post"
-        android:textSize="30dp"
-        android:textColor="@color/blue_bg"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/greyTrans"
+        android:paddingTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/user_text_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:foregroundGravity="center_vertical"
+        android:hint="What's on your mind?"
+        android:inputType="textLongMessage"
+        android:paddingTop="@dimen/_15font_ssp"
+        android:paddingBottom="@dimen/_15font_ssp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <Button
+        android:id="@+id/post_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/greyTrans"
+        android:backgroundTint="@color/greyTrans"
+        android:enabled="false"
+        android:fontFamily="serif"
+        android:paddingStart="@dimen/_25font_ssp"
+        android:paddingTop="@dimen/_7font_ssp"
+        android:paddingEnd="@dimen/_25font_ssp"
+        android:paddingBottom="@dimen/_7font_ssp"
+        android:text="Post"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15font_ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="serif"
+        android:text="You are not alone. We are here for you!"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15font_ssp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_text_post" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Feel free to talk about anything!"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15font_ssp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:visibility="gone"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

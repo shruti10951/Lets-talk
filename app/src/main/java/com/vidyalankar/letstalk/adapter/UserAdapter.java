@@ -96,8 +96,8 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
         public viewHolder(@NonNull View itemView) {
             super(itemView);
 
-            profile_image= itemView.findViewById(R.id.user_rv_profile);
-            username= itemView.findViewById(R.id.user_rv_name);
+            profile_image= itemView.findViewById(R.id.user_profile_post);
+            username= itemView.findViewById(R.id.username_post);
             follow_btn= itemView.findViewById(R.id.follow_btn_user_rv);
 
         }

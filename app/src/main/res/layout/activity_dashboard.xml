@@ -54,10 +54,10 @@
 
         </androidx.appcompat.widget.Toolbar>
 
-<!--        <FrameLayout-->
-<!--            android:id="@+id/dashboard_fragment_container"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent" />-->
+        <FrameLayout
+            android:id="@+id/dashboard_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 

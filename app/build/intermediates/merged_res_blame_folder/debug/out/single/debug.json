@@ -44,16 +44,20 @@
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_info_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\info_icon.xml"
-    },
-    {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_info_icon.xml.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\info_icon.xml"
+    },
+    {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_profile.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_done_post.xml.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\done_post.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_forgot_password.xml.flat",
@@ -220,10 +224,6 @@
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\breathing_option_background.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_breathing_four.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_breathing_four.xml"
-    },
-    {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_breathing_three.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_breathing_three.xml"
     },
@@ -254,6 +254,10 @@
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_dashboard_recycler_view.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\dashboard_recycler_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_create_post_background.jpg.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\create_post_background.jpg"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
@@ -298,6 +302,10 @@
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_wellness_center_icon.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\wellness_center_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_post_successful.xml.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_post_successful.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_nutrition_drawer_option.jpeg.flat",
@@ -358,6 +366,10 @@
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_woman.jpg.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\woman.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_post_successful_background.jpg.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\post_successful_background.jpg"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_sleep_wellness_center.xml.flat",

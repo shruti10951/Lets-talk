@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../AppData/Local/Android/Sdk/icons/material/materialicons/add_a_photo/baseline_add_a_photo_24.xml" />
+                                      <entry key="url" value="file:/$PROJECT_DIR$/../AppData/Local/Android/Sdk/icons/material/materialicons/check_circle/baseline_check_circle_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -33,7 +33,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_baseline_add_a_photo_24" />
+                            <entry key="outputName" value="done_post" />
                             <entry key="sourceFile" value="C:\Users\Admin\AndroidStudioProjects\LetsTalk" />
                           </map>
                         </option>

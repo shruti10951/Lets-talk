@@ -11,16 +11,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.vidyalankar.letstalk.R;
-import com.vidyalankar.letstalk.model.HomeModel;
+import com.vidyalankar.letstalk.model.PostModel;
 
 import java.util.ArrayList;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.viewHolder> {
 
-    ArrayList<HomeModel> list;
+    ArrayList<PostModel> list;
     Context context;
 
-    public HomeAdapter(ArrayList<HomeModel> list, Context context) {
+    public HomeAdapter(ArrayList<PostModel> list, Context context) {
         this.list = list;
         this.context = context;
     }
@@ -35,13 +35,13 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.viewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
-        HomeModel homeModel= list.get(position);
-        holder.profile_image.setImageResource(homeModel.getProfile());
-        holder.post.setText(homeModel.getPostImage());
-        holder.save.setImageResource(homeModel.getSave());
-        holder.username.setText(homeModel.getName());
-        holder.like.setText(homeModel.getLike());
-        holder.comment.setText(homeModel.getComment());
+        PostModel postModel = list.get(position);
+//        holder.profile_image.setImageResource(postModel.getProfile());
+//        holder.post.setText(postModel.getPostImage());
+//        holder.save.setImageResource(postModel.getSave());
+//        holder.username.setText(postModel.getName());
+//        holder.like.setText(postModel.getLike());
+//        holder.comment.setText(postModel.getComment());
     }
 
     @Override

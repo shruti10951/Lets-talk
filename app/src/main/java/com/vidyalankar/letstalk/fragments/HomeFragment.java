@@ -12,14 +12,14 @@ import android.view.ViewGroup;
 
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.adapter.HomeAdapter;
-import com.vidyalankar.letstalk.model.HomeModel;
+import com.vidyalankar.letstalk.model.PostModel;
 
 import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
     RecyclerView homeRV;
-    ArrayList<HomeModel> homeList;
+    ArrayList<PostModel> homeList;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -34,19 +34,19 @@ public class HomeFragment extends Fragment {
         homeRV= view.findViewById(R.id.homeRV);
         homeList= new ArrayList<>();
 
-        homeList.add(new HomeModel(R.drawable.woman,
-                "Hello how are you all?", R.drawable.bookmark_saved,"Shruti2004", "78","9"));
-        homeList.add(new HomeModel(R.drawable.woman,
-                "Today was a very stressful day for me! anyone wanna talk?", R.drawable.bookmark, "Aditi2003", "67", "10"));
-        homeList.add(new HomeModel(R.drawable.woman,
-                "what a beautiful day!", R.drawable.bookmark, "Amrita2004", "98", "23"));
-        homeList.add(new HomeModel(R.drawable.woman,
-                "I am so sick of this fake love! fake love! I am so sorry but it is fake love!", R.drawable.bookmark_saved, "Manali2004", "56", "4"));
-        homeList.add(new HomeModel(R.drawable.woman,
-                "Shining through the city with a little funk in soul!", R.drawable.bookmark, "abc1234", "89", "21"));
-
-        homeList.add(new HomeModel(R.drawable.woman,
-                "Shining through the city with a little funk in soul!", R.drawable.bookmark, "abc1234", "89", "21"));
+//        homeList.add(new PostModel(R.drawable.woman,
+//                "Hello how are you all?", R.drawable.bookmark_saved,"Shruti2004", "78","9"));
+//        homeList.add(new PostModel(R.drawable.woman,
+//                "Today was a very stressful day for me! anyone wanna talk?", R.drawable.bookmark, "Aditi2003", "67", "10"));
+//        homeList.add(new PostModel(R.drawable.woman,
+//                "what a beautiful day!", R.drawable.bookmark, "Amrita2004", "98", "23"));
+//        homeList.add(new PostModel(R.drawable.woman,
+//                "I am so sick of this fake love! fake love! I am so sorry but it is fake love!", R.drawable.bookmark_saved, "Manali2004", "56", "4"));
+//        homeList.add(new PostModel(R.drawable.woman,
+//                "Shining through the city with a little funk in soul!", R.drawable.bookmark, "abc1234", "89", "21"));
+//
+//        homeList.add(new PostModel(R.drawable.woman,
+//                "Shining through the city with a little funk in soul!", R.drawable.bookmark, "abc1234", "89", "21"));
 
 
         HomeAdapter homeAdapter= new HomeAdapter(homeList, getContext());
