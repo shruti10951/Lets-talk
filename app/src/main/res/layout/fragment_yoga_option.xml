@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:diagonal="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/help_calm_down"
     tools:context=".fragments.YogaOptionFragment">
 
     <androidx.core.widget.NestedScrollView
@@ -18,170 +18,125 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <com.github.florent37.diagonallayout.DiagonalLayout
-                android:id="@+id/sleep_diagonal_layout"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:elevation="30dp"
-                diagonal:diagonal_angle="10"
-                diagonal:diagonal_direction="left"
-                diagonal:diagonal_position="bottom">
+                android:layout_height="match_parent">
 
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout"
+                <View
+                    android:id="@+id/yoga_one_option"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/sleep_drawer_option"
-                    android:scaleType="centerCrop"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="@dimen/_120hsdp"
+                    android:layout_marginStart="@dimen/_35hsdp"
+                    android:layout_marginEnd="@dimen/_35hsdp"
+                    android:background="@color/greyTrans"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/yoga_one_point_2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/yoga_one_point_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:fontFamily="serif"
+                    android:text="Cat-Cow Pose"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25font_ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0">
+                    app:layout_constraintTop_toTopOf="@+id/yoga_one_option" />
 
-
-                    <TextView
-                        android:id="@+id/sleep_article_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:text="Sleep"
-                        android:fontFamily="serif"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_25hsdp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.601" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </com.github.florent37.diagonallayout.DiagonalLayout>
-
-            <com.github.florent37.diagonallayout.DiagonalLayout
-                android:id="@+id/mindfulness_diagonal_layout"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:elevation="30dp"
-                diagonal:diagonal_angle="10"
-                diagonal:diagonal_direction="right"
-                diagonal:diagonal_position="top">
-
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout1"
+                <View
+                    android:id="@+id/yoga_two_option"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/mindfulness_drawer_option"
-                    android:scaleType="centerCrop"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="@dimen/_120hsdp"
+                    android:background="@color/greyTrans"
+                    android:layout_marginStart="@dimen/_35hsdp"
+                    android:layout_marginEnd="@dimen/_35hsdp"
+                    android:layout_marginTop="?android:attr/actionBarSize"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0">
+                    app:layout_constraintTop_toBottomOf="@+id/yoga_one_option" />
 
-                    <TextView
-                        android:id="@+id/minflness_textview"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
-                        android:text="Mindfulness"
-                        android:textStyle="bold"
-                        android:fontFamily="serif"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_25hsdp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.858" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/yoga_one_point_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="52dp"
+                    android:fontFamily="serif"
+                    android:text="Child’s Pose"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25font_ssp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="@+id/yoga_two_option"
+                    app:layout_constraintStart_toStartOf="@+id/yoga_two_option"
+                    app:layout_constraintTop_toTopOf="@+id/yoga_two_option" />
 
-            </com.github.florent37.diagonallayout.DiagonalLayout>
-
-            <com.github.florent37.diagonallayout.DiagonalLayout
-                android:id="@+id/stress_diagonal_layout"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:elevation="30dp"
-                android:layout_marginTop="60dp"
-                diagonal:diagonal_angle="10"
-                diagonal:diagonal_direction="left"
-                diagonal:diagonal_position="bottom">
-
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout2"
+                <View
+                    android:id="@+id/yoga_three_option"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/stress_drawer_option"
-                    android:scaleType="centerCrop"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="@dimen/_120hsdp"
+                    android:background="@color/greyTrans"
+                    android:layout_marginStart="@dimen/_35hsdp"
+                    android:layout_marginEnd="@dimen/_35hsdp"
+                    android:layout_marginTop="?android:attr/actionBarSize"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0">
+                    app:layout_constraintTop_toBottomOf="@+id/yoga_two_option" />
 
+                <TextView
+                    android:id="@+id/yoga_one_point_4"
+                    android:layout_width="258dp"
+                    android:layout_height="112dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="serif"
+                    android:text="Legs-Up-the-Wall Pose "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25font_ssp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/yoga_three_option"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="@+id/yoga_three_option"
+                    app:layout_constraintTop_toTopOf="@+id/yoga_three_option" />
 
-                    <TextView
-                        android:id="@+id/stress_textview"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:text="Stress"
-                        android:fontFamily="serif"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_25hsdp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.601" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </com.github.florent37.diagonallayout.DiagonalLayout>
-
-            <com.github.florent37.diagonallayout.DiagonalLayout
-                android:id="@+id/nutrition_diagonal_layout"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:elevation="30dp"
-                diagonal:diagonal_angle="10"
-                diagonal:diagonal_direction="right"
-                diagonal:diagonal_position="top">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout3"
+                <View
+                    android:id="@+id/yoga_four_option"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/nutrition_drawer_option"
-                    android:scaleType="centerCrop"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="@dimen/_120hsdp"
+                    android:layout_marginStart="@dimen/_35hsdp"
+                    android:layout_marginEnd="@dimen/_35hsdp"
+                    android:layout_marginTop="?android:attr/actionBarSize"
+                    android:background="@color/greyTrans"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0">
+                    app:layout_constraintTop_toBottomOf="@+id/yoga_three_option" />
 
-                    <TextView
-                        android:id="@+id/nutrition_textview"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
-                        android:text="Nutrition"
-                        android:fontFamily="serif"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_25hsdp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.858" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </com.github.florent37.diagonallayout.DiagonalLayout>
+                <TextView
+                    android:id="@+id/yoga_one_point_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="serif"
+                    android:text="Corpse Pose"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25font_ssp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="@+id/yoga_four_option"
+                    app:layout_constraintHorizontal_bias="0.637"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/yoga_four_option" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>

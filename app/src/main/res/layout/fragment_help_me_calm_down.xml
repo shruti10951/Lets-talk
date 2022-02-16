@@ -9,7 +9,7 @@
 
 
     <View
-        android:id="@+id/breathing_option"
+        android:id="@+id/yoga_one_option"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_120hsdp"
         android:layout_marginStart="@dimen/_35hsdp"
@@ -30,10 +30,10 @@
         android:textColor="@color/white"
         android:textSize="@dimen/_30font_ssp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/breathing_option"
+        app:layout_constraintEnd_toEndOf="@+id/yoga_one_option"
         app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="@+id/breathing_option"
-        app:layout_constraintTop_toTopOf="@+id/breathing_option" />
+        app:layout_constraintStart_toStartOf="@+id/yoga_one_option"
+        app:layout_constraintTop_toTopOf="@+id/yoga_one_option" />
 
     <View
         android:id="@+id/yoga_option"
@@ -46,7 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/breathing_option" />
+        app:layout_constraintTop_toBottomOf="@+id/yoga_one_option" />
 
     <TextView
         android:layout_width="wrap_content"
