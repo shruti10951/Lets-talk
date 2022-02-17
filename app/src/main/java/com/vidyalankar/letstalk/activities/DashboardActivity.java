@@ -9,14 +9,12 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,10 +28,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.fragments.AboutLetsTalkFragment;
 import com.vidyalankar.letstalk.fragments.AddPostFragment;
 import com.vidyalankar.letstalk.fragments.CalmMelodiesFragment;
-import com.vidyalankar.letstalk.fragments.FriendsFragment;
 import com.vidyalankar.letstalk.fragments.NotificationFragment;
 import com.vidyalankar.letstalk.fragments.HelpMeCalmDownFragment;
 import com.vidyalankar.letstalk.fragments.HomeFragment;
@@ -85,6 +83,7 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         View hView= dashboardNavigation.getHeaderView(0);
         TextView userNameDashNav= (TextView) hView.findViewById(R.id.user_name_dash_nav);
         TextView userEmailDashNav= (TextView) hView.findViewById(R.id.user_mail_dash_nav);
+        ImageView userProfilePic= (ImageView) hView.findViewById(R.id.user_profile_dash_nav);
         reference.child(userID).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -93,6 +92,10 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
                 {
                     String userName= userProfile.username;
                     String userEmail= userProfile.email;
+
+                    Picasso.get().load(userProfile.getProfilePic())
+                            .placeholder(R.drawable.user_profile_default)
+                            .into(userProfilePic);
 
                     userNameDashNav.setText(userName);
                     userEmailDashNav.setText(userEmail);
@@ -111,33 +114,30 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        Fragment selectedFragment= null;
-
         switch (item.getItemId())
         {
             case R.id.settingFragment:
-                selectedFragment= new SettingFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new SettingFragment()).addToBackStack(null).commit();
                 break;
             case R.id.wellnessCenterFragment:
-                selectedFragment= new WellnessCenterFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new WellnessCenterFragment()).addToBackStack(null).commit();
                 break;
             case R.id.calmMelodiesFragment:
-                selectedFragment= new CalmMelodiesFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new CalmMelodiesFragment()).addToBackStack(null).commit();
                 break;
             case R.id.helpMeCalmDownFragment:
-                selectedFragment= new HelpMeCalmDownFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new HelpMeCalmDownFragment()).addToBackStack(null).commit();
                 break;
             case R.id.INeedHelpFragment:
-                selectedFragment= new INeedHelpFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new INeedHelpFragment()).addToBackStack(null).commit();
                 break;
             case R.id.aboutLetsTalkFragment:
-                selectedFragment= new AboutLetsTalkFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new AboutLetsTalkFragment()).addToBackStack(null).commit();
                 break;
             case R.id.logout:
                 logoutUser();
                 break;
         }
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, selectedFragment).addToBackStack(null).commit();
         dashboard_drawer.closeDrawer(GravityCompat.START);
         return true;
     }
