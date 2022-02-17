@@ -71,5 +71,9 @@ dependencies {
     //diagonal layout for photo
     implementation 'com.github.florent37:diagonallayout:1.0.9'
 
+    //Shimmer effect
+    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'
+
+
 
 }

@@ -96,7 +96,7 @@ public class AddPostFragment extends Fragment {
                         Toast.makeText(getContext(), "Posted Successfully!", Toast.LENGTH_SHORT).show();
                         getFragmentManager()
                                 .beginTransaction()
-                                .replace(R.id.fragmentContainerView2, new PostSuccessfulFragment())
+                                .replace(R.id.fragmentContainerView2, new HomeFragment())
                                 .addToBackStack(null)
                                 .commit();
                     }

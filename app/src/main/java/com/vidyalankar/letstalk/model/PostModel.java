@@ -6,6 +6,24 @@ public class PostModel {
     private String post;
     private String postedBy;
     private Long postedAt;
+    private int postLikes;
+    private int commentCount;
+
+    public int getCommentCount() {
+        return commentCount;
+    }
+
+    public void setCommentCount(int commentCount) {
+        this.commentCount = commentCount;
+    }
+
+    public int getPostLikes() {
+        return postLikes;
+    }
+
+    public void setPostLikes(int postLikes) {
+        this.postLikes = postLikes;
+    }
 
     public String getPostId() {
         return postId;

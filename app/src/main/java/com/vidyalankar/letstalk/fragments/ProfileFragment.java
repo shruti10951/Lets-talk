@@ -62,7 +62,7 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        profilePic= (ImageView) view.findViewById(R.id.profile_user);
+        profilePic= (ImageView) view.findViewById(R.id.user_profile_comment);
         userNameTextView= (TextView) view.findViewById(R.id.profile_username);
         userEmailTextView= (TextView) view.findViewById(R.id.profile_email);
         friendsTextView= (TextView) view.findViewById(R.id.friends_profile);

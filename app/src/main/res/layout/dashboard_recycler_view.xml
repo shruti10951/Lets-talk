@@ -10,7 +10,7 @@
 
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_user"
+        android:id="@+id/user_profile_comment"
         android:layout_width="@dimen/_40hsdp"
         android:layout_height="@dimen/_40hsdp"
         android:layout_marginStart="16dp"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/rv_user_name"
+        android:id="@+id/username_comment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -30,24 +30,24 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/profile_user"
-        app:layout_constraintStart_toEndOf="@+id/profile_user"
-        app:layout_constraintTop_toTopOf="@+id/profile_user" />
+        app:layout_constraintBottom_toBottomOf="@+id/user_profile_comment"
+        app:layout_constraintStart_toEndOf="@+id/user_profile_comment"
+        app:layout_constraintTop_toTopOf="@+id/user_profile_comment" />
 
     <ImageView
-        android:id="@+id/rv_three_dots"
+        android:id="@+id/three_dots_comment"
         android:layout_width="18dp"
         android:layout_height="18dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/profile_user"
+        app:layout_constraintBottom_toBottomOf="@+id/user_profile_comment"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/profile_user"
+        app:layout_constraintTop_toTopOf="@+id/user_profile_comment"
         app:srcCompat="@drawable/ic_more_three_dots"
         app:tint="#FFFFFF" />
 
 
     <TextView
-        android:id="@+id/rv_post"
+        android:id="@+id/user_post_comment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_marginTop="16dp"
@@ -63,23 +63,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_user"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_comment"
         app:riv_corner_radius="10dip"
         app:riv_mutate_background="true" />
 
     <ImageView
-        android:id="@+id/rv_save_post"
+        android:id="@+id/save_post_comment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
         android:layout_marginEnd="8dp"
         android:drawableTint="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/rv_post"
-        app:layout_constraintTop_toTopOf="@+id/rv_post"
+        app:layout_constraintEnd_toEndOf="@+id/user_post_comment"
+        app:layout_constraintTop_toTopOf="@+id/user_post_comment"
         app:srcCompat="@drawable/bookmark" />
 
     <TextView
-        android:id="@+id/like"
+        android:id="@+id/likes_comment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -91,11 +91,11 @@
         android:gravity="center"
         android:text="234"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rv_post"
+        app:layout_constraintTop_toBottomOf="@+id/user_post_comment"
         android:paddingBottom="@dimen/_5font_ssp"/>
 
     <TextView
-        android:id="@+id/comment"
+        android:id="@+id/user_comments_comment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -106,8 +106,8 @@
         android:textColor="@color/white"
         android:gravity="center"
         android:text="52"
-        app:layout_constraintStart_toEndOf="@id/like"
-        app:layout_constraintTop_toBottomOf="@+id/rv_post"
+        app:layout_constraintStart_toEndOf="@id/likes_comment"
+        app:layout_constraintTop_toBottomOf="@+id/user_post_comment"
         android:paddingBottom="@dimen/_10font_ssp"/>
 
 

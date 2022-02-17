@@ -19,24 +19,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!--    <EditText-->
+<!--        android:id="@+id/user_text_post"-->
+<!--        android:layout_width="374dp"-->
+<!--        android:layout_height="204dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:ems="10"-->
+<!--        android:foregroundGravity="center_vertical" />-->
+
     <EditText
         android:id="@+id/user_text_post"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@android:color/transparent"
         android:ems="10"
-        android:foregroundGravity="center_vertical"
+        android:gravity="start|top"
         android:hint="What's on your mind?"
-        android:inputType="textLongMessage"
-        android:paddingTop="@dimen/_15font_ssp"
-        android:paddingBottom="@dimen/_15font_ssp"
+        android:inputType="textMultiLine"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view3" />
 
