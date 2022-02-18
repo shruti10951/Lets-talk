@@ -17,7 +17,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.model.CommentModel;
-import com.vidyalankar.letstalk.model.User;
+import com.vidyalankar.letstalk.model.UserModel;
 
 import java.util.ArrayList;
 
@@ -50,11 +50,11 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        User user= snapshot.getValue(User.class);
-                        Picasso.get().load(user.getProfilePic())
+                        UserModel userModel = snapshot.getValue(UserModel.class);
+                        Picasso.get().load(userModel.getProfilePic())
                                 .placeholder(R.drawable.user_profile_default)
                                 .into(holder.profile_image);
-                        holder.username.setText(user.getUsername());
+                        holder.username.setText(userModel.getUsername());
                     }
 
                     @Override

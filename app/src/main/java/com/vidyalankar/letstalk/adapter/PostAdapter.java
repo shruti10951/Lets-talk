@@ -21,10 +21,12 @@ import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.activities.CommentActivity;
+import com.vidyalankar.letstalk.model.NotificationModel;
 import com.vidyalankar.letstalk.model.PostModel;
-import com.vidyalankar.letstalk.model.User;
+import com.vidyalankar.letstalk.model.UserModel;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
 
@@ -54,12 +56,12 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
                 .child(postModel.getPostedBy()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                User user= snapshot.getValue(User.class);
+                UserModel userModel = snapshot.getValue(UserModel.class);
                 Picasso.get()
-                        .load(user.getProfilePic())
+                        .load(userModel.getProfilePic())
                         .placeholder(R.drawable.user_profile_default)
                         .into(holder.profile_image);
-                holder.username.setText(user.getUsername());
+                holder.username.setText(userModel.getUsername());
                 holder.post.setText(postModel.getPost());
                 holder.like.setText(postModel.getPostLikes()+"");
                 holder.comment.setText(postModel.getCommentCount()+"");
@@ -104,6 +106,19 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
                                                         public void onSuccess(Void unused) {
                                                             holder.like.setCompoundDrawablesWithIntrinsicBounds(R.drawable.liked_icon, 0,0,0);
                                                             Toast.makeText(view.getContext(), "You liked this post!", Toast.LENGTH_SHORT).show();
+
+                                                            NotificationModel notificationModel= new NotificationModel();
+                                                            notificationModel.setNotificationBy(FirebaseAuth.getInstance().getUid());
+                                                            notificationModel.setNotificationAt(new Date().getTime());
+                                                            notificationModel.setPostId(postModel.getPostId());
+                                                            notificationModel.setPostedBy(postModel.getPostedBy());
+                                                            notificationModel.setType("like");
+
+                                                            FirebaseDatabase.getInstance().getReference()
+                                                                    .child("Notification")
+                                                                    .child(postModel.getPostedBy())
+                                                                    .push()
+                                                                    .setValue(notificationModel);
                                                         }
                                                     });
                                                 }

@@ -36,8 +36,8 @@ public class ChatAdapter extends  RecyclerView.Adapter<ChatAdapter.viewHolder> {
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
 
         ChatModel chatModel= list.get(position);
-        holder.profile_image.setImageResource(chatModel.getProfile());
-        holder.username.setText(chatModel.getName());
+        holder.profile_image.setImageResource(chatModel.getProfilePic());
+        holder.username.setText(chatModel.getUserName());
         holder.last_message.setText(chatModel.getLastMessage());
         holder.time.setText(chatModel.getTime());
 

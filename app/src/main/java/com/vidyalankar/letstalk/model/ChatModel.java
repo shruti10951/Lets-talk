@@ -2,38 +2,26 @@ package com.vidyalankar.letstalk.model;
 
 public class ChatModel {
 
-    int profile;
-    String name, lastMessage, time;
+    int profilePic;
+    String userName, time, lastMessage;
 
-    public ChatModel(int profile, String name, String lastMessage, String time) {
-        this.profile = profile;
-        this.name = name;
-        this.lastMessage = lastMessage;
-        this.time = time;
+    public ChatModel() {
     }
 
-    public int getProfile() {
-        return profile;
+    public int getProfilePic() {
+        return profilePic;
     }
 
-    public void setProfile(int profile) {
-        this.profile = profile;
+    public void setProfilePic(int profilePic) {
+        this.profilePic = profilePic;
     }
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getLastMessage() {
-        return lastMessage;
-    }
-
-    public void setLastMessage(String lastMessage) {
-        this.lastMessage = lastMessage;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getTime() {
@@ -42,5 +30,13 @@ public class ChatModel {
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+    public String getLastMessage() {
+        return lastMessage;
+    }
+
+    public void setLastMessage(String lastMessage) {
+        this.lastMessage = lastMessage;
     }
 }

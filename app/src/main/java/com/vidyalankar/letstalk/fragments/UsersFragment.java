@@ -18,13 +18,13 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.adapter.UserAdapter;
-import com.vidyalankar.letstalk.model.User;
+import com.vidyalankar.letstalk.model.UserModel;
 
 import java.util.ArrayList;
 
 public class UsersFragment extends Fragment {
 
-    ArrayList<User> list= new ArrayList<User>();
+    ArrayList<UserModel> list= new ArrayList<UserModel>();
     FirebaseAuth auth;
     FirebaseDatabase database;
     RecyclerView userRv;
@@ -63,9 +63,11 @@ public class UsersFragment extends Fragment {
                 list.clear();
                 for (DataSnapshot dataSnapshot: snapshot.getChildren())
                 {
-                    User user= dataSnapshot.getValue(User.class);
-                    user.setUserID(dataSnapshot.getKey());
-                    list.add(user);
+                    UserModel userModel = dataSnapshot.getValue(UserModel.class);
+                    userModel.setUserID(dataSnapshot.getKey());
+                    if(!dataSnapshot.getKey().equals(FirebaseAuth.getInstance().getUid())){
+                        list.add(userModel);
+                    }
                 }
                 adapter.notifyDataSetChanged();
             }
