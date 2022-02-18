@@ -1,20 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:diagonal="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.WellnessCenterFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Wellness Center!"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+                <com.github.florent37.diagonallayout.DiagonalLayout
+                    android:id="@+id/sleep_diagonal_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:elevation="30dp"
+                    diagonal:diagonal_angle="10"
+                    diagonal:diagonal_direction="left"
+                    diagonal:diagonal_position="bottom">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/sleep_drawer_option"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+
+                        <TextView
+                            android:id="@+id/sleep_article_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Sleep"
+                            android:fontFamily="serif"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_25hsdp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.601" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.github.florent37.diagonallayout.DiagonalLayout>
+
+            <com.github.florent37.diagonallayout.DiagonalLayout
+                android:id="@+id/mindfulness_diagonal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:elevation="30dp"
+                diagonal:diagonal_angle="10"
+                diagonal:diagonal_direction="right"
+                diagonal:diagonal_position="top">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/mindfulness_drawer_option"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <TextView
+                        android:id="@+id/minflness_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:text="Mindfulness"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_25hsdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.858" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.github.florent37.diagonallayout.DiagonalLayout>
+
+            <com.github.florent37.diagonallayout.DiagonalLayout
+                android:id="@+id/stress_diagonal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:elevation="30dp"
+                android:layout_marginTop="60dp"
+                diagonal:diagonal_angle="10"
+                diagonal:diagonal_direction="left"
+                diagonal:diagonal_position="bottom">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/stress_drawer_option"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+
+                    <TextView
+                        android:id="@+id/stress_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Stress"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_25hsdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.601" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.github.florent37.diagonallayout.DiagonalLayout>
+
+            <com.github.florent37.diagonallayout.DiagonalLayout
+                android:id="@+id/nutrition_diagonal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:elevation="30dp"
+                diagonal:diagonal_angle="10"
+                diagonal:diagonal_direction="right"
+                diagonal:diagonal_position="top">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/nutrition_drawer_option"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/nutrition_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Nutrition"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25hsdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.858" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.github.florent37.diagonallayout.DiagonalLayout>
+            </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

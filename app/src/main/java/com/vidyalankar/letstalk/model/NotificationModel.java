@@ -2,36 +2,67 @@ package com.vidyalankar.letstalk.model;
 
 public class NotificationModel {
 
-    int profile;
-    String notificationMessage, time;
+    private String notificationBy;
+    private Long notificationAt;
+    private String type;
+    private String postId;
+    private String notificationId;
+    private String postedBy;
+    private boolean checkOpen;
 
-    public NotificationModel(int profile, String notificationMessage, String time) {
-        this.profile = profile;
-        this.notificationMessage = notificationMessage;
-        this.time = time;
+    public String getNotificationBy() {
+        return notificationBy;
     }
 
-    public int getProfile() {
-        return profile;
+    public String getNotificationId() {
+        return notificationId;
     }
 
-    public void setProfile(int profile) {
-        this.profile = profile;
+    public void setNotificationId(String notificationId) {
+        this.notificationId = notificationId;
     }
 
-    public String getNotificationMessage() {
-        return notificationMessage;
+    public void setNotificationBy(String notificationBy) {
+        this.notificationBy = notificationBy;
     }
 
-    public void setNotificationMessage(String notificationMessage) {
-        this.notificationMessage = notificationMessage;
+    public Long getNotificationAt() {
+        return notificationAt;
     }
 
-    public String getTime() {
-        return time;
+    public void setNotificationAt(Long notificationAt) {
+        this.notificationAt = notificationAt;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getPostId() {
+        return postId;
+    }
+
+    public void setPostId(String postId) {
+        this.postId = postId;
+    }
+
+    public String getPostedBy() {
+        return postedBy;
+    }
+
+    public void setPostedBy(String postedBy) {
+        this.postedBy = postedBy;
+    }
+
+    public boolean isCheckOpen() {
+        return checkOpen;
+    }
+
+    public void setCheckOpen(boolean checkOpen) {
+        this.checkOpen = checkOpen;
     }
 }

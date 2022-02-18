@@ -3,22 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="176dp"
+    android:layout_height="@dimen/_170hsdp"
     android:gravity="bottom"
-    android:background="@color/blue_bg"
+    android:background="@drawable/wallpaper_header"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
-    android:layout_margin="8dp"
     android:padding="16dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/user_iv"
+        android:id="@+id/user_profile_dash_nav"
         android:layout_width="@dimen/_65hsdp"
         android:layout_height="@dimen/_65hsdp"
         app:civ_border_width="@dimen/_2font_ssp"
-        app:civ_border_color="@color/rose"
+        app:civ_border_color="@color/black"
         android:layout_marginLeft="4dp"
         android:src="@drawable/woman"
-        android:layout_below="@+id/user_iv" />
+        android:layout_below="@+id/user_profile_dash_nav" />
 
     <TextView
         android:layout_width="wrap_content"

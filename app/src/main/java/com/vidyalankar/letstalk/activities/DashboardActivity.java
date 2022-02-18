@@ -14,6 +14,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +28,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.fragments.AboutLetsTalkFragment;
 import com.vidyalankar.letstalk.fragments.AddPostFragment;
 import com.vidyalankar.letstalk.fragments.CalmMelodiesFragment;
@@ -39,7 +41,7 @@ import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.fragments.SettingFragment;
 import com.vidyalankar.letstalk.fragments.UsersFragment;
 import com.vidyalankar.letstalk.fragments.WellnessCenterFragment;
-import com.vidyalankar.letstalk.model.User;
+import com.vidyalankar.letstalk.model.UserModel;
 
 public class DashboardActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -81,14 +83,19 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         View hView= dashboardNavigation.getHeaderView(0);
         TextView userNameDashNav= (TextView) hView.findViewById(R.id.user_name_dash_nav);
         TextView userEmailDashNav= (TextView) hView.findViewById(R.id.user_mail_dash_nav);
+        ImageView userProfilePic= (ImageView) hView.findViewById(R.id.user_profile_dash_nav);
         reference.child(userID).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                User userProfile= snapshot.getValue(User.class);
-                if(userProfile!=null)
+                UserModel userModelProfile = snapshot.getValue(UserModel.class);
+                if(userModelProfile !=null)
                 {
-                    String userName= userProfile.username;
-                    String userEmail= userProfile.email;
+                    String userName= userModelProfile.username;
+                    String userEmail= userModelProfile.email;
+
+                    Picasso.get().load(userModelProfile.getProfilePic())
+                            .placeholder(R.drawable.user_profile_default)
+                            .into(userProfilePic);
 
                     userNameDashNav.setText(userName);
                     userEmailDashNav.setText(userEmail);
@@ -106,31 +113,26 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
         switch (item.getItemId())
         {
             case R.id.settingFragment:
-                getSupportFragmentManager().beginTransaction().
-                        replace(R.id.dashboard_fragment_container,new SettingFragment()).addToBackStack(null).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new SettingFragment()).addToBackStack(null).commit();
                 break;
             case R.id.wellnessCenterFragment:
-                getSupportFragmentManager().beginTransaction().
-                        replace(R.id.dashboard_fragment_container,new WellnessCenterFragment()).addToBackStack(null).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new WellnessCenterFragment()).addToBackStack(null).commit();
                 break;
             case R.id.calmMelodiesFragment:
-                getSupportFragmentManager().beginTransaction().
-                        replace(R.id.dashboard_fragment_container,new CalmMelodiesFragment()).addToBackStack(null).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new CalmMelodiesFragment()).addToBackStack(null).commit();
                 break;
             case R.id.helpMeCalmDownFragment:
-                getSupportFragmentManager().beginTransaction().
-                        replace(R.id.dashboard_fragment_container,new HelpMeCalmDownFragment()).addToBackStack(null).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new HelpMeCalmDownFragment()).addToBackStack(null).commit();
                 break;
             case R.id.INeedHelpFragment:
-                getSupportFragmentManager().beginTransaction().
-                        replace(R.id.dashboard_fragment_container,new INeedHelpFragment()).addToBackStack(null).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new INeedHelpFragment()).addToBackStack(null).commit();
                 break;
             case R.id.aboutLetsTalkFragment:
-                getSupportFragmentManager().beginTransaction().
-                        replace(R.id.dashboard_fragment_container,new AboutLetsTalkFragment()).addToBackStack(null).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new AboutLetsTalkFragment()).addToBackStack(null).commit();
                 break;
             case R.id.logout:
                 logoutUser();
@@ -157,13 +159,16 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         alert.show();
     }
 
+//INCOMPLETE!!!! --->>>
 
     @Override
     public void onBackPressed() {
+        android.app.Fragment test= getFragmentManager().findFragmentById(R.id.fragmentContainerView2);
         if(dashboard_drawer.isDrawerOpen(GravityCompat.START))
         {
             dashboard_drawer.closeDrawer(GravityCompat.START);
-        }else {
+        }
+        else {
             AlertDialog.Builder builder= new AlertDialog.Builder(DashboardActivity.this);
 
             builder.setTitle("Exit?").setMessage("Are you sure?")
@@ -177,6 +182,8 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
             alert.show();
         }
     }
+
+    //SOLVE THIS!!! <<<----
 
     private NavigationBarView.OnItemSelectedListener navListener= new NavigationBarView.OnItemSelectedListener() {
         @Override

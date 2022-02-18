@@ -4,17 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.CalmMelodiesFragment">
+    android:background="@drawable/calm_melodies_cover"
+    tools:context=".fragments.HelpMeCalmDownFragment">
+
+
+    <View
+        android:id="@+id/melodies"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120hsdp"
+        android:layout_marginStart="@dimen/_35hsdp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="@dimen/_35hsdp"
+        android:background="@color/greyTrans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Calm Melodies!"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif"
+        android:text="Brainwave Entrainment"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_30font_ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/melodies"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/melodies"
+        app:layout_constraintTop_toTopOf="@+id/melodies" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,7 +23,11 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
+<<<<<<< HEAD
                                       <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/add_a_photo/baseline_add_a_photo_24.xml" />
+=======
+                                      <entry key="url" value="file:/$PROJECT_DIR$/../AppData/Local/Android/Sdk/icons/material/materialicons/favorite/baseline_favorite_24.xml" />
+>>>>>>> 61abfcdc924f57b46d84c15030f17976cf1cfa13
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -33,8 +37,13 @@
                         </option>
                         <option name="values">
                           <map>
+<<<<<<< HEAD
                             <entry key="color" value="292a6e" />
                             <entry key="outputName" value="ic_baseline_add_a_photo_24" />
+=======
+                            <entry key="color" value="ff0000" />
+                            <entry key="outputName" value="liked_icon" />
+>>>>>>> 61abfcdc924f57b46d84c15030f17976cf1cfa13
                             <entry key="sourceFile" value="C:\Users\Admin\AndroidStudioProjects\LetsTalk" />
                           </map>
                         </option>

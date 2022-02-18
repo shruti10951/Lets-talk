@@ -3,7 +3,7 @@
     package="com.vidyalankar.letstalk">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -13,8 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LetsTalk">
         <activity
-            android:name=".SetProfile"
-            android:exported="true" />
+            android:name=".activities.CommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CommentActivity"
+            android:exported="false" />
         <activity
             android:name=".activities.ForgotPassword"
             android:exported="true" />

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/breathing_option_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.BreathingOptionFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/breathing_one_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120hsdp"
+                    android:layout_marginStart="@dimen/_35hsdp"
+                    android:layout_marginEnd="@dimen/_35hsdp"
+                    android:background="@color/greyTrans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/yoga_one_point_2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/yoga_one_point_2"
+                    android:layout_width="283dp"
+                    android:layout_height="82dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="serif"
+                    android:text="Alternate Nostril Breathing"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25font_ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/breathing_one_option" />
+
+                <View
+                    android:id="@+id/breathing_two_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120hsdp"
+                    android:background="@color/greyTrans"
+                    android:layout_marginStart="@dimen/_35hsdp"
+                    android:layout_marginEnd="@dimen/_35hsdp"
+                    android:layout_marginTop="?android:attr/actionBarSize"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/breathing_one_option" />
+
+                <TextView
+                    android:id="@+id/yoga_one_point_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="52dp"
+                    android:fontFamily="serif"
+                    android:text="Ujjayi breathing"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25font_ssp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="@+id/breathing_two_option"
+                    app:layout_constraintStart_toStartOf="@+id/breathing_two_option"
+                    app:layout_constraintTop_toTopOf="@+id/breathing_two_option" />
+
+                <View
+                    android:id="@+id/breathing_three_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120hsdp"
+                    android:background="@color/greyTrans"
+                    android:layout_marginStart="@dimen/_35hsdp"
+                    android:layout_marginEnd="@dimen/_35hsdp"
+                    android:layout_marginTop="?android:attr/actionBarSize"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/breathing_two_option" />
+
+                <TextView
+                    android:id="@+id/yoga_one_point_4"
+                    android:layout_width="258dp"
+                    android:layout_height="112dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="serif"
+                    android:text="Humming bee breath"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25font_ssp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/breathing_three_option"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="@+id/breathing_three_option"
+                    app:layout_constraintTop_toTopOf="@+id/breathing_three_option" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

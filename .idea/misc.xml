@@ -14,12 +14,14 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LetsTalk/app/src/main/res/layout/activity_registration.xml" value="0.264" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LetsTalk/app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/animation_colors.xml" value="0.183" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/calm_down.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/chat_icon.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/color1.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/color2.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/color3.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/color4.xml" value="0.2703125" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/done_post.xml" value="0.2245" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/email.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/home_icon.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/ic_baseline_alternate_email_24.xml" value="0.15989583333333332" />
@@ -30,15 +32,21 @@
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/ic_launcher_background.xml" value="0.15989583333333332" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/info.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/layout_border.xml" value="0.2105" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/like_icon.xml" value="0.1615" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/liked_icon.xml" value="0.1615" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/logout_icon.xml" value="0.2703125" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/message_bg_chat.xml" value="0.25" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/music.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/password_lock.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/profile.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/send_icon.xml" value="0.25" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/setting.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/toolbar.xml" value="0.2105" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/toolbar_bg.xml" value="0.2105" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/user_profile_default.xml" value="0.2285" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/wellness_center.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/drawable/widgets.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_comment.xml" value="0.264" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_dashboard.xml" value="0.264" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_forgot_password.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_login.xml" value="0.1" />
@@ -46,28 +54,48 @@
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_registration.xml" value="0.1" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_set_profile.xml" value="0.264" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_splash_screen.xml" value="0.176" />
-        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/dashboard_recycler_view.xml" value="0.30324074074074076" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/chat_users_recycler_view.xml" value="0.264" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/comment_recycler_view.xml" value="0.4" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/dashboard_recycler_view.xml" value="0.176" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_about_lets_talk.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_add_post.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_all_notification.xml" value="0.196875" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_breathing_four.xml" value="0.11041666666666666" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_breathing_one.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_breathing_option.xml" value="0.25" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_calm_melodies.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_change_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_chat.xml" value="0.1828125" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_chat_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_detailed_chat.xml" value="0.176" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_edit_profile.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_friends.xml" value="0.4" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_help_me_calm.xml" value="0.23385416666666667" />
-        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_help_me_calm_down.xml" value="0.23385416666666667" />
-        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_help_me_calm_down.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_i_need_help.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_mindfulness_wellness_center.xml" value="0.25" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_notification.xml" value="0.2" />
-        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_profile.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_nutrition_wellness_center.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_post_successful.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_setting.xml" value="0.23385416666666667" />
-        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_users.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_sleep_wellness_center.xml" value="0.264" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_stress_wellness_center.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_users.xml" value="0.1" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_wellness_center.xml" value="0.23385416666666667" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_yoga_four.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_yoga_one.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_yoga_option.xml" value="0.234375" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_yoga_three.xml" value="0.18177083333333333" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_yoga_two.xml" value="0.16875" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/friends_recycler_view.xml" value="0.264" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/layout_border.xml" value="0.23641304347826086" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/nav_header.xml" value="0.4" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/notification_recycler_view.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/shimmer_layout.xml" value="0.16927083333333334" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/toolbar.xml" value="0.1381340579710145" />
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/users_recycler_view.xml" value="0.25" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/menu/dashboard_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/menu/nav_menu.xml" value="0.6" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/drawable/profile_icon.xml" value="0.26614583333333336" />
@@ -76,8 +104,12 @@
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/activity_main.xml" value="0.23822463768115942" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/activity_registration.xml" value="0.1" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/dashboard_recycler_view.xml" value="0.25" />
+        <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_binaural_calm_melodies.xml" value="0.25" />
+        <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_brainwave_calm_melodies.xml" value="0.13677536231884058" />
+        <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_calm_melodies.xml" value="0.1" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_edit_profile.xml" value="0.128125" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_home.xml" value="0.176" />
+        <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_isochronic_calm_melodies.xml" value="0.25" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/friend_rv_sample.xml" value="0.23007246376811594" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/notification_recycler_view.xml" value="0.23822463768115942" />
