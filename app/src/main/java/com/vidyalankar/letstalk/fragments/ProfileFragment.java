@@ -35,13 +35,13 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
-import com.vidyalankar.letstalk.model.User;
+import com.vidyalankar.letstalk.model.UserModel;
 
 
 public class ProfileFragment extends Fragment {
 
     ImageView profilePic;
-    TextView userNameTextView, userEmailTextView, friendsTextView;
+    TextView userNameTextView, userEmailTextView, friendsTextView, followerCount;
     ImageView editProfile;
     ProgressBar progressBar;
 
@@ -67,6 +67,7 @@ public class ProfileFragment extends Fragment {
         userEmailTextView= (TextView) view.findViewById(R.id.profile_email);
         friendsTextView= (TextView) view.findViewById(R.id.friends_profile);
         editProfile= (ImageView) view.findViewById(R.id.changeProfile);
+        followerCount= (TextView) view.findViewById(R.id.follower_count);
         progressBar= (ProgressBar) view.findViewById(R.id.profileProgressBar);
 
         user= FirebaseAuth.getInstance().getCurrentUser();
@@ -80,16 +81,19 @@ public class ProfileFragment extends Fragment {
         reference.child(userID).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                User userProfile= snapshot.getValue(User.class);
-                if(userProfile!=null)
+                UserModel userModelProfile = snapshot.getValue(UserModel.class);
+                if(userModelProfile !=null)
                 {
-                    String userName= userProfile.username;
-                    String userEmail= userProfile.email;
+                    String userName= userModelProfile.username;
+                    String userEmail= userModelProfile.email;
                     String uri= snapshot.child("profilePic").getValue(String.class);
+                    int follower_count= userModelProfile.getFollowerCount();
 
                     userNameTextView.setText(userName);
                     userEmailTextView.setText(userEmail);
-                    Picasso.get().load(uri).into(profilePic);
+                    Picasso.get().load(uri).placeholder(R.drawable.user_profile_default)
+                            .into(profilePic);
+                    followerCount.setText(follower_count+"");
                 }
             }
 

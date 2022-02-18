@@ -2,14 +2,14 @@ package com.vidyalankar.letstalk.model;
 
 import android.net.Uri;
 
-public class User {
+public class UserModel {
 
     public String username, email, userID, profilePic;
     int followerCount;
 
-    public User() {
+    public UserModel() {
     }
-    public User(String username, String email)
+    public UserModel(String username, String email)
     {
         this.username= username;
         this.email= email;
@@ -39,7 +39,7 @@ public class User {
         this.profilePic = profilePic;
     }
 
-    public User(String email)
+    public UserModel(String email)
     {
         this.email= email;
     }

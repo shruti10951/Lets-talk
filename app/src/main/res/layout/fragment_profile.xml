@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="serif"
-        android:text="user@gmail.com"
+        android:text="userModel@gmail.com"
         android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -141,7 +141,7 @@
                 app:layout_constraintTop_toTopOf="@+id/view4" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/follower_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="9"

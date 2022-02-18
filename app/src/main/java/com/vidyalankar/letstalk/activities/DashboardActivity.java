@@ -41,7 +41,7 @@ import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.fragments.SettingFragment;
 import com.vidyalankar.letstalk.fragments.UsersFragment;
 import com.vidyalankar.letstalk.fragments.WellnessCenterFragment;
-import com.vidyalankar.letstalk.model.User;
+import com.vidyalankar.letstalk.model.UserModel;
 
 public class DashboardActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -87,13 +87,13 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         reference.child(userID).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                User userProfile= snapshot.getValue(User.class);
-                if(userProfile!=null)
+                UserModel userModelProfile = snapshot.getValue(UserModel.class);
+                if(userModelProfile !=null)
                 {
-                    String userName= userProfile.username;
-                    String userEmail= userProfile.email;
+                    String userName= userModelProfile.username;
+                    String userEmail= userModelProfile.email;
 
-                    Picasso.get().load(userProfile.getProfilePic())
+                    Picasso.get().load(userModelProfile.getProfilePic())
                             .placeholder(R.drawable.user_profile_default)
                             .into(userProfilePic);
 

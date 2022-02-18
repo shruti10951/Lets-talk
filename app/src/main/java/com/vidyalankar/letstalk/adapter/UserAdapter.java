@@ -10,15 +10,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.model.FriendsModel;
-import com.vidyalankar.letstalk.model.User;
+import com.vidyalankar.letstalk.model.NotificationModel;
+import com.vidyalankar.letstalk.model.UserModel;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -26,9 +31,9 @@ import java.util.Date;
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
 
     Context context;
-    ArrayList<User> list;
+    ArrayList<UserModel> list;
 
-    public UserAdapter(Context context, ArrayList<User> list) {
+    public UserAdapter(Context context, ArrayList<UserModel> list) {
         this.context = context;
         this.list = list;
     }
@@ -43,43 +48,81 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
 
-        User user= list.get(position);
+        UserModel userModel = list.get(position);
         Picasso.get()
-                .load(user.getProfilePic())
+                .load(userModel.getProfilePic())
                 .placeholder(R.drawable.user_profile_default)
                 .into(holder.profile_image);
-        holder.username.setText(user.getUsername());
+        holder.username.setText(userModel.getUsername());
 
-        holder.follow_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FriendsModel friendsModel = new FriendsModel();
-                friendsModel.setFollowedBy(FirebaseAuth.getInstance().getUid());
-                friendsModel.setFollowedAt(new Date().getTime());
-
-                FirebaseDatabase.getInstance().getReference()
-                        .child("Users")
-                        .child(user.getUserID())
-                        .child("followers")
-                        .child(FirebaseAuth.getInstance().getUid())
-                        .setValue(friendsModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+        FirebaseDatabase.getInstance().getReference()
+                .child("Users")
+                .child(userModel.getUserID())
+                .child("followers")
+                .child(FirebaseAuth.getInstance().getUid())
+                .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
-                    public void onSuccess(Void unused) {
-                        FirebaseDatabase.getInstance().getReference()
-                                .child("Users")
-                                .child(user.getUserID())
-                                .child("followerCount")
-                                .setValue(user.getFollowerCount()+1)
-                                .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                    @Override
-                                    public void onSuccess(Void unused) {
-                                        Toast.makeText(context, "You followed "+ user.getUsername() + list.size() , Toast.LENGTH_SHORT).show();
-                                    }
-                                });
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if(snapshot.exists()){
+                            holder.follow_btn.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.layout_border));
+                            holder.follow_btn.setText("Following");
+                            holder.follow_btn.setTextColor(context.getResources().getColor(R.color.black));
+                            holder.follow_btn.setEnabled(false);
+                        }else {
+                            holder.follow_btn.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    FriendsModel friendsModel = new FriendsModel();
+                                    friendsModel.setFollowedBy(FirebaseAuth.getInstance().getUid());
+                                    friendsModel.setFollowedAt(new Date().getTime());
+
+                                    FirebaseDatabase.getInstance().getReference()
+                                            .child("Users")
+                                            .child(userModel.getUserID())
+                                            .child("followers")
+                                            .child(FirebaseAuth.getInstance().getUid())
+                                            .setValue(friendsModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        @Override
+                                        public void onSuccess(Void unused) {
+                                            FirebaseDatabase.getInstance().getReference()
+                                                    .child("Users")
+                                                    .child(userModel.getUserID())
+                                                    .child("followerCount")
+                                                    .setValue(userModel.getFollowerCount()+1)
+                                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                        @Override
+                                                        public void onSuccess(Void unused) {
+                                                            holder.follow_btn.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.layout_border));
+                                                            holder.follow_btn.setText("Following");
+                                                            holder.follow_btn.setTextColor(context.getResources().getColor(R.color.black));
+                                                            holder.follow_btn.setEnabled(false);
+                                                            Toast.makeText(context, "You followed "+ userModel.getUsername() + list.size() , Toast.LENGTH_SHORT).show();
+
+                                                            NotificationModel notificationModel= new NotificationModel();
+                                                            notificationModel.setNotificationBy(FirebaseAuth.getInstance().getUid());
+                                                            notificationModel.setNotificationAt(new Date().getTime());
+                                                            notificationModel.setType("follow");
+
+                                                            FirebaseDatabase.getInstance().getReference()
+                                                                    .child("Notification")
+                                                                    .child(userModel.getUserID())
+                                                                    .push()
+                                                                    .setValue(notificationModel);
+                                                        }
+                                                    });
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
                     }
                 });
-            }
-        });
+
     }
 
     @Override

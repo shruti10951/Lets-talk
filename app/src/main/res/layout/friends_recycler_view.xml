@@ -26,6 +26,7 @@
         android:layout_marginStart="8dp"
         android:textColor="@color/black"
         android:textSize="17sp"
+        android:text="Username"
         android:textStyle="bold"
         android:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="@+id/friends_rv_profile"

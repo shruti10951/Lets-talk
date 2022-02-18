@@ -10,9 +10,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.model.FriendsModel;
+import com.vidyalankar.letstalk.model.UserModel;
 
 import java.util.ArrayList;
 
@@ -37,11 +42,24 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.viewHold
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
 
         FriendsModel friendsModel = list.get(position);
-//        Picasso.get()
-//                .load(friendsModel.getProfilepic())
-//                .placeholder(R.drawable.profile_icon)
-//                .into(holder.profile_image);
-//        holder.username.setText(friendsModel.getUsername());
+        FirebaseDatabase.getInstance().getReference()
+                .child("Users")
+                .child(friendsModel.getFollowedBy())
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        UserModel userModel = snapshot.getValue(UserModel.class);
+                        Picasso.get().load(userModel.getProfilePic())
+                                .placeholder(R.drawable.user_profile_default)
+                                .into(holder.profile_image);
+                        holder.username.setText(userModel.getUsername());
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
 
     }
 

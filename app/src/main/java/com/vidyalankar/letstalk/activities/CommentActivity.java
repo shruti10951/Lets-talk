@@ -23,8 +23,9 @@ import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.adapter.CommentAdapter;
 import com.vidyalankar.letstalk.model.CommentModel;
+import com.vidyalankar.letstalk.model.NotificationModel;
 import com.vidyalankar.letstalk.model.PostModel;
-import com.vidyalankar.letstalk.model.User;
+import com.vidyalankar.letstalk.model.UserModel;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -89,11 +90,11 @@ public class CommentActivity extends AppCompatActivity {
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        User user= snapshot.getValue(User.class);
-                        Picasso.get().load(user.getProfilePic())
+                        UserModel userModel = snapshot.getValue(UserModel.class);
+                        Picasso.get().load(userModel.getProfilePic())
                                 .placeholder(R.drawable.user_profile_default)
                                 .into(userProfile);
-                        username.setText(user.getUsername());
+                        username.setText(userModel.getUsername());
                     }
 
                     @Override
@@ -137,6 +138,19 @@ public class CommentActivity extends AppCompatActivity {
                                             public void onSuccess(Void unused) {
                                                 comment.setText("");
                                                 Toast.makeText(CommentActivity.this, "Commented!", Toast.LENGTH_SHORT).show();
+
+                                                NotificationModel notificationModel= new NotificationModel();
+                                                notificationModel.setNotificationBy(FirebaseAuth.getInstance().getUid());
+                                                notificationModel.setNotificationAt(new Date().getTime());
+                                                notificationModel.setPostId(postId);
+                                                notificationModel.setPostedBy(postedBy);
+                                                notificationModel.setType("comment");
+
+                                                FirebaseDatabase.getInstance().getReference()
+                                                        .child("Notification")
+                                                        .child(postedBy)
+                                                        .push()
+                                                        .setValue(notificationModel);
                                             }
                                         });
                                     }

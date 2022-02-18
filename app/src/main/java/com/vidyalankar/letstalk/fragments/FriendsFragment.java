@@ -84,10 +84,11 @@ public class FriendsFragment extends Fragment {
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        list.clear();
                         for(DataSnapshot dataSnapshot: snapshot.getChildren())
                         {
-                            FriendsModel friendsModel= dataSnapshot.getValue(FriendsModel.class);
-                            list.add(friendsModel);
+                            FriendsModel user= dataSnapshot.getValue(FriendsModel.class);
+                            list.add(user);
                         }
                         adapter.notifyDataSetChanged();
                     }
