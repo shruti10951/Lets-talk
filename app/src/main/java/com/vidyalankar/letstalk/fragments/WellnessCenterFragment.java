@@ -39,25 +39,25 @@ public class WellnessCenterFragment extends Fragment {
         sleep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new SleepWellnessCenterFragment()).addToBackStack(null).commit();
+                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new SleepOptionsFragment()).addToBackStack(null).commit();
             }
         });
         stress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new StressWellnessCenterFragment()).addToBackStack(null).commit();
+                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new StressOptionsFragment()).addToBackStack(null).commit();
             }
         });
         mindfulness.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new MindfulnessWellnessCenterFragment()).addToBackStack(null).commit();
+                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new MindfulnessOptionsFragment()).addToBackStack(null).commit();
             }
         });
         nutrition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new NutritionWellnessCenterFragment()).addToBackStack(null).commit();
+                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new NutritionOptionsFragment()).addToBackStack(null).commit();
             }
         });
 

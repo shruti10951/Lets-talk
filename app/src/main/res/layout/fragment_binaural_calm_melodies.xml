@@ -10,15 +10,40 @@
 
     <View
         android:id="@+id/binaural_option_one"
-        android:layout_width="358dp"
-        android:layout_height="163dp"
+        android:layout_width="327dp"
+        android:layout_height="92dp"
         android:layout_marginStart="@dimen/_35hsdp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="300dp"
         android:layout_marginEnd="@dimen/_35hsdp"
         android:background="@color/greyTrans"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="52dp"
+        android:layout_height="49dp"
+        android:onClick="play_song"
+        android:src="@drawable/play"
+        app:layout_constraintBottom_toBottomOf="@+id/binaural_option_one"
+        app:layout_constraintEnd_toEndOf="@+id/binaural_option_one"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="@+id/binaural_option_one"
+        app:layout_constraintTop_toTopOf="@+id/binaural_option_one" />
+
+        <TextView
+        android:id="@+id/playnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Now"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15font_ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/binaural_option_one"
+        app:layout_constraintEnd_toEndOf="@+id/binaural_option_one"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="@+id/binaural_option_one"
+        app:layout_constraintTop_toTopOf="@+id/binaural_option_one" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
