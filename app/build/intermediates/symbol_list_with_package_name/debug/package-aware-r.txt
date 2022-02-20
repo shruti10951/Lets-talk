@@ -2795,6 +2795,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -3488,6 +3489,7 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id FirstFragment
 id INeedHelpFragment
 id META
 id NO_DEBUG
@@ -3496,6 +3498,7 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id SecondFragment
 id TOP_END
 id TOP_START
 id aboutLetsTalkFragment
@@ -3537,6 +3540,8 @@ id action0
 id actionDown
 id actionDownUp
 id actionUp
+id action_FirstFragment_to_SecondFragment
+id action_SecondFragment_to_FirstFragment
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -3601,6 +3606,8 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonPanel
+id button_first
+id button_second
 id cache_measures
 id callMeasure
 id calmMelodiesFragment
@@ -3877,6 +3884,7 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
+id nav_graph
 id nav_host_fragment_container
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -3935,6 +3943,7 @@ id peekHeight
 id percent
 id pin
 id play
+id play_now
 id playnow
 id position
 id postLayout
@@ -4120,6 +4129,8 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id textview_first
+id textview_second
 id three_dots_comment
 id time
 id title
@@ -4290,6 +4301,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_binaural1
 layout activity_comment
 layout activity_dashboard
 layout activity_forgot_password
@@ -4332,6 +4344,7 @@ layout fragment_chat
 layout fragment_counselling_help
 layout fragment_detailed_chat
 layout fragment_emergency_help
+layout fragment_first
 layout fragment_friends
 layout fragment_help_me_calm_down
 layout fragment_home
@@ -4344,6 +4357,7 @@ layout fragment_nutrition_options
 layout fragment_nutrition_wellness_center
 layout fragment_post_successful
 layout fragment_profile
+layout fragment_second
 layout fragment_setting
 layout fragment_sleep_options
 layout fragment_sleep_wellness_center
@@ -4450,6 +4464,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation dashboard_menu
 navigation drawer_navigation
+navigation nav_graph
 plurals mtrl_badge_content_description
 string _6
 string _9
@@ -4517,6 +4532,7 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string firebase_database_url
+string first_fragment_label
 string friends
 string gcm_defaultSenderId
 string google_api_key
@@ -4524,6 +4540,8 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_blank_fragment
+string hello_first_fragment
+string hello_second_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -4620,6 +4638,7 @@ string mtrl_timepicker_confirm
 string my_friends
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string next
 string open
 string password_toggle_content_description
 string path_password_eye
@@ -4627,9 +4646,12 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string photos
+string previous
 string project_id
 string search_menu_title
+string second_fragment_label
 string status_bar_notification_info_overflow
+string title_activity_binaural1
 string user_gmail_com
 string username
 style AlertDialog_AppCompat
@@ -5138,6 +5160,9 @@ style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
 style Theme_LetsTalk
+style Theme_LetsTalk_AppBarOverlay
+style Theme_LetsTalk_NoActionBar
+style Theme_LetsTalk_PopupOverlay
 style Theme_Material3_Dark
 style Theme_Material3_Dark_BottomSheetDialog
 style Theme_Material3_Dark_Dialog

@@ -8,5 +8,10 @@
     "name": "drawer_navigation",
     "navigationXmlIds": [],
     "deepLinks": []
+  },
+  {
+    "name": "nav_graph",
+    "navigationXmlIds": [],
+    "deepLinks": []
   }
 ]

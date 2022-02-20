@@ -13,6 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LetsTalk">
         <activity
+            android:name=".activities.Binaural1Activity"
+            android:exported="false"
+            android:label="@string/title_activity_binaural1"
+            android:theme="@style/Theme.LetsTalk.NoActionBar" />
+        <activity
             android:name=".activities.CommentActivity"
             android:exported="false" />
         <activity
