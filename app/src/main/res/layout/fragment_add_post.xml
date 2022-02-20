@@ -4,31 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/create_post_background"
+    android:background="@drawable/dark_nature_bg"
     tools:context=".fragments.AddPostFragment">
+
+    <Toolbar
+        android:id="@+id/add_post_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:titleTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view3"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginTop="?attr/actionBarSize"
-        android:background="@color/greyTrans"
+        android:background="@color/white"
         android:paddingTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--    <EditText-->
-<!--        android:id="@+id/user_text_post"-->
-<!--        android:layout_width="374dp"-->
-<!--        android:layout_height="204dp"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:layout_marginEnd="16dp"-->
-<!--        android:background="@android:color/transparent"-->
-<!--        android:ems="10"-->
-<!--        android:foregroundGravity="center_vertical" />-->
 
     <EditText
         android:id="@+id/user_text_post"
@@ -42,7 +42,8 @@
         android:gravity="start|top"
         android:hint="What's on your mind?"
         android:inputType="textMultiLine"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
@@ -79,7 +80,7 @@
         android:layout_marginEnd="8dp"
         android:fontFamily="serif"
         android:text="You are not alone. We are here for you!"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,7 +93,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="serif"
         android:text="Feel free to talk about anything!"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,9 +106,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

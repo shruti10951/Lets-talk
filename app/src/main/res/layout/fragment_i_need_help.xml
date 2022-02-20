@@ -10,11 +10,102 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="I need help!!"
-        android:textSize="30sp"
+        android:text="ARE YOU IN A CRISIS?"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <TextView
+        android:layout_width="391dp"
+        android:layout_height="37dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="If you or someone close to you is in need of help,it is cruicial to take action right now!"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <View
+        android:id="@+id/help1"
+        android:layout_width="353dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="@dimen/_35hsdp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="@dimen/_35hsdp"
+        android:background="@color/pink_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="serif"
+        android:text="Emergency No."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20font_ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/help1"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="@+id/help1"
+        app:layout_constraintTop_toTopOf="@+id/help1" />
+
+    <View
+        android:id="@+id/help2"
+        android:layout_width="357dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="@dimen/_35hsdp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="@dimen/_35hsdp"
+        android:background="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/help1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="serif"
+        android:text="Free Counselling"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20font_ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/help2"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/help2"
+        app:layout_constraintTop_toTopOf="@+id/help2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:fontFamily="serif"
+        android:text="INDIA"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10font_ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

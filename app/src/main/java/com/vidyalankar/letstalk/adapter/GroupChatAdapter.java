@@ -10,22 +10,24 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.model.ChatModel;
 import com.vidyalankar.letstalk.model.UserModel;
 
 import java.util.ArrayList;
 
-public class ChatAdapter extends RecyclerView.Adapter{
-
+public class GroupChatAdapter extends RecyclerView.Adapter {
     ArrayList<ChatModel> list;
     Context context;
 
     int SENDER_VIEW_TYPE=1;
     int RECEIVER_VIEW_TYPE=2;
 
-    public ChatAdapter(ArrayList<ChatModel> list, Context context) {
+    public GroupChatAdapter(ArrayList<ChatModel> list, Context context) {
         this.list = list;
         this.context = context;
     }
@@ -36,11 +38,11 @@ public class ChatAdapter extends RecyclerView.Adapter{
 
         if(viewType== SENDER_VIEW_TYPE){
             View view= LayoutInflater.from(context).inflate(R.layout.sender_recycler_view, parent, false);
-            return new SenderViewHolder(view);
+            return new GroupChatAdapter.SenderViewHolder(view);
         }
         else{
-            View view= LayoutInflater.from(context).inflate(R.layout.receiver_recycler_view, parent, false);
-            return new ReceiverViewHolder(view);
+            View view= LayoutInflater.from(context).inflate(R.layout.grp_receiver_recycler_view, parent, false);
+            return new GroupChatAdapter.ReceiverViewHolder(view);
         }
     }
 
@@ -58,13 +60,25 @@ public class ChatAdapter extends RecyclerView.Adapter{
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
         ChatModel chatModel= list.get(position);
-        if(holder.getClass()== SenderViewHolder.class){
-            ((SenderViewHolder)holder).senderMsg.setText(chatModel.getMessage());
+        if(holder.getClass()== GroupChatAdapter.SenderViewHolder.class){
+            ((GroupChatAdapter.SenderViewHolder)holder).senderMsg.setText(chatModel.getMessage());
         }else{
-//            UserModel userModel= new UserModel();
-//            userModel.getUsername();
-            ((ReceiverViewHolder)holder).receiverMsg.setText(chatModel.getMessage());
-            ((ReceiverViewHolder)holder).receiverName.setText(chatModel.getUserId());
+            FirebaseDatabase.getInstance().getReference()
+                    .child("Users")
+                    .child(chatModel.getUserId())
+                    .addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            UserModel userModel= snapshot.getValue(UserModel.class);
+                            ((GroupChatAdapter.ReceiverViewHolder)holder).receiverName.setText(userModel.getUsername());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+            ((GroupChatAdapter.ReceiverViewHolder)holder).receiverMsg.setText(chatModel.getMessage());
         }
 
     }
@@ -80,8 +94,8 @@ public class ChatAdapter extends RecyclerView.Adapter{
 
         public ReceiverViewHolder(@NonNull View itemView) {
             super(itemView);
-            receiverMsg= itemView.findViewById(R.id.receiver_text);
-            receiverTime= itemView.findViewById(R.id.receiver_time);
+            receiverMsg= itemView.findViewById(R.id.receiver_text_grp);
+            receiverTime= itemView.findViewById(R.id.receiver_time_grp);
             receiverName= itemView.findViewById(R.id.username_grp);
         }
     }
@@ -96,5 +110,4 @@ public class ChatAdapter extends RecyclerView.Adapter{
             senderTime= itemView.findViewById(R.id.sender_time);
         }
     }
-
 }
