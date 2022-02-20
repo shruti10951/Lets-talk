@@ -15,6 +15,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -106,6 +107,12 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     context.startActivity(intent);
                 }else{
+                    FirebaseDatabase.getInstance().getReference()
+                            .child("Notification")
+                            .child(FirebaseAuth.getInstance().getUid())
+                            .child(notificationModel.getNotificationId())
+                            .child("checkOpen")
+                            .setValue(true);
                     holder.notificationOpen.setBackgroundDrawable(ContextCompat.getDrawable(context, R.color.white));
                 }
             }
@@ -115,7 +122,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         if(checkOpen== true)
         {
             holder.notificationOpen.setBackgroundDrawable(ContextCompat.getDrawable(context, R.color.white));
-        }else {}
+        }
 
     }
 

@@ -4,21 +4,25 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.model.ChatModel;
 
 import java.util.ArrayList;
 
-public class ChatAdapter extends  RecyclerView.Adapter<ChatAdapter.viewHolder> {
+public class ChatAdapter extends RecyclerView.Adapter{
 
     ArrayList<ChatModel> list;
     Context context;
+
+    int SENDER_VIEW_TYPE=1;
+    int RECEIVER_VIEW_TYPE=2;
 
     public ChatAdapter(ArrayList<ChatModel> list, Context context) {
         this.list = list;
@@ -27,19 +31,37 @@ public class ChatAdapter extends  RecyclerView.Adapter<ChatAdapter.viewHolder> {
 
     @NonNull
     @Override
-    public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(context).inflate(R.layout.chat_users_recycler_view, parent, false);
-        return new viewHolder(view);
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
+        if(viewType== SENDER_VIEW_TYPE){
+            View view= LayoutInflater.from(context).inflate(R.layout.sender_recycler_view, parent, false);
+            return new SenderViewHolder(view);
+        }
+        else{
+            View view= LayoutInflater.from(context).inflate(R.layout.receiver_recycler_view, parent, false);
+            return new ReceiverViewHolder(view);
+        }
     }
 
     @Override
-    public void onBindViewHolder(@NonNull viewHolder holder, int position) {
+    public int getItemViewType(int position) {
+
+        if(list.get(position).getUserId().equals(FirebaseAuth.getInstance().getUid())){
+            return SENDER_VIEW_TYPE;
+        }else {
+            return RECEIVER_VIEW_TYPE;
+        }
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
         ChatModel chatModel= list.get(position);
-        holder.profile_image.setImageResource(chatModel.getProfilePic());
-        holder.username.setText(chatModel.getUserName());
-        holder.last_message.setText(chatModel.getLastMessage());
-        holder.time.setText(chatModel.getTime());
+        if(holder.getClass()== SenderViewHolder.class){
+            ((SenderViewHolder)holder).senderMsg.setText(chatModel.getMessage());
+        }else{
+            ((ReceiverViewHolder)holder).receiverMsg.setText(chatModel.getMessage());
+        }
 
     }
 
@@ -48,18 +70,25 @@ public class ChatAdapter extends  RecyclerView.Adapter<ChatAdapter.viewHolder> {
         return list.size();
     }
 
-    public class viewHolder extends RecyclerView.ViewHolder{
+    public class ReceiverViewHolder extends RecyclerView.ViewHolder{
 
-        ImageView profile_image;
-        TextView username, last_message, time;
+        TextView receiverMsg, receiverTime;
 
-        public viewHolder(@NonNull View itemView) {
+        public ReceiverViewHolder(@NonNull View itemView) {
             super(itemView);
+            receiverMsg= itemView.findViewById(R.id.receiver_text);
+            receiverTime= itemView.findViewById(R.id.receiver_time);
+        }
+    }
 
-            profile_image= itemView.findViewById(R.id.chat_user_rv_profile);
-            username= itemView.findViewById(R.id.chat_user_rv_name);
-            last_message= itemView.findViewById(R.id.chat_user_rv_last_msg);
-            time= itemView.findViewById(R.id.chat_user_rv_time);
+    public class SenderViewHolder extends RecyclerView.ViewHolder{
+
+        TextView senderMsg, senderTime;
+
+        public SenderViewHolder(@NonNull View itemView) {
+            super(itemView);
+            senderMsg= itemView.findViewById(R.id.sender_text);
+            senderTime= itemView.findViewById(R.id.sender_time);
         }
     }
 
