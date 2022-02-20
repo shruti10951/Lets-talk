@@ -24,6 +24,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -116,12 +117,17 @@ public class ChatActivity extends AppCompatActivity {
                     }
                 });
 
+        SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+        Date date= new Date();
+
+
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String msg= message.getText().toString();
                 ChatModel chatModel= new ChatModel(senderID, msg);
-                chatModel.setTime(new Date().getTime());
+                chatModel.setTime(formatter.format(date));
+                //chatModel.setTime(new Date().getTime());
                 message.setText("");
 
                 FirebaseDatabase.getInstance().getReference()

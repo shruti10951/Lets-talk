@@ -4,10 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     android:background="@drawable/calm_melodies_cover"
-=======
->>>>>>> fca3ef4d7fd6cd5ea86fdd30d99fd37873736910
     tools:context=".fragments.HelpMeCalmDownFragment">
 
 
@@ -39,8 +36,4 @@
         app:layout_constraintTop_toTopOf="@+id/melodies" />
 
 
-<<<<<<< HEAD
 </androidx.constraintlayout.widget.ConstraintLayout>
-=======
-</androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> fca3ef4d7fd6cd5ea86fdd30d99fd37873736910

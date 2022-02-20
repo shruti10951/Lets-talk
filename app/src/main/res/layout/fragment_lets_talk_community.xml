@@ -4,12 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-    tools:context=".fragments.LetsTalkCommunityFragment">
-
-
-
-=======
     android:background="@drawable/dark_bg_talk_community"
     tools:context=".fragments.LetsTalkCommunityFragment">
 
@@ -46,5 +40,4 @@
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
->>>>>>> fca3ef4d7fd6cd5ea86fdd30d99fd37873736910
 </androidx.constraintlayout.widget.ConstraintLayout>

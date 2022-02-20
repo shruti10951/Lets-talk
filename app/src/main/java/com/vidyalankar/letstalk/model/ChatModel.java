@@ -3,7 +3,7 @@ package com.vidyalankar.letstalk.model;
 public class ChatModel {
 
     String userId, message;
-    Long time;
+    String time;
 
     public ChatModel() {
     }
@@ -13,7 +13,7 @@ public class ChatModel {
         this.message = message;
     }
 
-    public ChatModel(String userId, String message, Long time) {
+    public ChatModel(String userId, String message, String time) {
         this.userId = userId;
         this.message = message;
         this.time = time;
@@ -35,11 +35,11 @@ public class ChatModel {
         this.message = message;
     }
 
-    public Long getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Long time) {
+    public void setTime(String time) {
         this.time = time;
     }
 }

@@ -61,14 +61,9 @@ public class ChatAdapter extends RecyclerView.Adapter{
         if(holder.getClass()== SenderViewHolder.class){
             ((SenderViewHolder)holder).senderMsg.setText(chatModel.getMessage());
         }else{
-<<<<<<< HEAD
             ((ReceiverViewHolder)holder).receiverMsg.setText(chatModel.getMessage());
-=======
-//            UserModel userModel= new UserModel();
-//            userModel.getUsername();
             ((ReceiverViewHolder)holder).receiverMsg.setText(chatModel.getMessage());
-            ((ReceiverViewHolder)holder).receiverName.setText(chatModel.getUserId());
->>>>>>> fca3ef4d7fd6cd5ea86fdd30d99fd37873736910
+            ((ReceiverViewHolder)holder).receiverTime.setText(chatModel.getTime().toString());
         }
 
     }
@@ -80,20 +75,11 @@ public class ChatAdapter extends RecyclerView.Adapter{
 
     public class ReceiverViewHolder extends RecyclerView.ViewHolder{
 
-<<<<<<< HEAD
         TextView receiverMsg, receiverTime;
-=======
-        TextView receiverMsg, receiverTime, receiverName;
->>>>>>> fca3ef4d7fd6cd5ea86fdd30d99fd37873736910
-
         public ReceiverViewHolder(@NonNull View itemView) {
             super(itemView);
             receiverMsg= itemView.findViewById(R.id.receiver_text);
             receiverTime= itemView.findViewById(R.id.receiver_time);
-<<<<<<< HEAD
-=======
-            receiverName= itemView.findViewById(R.id.username_grp);
->>>>>>> fca3ef4d7fd6cd5ea86fdd30d99fd37873736910
         }
     }
 

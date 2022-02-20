@@ -3327,7 +3327,6 @@ drawable background_profile
 drawable bookmark
 drawable bookmark_saved
 drawable breathing_option_background
-drawable breathing_option_header
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3338,6 +3337,8 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable calm_down_icon
 drawable calm_melodies_cover
+drawable chat_background
+drawable chat_bg
 drawable chat_icon
 drawable color1
 drawable color2
@@ -3366,6 +3367,8 @@ drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable counseling_cover
 drawable create_post_background
+drawable dark_bg_talk_community
+drawable dark_nature_bg
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3394,6 +3397,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable info_icon
 drawable layout_border
+drawable lets_talk_community_icon
 drawable lets_talk_logo
 drawable lets_talk_logo_dark
 drawable like_icon
@@ -3458,8 +3462,10 @@ drawable play
 drawable post_successful_background
 drawable post_wallpaper
 drawable profile_icon
+drawable receiver_bg
 drawable search_icon
 drawable send_icon
+drawable sender_bg
 drawable setting_icon
 drawable sleep1
 drawable sleep2
@@ -3563,6 +3569,7 @@ id actions
 id activity_chooser_view_content
 id add
 id addPostFragment
+id add_post_toolbar
 id adjust_height
 id adjust_width
 id alertTitle
@@ -3583,6 +3590,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id back_btn_chat_detailed
+id back_btn_grp_chat
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3622,12 +3630,11 @@ id chain
 id chain2
 id chains
 id changeProfile
-id chat_detailed_rv
+id chat_activity_rv
+id chat_recycler_view
 id chat_rv
-id chat_user_rv_last_msg
 id chat_user_rv_name
 id chat_user_rv_profile
-id chat_user_rv_time
 id checkbox
 id checked
 id chip
@@ -3716,6 +3723,8 @@ id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id enter_comment_comment
+id enter_message
+id enter_message_grp
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3751,7 +3760,10 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id grp
+id grp_chat_activity_rv
 id guideline
+id guideline2
 id header_title
 id help1
 id help2
@@ -3771,7 +3783,6 @@ id ignore
 id ignoreRequest
 id image
 id imageView
-id imageView2
 id imageView3
 id imageView4
 id immediateStop
@@ -3794,12 +3805,12 @@ id left
 id leftToRight
 id left_to_right
 id legacy
+id letsTalkCommunityFragment
 id light
 id likes_comment
 id line1
 id line3
 id linear
-id linearLayout
 id linearLayout3
 id listMode
 id list_item
@@ -3883,6 +3894,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name_grp_chat_activity
 id nav_controller_view_tag
 id nav_graph
 id nav_host_fragment_container
@@ -3953,6 +3965,7 @@ id profileFragment
 id profileProgressBar
 id profile_email
 id profile_fragment_for_transaction
+id profile_grp_chat_activity
 id profile_username
 id progressBar
 id progress_bar_login
@@ -3962,6 +3975,10 @@ id progress_horizontal
 id radial
 id radio
 id ratio
+id receiver_text
+id receiver_text_grp
+id receiver_time
+id receiver_time_grp
 id rectangles
 id reg_progress_bar
 id reg_to_login_btn
@@ -4003,7 +4020,10 @@ id seek_bar
 id select_dialog_listview
 id selected
 id selection_type
-id settingFragment
+id send_message
+id send_message_grp
+id sender_text
+id sender_time
 id sharedValueSet
 id sharedValueUnset
 id shimmer
@@ -4099,7 +4119,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView1
 id textView10
 id textView11
 id textView12
@@ -4139,6 +4158,7 @@ id title_template
 id toggle
 id toolbar
 id toolbar2
+id toolbar_group
 id top
 id topPanel
 id top_to_bottom
@@ -4162,7 +4182,7 @@ id user_mail_dash_nav
 id user_name_dash_nav
 id user_password_login
 id user_post_comment
-id user_profile_chat_detailed
+id user_profile_chat_activity
 id user_profile_comment
 id user_profile_comment_rv
 id user_profile_dash_nav
@@ -4171,8 +4191,9 @@ id user_reg_email
 id user_reg_password
 id user_reg_password_confirm
 id user_text_post
-id username_chat_detailed
+id username_chat_activity
 id username_comment
+id username_grp
 id username_post
 id username_reg
 id usersFragment
@@ -4181,7 +4202,6 @@ id vertical_only
 id view
 id view3
 id view4
-id view5
 id view6
 id view_offset_helper
 id view_pager_notif
@@ -4302,9 +4322,11 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_binaural1
+layout activity_chat
 layout activity_comment
 layout activity_dashboard
 layout activity_forgot_password
+layout activity_group_chat
 layout activity_login
 layout activity_main
 layout activity_registration
@@ -4342,7 +4364,6 @@ layout fragment_breathing_two
 layout fragment_calm_melodies
 layout fragment_chat
 layout fragment_counselling_help
-layout fragment_detailed_chat
 layout fragment_emergency_help
 layout fragment_first
 layout fragment_friends
@@ -4350,15 +4371,14 @@ layout fragment_help_me_calm_down
 layout fragment_home
 layout fragment_i_need_help
 layout fragment_isochronic_calm_melodies
+layout fragment_lets_talk_community
 layout fragment_mindfulness_options
 layout fragment_mindfulness_wellness_center
 layout fragment_notification
 layout fragment_nutrition_options
 layout fragment_nutrition_wellness_center
-layout fragment_post_successful
 layout fragment_profile
 layout fragment_second
-layout fragment_setting
 layout fragment_sleep_options
 layout fragment_sleep_wellness_center
 layout fragment_stress_options
@@ -4371,6 +4391,7 @@ layout fragment_yoga_option
 layout fragment_yoga_three
 layout fragment_yoga_two
 layout friends_recycler_view
+layout grp_receiver_recycler_view
 layout hsdp_layout
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -4435,9 +4456,11 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout receiver_recycler_view
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout sender_recycler_view
 layout shimmer_layout
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
