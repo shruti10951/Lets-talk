@@ -68,11 +68,11 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--            <View-->
-<!--                android:id="@+id/view3"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:background="@color/greyTrans" />-->
+            <!--            <View-->
+            <!--                android:id="@+id/view3"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@color/greyTrans" />-->
 
 
         </com.github.florent37.diagonallayout.DiagonalLayout>

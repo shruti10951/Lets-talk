@@ -73,7 +73,7 @@ public class ProfileFragment extends Fragment {
         user= FirebaseAuth.getInstance().getCurrentUser();
         userID= user.getUid();
         reference= FirebaseDatabase.getInstance().getReference("Users");
-       // reference= FirebaseDatabase.getInstance().getReference().child("profile_pic");
+        // reference= FirebaseDatabase.getInstance().getReference().child("profile_pic");
         storageRef= FirebaseStorage.getInstance().getReference().child("profile_pic").child(user.getUid());
 
 
@@ -125,6 +125,7 @@ public class ProfileFragment extends Fragment {
                 mGetContent.launch("image/*");
             }
         });
+
 
         // Inflate the layout for this fragment
         return view;

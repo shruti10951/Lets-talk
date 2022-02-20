@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calm_melodies_cover"
+    tools:context=".fragments.BrainwaveCalmMelodiesFragment">
+
+
+    <View
+        android:id="@+id/melodies_one_option"
+        android:layout_width="358dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="@dimen/_35hsdp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="@dimen/_35hsdp"
+        android:background="@color/greyTrans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="serif"
+        android:text="Binaural Beats"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20font_ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/melodies_one_option"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/melodies_one_option"
+        app:layout_constraintTop_toTopOf="@+id/melodies_one_option" />
+
+    <View
+        android:id="@+id/melodies_two_option"
+        android:layout_width="358dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="@dimen/_35hsdp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="@dimen/_35hsdp"
+        android:background="@color/greyTrans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/melodies_one_option" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="serif"
+        android:text="Isochronic Tones"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20font_ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/melodies_two_option"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/melodies_two_option"
+        app:layout_constraintTop_toTopOf="@+id/melodies_two_option" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

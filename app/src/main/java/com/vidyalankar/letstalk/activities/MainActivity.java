@@ -31,9 +31,6 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout.addDrawerListener(mActionDrawerToggle);
         mActionDrawerToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
-
     }
 
     @Override
