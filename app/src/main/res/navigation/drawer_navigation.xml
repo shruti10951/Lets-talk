@@ -3,13 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_navigation"
-    app:startDestination="@id/settingFragment">
+    app:startDestination="@id/letsTalkCommunityFragment">
 
-    <fragment
-        android:id="@+id/settingFragment"
-        android:name="com.vidyalankar.letstalk.fragments.SettingFragment"
-        android:label="fragment_setting"
-        tools:layout="@layout/fragment_setting" />
     <fragment
         android:id="@+id/aboutLetsTalkFragment"
         android:name="com.vidyalankar.letstalk.fragments.AboutLetsTalkFragment"
@@ -25,6 +20,11 @@
         android:name="com.vidyalankar.letstalk.fragments.CalmMelodiesFragment"
         android:label="fragment_calm_melodies"
         tools:layout="@layout/fragment_calm_melodies" />
+    <fragment
+        android:id="@+id/letsTalkCommunityFragment"
+        android:name="com.vidyalankar.letstalk.fragments.LetsTalkCommunityFragment"
+        android:label="fragment_lets_talk_community"
+        tools:layout="@layout/fragment_lets_talk_community" />
     <fragment
         android:id="@+id/helpMeCalmDownFragment"
         android:name="com.vidyalankar.letstalk.fragments.HelpMeCalmDownFragment"

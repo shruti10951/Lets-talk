@@ -38,7 +38,7 @@ import com.vidyalankar.letstalk.fragments.HomeFragment;
 import com.vidyalankar.letstalk.fragments.INeedHelpFragment;
 import com.vidyalankar.letstalk.fragments.ProfileFragment;
 import com.vidyalankar.letstalk.R;
-import com.vidyalankar.letstalk.fragments.SettingFragment;
+import com.vidyalankar.letstalk.fragments.LetsTalkCommunityFragment;
 import com.vidyalankar.letstalk.fragments.UsersFragment;
 import com.vidyalankar.letstalk.fragments.WellnessCenterFragment;
 import com.vidyalankar.letstalk.model.UserModel;
@@ -116,8 +116,8 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
 
         switch (item.getItemId())
         {
-            case R.id.settingFragment:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new SettingFragment()).addToBackStack(null).commit();
+            case R.id.letsTalkCommunityFragment:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new LetsTalkCommunityFragment()).addToBackStack(null).commit();
                 break;
             case R.id.wellnessCenterFragment:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new WellnessCenterFragment()).addToBackStack(null).commit();

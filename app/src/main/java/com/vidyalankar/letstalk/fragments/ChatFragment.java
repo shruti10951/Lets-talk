@@ -17,15 +17,15 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.vidyalankar.letstalk.R;
-import com.vidyalankar.letstalk.adapter.ChatAdapter;
-import com.vidyalankar.letstalk.model.ChatModel;
+import com.vidyalankar.letstalk.adapter.ChatListAdapter;
+import com.vidyalankar.letstalk.model.FriendsModel;
 
 import java.util.ArrayList;
 
 public class ChatFragment extends Fragment {
 
     RecyclerView chatRV;
-    ArrayList<ChatModel> chatList;
+    ArrayList<FriendsModel> friendList;
     FirebaseDatabase database;
     FirebaseAuth auth;
 
@@ -40,40 +40,15 @@ public class ChatFragment extends Fragment {
         View view= inflater.inflate(R.layout.fragment_chat, container, false);
 
         chatRV= view.findViewById(R.id.chat_rv);
-        chatList= new ArrayList<>();
+        friendList= new ArrayList<>();
         database= FirebaseDatabase.getInstance();
         auth= FirebaseAuth.getInstance();
 
-//        chatList.add(new ChatModel(R.drawable.user_profile_default,
-//                "Manali2004", "bye", "just now"));
-//        chatList.add(new ChatModel(R.drawable.user_profile_default,
-//                "Amrita2004", "hello", "just now"));
-//        chatList.add(new ChatModel(R.drawable.user_profile_default,
-//                "Manali2004", "bye", "just now"));
-//        chatList.add(new ChatModel(R.drawable.user_profile_default,
-//                "Aditi2003", "bye", "just now"));
-//        chatList.add(new ChatModel(R.drawable.user_profile_default,
-//                "Manali2004", "bye", "just now"));
-//        chatList.add(new ChatModel(R.drawable.user_profile_default,
-//                "abc1234", "bye", "just now"));
-//        chatList.add(new ChatModel(R.drawable.user_profile_default,
-//                "Manali2004", "bye", "just now"));
-//        chatList.add(new ChatModel(R.drawable.user_profile_default,
-//                "Manali2004", "bye", "just now"));
-//        chatList.add(new ChatModel(R.drawable.user_profile_default,
-//                "Manali2004", "bye", "just now"));
-//        chatList.add(new ChatModel(R.drawable.user_profile_default,
-//                "Manali2004", "bye", "just now"));
-//        chatList.add(new ChatModel(R.drawable.user_profile_default,
-//                "Manali2004", "bye", "just now"));
-//        chatList.add(new ChatModel(R.drawable.user_profile_default,
-//                "Manali2004", "bye", "just now"));
-
-        ChatAdapter chatAdapter= new ChatAdapter(chatList, getContext());
+        ChatListAdapter chatListAdapter = new ChatListAdapter(friendList, getContext());
         LinearLayoutManager layoutManager= new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
         chatRV.setLayoutManager(layoutManager);
         chatRV.setNestedScrollingEnabled(false);
-        chatRV.setAdapter(chatAdapter);
+        chatRV.setAdapter(chatListAdapter);
 
         database.getReference()
                 .child("Users")
@@ -82,12 +57,13 @@ public class ChatFragment extends Fragment {
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        friendList.clear();
                         for(DataSnapshot dataSnapshot: snapshot.getChildren())
                         {
-                            ChatModel user= dataSnapshot.getValue(ChatModel.class);
-                            chatList.add(user);
+                            FriendsModel user= dataSnapshot.getValue(FriendsModel.class);
+                            friendList.add(user);
                         }
-                        chatAdapter.notifyDataSetChanged();
+                        chatListAdapter.notifyDataSetChanged();
                     }
 
                     @Override
