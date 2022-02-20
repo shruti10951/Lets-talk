@@ -21,8 +21,12 @@
 <!--            android:name=".activities.ChatActivity"-->
 <!--            android:exported="false" />-->
 
+
+            <activity
+                android:name=".activities.Binaural1Activity"
+        android:exported="false"/>
         <activity
-            android:name=".activities.Binaural1Activity"
+                android:name=".activities.GroupChatActivity"
             android:exported="false" />
         <activity
             android:name=".activities.ChatActivity"

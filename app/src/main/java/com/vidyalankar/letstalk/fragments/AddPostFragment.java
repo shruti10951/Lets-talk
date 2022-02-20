@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,6 +30,7 @@ public class AddPostFragment extends Fragment {
     EditText textMessage;
     Button post_btn;
     ProgressBar progressBar;
+    Toolbar toolbar;
 
     FirebaseAuth auth;
     FirebaseDatabase database;
@@ -55,6 +57,7 @@ public class AddPostFragment extends Fragment {
         post_btn= view.findViewById(R.id.post_btn);
         textMessage= view.findViewById(R.id.user_text_post);
         progressBar= view.findViewById(R.id.progressBar);
+        toolbar= view.findViewById(R.id.add_post_toolbar);
 
 //        database.getReference()
 //                .child("Users")
