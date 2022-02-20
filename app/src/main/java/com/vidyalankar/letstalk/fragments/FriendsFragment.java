@@ -52,25 +52,6 @@ public class FriendsFragment extends Fragment {
 
         list= new ArrayList<>();
 
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-//        list.add(new FriendsModel("Amrita2004", R.drawable.woman));
-
-
         FriendsAdapter adapter= new FriendsAdapter(getContext(), list);
         LinearLayoutManager layoutManager= new LinearLayoutManager(getContext());
         friendsRV.setLayoutManager(layoutManager);

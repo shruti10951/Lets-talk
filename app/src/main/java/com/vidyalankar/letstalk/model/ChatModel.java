@@ -2,41 +2,44 @@ package com.vidyalankar.letstalk.model;
 
 public class ChatModel {
 
-    int profilePic;
-    String userName, time, lastMessage;
+    String userId, message;
+    Long time;
 
     public ChatModel() {
     }
 
-    public int getProfilePic() {
-        return profilePic;
+    public ChatModel(String userId, String message) {
+        this.userId = userId;
+        this.message = message;
     }
 
-    public void setProfilePic(int profilePic) {
-        this.profilePic = profilePic;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getTime() {
-        return time;
-    }
-
-    public void setTime(String time) {
+    public ChatModel(String userId, String message, Long time) {
+        this.userId = userId;
+        this.message = message;
         this.time = time;
     }
 
-    public String getLastMessage() {
-        return lastMessage;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setLastMessage(String lastMessage) {
-        this.lastMessage = lastMessage;
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public Long getTime() {
+        return time;
+    }
+
+    public void setTime(Long time) {
+        this.time = time;
     }
 }
