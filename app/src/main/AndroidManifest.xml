@@ -13,10 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LetsTalk">
         <activity
-            android:name=".activities.ChatActivity"
+            android:name=".activities.GroupChatActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.CommentActivity"
+            android:name=".activities.ChatActivity"
             android:exported="false" />
         <activity
             android:name=".activities.CommentActivity"
