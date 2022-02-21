@@ -5,7 +5,7 @@ public class PostModel {
     private String postId;
     private String post;
     private String postedBy;
-    private Long postedAt;
+    private String postedAt;
     private int postLikes;
     private int commentCount;
 
@@ -49,18 +49,18 @@ public class PostModel {
         this.postedBy = postedBy;
     }
 
-    public Long getPostedAt() {
+    public String getPostedAt() {
         return postedAt;
     }
 
-    public void setPostedAt(Long postedAt) {
+    public void setPostedAt(String postedAt) {
         this.postedAt = postedAt;
     }
 
     public PostModel() {
     }
 
-    public PostModel(String postId, String post, String postedBy, Long postedAt) {
+    public PostModel(String postId, String post, String postedBy, String postedAt) {
         this.postId = postId;
         this.post = post;
         this.postedBy = postedBy;

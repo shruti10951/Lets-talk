@@ -22,6 +22,7 @@ import com.vidyalankar.letstalk.adapter.ChatAdapter;
 import com.vidyalankar.letstalk.adapter.GroupChatAdapter;
 import com.vidyalankar.letstalk.model.ChatModel;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -85,13 +86,17 @@ public class GroupChatActivity extends AppCompatActivity {
             }
         });
 
+        SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+        Date date= new Date();
+
         send_msg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 String msg= message.getText().toString();
                 ChatModel chatModel= new ChatModel(senderId,msg);
-                //chatModel.setTime(new Date().getTime());
+//                chatModel.setTime(new Date().getTime());
+                chatModel.setTime(formatter.format(date));
                 message.setText("");
 
                 FirebaseDatabase.getInstance().getReference()

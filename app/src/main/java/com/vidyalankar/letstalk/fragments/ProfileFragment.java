@@ -9,6 +9,8 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,7 +37,12 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
+import com.vidyalankar.letstalk.adapter.PostAdapter;
+import com.vidyalankar.letstalk.adapter.ProfileAdapter;
+import com.vidyalankar.letstalk.model.PostModel;
 import com.vidyalankar.letstalk.model.UserModel;
+
+import java.util.ArrayList;
 
 
 public class ProfileFragment extends Fragment {
@@ -48,6 +55,10 @@ public class ProfileFragment extends Fragment {
     FirebaseUser user;
     DatabaseReference reference;
     StorageReference storageRef;
+    RecyclerView profileRV;
+    ArrayList<PostModel> postList;
+    FirebaseDatabase database;
+    FirebaseAuth auth;
 
     String userID;
 
@@ -75,7 +86,10 @@ public class ProfileFragment extends Fragment {
         reference= FirebaseDatabase.getInstance().getReference("Users");
         // reference= FirebaseDatabase.getInstance().getReference().child("profile_pic");
         storageRef= FirebaseStorage.getInstance().getReference().child("profile_pic").child(user.getUid());
-
+        profileRV= view.findViewById(R.id.profileRV);
+        postList= new ArrayList<>();
+        database= FirebaseDatabase.getInstance();
+        auth= FirebaseAuth.getInstance();
 
 
         reference.child(userID).addValueEventListener(new ValueEventListener() {
@@ -126,6 +140,32 @@ public class ProfileFragment extends Fragment {
             }
         });
 
+        ProfileAdapter profileAdapter = new ProfileAdapter(postList, getContext());
+        LinearLayoutManager layoutManager= new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL,false);
+        profileRV.setLayoutManager(layoutManager);
+        profileRV.setNestedScrollingEnabled(false);
+        profileRV.setAdapter(profileAdapter);
+
+        database.getReference().child("Posts").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                postList.clear();
+                for(DataSnapshot dataSnapshot : snapshot.getChildren())
+                {
+                    PostModel postModel= dataSnapshot.getValue(PostModel.class);
+                    postModel.setPostId(dataSnapshot.getKey());
+                    if (postModel.getPostedBy().equals(FirebaseAuth.getInstance().getUid())){
+                        postList.add(postModel);
+                    }
+                }
+                profileAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
         // Inflate the layout for this fragment
         return view;

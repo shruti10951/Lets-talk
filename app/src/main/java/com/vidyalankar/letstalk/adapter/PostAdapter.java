@@ -25,6 +25,7 @@ import com.vidyalankar.letstalk.model.NotificationModel;
 import com.vidyalankar.letstalk.model.PostModel;
 import com.vidyalankar.letstalk.model.UserModel;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -73,6 +74,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
             }
         });
 
+        SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+        Date date= new Date();
+
         FirebaseDatabase.getInstance().getReference()
                 .child("Posts")
                 .child(postModel.getPostId())
@@ -109,7 +113,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
 
                                                             NotificationModel notificationModel= new NotificationModel();
                                                             notificationModel.setNotificationBy(FirebaseAuth.getInstance().getUid());
-                                                            notificationModel.setNotificationAt(new Date().getTime());
+                                                            notificationModel.setNotificationAt(formatter.format(date));
                                                             notificationModel.setPostId(postModel.getPostId());
                                                             notificationModel.setPostedBy(postModel.getPostedBy());
                                                             notificationModel.setType("like");
@@ -154,7 +158,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
 
     public class viewHolder extends RecyclerView.ViewHolder {
 
-        ImageView profile_image, save;
+        ImageView profile_image;
         TextView username, like, comment, post;
 
         public viewHolder(@NonNull View itemView) {
@@ -162,7 +166,6 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
 
             profile_image= itemView.findViewById(R.id.user_profile_comment);
             post= itemView.findViewById(R.id.user_post_comment);
-            save= itemView.findViewById(R.id.save_post_comment);
             username= itemView.findViewById(R.id.username_comment);
             like= itemView.findViewById(R.id.likes_comment);
             comment= itemView.findViewById(R.id.user_comments_comment);

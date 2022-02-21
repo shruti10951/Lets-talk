@@ -21,10 +21,12 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
+import com.vidyalankar.letstalk.model.FollowingModel;
 import com.vidyalankar.letstalk.model.FriendsModel;
 import com.vidyalankar.letstalk.model.NotificationModel;
 import com.vidyalankar.letstalk.model.UserModel;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -44,6 +46,9 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
         View view= LayoutInflater.from(context).inflate(R.layout.users_recycler_view, parent, false);
         return new viewHolder(view);
     }
+
+    SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+    Date date= new Date();
 
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
@@ -74,7 +79,11 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
                                 public void onClick(View view) {
                                     FriendsModel friendsModel = new FriendsModel();
                                     friendsModel.setFollowedBy(FirebaseAuth.getInstance().getUid());
-                                    friendsModel.setFollowedAt(new Date().getTime());
+                                    friendsModel.setFollowedAt(formatter.format(date));
+
+                                    FollowingModel followingModel=new FollowingModel();
+                                    followingModel.setFollowedAt(formatter.format(date));
+                                    followingModel.setFollowedTo(userModel.getUserID());
 
                                     FirebaseDatabase.getInstance().getReference()
                                             .child("Users")
@@ -92,22 +101,37 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
                                                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                                                         @Override
                                                         public void onSuccess(Void unused) {
-                                                            holder.follow_btn.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.layout_border));
-                                                            holder.follow_btn.setText("Following");
-                                                            holder.follow_btn.setTextColor(context.getResources().getColor(R.color.black));
-                                                            holder.follow_btn.setEnabled(false);
-                                                            Toast.makeText(context, "You followed "+ userModel.getUsername() + list.size() , Toast.LENGTH_SHORT).show();
-
-                                                            NotificationModel notificationModel= new NotificationModel();
-                                                            notificationModel.setNotificationBy(FirebaseAuth.getInstance().getUid());
-                                                            notificationModel.setNotificationAt(new Date().getTime());
-                                                            notificationModel.setType("follow");
 
                                                             FirebaseDatabase.getInstance().getReference()
-                                                                    .child("Notification")
+                                                                    .child("Users")
+                                                                    .child(FirebaseAuth.getInstance().getUid())
+                                                                    .child("Following")
                                                                     .child(userModel.getUserID())
-                                                                    .push()
-                                                                    .setValue(notificationModel);
+                                                                    .setValue(followingModel)
+                                                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                        @Override
+                                                                        public void onSuccess(Void unused) {
+
+                                                                            holder.follow_btn.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.layout_border));
+                                                                            holder.follow_btn.setText("Following");
+                                                                            holder.follow_btn.setTextColor(context.getResources().getColor(R.color.black));
+                                                                            holder.follow_btn.setEnabled(false);
+                                                                            Toast.makeText(context, "You followed "+ userModel.getUsername() + list.size() , Toast.LENGTH_SHORT).show();
+
+                                                                            NotificationModel notificationModel= new NotificationModel();
+                                                                            notificationModel.setNotificationBy(FirebaseAuth.getInstance().getUid());
+                                                                            notificationModel.setNotificationAt(formatter.format(date));
+                                                                            notificationModel.setType("follow");
+
+                                                                            FirebaseDatabase.getInstance().getReference()
+                                                                                    .child("Notification")
+                                                                                    .child(userModel.getUserID())
+                                                                                    .push()
+                                                                                    .setValue(notificationModel);
+                                                                        }
+                                                                    });
+
+
                                                         }
                                                     });
                                         }

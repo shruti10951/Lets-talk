@@ -27,6 +27,7 @@ import com.vidyalankar.letstalk.model.NotificationModel;
 import com.vidyalankar.letstalk.model.PostModel;
 import com.vidyalankar.letstalk.model.UserModel;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -103,13 +104,17 @@ public class CommentActivity extends AppCompatActivity {
                     }
                 });
 
+        SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+        Date date= new Date();
+
         postComment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 CommentModel commentModel= new CommentModel();
                 commentModel.setComment(comment.getText().toString());
-                commentModel.setCommentedAt(new Date().getTime());
+//                commentModel.setCommentedAt(new Date().getTime());
+                commentModel.setCommentedAt(formatter.format(date));
                 commentModel.setCommentedBy(FirebaseAuth.getInstance().getUid());
 
                 database.getReference().child("Posts")
@@ -141,7 +146,7 @@ public class CommentActivity extends AppCompatActivity {
 
                                                 NotificationModel notificationModel= new NotificationModel();
                                                 notificationModel.setNotificationBy(FirebaseAuth.getInstance().getUid());
-                                                notificationModel.setNotificationAt(new Date().getTime());
+                                                notificationModel.setNotificationAt(formatter.format(date));
                                                 notificationModel.setPostId(postId);
                                                 notificationModel.setPostedBy(postedBy);
                                                 notificationModel.setType("comment");

@@ -34,7 +34,7 @@ public class ChatActivity extends AppCompatActivity {
     ImageView profile, back, send;
     EditText message;
     Intent intent;
-    String followedBy;
+    String followedTo;
     RecyclerView chatRv;
     FirebaseDatabase database;
     FirebaseAuth auth;
@@ -54,16 +54,16 @@ public class ChatActivity extends AppCompatActivity {
         send= findViewById(R.id.send_message);
 
         intent= getIntent();
-        followedBy= intent.getStringExtra("followedBy");
+        followedTo= intent.getStringExtra("followedTo");
 
         database= FirebaseDatabase.getInstance();
         auth= FirebaseAuth.getInstance();
         senderID= auth.getUid();
-        receiverId= followedBy;
+        receiverId= followedTo;
 
         database.getReference()
                 .child("Users")
-                .child(followedBy)
+                .child(followedTo)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
