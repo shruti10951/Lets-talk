@@ -60,6 +60,7 @@ public class ChatAdapter extends RecyclerView.Adapter{
         ChatModel chatModel= list.get(position);
         if(holder.getClass()== SenderViewHolder.class){
             ((SenderViewHolder)holder).senderMsg.setText(chatModel.getMessage());
+            ((SenderViewHolder)holder).senderTime.setText(chatModel.getTime().toString());
         }else{
             ((ReceiverViewHolder)holder).receiverMsg.setText(chatModel.getMessage());
             ((ReceiverViewHolder)holder).receiverMsg.setText(chatModel.getMessage());

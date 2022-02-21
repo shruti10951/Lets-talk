@@ -23,6 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.model.PostModel;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class AddPostFragment extends Fragment {
@@ -76,7 +77,8 @@ public class AddPostFragment extends Fragment {
 //
 //            }
 //        });
-
+        SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+        Date date= new Date();
         post_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,7 +88,7 @@ public class AddPostFragment extends Fragment {
                 PostModel postModel= new PostModel();
                 postModel.setPostedBy(FirebaseAuth.getInstance().getUid());
                 postModel.setPost(textMessage.getText().toString());
-                postModel.setPostedAt(new Date().getTime());
+                postModel.setPostedAt(formatter.format(date));
 
                 database.getReference()
                         .child("Posts")

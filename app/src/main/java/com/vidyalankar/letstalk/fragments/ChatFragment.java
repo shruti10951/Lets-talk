@@ -18,14 +18,16 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.adapter.ChatListAdapter;
+import com.vidyalankar.letstalk.model.FollowingModel;
 import com.vidyalankar.letstalk.model.FriendsModel;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ChatFragment extends Fragment {
 
     RecyclerView chatRV;
-    ArrayList<FriendsModel> friendList;
+    ArrayList<FollowingModel> friendList;
     FirebaseDatabase database;
     FirebaseAuth auth;
 
@@ -53,16 +55,17 @@ public class ChatFragment extends Fragment {
         database.getReference()
                 .child("Users")
                 .child(FirebaseAuth.getInstance().getUid())
-                .child("followers")
+                .child("Following")
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         friendList.clear();
                         for(DataSnapshot dataSnapshot: snapshot.getChildren())
                         {
-                            FriendsModel user= dataSnapshot.getValue(FriendsModel.class);
+                            FollowingModel user= dataSnapshot.getValue(FollowingModel.class);
                             friendList.add(user);
                         }
+                        Collections.reverse(friendList);
                         chatListAdapter.notifyDataSetChanged();
                     }
 

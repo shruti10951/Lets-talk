@@ -65,7 +65,9 @@ public class HomeFragment extends Fragment {
                 {
                     PostModel postModel= dataSnapshot.getValue(PostModel.class);
                     postModel.setPostId(dataSnapshot.getKey());
-                    postList.add(postModel);
+                    if (!postModel.getPostedBy().equals(FirebaseAuth.getInstance().getUid())){
+                        postList.add(postModel);
+                    }
                 }
                 postAdapter.notifyDataSetChanged();
             }

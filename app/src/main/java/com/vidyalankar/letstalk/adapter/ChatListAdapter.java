@@ -19,6 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.activities.ChatActivity;
+import com.vidyalankar.letstalk.model.FollowingModel;
 import com.vidyalankar.letstalk.model.FriendsModel;
 import com.vidyalankar.letstalk.model.UserModel;
 
@@ -26,10 +27,10 @@ import java.util.ArrayList;
 
 public class ChatListAdapter extends  RecyclerView.Adapter<ChatListAdapter.viewHolder> {
 
-    ArrayList<FriendsModel> list;
+    ArrayList<FollowingModel> list;
     Context context;
 
-    public ChatListAdapter(ArrayList<FriendsModel> list, Context context) {
+    public ChatListAdapter(ArrayList<FollowingModel> list, Context context) {
         this.list = list;
         this.context = context;
     }
@@ -44,10 +45,10 @@ public class ChatListAdapter extends  RecyclerView.Adapter<ChatListAdapter.viewH
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
 
-        FriendsModel friendsModel= list.get(position);
+        FollowingModel followingModel= list.get(position);
         FirebaseDatabase.getInstance().getReference()
                 .child("Users")
-                .child(friendsModel.getFollowedBy())
+                .child(followingModel.getFollowedTo())
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -68,7 +69,7 @@ public class ChatListAdapter extends  RecyclerView.Adapter<ChatListAdapter.viewH
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(context, ChatActivity.class);
-                intent.putExtra("followedBy", friendsModel.getFollowedBy());
+                intent.putExtra("followedTo", followingModel.getFollowedTo());
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }

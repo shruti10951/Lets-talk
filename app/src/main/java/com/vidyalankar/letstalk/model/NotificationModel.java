@@ -3,7 +3,7 @@ package com.vidyalankar.letstalk.model;
 public class NotificationModel {
 
     private String notificationBy;
-    private Long notificationAt;
+    private String notificationAt;
     private String type;
     private String postId;
     private String notificationId;
@@ -26,11 +26,11 @@ public class NotificationModel {
         this.notificationBy = notificationBy;
     }
 
-    public Long getNotificationAt() {
+    public String getNotificationAt() {
         return notificationAt;
     }
 
-    public void setNotificationAt(Long notificationAt) {
+    public void setNotificationAt(String notificationAt) {
         this.notificationAt = notificationAt;
     }
 
