@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -34,6 +35,7 @@ public class GroupChatActivity extends AppCompatActivity {
     RecyclerView grpChatRv;
     String senderId;
     String receiverId;
+    Intent intent;
     FirebaseAuth auth;
     FirebaseDatabase database;
 
@@ -51,6 +53,10 @@ public class GroupChatActivity extends AppCompatActivity {
         auth= FirebaseAuth.getInstance();
         database= FirebaseDatabase.getInstance();
 
+        intent= getIntent();
+        String groupName= intent.getStringExtra("grpId");
+        grpName.setText(groupName);
+
         senderId= auth.getUid();
 
         final ArrayList<ChatModel> chatModels= new ArrayList<>();
@@ -61,7 +67,8 @@ public class GroupChatActivity extends AppCompatActivity {
         grpChatRv.setAdapter(grpChatAdapter);
 
         database.getReference().child("Group chat")
-                .child("Group 1")
+                .child(groupName)
+                .child("chats")
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -101,7 +108,8 @@ public class GroupChatActivity extends AppCompatActivity {
 
                 FirebaseDatabase.getInstance().getReference()
                         .child("Group chat")
-                        .child("Group 1")
+                        .child(groupName)
+                        .child("chats")
                         .push()
                         .setValue(chatModel).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
