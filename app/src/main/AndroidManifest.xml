@@ -12,26 +12,24 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.LetsTalk">
-
-<!--            android:name=".activities.Binaural1Activity"-->
-<!--            android:exported="false"-->
-<!--            android:label="@string/title_activity_binaural1"-->
-<!--            android:theme="@style/Theme.LetsTalk.NoActionBar" />-->
-
-<!--            android:name=".activities.ChatActivity"-->
-<!--            android:exported="false" />-->
-
-
-            <activity
-                android:name=".activities.Binaural1Activity"
-        android:exported="false"/>
         <activity
-                android:name=".activities.GroupChatActivity"
+            android:name=".activities.IsochronicActivity"
+            android:exported="false" />
+        <!-- android:name=".activities.Binaural1Activity" -->
+        <!-- android:exported="false" -->
+        <!-- android:label="@string/title_activity_binaural1" -->
+        <!-- android:theme="@style/Theme.LetsTalk.NoActionBar" /> -->
+        <!-- android:name=".activities.ChatActivity" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".activities.Binaural1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.GroupChatActivity"
             android:exported="false" />
         <activity
             android:name=".activities.ChatActivity"
             android:exported="false" />
-
         <activity
             android:name=".activities.CommentActivity"
             android:exported="false" />

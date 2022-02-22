@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-61:12
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-59:12
 MERGED from [androidx.databinding:viewbinding:7.1.1] C:\Users\apurv\.gradle\caches\transforms-3\ab82e19cfa30bc0e38ff6510502b19a4\transformed\jetified-viewbinding-7.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.4.0] C:\Users\apurv\.gradle\caches\transforms-3\8f455c6a58354e85c5d41bd986a6c85d\transformed\navigation-ui-2.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\apurv\.gradle\caches\transforms-3\12500e3d6b4e74aa3edc6654afd509d4\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
@@ -83,20 +83,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\apurv\.gradle\ca
 MERGED from [androidx.print:print:1.0.0] C:\Users\apurv\.gradle\caches\transforms-3\91e09370fe364a2f16de62f5c72aa819\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\apurv\.gradle\caches\transforms-3\b2c14cc52a76b58656c187c8af80b6ef\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\apurv\.gradle\caches\transforms-3\e7ed8a6b9017a728d69ba1a7bdf2d805\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-59:12
 	package
 		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-61:12
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-59:12
 		INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-61:12
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:1-59:12
 		INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:2:11-69
@@ -121,7 +121,7 @@ MERGED from [com.google.firebase:firebase-storage:20.0.0] C:\Users\apurv\.gradle
 	android:name
 		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:8:5-59:19
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:8:5-57:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\apurv\.gradle\caches\transforms-3\12500e3d6b4e74aa3edc6654afd509d4\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\apurv\.gradle\caches\transforms-3\12500e3d6b4e74aa3edc6654afd509d4\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\apurv\.gradle\caches\transforms-3\6bfd3b70425edfc10d010b0e2930a228\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
@@ -176,70 +176,76 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\apurv\.gradle\cach
 		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
 		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:14:9-46
+activity#com.vidyalankar.letstalk.activities.IsochronicActivity
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:15:9-17:40
+	android:exported
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:17:13-37
+	android:name
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:16:13-58
 activity#com.vidyalankar.letstalk.activities.Binaural1Activity
-ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:25:13-27:35
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:27:9-33
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:26:17-61
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:25:13-57
 activity#com.vidyalankar.letstalk.activities.GroupChatActivity
-ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:28:9-30:40
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:27:9-29:40
 	android:exported
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:30:13-37
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:29:17-61
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:28:13-57
 activity#com.vidyalankar.letstalk.activities.ChatActivity
-ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:31:9-33:40
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:30:9-32:40
 	android:exported
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:33:13-37
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:32:13-52
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:31:13-52
 activity#com.vidyalankar.letstalk.activities.CommentActivity
-ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:35:9-37:40
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:33:9-35:40
 	android:exported
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:36:13-55
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:34:13-55
 activity#com.vidyalankar.letstalk.activities.ForgotPassword
-ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:38:9-40:39
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:36:9-38:39
 	android:exported
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:40:13-36
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:38:13-36
 	android:name
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:39:13-54
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:37:13-54
 activity#com.vidyalankar.letstalk.activities.DashboardActivity
-ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:41:9-43:39
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:39:9-41:39
 	android:exported
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:43:13-36
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:41:13-36
 	android:name
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:42:13-57
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:40:13-57
 activity#com.vidyalankar.letstalk.activities.LoginActivity
-ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:44:9-46:39
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:42:9-44:39
 	android:exported
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:46:13-36
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:44:13-36
 	android:name
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:45:13-53
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:43:13-53
 activity#com.vidyalankar.letstalk.activities.RegistrationActivity
-ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:47:9-49:39
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:45:9-47:39
 	android:exported
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:49:13-36
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:47:13-36
 	android:name
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:48:13-60
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:46:13-60
 activity#com.vidyalankar.letstalk.activities.SplashScreen
-ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:50:9-58:20
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:48:9-56:20
 	android:exported
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:52:13-36
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:50:13-36
 	android:name
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:51:13-52
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:49:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:53:13-57:29
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:51:13-55:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:54:17-69
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:52:17-69
 	android:name
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:54:25-66
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:52:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:56:17-77
+ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:54:17-77
 	android:name
-		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:56:27-74
+		ADDED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml:54:27-74
 uses-sdk
 INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\apurv\Lets-talk\app\src\main\AndroidManifest.xml
