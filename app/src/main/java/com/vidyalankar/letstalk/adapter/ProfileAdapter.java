@@ -6,13 +6,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
@@ -20,6 +23,8 @@ import com.vidyalankar.letstalk.model.PostModel;
 import com.vidyalankar.letstalk.model.UserModel;
 
 import java.util.ArrayList;
+
+import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHolder> {
 
@@ -62,6 +67,41 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
 
             }
         });
+        holder.delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new SweetAlertDialog(view.getContext(), SweetAlertDialog.BUTTON_CONFIRM)
+                        .setTitleText("Delete?")
+                        .setContentText("Are you sure you want to delete this post?")
+                        .setConfirmText("Yes")
+                        .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                            @Override
+                            public void onClick(SweetAlertDialog sweetAlertDialog) {
+                                DatabaseReference reference= FirebaseDatabase.getInstance().getReference();
+                                Query deletePostQuery= reference.child("Posts").orderByChild("postedAt").equalTo(postModel.getPostedAt());
+                                deletePostQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                        for(DataSnapshot dataSnapshot: snapshot.getChildren()){
+                                            dataSnapshot.getRef().removeValue();
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError error) {
+                                        Toast.makeText(context, "Something went wrong...", Toast.LENGTH_SHORT).show();
+                                    }
+                                });
+                                sweetAlertDialog.dismissWithAnimation();
+                            }
+                        }).setCancelButton("No", new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sweetAlertDialog) {
+                        sweetAlertDialog.dismissWithAnimation();
+                    }
+                }).show();
+            }
+        });
 
     }
 
@@ -72,7 +112,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
 
     public class viewHolder extends RecyclerView.ViewHolder{
 
-        ImageView profile_image, save;
+        ImageView profile_image, delete;
         TextView username, like, comment, post;
 
         public viewHolder(@NonNull View itemView) {
@@ -80,12 +120,12 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
 
             profile_image= itemView.findViewById(R.id.user_profile_comment);
             post= itemView.findViewById(R.id.user_post_comment);
-            save= itemView.findViewById(R.id.save_post_comment);
             username= itemView.findViewById(R.id.username_comment);
             like= itemView.findViewById(R.id.likes_comment);
             comment= itemView.findViewById(R.id.user_comments_comment);
+            delete= itemView.findViewById(R.id.delete_post);
 
-
+            delete.setVisibility(View.VISIBLE);
         }
     }
 }

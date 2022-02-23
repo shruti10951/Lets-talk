@@ -22,6 +22,7 @@ import com.vidyalankar.letstalk.adapter.PostAdapter;
 import com.vidyalankar.letstalk.model.PostModel;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class HomeFragment extends Fragment {
 
@@ -69,6 +70,7 @@ public class HomeFragment extends Fragment {
                         postList.add(postModel);
                     }
                 }
+                Collections.reverse(postList);
                 postAdapter.notifyDataSetChanged();
             }
 

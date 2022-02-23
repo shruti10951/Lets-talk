@@ -8,6 +8,7 @@ import android.os.Handler;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.vidyalankar.letstalk.R;
 
 
@@ -20,6 +21,8 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
+        FirebaseMessaging.getInstance().subscribeToTopic("Notification");
 
         mAuth = FirebaseAuth.getInstance();
         if (mAuth != null) {

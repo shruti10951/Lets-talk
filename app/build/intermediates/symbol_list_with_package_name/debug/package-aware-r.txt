@@ -3436,6 +3436,7 @@ drawable counseling_cover
 drawable create_post_background
 drawable dark_bg_talk_community
 drawable dark_nature_bg
+drawable delete_icon
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3766,6 +3767,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete_post
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3810,6 +3812,7 @@ id enter_message_grp
 id error_frame
 id error_x
 id exitUntilCollapsed
+id exit_chat
 id expand_activities_button
 id expanded_menu
 id fade
@@ -4662,6 +4665,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fcm_fallback_notification_channel_label
 string firebase_database_url
 string first_fragment_label
 string friends

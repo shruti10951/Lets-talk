@@ -8,6 +8,19 @@
     android:background="@drawable/post_wallpaper"
     android:layout_height="wrap_content">
 
+    <ImageView
+        android:id="@+id/delete_post"
+        android:layout_width="@dimen/_20font_ssp"
+        android:layout_height="@dimen/_20font_ssp"
+        android:src="@drawable/delete_icon"
+        app:layout_constraintBottom_toTopOf="@+id/user_post_comment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toEndOf="@+id/username_comment"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:layout_constraintVertical_bias="0.369"
+        app:tint="@color/white" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/user_profile_comment"

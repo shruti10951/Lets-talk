@@ -11,11 +11,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.vidyalankar.letstalk.R;
@@ -27,10 +29,12 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 public class GroupChatActivity extends AppCompatActivity {
 
     ImageView back_btn, send_msg;
-    TextView grpName;
+    TextView grpName, exitChat;
     EditText message;
     RecyclerView grpChatRv;
     String senderId;
@@ -49,6 +53,7 @@ public class GroupChatActivity extends AppCompatActivity {
         grpName= findViewById(R.id.name_grp_chat_activity);
         message= findViewById(R.id.enter_message_grp);
         grpChatRv= findViewById(R.id.grp_chat_activity_rv);
+        exitChat= findViewById(R.id.exit_chat);
 
         auth= FirebaseAuth.getInstance();
         database= FirebaseDatabase.getInstance();
@@ -117,6 +122,41 @@ public class GroupChatActivity extends AppCompatActivity {
 
                     }
                 });
+            }
+        });
+
+        exitChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new SweetAlertDialog(GroupChatActivity.this, SweetAlertDialog.BUTTON_CONFIRM)
+                        .setTitleText("Exit?")
+                        .setContentText("Are you sure yo want to exit?")
+                        .setConfirmText("Yes!")
+                        .setCustomImage(R.drawable.info_icon)
+                        .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                            @Override
+                            public void onClick(SweetAlertDialog sweetAlertDialog) {
+
+                                DatabaseReference reference= FirebaseDatabase.getInstance().getReference()
+                                        .child("Group chat")
+                                        .child(groupName)
+                                        .child("group members")
+                                        .child(FirebaseAuth.getInstance().getUid());
+                                reference.removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void unused) {
+                                        Toast.makeText(GroupChatActivity.this, "Exit successful...", Toast.LENGTH_SHORT).show();
+                                        GroupChatActivity.super.onBackPressed();
+                                        sweetAlertDialog.dismissWithAnimation();
+                                    }
+                                });
+                            }
+                        }).setCancelButton("No!", new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sweetAlertDialog) {
+                        sweetAlertDialog.dismissWithAnimation();
+                    }
+                }).show();
             }
         });
 

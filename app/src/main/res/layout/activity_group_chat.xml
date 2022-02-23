@@ -29,6 +29,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/black" />
 
+    <TextView
+        android:id="@+id/exit_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15font_ssp"
+        android:text="Exit"
+        android:background="@color/greyTrans"
+        android:paddingStart="@dimen/_7hsdp"
+        android:paddingEnd="@dimen/_7hsdp"
+        android:paddingBottom="@dimen/_2hsdp"
+        android:paddingTop="@dimen/_2hsdp"
+        app:layout_constraintBottom_toBottomOf="@+id/name_grp_chat_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toEndOf="@+id/name_grp_chat_activity"
+        app:layout_constraintTop_toTopOf="@+id/name_grp_chat_activity"
+        app:layout_constraintVertical_bias="1.0" />
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_grp_chat_activity"
         android:layout_width="@dimen/_35hsdp"

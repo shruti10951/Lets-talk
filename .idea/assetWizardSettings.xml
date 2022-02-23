@@ -18,15 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../AppData/Local/Android/Sdk/icons/material/materialicons/pause/baseline_pause_24.xml" />
-=======
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../AppData/Local/Android/Sdk/icons/material/materialicons/groups/baseline_groups_24.xml" />
->>>>>>> 2986dae408a0d1d816c6f13b9dfa727bb32147d7
-=======
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../AppData/Local/Android/Sdk/icons/material/materialicons/groups/baseline_groups_24.xml" />
->>>>>>> fca3ef4d7fd6cd5ea86fdd30d99fd37873736910
+                                      <entry key="url" value="file:/$PROJECT_DIR$/../AppData/Local/Android/Sdk/icons/material/materialicons/delete/baseline_delete_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -36,17 +28,8 @@
                         </option>
                         <option name="values">
                           <map>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="pause" />
-                            <entry key="sourceFile" value="C:\Users\apurv\Lets-talk" />
-=======
-=======
->>>>>>> fca3ef4d7fd6cd5ea86fdd30d99fd37873736910
-                            <entry key="outputName" value="lets_talk_community_icon" />
-                            <entry key="sourceFile" value="C:\Users\Admin\AndroidStudioProjects\LetsTalk" />
->>>>>>> 2986dae408a0d1d816c6f13b9dfa727bb32147d7
+                            <entry key="outputName" value="delete_icon" />
+                            <entry key="sourceFile" value="C:\Users\Admin\Lets-talk" />
                           </map>
                         </option>
                       </PersistentState>
