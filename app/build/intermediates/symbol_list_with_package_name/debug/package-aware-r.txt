@@ -3883,7 +3883,6 @@ id info
 id invisible
 id inward
 id isochronic_option_one
-id isochronic_option_two
 id italic
 id item1
 id item2
@@ -4165,6 +4164,10 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id song1
+id song2
+id song3
+id song4
 id south
 id spacer
 id special_effects_controller_view_tag
@@ -4447,6 +4450,7 @@ layout activity_group_chat
 layout activity_isochronic
 layout activity_login
 layout activity_main
+layout activity_play_melodies
 layout activity_registration
 layout activity_splash_screen
 layout alert_dialog

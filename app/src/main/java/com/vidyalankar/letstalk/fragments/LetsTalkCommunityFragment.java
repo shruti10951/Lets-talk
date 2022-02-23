@@ -90,7 +90,6 @@ public class LetsTalkCommunityFragment extends Fragment {
         view.findViewById(R.id.grp4).setOnClickListener(mListener);
         view.findViewById(R.id.grp5).setOnClickListener(mListener);
 
-
         return view;
     }
 
