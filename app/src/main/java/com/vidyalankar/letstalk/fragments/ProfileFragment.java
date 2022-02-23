@@ -43,12 +43,13 @@ import com.vidyalankar.letstalk.model.PostModel;
 import com.vidyalankar.letstalk.model.UserModel;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 
 public class ProfileFragment extends Fragment {
 
     ImageView profilePic;
-    TextView userNameTextView, userEmailTextView, friendsTextView, followerCount;
+    TextView userNameTextView, userEmailTextView, friendsTextView, followerCount, postCount;
     ImageView editProfile;
     ProgressBar progressBar;
 
@@ -80,6 +81,7 @@ public class ProfileFragment extends Fragment {
         editProfile= (ImageView) view.findViewById(R.id.changeProfile);
         followerCount= (TextView) view.findViewById(R.id.follower_count);
         progressBar= (ProgressBar) view.findViewById(R.id.profileProgressBar);
+        //postCount= (TextView) view.findViewById(R.id.)
 
         user= FirebaseAuth.getInstance().getCurrentUser();
         userID= user.getUid();
@@ -158,6 +160,7 @@ public class ProfileFragment extends Fragment {
                         postList.add(postModel);
                     }
                 }
+                Collections.reverse(postList);
                 profileAdapter.notifyDataSetChanged();
             }
 

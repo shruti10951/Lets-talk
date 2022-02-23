@@ -23,7 +23,7 @@
 
 
                 <TextView
-                    android:id="@+id/grp"
+                    android:id="@+id/grp1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="84dp"
@@ -32,9 +32,65 @@
                     android:textColor="@color/white"
                     android:textSize="@dimen/_25font_ssp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.194"
+                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/grp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Group 2"
+                    android:layout_marginTop="@dimen/_8font_ssp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25font_ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/grp1" />
+
+                <TextView
+                    android:id="@+id/grp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Group 3"
+                    android:layout_marginTop="@dimen/_10font_ssp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25font_ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/grp2" />
+
+                <TextView
+                    android:id="@+id/grp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Group 4"
+                    android:layout_marginTop="@dimen/_10font_ssp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25font_ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/grp3" />
+
+                <TextView
+                    android:id="@+id/grp5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Group 5"
+                    android:layout_marginTop="@dimen/_10font_ssp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25font_ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/grp4" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

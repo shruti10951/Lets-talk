@@ -22,6 +22,7 @@ import com.vidyalankar.letstalk.adapter.FriendsAdapter;
 import com.vidyalankar.letstalk.model.FriendsModel;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 
 public class FriendsFragment extends Fragment {
@@ -71,6 +72,7 @@ public class FriendsFragment extends Fragment {
                             FriendsModel user= dataSnapshot.getValue(FriendsModel.class);
                             list.add(user);
                         }
+                        Collections.reverse(list);
                         adapter.notifyDataSetChanged();
                     }
 
