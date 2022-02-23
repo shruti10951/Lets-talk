@@ -36,14 +36,14 @@ public class HelpMeCalmDownFragment extends Fragment {
         breathing_option.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new BreathingOptionFragment()).commit();
+                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new BreathingOptionFragment()).addToBackStack(null).commit();
             }
         });
 
         yoga_option.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new YogaOptionFragment()).commit();
+                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new YogaOptionFragment()).addToBackStack(null).commit();
             }
         });
 

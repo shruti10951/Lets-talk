@@ -26,7 +26,9 @@ import com.vidyalankar.letstalk.activities.CommentActivity;
 import com.vidyalankar.letstalk.model.NotificationModel;
 import com.vidyalankar.letstalk.model.UserModel;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapter.viewHolder>{
 
@@ -73,6 +75,10 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
                         Picasso.get().load(userModel.getProfilePic())
                                 .placeholder(R.drawable.user_profile_default)
                                 .into(holder.profile);
+
+                        Date date= new Date(notificationModel.getNotificationAt());
+                        SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+                        holder.time.setText(formatter.format(date));
 
                         if (notificationModel.getType().equals("like")){
                             holder.notificationMessage.setText(Html.fromHtml("<b>" +userModel.getUsername()+"</b>" + " liked your post"));

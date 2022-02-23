@@ -24,14 +24,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:fontFamily="serif"
+        android:text="Username"
         android:textColor="@color/black"
         android:textSize="17sp"
-        android:text="Username"
         android:textStyle="bold"
-        android:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="@+id/friends_rv_profile"
         app:layout_constraintStart_toEndOf="@+id/friends_rv_profile"
-        app:layout_constraintTop_toTopOf="@+id/friends_rv_profile" />
+        app:layout_constraintTop_toTopOf="@+id/friends_rv_profile"
+        app:layout_constraintVertical_bias="0.26" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

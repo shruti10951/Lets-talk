@@ -3827,6 +3827,8 @@ id flip
 id floating
 id follow_btn_user_rv
 id follower_count
+id following
+id following_count
 id forever
 id forgot_pas_text
 id fragmentContainerView2
@@ -4122,6 +4124,7 @@ id search_go_btn
 id search_mag_icon
 id search_plate
 id search_src_text
+id search_user_et
 id search_voice_btn
 id seek_bar
 id seek_bar1
@@ -4238,7 +4241,6 @@ id textView10
 id textView11
 id textView12
 id textView13
-id textView14
 id textView16
 id textView17
 id textView18
@@ -4252,8 +4254,6 @@ id textView4
 id textView5
 id textView6
 id textView7
-id textView8
-id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -4352,6 +4352,15 @@ id yoga_one_point_5
 id yoga_option
 id yoga_three_option
 id yoga_two_option
+id yoga_two_point_1
+id yoga_two_point_2
+id yoga_two_point_3
+id yoga_two_point_4
+id yoga_two_point_5
+id yoga_two_point_6
+id yoga_two_point_7
+id yoga_two_point_8
+id yoga_two_pose_1
 id z
 id zero_corner_chip
 integer abc_config_activityDefaultDur

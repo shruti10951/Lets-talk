@@ -8,6 +8,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -42,6 +43,8 @@ import com.vidyalankar.letstalk.fragments.LetsTalkCommunityFragment;
 import com.vidyalankar.letstalk.fragments.UsersFragment;
 import com.vidyalankar.letstalk.fragments.WellnessCenterFragment;
 import com.vidyalankar.letstalk.model.UserModel;
+
+import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class DashboardActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -159,31 +162,35 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         alert.show();
     }
 
-//INCOMPLETE!!!! --->>>
-
     @Override
     public void onBackPressed() {
         android.app.Fragment test= getFragmentManager().findFragmentById(R.id.fragmentContainerView2);
         if(dashboard_drawer.isDrawerOpen(GravityCompat.START))
         {
             dashboard_drawer.closeDrawer(GravityCompat.START);
+//        }else if(getFragmentManager().getBackStackEntryCount()>0){
+//            getFragmentManager().popBackStack();
+//            new SweetAlertDialog(DashboardActivity.this, SweetAlertDialog.BUTTON_CONFIRM)
+//                    .setTitleText("Exit?")
+//                    .setContentText("Are you sure you want to exit?")
+//                    .setConfirmText("Yes")
+//                    .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+//                        @Override
+//                        public void onClick(SweetAlertDialog sweetAlertDialog) {
+//                            DashboardActivity.super.onBackPressed();
+//                            sweetAlertDialog.dismissWithAnimation();
+//                        }
+//                    }).setCancelButton("No", new SweetAlertDialog.OnSweetClickListener() {
+//                        @Override
+//                        public void onClick(SweetAlertDialog sweetAlertDialog) {
+//                            sweetAlertDialog.dismissWithAnimation();
+//                        }
+//                    }).show();
         }
         else {
-            AlertDialog.Builder builder= new AlertDialog.Builder(DashboardActivity.this);
-
-            builder.setTitle("Exit?").setMessage("Are you sure?")
-                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            DashboardActivity.super.onBackPressed();
-                        }
-                    }).setNegativeButton("No",null);
-            AlertDialog alert= builder.create();
-            alert.show();
-        }
+            super.onBackPressed();
+            }
     }
-
-    //SOLVE THIS!!! <<<----
 
     private NavigationBarView.OnItemSelectedListener navListener= new NavigationBarView.OnItemSelectedListener() {
         @Override

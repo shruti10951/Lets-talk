@@ -22,6 +22,7 @@ import com.vidyalankar.letstalk.adapter.NotificationAdapter;
 import com.vidyalankar.letstalk.model.NotificationModel;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class AllNotificationFragment extends Fragment {
 
@@ -65,6 +66,7 @@ public class AllNotificationFragment extends Fragment {
                             notificationModel.setNotificationId(dataSnapshot.getKey());
                             list.add(notificationModel);
                         }
+                        Collections.reverse(list);
                         adapter.notifyDataSetChanged();
                     }
 

@@ -3,12 +3,21 @@ package com.vidyalankar.letstalk.model;
 public class NotificationModel {
 
     private String notificationBy;
-    private String notificationAt;
+//    private String notificationAt;
+    private Long notificationAt;
     private String type;
     private String postId;
     private String notificationId;
     private String postedBy;
     private boolean checkOpen;
+
+    public Long getNotificationAt() {
+        return notificationAt;
+    }
+
+    public void setNotificationAt(Long notificationAt) {
+        this.notificationAt = notificationAt;
+    }
 
     public String getNotificationBy() {
         return notificationBy;
@@ -26,13 +35,13 @@ public class NotificationModel {
         this.notificationBy = notificationBy;
     }
 
-    public String getNotificationAt() {
-        return notificationAt;
-    }
-
-    public void setNotificationAt(String notificationAt) {
-        this.notificationAt = notificationAt;
-    }
+//    public String getNotificationAt() {
+//        return notificationAt;
+//    }
+//
+//    public void setNotificationAt(String notificationAt) {
+//        this.notificationAt = notificationAt;
+//    }
 
     public String getType() {
         return type;

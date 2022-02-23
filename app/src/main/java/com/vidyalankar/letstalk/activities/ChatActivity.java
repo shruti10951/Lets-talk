@@ -126,8 +126,8 @@ public class ChatActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String msg= message.getText().toString();
                 ChatModel chatModel= new ChatModel(senderID, msg);
-                chatModel.setTime(formatter.format(date));
-                //chatModel.setTime(new Date().getTime());
+//                chatModel.setTime(formatter.format(date));
+                chatModel.setTime(new Date().getTime());
                 message.setText("");
 
                 FirebaseDatabase.getInstance().getReference()

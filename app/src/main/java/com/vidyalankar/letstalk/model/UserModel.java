@@ -5,7 +5,7 @@ import android.net.Uri;
 public class UserModel {
 
     public String username, email, userID, profilePic;
-    int followerCount;
+    int followerCount, followingCount;
 
     public UserModel() {
     }
@@ -61,4 +61,11 @@ public class UserModel {
         this.email = email;
     }
 
+    public int getFollowingCount() {
+        return followingCount;
+    }
+
+    public void setFollowingCount(int followingCount) {
+        this.followingCount = followingCount;
+    }
 }

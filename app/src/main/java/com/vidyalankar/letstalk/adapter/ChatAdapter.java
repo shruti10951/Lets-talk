@@ -10,12 +10,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.FirebaseDatabase;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.model.ChatModel;
-import com.vidyalankar.letstalk.model.UserModel;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class ChatAdapter extends RecyclerView.Adapter{
 
@@ -60,11 +60,14 @@ public class ChatAdapter extends RecyclerView.Adapter{
         ChatModel chatModel= list.get(position);
         if(holder.getClass()== SenderViewHolder.class){
             ((SenderViewHolder)holder).senderMsg.setText(chatModel.getMessage());
-            ((SenderViewHolder)holder).senderTime.setText(chatModel.getTime().toString());
+            Date date= new Date(chatModel.getTime());
+            SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+            ((SenderViewHolder)holder).senderTime.setText(formatter.format(date));
         }else{
             ((ReceiverViewHolder)holder).receiverMsg.setText(chatModel.getMessage());
-            ((ReceiverViewHolder)holder).receiverMsg.setText(chatModel.getMessage());
-            ((ReceiverViewHolder)holder).receiverTime.setText(chatModel.getTime().toString());
+            Date date= new Date(chatModel.getTime());
+            SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+            ((ReceiverViewHolder)holder).receiverTime.setText(formatter.format(date));
         }
 
     }

@@ -3,20 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".fragments.UsersFragment">
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/users_show_rv"
+    <EditText
+        android:id="@+id/search_user_et"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15font_ssp"
         android:layout_marginTop="?attr/actionBarSize"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="@dimen/_15font_ssp"
+        android:backgroundTint="@color/black"
+        android:drawableLeft="@drawable/search_icon"
+        android:drawablePadding="@dimen/_10font_ssp"
+        android:drawableTint="@color/black"
+        android:hint="Search users"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15font_ssp"
+        app:layout_constraintBottom_toTopOf="@+id/users_show_rv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/users_show_rv"
+        android:layout_width="398dp"
+        android:layout_height="536dp"
+        android:layout_marginStart="@dimen/_15font_ssp"
+        android:layout_marginEnd="@dimen/_15font_ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_user_et" />
 </androidx.constraintlayout.widget.ConstraintLayout>

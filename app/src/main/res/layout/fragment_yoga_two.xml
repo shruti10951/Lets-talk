@@ -35,8 +35,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
-        android:layout_width="393dp"
-        android:layout_height="443dp"
+        android:layout_width="380dp"
+        android:layout_height="415dp"
         android:layout_marginTop="@dimen/_16font_ssp"
         android:layout_marginBottom="?attr/actionBarSize"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,7 +60,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/yoga_one_point_1"
+                    android:id="@+id/yoga_two_point_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -75,19 +75,19 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/yoga_two_pose_1"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_180hsdp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
+                    android:background="@drawable/yoga_one_pose2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/yoga_one_point_1"
-                    android:background="@drawable/yoga_one_pose2" />
+                    app:layout_constraintTop_toBottomOf="@+id/yoga_one_point_1" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/yoga_two_point_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -102,7 +102,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/yoga_two_point_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -117,7 +117,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/yoga_two_point_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -132,7 +132,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/yoga_two_point_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -147,12 +147,43 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/yoga_two_point_6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/yoga_two_point_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/yoga_two_point_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="@dimen/_15font_ssp"
                     android:text="TextView"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
