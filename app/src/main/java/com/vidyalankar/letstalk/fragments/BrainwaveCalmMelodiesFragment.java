@@ -9,7 +9,9 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 
 import com.vidyalankar.letstalk.R;
+
 import com.vidyalankar.letstalk.activities.Binaural1Activity;
+import com.vidyalankar.letstalk.activities.IsochronicActivity;
 
 public class BrainwaveCalmMelodiesFragment extends Fragment {
     View binaural, isochronic;
@@ -36,8 +38,7 @@ public class BrainwaveCalmMelodiesFragment extends Fragment {
         binaural.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new BinauralCalmMelodiesFragment()).addToBackStack(null).commit();
-                Intent intent=new Intent(getActivity(),Binaural1Activity.class);
+                Intent intent=new Intent(getActivity(), Binaural1Activity.class);
                 startActivity(intent);
             }
         });
@@ -45,7 +46,8 @@ public class BrainwaveCalmMelodiesFragment extends Fragment {
         isochronic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new IsochronicCalmMelodiesFragment()).addToBackStack(null).commit();
+                Intent intent=new Intent(getActivity(), IsochronicActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -107,9 +107,11 @@
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/menu/dashboard_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/menu/nav_menu.xml" value="0.6" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/drawable/profile_icon.xml" value="0.26614583333333336" />
-        <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/activity_binaural1.xml" value="0.2" />
+        <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/activity_binaural.xml" value="0.264" />
+        <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/activity_binaural1.xml" value="0.136" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/activity_comment.xml" value="0.16" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/activity_forgot_password.xml" value="0.23822463768115942" />
+        <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/activity_isochronic.xml" value="0.2359375" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/activity_main.xml" value="0.23822463768115942" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/activity_registration.xml" value="0.1" />
@@ -128,7 +130,7 @@
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_mindfulness_options.xml" value="0.264" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_mindfulness_wellness_center.xml" value="0.25" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_nutrition_options.xml" value="0.264" />
-        <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
+        <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_sleep_options.xml" value="0.4" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_stress_options.xml" value="0.264" />
         <entry key="..\:/Users/apurv/Lets-talk/app/src/main/res/layout/fragment_wellness_center.xml" value="0.23369565217391305" />

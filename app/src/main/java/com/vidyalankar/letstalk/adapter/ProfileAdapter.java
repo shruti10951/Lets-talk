@@ -1,6 +1,7 @@
 package com.vidyalankar.letstalk.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
+import com.vidyalankar.letstalk.activities.CommentActivity;
 import com.vidyalankar.letstalk.model.PostModel;
 import com.vidyalankar.letstalk.model.UserModel;
 
@@ -55,6 +57,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
                 holder.post.setText(postModel.getPost());
                 holder.like.setText(postModel.getPostLikes()+"");
                 holder.comment.setText(postModel.getCommentCount()+"");
+
             }
 
             @Override
@@ -62,6 +65,17 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
 
             }
         });
+
+//        holder.profileRV.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent= new Intent(context, CommentActivity.class);
+//                intent.putExtra("postId", postModel.getPostId());
+//                intent.putExtra("postedBy", postModel.getPostedBy());
+//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                context.startActivity(intent);
+//            }
+//        });
 
     }
 
@@ -72,18 +86,21 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
 
     public class viewHolder extends RecyclerView.ViewHolder{
 
-        ImageView profile_image, save;
+        ImageView profile_image;
         TextView username, like, comment, post;
+        RecyclerView profileRV;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
 
             profile_image= itemView.findViewById(R.id.user_profile_comment);
             post= itemView.findViewById(R.id.user_post_comment);
-            save= itemView.findViewById(R.id.save_post_comment);
+//            save= itemView.findViewById(R.id.save_post_comment);
             username= itemView.findViewById(R.id.username_comment);
             like= itemView.findViewById(R.id.likes_comment);
             comment= itemView.findViewById(R.id.user_comments_comment);
+//            profileRV=itemView.findViewById(R.id.profileRV);
+
 
 
         }

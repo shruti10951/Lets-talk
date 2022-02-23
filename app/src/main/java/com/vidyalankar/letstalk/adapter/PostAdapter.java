@@ -160,6 +160,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
 
         ImageView profile_image;
         TextView username, like, comment, post;
+        //Recycler define
+
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
@@ -169,6 +171,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
             username= itemView.findViewById(R.id.username_comment);
             like= itemView.findViewById(R.id.likes_comment);
             comment= itemView.findViewById(R.id.user_comments_comment);
+            //id
 
         }
     }

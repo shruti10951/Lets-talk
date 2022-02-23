@@ -188,6 +188,10 @@
         "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\home_icon.xml"
     },
     {
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_beat2.mp3.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\raw\\beat2.mp3"
+    },
+    {
         "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_sleep2.jpeg.flat",
         "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\sleep2.jpeg"
     },
@@ -260,10 +264,6 @@
         "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_binaural1.xml.flat",
-        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_binaural1.xml"
-    },
-    {
         "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_splash_screen.jpeg.flat",
         "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\splash_screen.jpeg"
     },
@@ -318,6 +318,10 @@
     {
         "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_binaural.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_binaural.xml"
     },
     {
         "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_like_icon.xml.flat",
@@ -396,6 +400,10 @@
         "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_registration.xml"
     },
     {
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_beat1.mp3.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\raw\\beat1.mp3"
+    },
+    {
         "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_bookmark_saved.xml.flat",
         "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\bookmark_saved.xml"
     },
@@ -406,6 +414,10 @@
     {
         "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_counselling_help.xml.flat",
         "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_counselling_help.xml"
+    },
+    {
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_isochronic.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_isochronic.xml"
     },
     {
         "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_search_icon.xml.flat",
