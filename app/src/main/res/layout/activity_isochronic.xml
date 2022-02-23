@@ -7,210 +7,50 @@
     android:background="@drawable/calm_melodies_cover"
     tools:context=".activities.IsochronicActivity">
 
-
-    <LinearLayout
-        android:id="@+id/linearLayoutCompat"
-        android:layout_width="414dp"
-        android:layout_height="184dp"
-        android:orientation="horizontal"
-        android:padding="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/song1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Song 1"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.158">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-            <View
-                android:id="@+id/isochronic_option_one"
-                android:layout_width="410dp"
-                android:layout_height="108dp"
-                android:layout_marginTop="?attr/actionBarSize"
-                android:background="@color/greyTrans"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
-            <ImageView
-                android:id="@+id/play1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:clickable="true"
-                android:src="@drawable/play"
-                app:layout_constraintBottom_toBottomOf="@+id/binaural_option_one"
-                app:layout_constraintEnd_toEndOf="@+id/binaural_option_one"
-                app:layout_constraintHorizontal_bias="0.501"
-                app:layout_constraintStart_toStartOf="@+id/binaural_option_one"
-                app:layout_constraintTop_toTopOf="@+id/binaural_option_one"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <ImageView
-                android:id="@+id/pause1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:clickable="true"
-                android:src="@drawable/pause"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="@+id/isochronic_option_one"
-                app:layout_constraintEnd_toEndOf="@+id/isochronic_option_one"
-                app:layout_constraintHorizontal_bias="0.501"
-                app:layout_constraintStart_toStartOf="@+id/isochronic_option_one"
-                app:layout_constraintTop_toTopOf="@+id/isochronic_option_one"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <TextView
-                android:id="@+id/player_position1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:text="00:00"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/isochronic_option_one"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.114"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/isochronic_option_one"
-                app:layout_constraintVertical_bias="0.618" />
-
-            <SeekBar
-                android:id="@+id/seek_bar1"
-                android:layout_width="348dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="52dp"
-                android:layout_weight="1"
-                app:layout_constraintBottom_toBottomOf="@+id/isochronic_option_one"
-                app:layout_constraintEnd_toEndOf="@+id/isochronic_option_one"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/play1" />
-
-            <TextView
-                android:id="@+id/player_duration1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
-                android:text="00:00"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/isochronic_option_one"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.867"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/isochronic_option_one"
-                app:layout_constraintVertical_bias="0.616" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="414dp"
-        android:layout_height="184dp"
-        android:orientation="horizontal"
-        android:padding="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/song2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song 1"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.54">
+        app:layout_constraintTop_toBottomOf="@+id/song1" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/song3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song 1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/song2" />
 
-            <View
-                android:id="@+id/isochronic_option_two"
-                android:layout_width="409dp"
-                android:layout_height="101dp"
-                android:layout_marginTop="56dp"
-                android:layout_marginEnd="40dp"
-                android:background="@color/greyTrans"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.152"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/play2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:clickable="true"
-                android:src="@drawable/play"
-                app:layout_constraintBottom_toBottomOf="@+id/isochronic_option_two"
-                app:layout_constraintEnd_toEndOf="@+id/binaural_option_two"
-                app:layout_constraintHorizontal_bias="0.501"
-                app:layout_constraintStart_toStartOf="@+id/isochronic_option_two"
-                app:layout_constraintTop_toTopOf="@+id/isochronic_option_two"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <ImageView
-                android:id="@+id/pause2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:clickable="true"
-                android:src="@drawable/pause"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="@+id/isochronic_option_two"
-                app:layout_constraintEnd_toEndOf="@+id/isochronic_option_two"
-                app:layout_constraintHorizontal_bias="0.501"
-                app:layout_constraintStart_toStartOf="@+id/isochronic_option_two"
-                app:layout_constraintTop_toTopOf="@+id/isochronic_option_two"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <TextView
-                android:id="@+id/player_position2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:text="00.00"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/isochronic_option_two"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.114"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/isochronic_option_two"
-                app:layout_constraintVertical_bias="0.618" />
-
-
-            <SeekBar
-                android:id="@+id/seek_bar2"
-                android:layout_width="348dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="60dp"
-                android:layout_weight="1"
-                app:layout_constraintBottom_toBottomOf="@+id/isochronic_option_two"
-                app:layout_constraintEnd_toEndOf="@+id/isochronic_option_two"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/play2" />
-
-            <TextView
-                android:id="@+id/player_duration2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
-                android:text="00:00"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/isochronic_option_two"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.867"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/isochronic_option_two"
-                app:layout_constraintVertical_bias="0.616" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/song4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song 1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/song3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
