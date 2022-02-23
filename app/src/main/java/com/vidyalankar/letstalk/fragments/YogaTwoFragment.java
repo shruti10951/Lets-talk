@@ -7,60 +7,47 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.vidyalankar.letstalk.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link YogaTwoFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class YogaTwoFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    TextView pointOne, pointTwo, pointThree, pointFour, pointFive, pointSix, pointSeven, pointEight;
 
     public YogaTwoFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment YogaTwoFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static YogaTwoFragment newInstance(String param1, String param2) {
-        YogaTwoFragment fragment = new YogaTwoFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_yoga_two, container, false);
+        View view= inflater.inflate(R.layout.fragment_yoga_two, container, false);
+
+        pointOne= view.findViewById(R.id.yoga_two_point_1);
+        pointTwo= view.findViewById(R.id.yoga_two_point_2);
+        pointThree= view.findViewById(R.id.yoga_two_point_3);
+        pointFour= view.findViewById(R.id.yoga_two_point_4);
+        pointFive= view.findViewById(R.id.yoga_two_point_5);
+        pointSix= view.findViewById(R.id.yoga_two_point_6);
+        pointSeven= view.findViewById(R.id.yoga_two_point_7);
+        pointEight= view.findViewById(R.id.yoga_two_point_8);
+
+        pointOne.setText("Child’s pose helps create an inward focus and restore energy. For more support, place a cushion under your forehead, torso, or thighs.");
+        pointTwo.setText("1. From a kneeling position, place your knees together or slightly apart.");
+        pointThree.setText("2.Sit back on your heels.");
+        pointFour.setText("3.Hinge at your hips as you fold forward, resting your forehead on your mat.");
+        pointFive.setText("4.Extend your arms in front of you or alongside your legs.");
+        pointSix.setText("5.Allow your torso to sink into your thighs.");
+        pointSeven.setText("6.Breathe deeply and focus on relaxing your body.");
+        pointEight.setText("7.Hold this pose for up to 5 minutes.");
+
+        return view;
     }
 }

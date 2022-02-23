@@ -36,14 +36,14 @@ public class INeedHelpFragment extends Fragment {
         emergency.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new EmergencyHelpFragment()).commit();
+                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new EmergencyHelpFragment()).addToBackStack(null).commit();
             }
         });
 
         counseling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new CounsellingHelpFragment()).commit();
+                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new CounsellingHelpFragment()).addToBackStack(null).commit();
             }
         });
 

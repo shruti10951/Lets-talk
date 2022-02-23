@@ -88,7 +88,11 @@ public class AddPostFragment extends Fragment {
                 PostModel postModel= new PostModel();
                 postModel.setPostedBy(FirebaseAuth.getInstance().getUid());
                 postModel.setPost(textMessage.getText().toString());
-                postModel.setPostedAt(formatter.format(date));
+//                Date date= new Date(postModel.getPostedAt());
+//                SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+                postModel.setPostedAt(new Date().getTime());
+
+//                postModel.setPostedAt(formatter.format(date));
 
                 database.getReference()
                         .child("Posts")

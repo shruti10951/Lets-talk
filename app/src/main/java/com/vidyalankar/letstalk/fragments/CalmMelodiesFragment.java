@@ -35,7 +35,7 @@ public class CalmMelodiesFragment extends Fragment {
         brainwave_option.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new BrainwaveCalmMelodiesFragment()).commit();
+                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new BrainwaveCalmMelodiesFragment()).addToBackStack(null).commit();
             }
         });
 

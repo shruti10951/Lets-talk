@@ -146,7 +146,7 @@ public class CommentActivity extends AppCompatActivity {
 
                                                 NotificationModel notificationModel= new NotificationModel();
                                                 notificationModel.setNotificationBy(FirebaseAuth.getInstance().getUid());
-                                                notificationModel.setNotificationAt(formatter.format(date));
+                                                notificationModel.setNotificationAt(new Date().getTime());
                                                 notificationModel.setPostId(postId);
                                                 notificationModel.setPostedBy(postedBy);
                                                 notificationModel.setType("comment");

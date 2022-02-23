@@ -112,8 +112,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
                                                             Toast.makeText(view.getContext(), "You liked this post!", Toast.LENGTH_SHORT).show();
 
                                                             NotificationModel notificationModel= new NotificationModel();
+
                                                             notificationModel.setNotificationBy(FirebaseAuth.getInstance().getUid());
-                                                            notificationModel.setNotificationAt(formatter.format(date));
+                                                            notificationModel.setNotificationAt(new Date().getTime());
                                                             notificationModel.setPostId(postModel.getPostId());
                                                             notificationModel.setPostedBy(postModel.getPostedBy());
                                                             notificationModel.setType("like");

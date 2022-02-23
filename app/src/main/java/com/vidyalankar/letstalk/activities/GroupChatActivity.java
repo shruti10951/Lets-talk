@@ -107,8 +107,8 @@ public class GroupChatActivity extends AppCompatActivity {
 
                 String msg= message.getText().toString();
                 ChatModel chatModel= new ChatModel(senderId,msg);
-//                chatModel.setTime(new Date().getTime());
-                chatModel.setTime(formatter.format(date));
+                chatModel.setTime(new Date().getTime());
+//                chatModel.setTime(formatter.format(date));
                 message.setText("");
 
                 FirebaseDatabase.getInstance().getReference()

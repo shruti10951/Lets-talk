@@ -49,7 +49,7 @@ import java.util.Collections;
 public class ProfileFragment extends Fragment {
 
     ImageView profilePic;
-    TextView userNameTextView, userEmailTextView, friendsTextView, followerCount, postCount;
+    TextView userNameTextView, userEmailTextView, friendsTextView, followerCount, followingCount;
     ImageView editProfile;
     ProgressBar progressBar;
 
@@ -81,12 +81,11 @@ public class ProfileFragment extends Fragment {
         editProfile= (ImageView) view.findViewById(R.id.changeProfile);
         followerCount= (TextView) view.findViewById(R.id.follower_count);
         progressBar= (ProgressBar) view.findViewById(R.id.profileProgressBar);
-        //postCount= (TextView) view.findViewById(R.id.)
+        followingCount= (TextView) view.findViewById(R.id.following_count);
 
         user= FirebaseAuth.getInstance().getCurrentUser();
         userID= user.getUid();
         reference= FirebaseDatabase.getInstance().getReference("Users");
-        // reference= FirebaseDatabase.getInstance().getReference().child("profile_pic");
         storageRef= FirebaseStorage.getInstance().getReference().child("profile_pic").child(user.getUid());
         profileRV= view.findViewById(R.id.profileRV);
         postList= new ArrayList<>();
@@ -104,12 +103,14 @@ public class ProfileFragment extends Fragment {
                     String userEmail= userModelProfile.email;
                     String uri= snapshot.child("profilePic").getValue(String.class);
                     int follower_count= userModelProfile.getFollowerCount();
+                    int following_count= userModelProfile.getFollowingCount();
 
                     userNameTextView.setText(userName);
                     userEmailTextView.setText(userEmail);
                     Picasso.get().load(uri).placeholder(R.drawable.user_profile_default)
                             .into(profilePic);
                     followerCount.setText(follower_count+"");
+                    followingCount.setText(following_count+"");
                 }
             }
 

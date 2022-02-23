@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -60,11 +61,14 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
                 .into(holder.profile_image);
         holder.username.setText(userModel.getUsername());
 
+//        FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
+//        String userId= user.getUid();
+
         FirebaseDatabase.getInstance().getReference()
                 .child("Users")
-                .child(userModel.getUserID())
-                .child("followers")
                 .child(FirebaseAuth.getInstance().getUid())
+                .child("Following")
+                .child(userModel.getUserID())
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -112,22 +116,31 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.viewHolder> {
                                                                         @Override
                                                                         public void onSuccess(Void unused) {
 
-                                                                            holder.follow_btn.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.layout_border));
-                                                                            holder.follow_btn.setText("Following");
-                                                                            holder.follow_btn.setTextColor(context.getResources().getColor(R.color.black));
-                                                                            holder.follow_btn.setEnabled(false);
-                                                                            Toast.makeText(context, "You followed "+ userModel.getUsername() + list.size() , Toast.LENGTH_SHORT).show();
-
-                                                                            NotificationModel notificationModel= new NotificationModel();
-                                                                            notificationModel.setNotificationBy(FirebaseAuth.getInstance().getUid());
-                                                                            notificationModel.setNotificationAt(formatter.format(date));
-                                                                            notificationModel.setType("follow");
-
                                                                             FirebaseDatabase.getInstance().getReference()
-                                                                                    .child("Notification")
-                                                                                    .child(userModel.getUserID())
-                                                                                    .push()
-                                                                                    .setValue(notificationModel);
+                                                                                    .child("Users")
+                                                                                    .child(FirebaseAuth.getInstance().getUid())
+                                                                                    .child("followingCount")
+                                                                                    .setValue(userModel.getFollowingCount()+1).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                @Override
+                                                                                public void onSuccess(Void unused) {
+                                                                                    holder.follow_btn.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.layout_border));
+                                                                                    holder.follow_btn.setText("Following");
+                                                                                    holder.follow_btn.setTextColor(context.getResources().getColor(R.color.black));
+                                                                                    holder.follow_btn.setEnabled(false);
+                                                                                    Toast.makeText(context, "You followed "+ userModel.getUsername() + list.size() , Toast.LENGTH_SHORT).show();
+
+                                                                                    NotificationModel notificationModel= new NotificationModel();
+                                                                                    notificationModel.setNotificationBy(FirebaseAuth.getInstance().getUid());
+                                                                                    notificationModel.setNotificationAt(new Date().getTime());
+                                                                                    notificationModel.setType("follow");
+
+                                                                                    FirebaseDatabase.getInstance().getReference()
+                                                                                            .child("Notification")
+                                                                                            .child(userModel.getUserID())
+                                                                                            .push()
+                                                                                            .setValue(notificationModel);
+                                                                                }
+                                                                            });
                                                                         }
                                                                     });
 

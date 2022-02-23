@@ -18,7 +18,9 @@ import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.model.ChatModel;
 import com.vidyalankar.letstalk.model.UserModel;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class GroupChatAdapter extends RecyclerView.Adapter {
     ArrayList<ChatModel> list;
@@ -62,6 +64,9 @@ public class GroupChatAdapter extends RecyclerView.Adapter {
         ChatModel chatModel= list.get(position);
         if(holder.getClass()== GroupChatAdapter.SenderViewHolder.class){
             ((GroupChatAdapter.SenderViewHolder)holder).senderMsg.setText(chatModel.getMessage());
+            Date date= new Date(chatModel.getTime());
+            SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+            ((SenderViewHolder)holder).senderTime.setText(formatter.format(date));
         }else{
             FirebaseDatabase.getInstance().getReference()
                     .child("Users")
@@ -71,6 +76,9 @@ public class GroupChatAdapter extends RecyclerView.Adapter {
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             UserModel userModel= snapshot.getValue(UserModel.class);
                             ((GroupChatAdapter.ReceiverViewHolder)holder).receiverName.setText(userModel.getUsername());
+                            Date date= new Date(chatModel.getTime());
+                            SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+                            ((ReceiverViewHolder)holder).receiverTime.setText(formatter.format(date));
                         }
 
                         @Override

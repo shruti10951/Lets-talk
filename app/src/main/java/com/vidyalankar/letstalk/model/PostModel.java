@@ -5,9 +5,27 @@ public class PostModel {
     private String postId;
     private String post;
     private String postedBy;
-    private String postedAt;
+   // private String postedAt;
     private int postLikes;
     private int commentCount;
+    private Long postedAt;
+
+    public PostModel(String postId, String post, String postedBy, int postLikes, int commentCount, Long postedAt) {
+        this.postId = postId;
+        this.post = post;
+        this.postedBy = postedBy;
+        this.postLikes = postLikes;
+        this.commentCount = commentCount;
+        this.postedAt = postedAt;
+    }
+
+    public Long getPostedAt() {
+        return postedAt;
+    }
+
+    public void setPostedAt(Long postedAt) {
+        this.postedAt = postedAt;
+    }
 
     public int getCommentCount() {
         return commentCount;
@@ -49,21 +67,21 @@ public class PostModel {
         this.postedBy = postedBy;
     }
 
-    public String getPostedAt() {
-        return postedAt;
-    }
-
-    public void setPostedAt(String postedAt) {
-        this.postedAt = postedAt;
-    }
+//    public String getPostedAt() {
+//        return postedAt;
+//    }
+//
+//    public void setPostedAt(String postedAt) {
+//        this.postedAt = postedAt;
+//    }
 
     public PostModel() {
     }
 
-    public PostModel(String postId, String post, String postedBy, String postedAt) {
-        this.postId = postId;
-        this.post = post;
-        this.postedBy = postedBy;
-        this.postedAt = postedAt;
-    }
+//    public PostModel(String postId, String post, String postedBy, String postedAt) {
+//        this.postId = postId;
+//        this.post = post;
+//        this.postedBy = postedBy;
+//        this.postedAt = postedAt;
+//    }
 }
