@@ -3676,6 +3676,7 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id binaural_option_one
+id binaural_option_two
 id blocking
 id bottom
 id bottomNavigationView
@@ -3882,6 +3883,7 @@ id info
 id invisible
 id inward
 id isochronic_option_one
+id isochronic_option_two
 id italic
 id item1
 id item2
@@ -3903,6 +3905,7 @@ id line1
 id line3
 id linear
 id linearLayout3
+id linearLayoutCompat
 id listMode
 id list_item
 id loading
@@ -4046,11 +4049,18 @@ id parent_matrix
 id password_toggle
 id path
 id pathRelative
+id pause1
+id pause2
 id peekHeight
 id percent
 id pin
 id play
-id play_now
+id play1
+id play2
+id player_duration1
+id player_duration2
+id player_position1
+id player_position2
 id playnow
 id position
 id postLayout
@@ -4115,6 +4125,8 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id seek_bar
+id seek_bar1
+id seek_bar2
 id select_dialog_listview
 id selected
 id selection_type
@@ -4426,12 +4438,13 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_binaural1
+layout activity_binaural
 layout activity_chat
 layout activity_comment
 layout activity_dashboard
 layout activity_forgot_password
 layout activity_group_chat
+layout activity_isochronic
 layout activity_login
 layout activity_main
 layout activity_registration
@@ -4595,6 +4608,8 @@ navigation dashboard_menu
 navigation drawer_navigation
 navigation nav_graph
 plurals mtrl_badge_content_description
+raw beat1
+raw beat2
 string LOADING
 string _6
 string _9

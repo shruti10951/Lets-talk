@@ -81,7 +81,7 @@ public class ProfileFragment extends Fragment {
         editProfile= (ImageView) view.findViewById(R.id.changeProfile);
         followerCount= (TextView) view.findViewById(R.id.follower_count);
         progressBar= (ProgressBar) view.findViewById(R.id.profileProgressBar);
-        postCount= (TextView) view.findViewById(R.id.)
+        //postCount= (TextView) view.findViewById(R.id.)
 
         user= FirebaseAuth.getInstance().getCurrentUser();
         userID= user.getUid();
