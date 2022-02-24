@@ -19,7 +19,9 @@ import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.model.CommentModel;
 import com.vidyalankar.letstalk.model.UserModel;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHolder> {
 
@@ -42,7 +44,11 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.viewHold
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         CommentModel commentModel= list.get(position);
         holder.comment.setText(commentModel.getComment());
-        holder.commentedAt.setText(commentModel.getCommentedAt()+"");
+
+        SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+        Date date= new Date(commentModel.getCommentedAt());
+
+        holder.commentedAt.setText(formatter.format(date));
 
         FirebaseDatabase.getInstance().getReference()
                 .child("Users")

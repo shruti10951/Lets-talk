@@ -13,7 +13,6 @@ import com.vidyalankar.letstalk.R;
 public class Binaural1Activity extends AppCompatActivity {
 
     String songName;
-    View binaural1, binaural2, binaural3, binaural4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

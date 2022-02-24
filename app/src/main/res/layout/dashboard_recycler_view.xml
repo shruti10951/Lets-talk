@@ -42,6 +42,7 @@
         android:text="Amrita2004"
         android:textColor="@color/white"
         android:textSize="20sp"
+        android:fontFamily="serif"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/user_profile_comment"
         app:layout_constraintStart_toEndOf="@+id/user_profile_comment"
@@ -80,6 +81,7 @@
         android:drawableTint="#FFFFFF"
         android:textColor="@color/white"
         android:gravity="center"
+        android:fontFamily="serif"
         android:text="234"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_post_comment"
@@ -97,6 +99,7 @@
         android:textColor="@color/white"
         android:gravity="center"
         android:text="52"
+        android:fontFamily="serif"
         app:layout_constraintStart_toEndOf="@id/likes_comment"
         app:layout_constraintTop_toBottomOf="@+id/user_post_comment"
         android:paddingBottom="@dimen/_10font_ssp"/>

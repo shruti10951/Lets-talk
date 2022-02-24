@@ -22,6 +22,7 @@
                 android:layout_height="match_parent">
 
 
+<<<<<<< HEAD
             <View
         android:id="@+id/mindfulness_view"
         android:layout_width="411dp"
@@ -222,6 +223,164 @@
         app:layout_constraintStart_toStartOf="@+id/mindfulness_view"
         app:layout_constraintTop_toBottomOf="@+id/mindfulness_view"
         app:layout_constraintVertical_bias="0.04" />
+=======
+                <View
+                    android:id="@+id/mindfulness_view"
+                    android:layout_width="411dp"
+                    android:layout_height="171dp"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:background="@drawable/isochronic_cover"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Binaural Beats"
+                    android:textColor="@color/white"
+                    android:background="@color/greyTrans"
+                    android:textSize="@dimen/_20font_ssp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view"
+                    app:layout_constraintEnd_toEndOf="@+id/mindfulness_view"
+                    app:layout_constraintStart_toStartOf="@+id/mindfulness_view"
+                    app:layout_constraintTop_toTopOf="@+id/mindfulness_view" />
+
+
+                <View
+                    android:id="@+id/isochronic1"
+                    android:layout_width="416dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="208dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/greyTrans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mindfulness_view" />
+
+
+
+                <TextView
+                    android:id="@+id/mindfulness_article_text1"
+                    android:layout_width="257dp"
+                    android:layout_height="74dp"
+                    android:fontFamily="serif"
+                    android:text="Calm Mind"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15font_ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/isochronic1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/isochronic1"
+                    app:layout_constraintVertical_bias="0.739" />
+
+                <View
+                    android:id="@+id/isochronic2"
+                    android:layout_width="413dp"
+                    android:layout_height="124dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="324dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/greyTrans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.533"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mindfulness_view" />
+
+
+                <TextView
+                    android:id="@+id/mindfulness_article_text2"
+                    android:layout_width="257dp"
+                    android:layout_height="74dp"
+                    android:fontFamily="serif"
+                    android:text="Morning Motivator"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15font_ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/isochronic2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/isochronic2"
+                    app:layout_constraintVertical_bias="0.76" />
+
+                <View
+                    android:id="@+id/isochronic3"
+                    android:layout_width="416dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="444dp"
+                    android:background="@color/greyTrans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.615"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mindfulness_view" />
+
+
+                <TextView
+                    android:id="@+id/mindfulness_article_text3"
+                    android:layout_width="257dp"
+                    android:layout_height="74dp"
+                    android:fontFamily="serif"
+                    android:text="Alpha Waves"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/isochronic3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/isochronic3"
+                    app:layout_constraintVertical_bias="0.913" />
+
+                <View
+                    android:id="@+id/isochronic4"
+                    android:layout_width="416dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="560dp"
+                    android:background="@color/greyTrans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.615"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mindfulness_view" />
+
+
+                <TextView
+                    android:id="@+id/mindfulness_article_text4"
+                    android:layout_width="257dp"
+                    android:layout_height="74dp"
+                    android:fontFamily="serif"
+                    android:text="Beta Swirl"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/isochronic4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/isochronic4"
+                    app:layout_constraintVertical_bias="0.739" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="108dp"
+                    android:layout_height="28dp"
+                    android:text="Melodies"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/isochronic3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.059"
+                    app:layout_constraintStart_toStartOf="@+id/mindfulness_view"
+                    app:layout_constraintTop_toBottomOf="@+id/mindfulness_view"
+                    app:layout_constraintVertical_bias="0.04" />
+>>>>>>> 118ab107c9b89cad00c2a12ed0d26c3d146d4e6b
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

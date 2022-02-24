@@ -3465,7 +3465,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gray_button_background
 drawable green_button_background
-drawable group_cover
+drawable group__cover
 drawable help_calm_down
 drawable home_icon
 drawable ic_baseline_add_a_photo_24
@@ -3715,8 +3715,6 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonPanel
-id button_first
-id button_second
 id buttons_container
 id cache_measures
 id callMeasure
@@ -4127,7 +4125,6 @@ id row_index_key
 id rtl
 id save_non_transition_alpha
 id save_overlay_view
-id save_post_comment
 id sawtooth
 id scale
 id screen
@@ -4297,9 +4294,6 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
-id textview_first
-id textview_second
-id three_dots_comment
 id time
 id title
 id titleDividerNoCustom
@@ -4328,6 +4322,8 @@ id up
 id useLogo
 id user_comments_comment
 id user_email_login
+id user_follower_count
+id user_following_count
 id user_mail_dash_nav
 id user_name_dash_nav
 id user_password_login
@@ -4336,7 +4332,9 @@ id user_profile_chat_activity
 id user_profile_comment
 id user_profile_comment_rv
 id user_profile_dash_nav
+id user_profile_image
 id user_profile_post
+id user_profile_username
 id user_reg_email
 id user_reg_password
 id user_reg_password_confirm
@@ -4350,7 +4348,6 @@ id usersFragment
 id users_show_rv
 id vertical_only
 id view
-id view3
 id view4
 id view6
 id view_offset_helper
@@ -4532,7 +4529,6 @@ layout fragment_calm_melodies
 layout fragment_chat
 layout fragment_counselling_help
 layout fragment_emergency_help
-layout fragment_first
 layout fragment_friends
 layout fragment_help_me_calm_down
 layout fragment_home
@@ -4544,11 +4540,11 @@ layout fragment_notification
 layout fragment_nutrition_options
 layout fragment_nutrition_wellness_center
 layout fragment_profile
-layout fragment_second
 layout fragment_sleep_options
 layout fragment_sleep_wellness_center
 layout fragment_stress_options
 layout fragment_stress_wellness_center
+layout fragment_user_profile
 layout fragment_users
 layout fragment_wellness_center
 layout fragment_yoga_four

@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textStyle="bold"
+        android:fontFamily="serif"
         android:layout_marginTop="8dp"
         android:layout_marginLeft="4dp"
         android:text="userName"
@@ -35,6 +36,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textStyle="bold"
+        android:fontFamily="serif"
         android:layout_marginLeft="4dp"
         android:text="name@gmail.com"
         android:id="@+id/user_mail_dash_nav">

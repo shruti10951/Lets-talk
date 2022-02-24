@@ -18,6 +18,7 @@
         android:drawablePadding="@dimen/_10font_ssp"
         android:drawableTint="@color/black"
         android:hint="Search users"
+        android:fontFamily="serif"
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textSize="@dimen/_15font_ssp"
@@ -29,7 +30,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/users_show_rv"
-        android:layout_width="398dp"
+        android:layout_width="380dp"
         android:layout_height="536dp"
         android:layout_marginStart="@dimen/_15font_ssp"
         android:layout_marginEnd="@dimen/_15font_ssp"

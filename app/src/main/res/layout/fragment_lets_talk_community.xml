@@ -98,7 +98,7 @@
                     android:layout_width="411dp"
                     android:layout_height="171dp"
                     android:layout_marginTop="?attr/actionBarSize"
-                    android:background="@drawable/group_cover"
+                    android:background="@drawable/group__cover"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
