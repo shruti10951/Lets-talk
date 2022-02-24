@@ -23,6 +23,7 @@
         android:maxWidth="@dimen/_190hsdp"
         android:minWidth="@dimen/_50hsdp"
         android:text="TextView"
+        android:fontFamily="serif"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/receiver_time"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,6 +39,7 @@
         android:layout_marginEnd="@dimen/_4hsdp"
         android:layout_marginBottom="@dimen/_4hsdp"
         android:text="12:00pm"
+        android:fontFamily="serif"
         android:textSize="@dimen/_10font_ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

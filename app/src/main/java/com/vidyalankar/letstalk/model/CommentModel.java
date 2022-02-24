@@ -3,7 +3,7 @@ package com.vidyalankar.letstalk.model;
 public class CommentModel {
     
     private String comment;
-    private String commentedAt;
+    private Long commentedAt;
     private String commentedBy;
 
     public CommentModel() {
@@ -17,11 +17,11 @@ public class CommentModel {
         this.comment = comment;
     }
 
-    public String getCommentedAt() {
+    public Long getCommentedAt() {
         return commentedAt;
     }
 
-    public void setCommentedAt(String commentedAt) {
+    public void setCommentedAt(Long commentedAt) {
         this.commentedAt = commentedAt;
     }
 

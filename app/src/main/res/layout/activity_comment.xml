@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginTop="4dp"
     tools:context=".activities.CommentActivity">
 
 
@@ -58,20 +61,10 @@
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold"
+                    android:fontFamily="serif"
                     app:layout_constraintBottom_toBottomOf="@+id/user_profile_comment"
                     app:layout_constraintStart_toEndOf="@+id/user_profile_comment"
                     app:layout_constraintTop_toTopOf="@+id/user_profile_comment" />
-
-                <ImageView
-                    android:id="@+id/three_dots_comment"
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
-                    android:layout_marginEnd="8dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/user_profile_comment"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/user_profile_comment"
-                    app:srcCompat="@drawable/ic_more_three_dots"
-                    app:tint="#FFFFFF" />
 
 
                 <TextView
@@ -87,24 +80,13 @@
                     android:text="Hello This is a post!"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_15font_ssp"
-                    android:typeface="serif"
+                    android:fontFamily="serif"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/user_profile_comment"
                     app:riv_corner_radius="10dip"
                     app:riv_mutate_background="true" />
-
-                <ImageView
-                    android:id="@+id/save_post_comment"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="8dp"
-                    android:drawableTint="#FFFFFF"
-                    app:layout_constraintEnd_toEndOf="@+id/user_post_comment"
-                    app:layout_constraintTop_toTopOf="@+id/user_post_comment"
-                    app:srcCompat="@drawable/bookmark" />
 
                 <TextView
                     android:id="@+id/likes_comment"
@@ -118,6 +100,7 @@
                     android:gravity="center"
                     android:paddingBottom="@dimen/_10font_ssp"
                     android:text="234"
+                    android:fontFamily="serif"
                     android:textColor="@color/white"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/user_post_comment" />
@@ -131,6 +114,7 @@
                     android:drawableLeft="@drawable/comment_icon"
                     android:drawablePadding="10dp"
                     android:drawableTint="#FFFFFF"
+                    android:fontFamily="serif"
                     android:gravity="center"
                     android:paddingBottom="@dimen/_10font_ssp"
                     android:text="52"
@@ -171,6 +155,7 @@
         android:paddingBottom="@dimen/_6font_ssp"
         android:textColor="@color/black"
         android:textSize="@dimen/_16font_ssp"
+        android:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.183"

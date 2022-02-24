@@ -35,7 +35,7 @@ public class LetsTalkCommunityFragment extends Fragment {
     }
 
 
-    View group1, group2, group3, group4, group5;
+    TextView group1, group2, group3, group4, group5;
     String groupName;
     SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
     Date date= new Date();

@@ -4,230 +4,213 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mid_blue"
+    android:background="@drawable/calm_melodies_cover"
     tools:context=".activities.Binaural1Activity">
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-
-            <View
-        android:id="@+id/mindfulness_view"
-        android:layout_width="411dp"
-        android:layout_height="171dp"
-        android:layout_marginTop="?attr/actionBarSize"
-        android:background="@drawable/binaural_cover"
+    <LinearLayout
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="414dp"
+        android:layout_height="184dp"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Binaural Beats"
-        android:textColor="@color/white"
-        android:background="@color/greyTrans"
-        android:textSize="@dimen/_20font_ssp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view"
-        app:layout_constraintEnd_toEndOf="@+id/mindfulness_view"
-        app:layout_constraintStart_toStartOf="@+id/mindfulness_view"
-        app:layout_constraintTop_toTopOf="@+id/mindfulness_view" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-                <View
-                    android:id="@+id/binaural1"
-                    android:layout_width="408dp"
-                    android:layout_height="118dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="208dp"
-                    android:layout_marginEnd="8dp"
-                    android:background="@color/greyTrans"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.6"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/mindfulness_view" />
-
-    <!--    <ImageView-->
-<!--        android:id="@+id/mindfulness_imageView4"-->
-<!--        android:layout_width="116dp"-->
-<!--        android:layout_height="110dp"-->
-<!--        android:src="@drawable/mindfulness1"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view1"-->
-<!--        app:layout_constraintEnd_toStartOf="@+id/mindfulness_article_text1"-->
-<!--        app:layout_constraintHorizontal_bias="0.473"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/mindfulness_view1"-->
-<!--        app:layout_constraintVertical_bias="0.412" />-->
+            <View
+                android:id="@+id/binaural_option_one"
+                android:layout_width="410dp"
+                android:layout_height="108dp"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:background="@color/greyTrans"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
-        android:id="@+id/mindfulness_article_text1"
-        android:layout_width="257dp"
-        android:layout_height="74dp"
-        android:fontFamily="serif"
-        android:text="Healing Aura"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_15font_ssp"
-        app:layout_constraintBottom_toBottomOf="@+id/binaural1"
+            <ImageView
+                android:id="@+id/play1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:src="@drawable/play"
+                app:layout_constraintBottom_toBottomOf="@+id/binaural_option_one"
+                app:layout_constraintEnd_toEndOf="@+id/binaural_option_one"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="@+id/binaural_option_one"
+                app:layout_constraintTop_toTopOf="@+id/binaural_option_one"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/pause1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:src="@drawable/pause"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/binaural_option_one"
+                app:layout_constraintEnd_toEndOf="@+id/binaural_option_one"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="@+id/binaural_option_one"
+                app:layout_constraintTop_toTopOf="@+id/binaural_option_one"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/player_position1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/binaural_option_one"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.114"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/binaural_option_one"
+                app:layout_constraintVertical_bias="0.618" />
+
+            <SeekBar
+                android:id="@+id/seek_bar1"
+                android:layout_width="348dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="52dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="@+id/binaural_option_one"
+                app:layout_constraintEnd_toEndOf="@+id/binaural_option_one"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/play1" />
+
+            <TextView
+                android:id="@+id/player_duration1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/binaural_option_one"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.867"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/binaural_option_one"
+                app:layout_constraintVertical_bias="0.616" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="184dp"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/binaural1"
-        app:layout_constraintVertical_bias="0.739" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.54">
 
-    <View
-        android:id="@+id/binaural2"
-        android:layout_width="413dp"
-        android:layout_height="124dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="324dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/greyTrans"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/mindfulness_view" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/mindfulness_article_text2"
-        android:layout_width="257dp"
-        android:layout_height="74dp"
-        android:fontFamily="serif"
-        android:text="Ground Air"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_15font_ssp"
-        app:layout_constraintBottom_toBottomOf="@+id/binaural2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/binaural2"
-        app:layout_constraintVertical_bias="0.621" />
+            <View
+                android:id="@+id/binaural_option_two"
+                android:layout_width="409dp"
+                android:layout_height="101dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="40dp"
+                android:background="@color/greyTrans"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.152"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/mindfulness_imageView1"-->
-<!--        android:layout_width="116dp"-->
-<!--        android:layout_height="110dp"-->
-<!--        android:src="@drawable/mindfulness2"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view2"-->
-<!--        app:layout_constraintEnd_toStartOf="@+id/mindfulness_article_text2"-->
-<!--        app:layout_constraintHorizontal_bias="0.529"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/mindfulness_view2"-->
-<!--        app:layout_constraintVertical_bias="0.611" />-->
+            <ImageView
+                android:id="@+id/play2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:src="@drawable/play"
+                app:layout_constraintBottom_toBottomOf="@+id/binaural_option_two"
+                app:layout_constraintEnd_toEndOf="@+id/binaural_option_two"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="@+id/binaural_option_two"
+                app:layout_constraintTop_toTopOf="@+id/binaural_option_two"
+                app:layout_constraintVertical_bias="1.0" />
 
-    <View
-        android:id="@+id/binaural3"
-        android:layout_width="416dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="444dp"
-        android:background="@color/greyTrans"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/mindfulness_view" />
+            <ImageView
+            android:id="@+id/pause2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:src="@drawable/pause"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/binaural_option_two"
+            app:layout_constraintEnd_toEndOf="@+id/binaural_option_two"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="@+id/binaural_option_two"
+            app:layout_constraintTop_toTopOf="@+id/binaural_option_two"
+            app:layout_constraintVertical_bias="1.0" />
 
-    <!--    <ImageView-->
-<!--        android:id="@+id/mindfulness_imageView3"-->
-<!--        android:layout_width="116dp"-->
-<!--        android:layout_height="110dp"-->
-<!--        android:src="@drawable/mindfulness3"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view3"-->
-<!--        app:layout_constraintEnd_toStartOf="@+id/mindfulness_article_text3"-->
-<!--        app:layout_constraintHorizontal_bias="0.473"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/mindfulness_view3"-->
-<!--        app:layout_constraintVertical_bias="0.805" />-->
+            <TextView
+                android:id="@+id/player_position2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="00.00"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/binaural_option_two"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.114"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/binaural_option_two"
+                app:layout_constraintVertical_bias="0.618" />
 
-    <TextView
-        android:id="@+id/mindfulness_article_text3"
-        android:layout_width="257dp"
-        android:layout_height="74dp"
-        android:fontFamily="serif"
-        android:text="Deep Alpha"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_14font_ssp"
-        app:layout_constraintBottom_toBottomOf="@+id/binaural3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/binaural3"
-        app:layout_constraintVertical_bias="0.913" />
 
-    <View
-        android:id="@+id/binaural4"
-        android:layout_width="416dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="560dp"
-        android:background="@color/greyTrans"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/mindfulness_view" />
+            <SeekBar
+                android:id="@+id/seek_bar2"
+                android:layout_width="348dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="60dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="@+id/binaural_option_two"
+                app:layout_constraintEnd_toEndOf="@+id/binaural_option_two"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/play2" />
 
-    <!--    <ImageView-->
-<!--        android:id="@+id/mindfulness_imageView"-->
-<!--        android:layout_width="116dp"-->
-<!--        android:layout_height="110dp"-->
-<!--        android:src="@color/greyTrans"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view4"-->
-<!--        app:layout_constraintEnd_toStartOf="@+id/mindfulness_article_text4"-->
-<!--        app:layout_constraintHorizontal_bias="0.473"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/mindfulness_view4"-->
-<!--        app:layout_constraintVertical_bias="0.805" />-->
+            <TextView
+                android:id="@+id/player_duration2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/binaural_option_two"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.867"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/binaural_option_two"
+                app:layout_constraintVertical_bias="0.616" />
 
-    <TextView
-        android:id="@+id/mindfulness_article_text4"
-        android:layout_width="257dp"
-        android:layout_height="74dp"
-        android:fontFamily="serif"
-        android:text="Relaxing Waves"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_14font_ssp"
-        app:layout_constraintBottom_toBottomOf="@+id/binaural4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/binaural4"
-        app:layout_constraintVertical_bias="0.739" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="108dp"
-        android:layout_height="28dp"
-        android:text="Melodies"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/binaural3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toStartOf="@+id/mindfulness_view"
-        app:layout_constraintTop_toBottomOf="@+id/mindfulness_view"
-        app:layout_constraintVertical_bias="0.04" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </LinearLayout>
-
-    </androidx.core.widget.NestedScrollView>
-
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

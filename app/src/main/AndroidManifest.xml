@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vidyalankar.letstalk" >
+    package="com.vidyalankar.letstalk">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -11,12 +11,9 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LetsTalk" >
+        android:theme="@style/Theme.LetsTalk">
         <activity
-            android:name=".activities.PlayMelodies1"
-            android:exported="false" />
-        <activity
-            android:name=".activities.PlayMelodies2"
+            android:name=".activities.PlayMelodies"
             android:exported="false" />
         <activity
             android:name=".activities.IsochronicActivity"
@@ -43,8 +40,8 @@
             android:exported="true" />
         <activity
             android:name=".activities.DashboardActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustPan" />
+            android:windowSoftInputMode="adjustPan"
+        android:exported="true" />
         <activity
             android:name=".activities.LoginActivity"
             android:exported="true" />
@@ -53,7 +50,7 @@
             android:exported="true" />
         <activity
             android:name=".activities.SplashScreen"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
