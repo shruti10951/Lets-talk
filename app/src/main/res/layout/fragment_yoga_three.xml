@@ -13,7 +13,7 @@
         android:id="@+id/sleep_diagonal_layout"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/mindfulness_drawer_option"
+        android:background="@drawable/yoga_header"
         android:elevation="30dp"
         app:layout_constraintTop_toTopOf="parent"
         diagonal:diagonal_angle="10"
@@ -25,8 +25,8 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="422dp"
+        android:layout_height="64dp"
         android:fontFamily="serif"
         android:text="Legs-Up-the-Wall Pose"
         android:textAlignment="center"
@@ -40,9 +40,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
-        android:layout_width="393dp"
-        android:layout_height="443dp"
-        android:layout_marginTop="@dimen/_16font_ssp"
+        android:layout_width="405dp"
+        android:layout_height="425dp"
+        android:layout_marginTop="@dimen/_25font_ssp"
         android:layout_marginBottom="?attr/actionBarSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,20 +65,20 @@
                 android:orientation="vertical">
 
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="TextView"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_16hsdp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                <!--                <TextView-->
+                <!--                    android:id="@+id/textView2"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="8dp"-->
+                <!--                    android:layout_marginTop="16dp"-->
+                <!--                    android:layout_marginEnd="8dp"-->
+                <!--                    android:text="Legs-Up-the-Wall Pose provides deep relaxation while boosting lymph flow and circulation."-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textSize="@dimen/_16hsdp"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintHorizontal_bias="0.0"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/textView6" />-->
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -87,7 +87,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:background="@drawable/yoga_one_pose2"
+                    android:background="@drawable/yoga_three_pose"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/yoga_one_point_1" />
@@ -99,7 +99,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="TextView"
+                    android:text="1.	Sit on the floor facing the wall, with your body as close to the wall as possible."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -114,7 +114,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="TextView"
+                    android:text="2.	Lie on your back and place your legs up the wall with straight knees."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +130,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="TextView"
+                    android:text="3.	Position your hips next to the wall or a few inches away."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -146,7 +146,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="TextView"
+                    android:text="4.	Place your arms alongside your body, or place one hand on your belly and one hand on your chest."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -161,7 +161,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="TextView"
+                    android:text="5.	Hold this pose for up to 15 minutes.5.	Hold this pose for up to 15 minutes."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
