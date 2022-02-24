@@ -15,5 +15,13 @@
     <color name="shimmer_color">#AAA3A3</color>
     <color name="mid_blue">#475063</color>
     <color name="beige">#faf0e6</color>
+    <color name="maroon">#371a27</color>
+    <color name="green">#1d7874</color>
+    <color name="light_green">#679289</color>
+    <color name="brown">#4A3728</color>
+    <color name="seed">#c9ada7</color>
+    <color name="grey_green">#888a78</color>
+
+    <!--    <#D9E1C1 ABD5C7 4B371C //4A3728-->
 
 </resources>

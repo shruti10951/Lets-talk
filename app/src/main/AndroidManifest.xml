@@ -13,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LetsTalk">
         <activity
-            android:name=".activities.PlayMelodies"
+            android:name=".activities.PlayMelodies1"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PlayMelodies2"
             android:exported="false" />
         <activity
             android:name=".activities.IsochronicActivity"

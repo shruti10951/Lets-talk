@@ -23,6 +23,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -124,33 +125,35 @@ public class ChatActivity extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String msg= message.getText().toString();
-                ChatModel chatModel= new ChatModel(senderID, msg);
+                if(!message.equals(null)) {
+                    String msg = message.getText().toString();
+                    ChatModel chatModel = new ChatModel(senderID, msg);
 //                chatModel.setTime(formatter.format(date));
-                chatModel.setTime(new Date().getTime());
-                message.setText("");
+                    chatModel.setTime(new Date().getTime());
+                    message.setText("");
 
-                FirebaseDatabase.getInstance().getReference()
-                        .child("Chats")
-                        .child(senderRoom)
-                        .push()
-                        .setValue(chatModel).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void unused) {
-                        database.getReference().child("Chats")
-                                .child(receiverRoom)
-                                .push()
-                                .setValue(chatModel).addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void unused) {
+                    FirebaseDatabase.getInstance().getReference()
+                            .child("Chats")
+                            .child(senderRoom)
+                            .push()
+                            .setValue(chatModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void unused) {
+                            database.getReference().child("Chats")
+                                    .child(receiverRoom)
+                                    .push()
+                                    .setValue(chatModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
 
-                            }
-                        });
-                    }
-                });
-
+                                }
+                            });
+                        }
+                    });
+                }else{
+                    Toast.makeText(ChatActivity.this, "Enter something...", Toast.LENGTH_SHORT).show();
+                }
             }
         });
-
     }
 }
