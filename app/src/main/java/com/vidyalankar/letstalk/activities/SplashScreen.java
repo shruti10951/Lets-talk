@@ -22,8 +22,6 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        FirebaseMessaging.getInstance().subscribeToTopic("Notification");
-
         mAuth = FirebaseAuth.getInstance();
         if (mAuth != null) {
             currentUser = mAuth.getCurrentUser();
@@ -44,7 +42,7 @@ public class SplashScreen extends AppCompatActivity {
                     finish();
                 }
             }
-        }, 4000);
+        }, 5000);
     }
 
 
