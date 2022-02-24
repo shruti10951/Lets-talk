@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 import com.google.firebase.storage.FirebaseStorage;
@@ -36,25 +38,11 @@ public class SleepWellnessCenterFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view=  inflater.inflate(R.layout.fragment_sleep_wellness_center, container, false);
-
-        articleText= view.findViewById(R.id.sleep_article_text);
-        reference= FirebaseStorage.getInstance().getReference().child("Articles");
-
-        String text= "";
-        try {
-            InputStream is= getResources().getAssets().open("mindfulness.txt");
-            int size= is.available();
-            byte[] buffer= new byte[size];
-            is.read(buffer);
-            is.close();
-            text= new String(buffer);
-
-        }catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-        articleText.setText(text);
-
+        WebView webView=(WebView)view.findViewById(R.id.webView1);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("https://amritapawar2802.wixsite.com/lifemedical/about");
         return view;
-    }
+
+            }
 }

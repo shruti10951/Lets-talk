@@ -1,118 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a95068b-aa42-46c6-b4fd-03a284c99220" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e4c388fe-2172-4946-9e47-ea558dfe3516" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/res/google-services/debug/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/res/google-services/debug/values/values.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/vidyalankar/letstalk/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/vidyalankar/letstalk/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/app_metadata/debug/app-metadata.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/app_metadata/debug/app-metadata.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compatible_screen_manifest/debug/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compatible_screen_manifest/debug/output-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/values_values.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/navigation_json/debug/navigation.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/navigation_json/debug/navigation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/activities/Binaural1Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/activities/Binaural1Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/activities/CommentActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/activities/CommentActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/activities/IsochronicActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/activities/IsochronicActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/activities/PlayMelodies1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/activities/PlayMelodies2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/adapter/CommentAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/adapter/CommentAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/adapter/PostAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/adapter/PostAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/fragments/LetsTalkCommunityFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/fragments/LetsTalkCommunityFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/activities/PlayMelodies.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/fragments/SleepWellnessCenterFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/fragments/SleepWellnessCenterFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/fragments/YogaTwoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/fragments/YogaTwoFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/model/CommentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/vidyalankar/letstalk/model/CommentModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/binaural_cover.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/breathing_cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/breathing_one_pose1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/breathing_one_pose2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/breathing_one_pose3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/breathing_option_header.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/group_cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/isochronic_cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/yoga_four_pose.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/yoga_header.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/yoga_one_pose1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/yoga_one_pose1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/yoga_one_pose2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/yoga_one_pose2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/yoga_three_pose.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/yoga_two_pose.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_binaural.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_binaural.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_comment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_comment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_forgot_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_forgot_password.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_group_chat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_group_chat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_isochronic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_isochronic.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_play_melodies1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_play_melodies2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/comment_recycler_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/comment_recycler_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dashboard_recycler_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dashboard_recycler_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_post.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_post.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_play_melodies.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_breathing_one.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_breathing_one.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_breathing_three.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_breathing_three.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_breathing_two.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_breathing_two.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_first.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_i_need_help.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_i_need_help.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_isochronic_calm_melodies.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_lets_talk_community.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_lets_talk_community.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mindfulness_options.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mindfulness_options.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_nutrition_options.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_nutrition_options.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_second.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_sleep_options.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_sleep_options.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_sleep_wellness_center.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_sleep_wellness_center.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_stress_options.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_stress_options.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_users.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_yoga_four.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_yoga_four.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_yoga_one.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_yoga_one.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_yoga_three.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_yoga_three.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_yoga_two.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_yoga_two.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/friends_recycler_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/friends_recycler_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/grp_receiver_recycler_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/grp_receiver_recycler_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_header.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/notification_recycler_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/notification_recycler_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/receiver_recycler_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/receiver_recycler_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/sender_recycler_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sender_recycler_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/shimmer_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/shimmer_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/users_recycler_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/users_recycler_view.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/deep_alpha.m4a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/ground_air.m4a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/healing_aura.m4a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/relaxing_waves.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/beat1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/beat2.mp3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Admin\.android\avd\Pixel_3_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\apurv\.android\avd\Nexus_5X_API_28.avd]" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

@@ -11,7 +11,7 @@
         android:id="@+id/sleep_diagonal_layout"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/mindfulness_drawer_option"
+        android:background="@drawable/yoga_header"
         android:elevation="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -20,9 +20,9 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="408dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="serif"
         android:text="Child’s Pose"
         android:textAlignment="center"
@@ -30,14 +30,15 @@
         android:textColorHighlight="#EFE0B3"
         android:textSize="@dimen/_25font_ssp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sleep_diagonal_layout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
-        android:layout_width="380dp"
-        android:layout_height="415dp"
-        android:layout_marginTop="@dimen/_16font_ssp"
+        android:layout_width="393dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="@dimen/_25font_ssp"
         android:layout_marginBottom="?attr/actionBarSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +67,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="TextView"
+                    android:text="1.	From a kneeling position, place your knees together or slightly apart."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -81,7 +82,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:background="@drawable/yoga_one_pose2"
+                    android:background="@drawable/yoga_two_pose"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/yoga_one_point_1" />
@@ -93,7 +94,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="TextView"
+                    android:text="2.	Sit back on your heels."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -108,7 +109,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="TextView"
+                    android:text="3.	Hinge at your hips as you fold forward, resting your forehead on your mat."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -123,7 +124,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="TextView"
+                    android:text="4.	Extend your arms in front of you or alongside your legs."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -138,7 +139,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="TextView"
+                    android:text="5.	Allow your torso to sink into your thighs."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -153,7 +154,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="TextView"
+                    android:text="6.	Breathe deeply and focus on relaxing your body."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -168,7 +169,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="TextView"
+                    android:text="7.	Hold this pose for up to 5 minutes."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -176,21 +177,21 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-                <TextView
-                    android:id="@+id/yoga_two_point_8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="8dp"
-                    android:paddingBottom="@dimen/_15font_ssp"
-                    android:text="TextView"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_16hsdp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                <!--                <TextView-->
+                <!--                    android:id="@+id/yoga_two_point_8"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="8dp"-->
+                <!--                    android:layout_marginTop="16dp"-->
+                <!--                    android:layout_marginEnd="8dp"-->
+                <!--                    android:paddingBottom="@dimen/_15font_ssp"-->
+                <!--                    android:text="TextView"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textSize="@dimen/_16hsdp"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintHorizontal_bias="0.0"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/textView5" />-->
 
 
             </LinearLayout>

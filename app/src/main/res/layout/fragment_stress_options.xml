@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mid_blue"
+    android:background="@color/seed"
     tools:context=".fragments.StressOptionsFragment">
 
 
@@ -164,7 +164,6 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:fontFamily="serif"
         app:layout_constraintBottom_toTopOf="@+id/stress_view3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
