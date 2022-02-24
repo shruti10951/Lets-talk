@@ -38,7 +38,7 @@ public class GroupChatActivity extends AppCompatActivity {
     EditText message;
     RecyclerView grpChatRv;
     String senderId;
-    String receiverId;
+//    String receiverId;
     Intent intent;
     FirebaseAuth auth;
     FirebaseDatabase database;

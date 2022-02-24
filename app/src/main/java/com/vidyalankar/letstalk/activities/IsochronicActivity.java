@@ -13,10 +13,6 @@ import com.vidyalankar.letstalk.R;
 public class IsochronicActivity extends AppCompatActivity {
 
     String songName;
-<<<<<<< HEAD
-    View isochronic1, isochronic2, isochronic3, isochronic4;
-=======
->>>>>>> 118ab107c9b89cad00c2a12ed0d26c3d146d4e6b
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
