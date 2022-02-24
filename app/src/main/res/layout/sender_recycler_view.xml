@@ -32,6 +32,7 @@
             android:layout_marginTop="@dimen/_8font_ssp"
             android:layout_marginBottom="@dimen/_8font_ssp"
             android:layout_marginEnd="@dimen/_8font_ssp"
+            android:fontFamily="serif"
             android:inputType="textLongMessage|textMultiLine"
             android:maxWidth="@dimen/_190hsdp"
             android:minWidth="@dimen/_50hsdp"
@@ -52,6 +53,7 @@
             android:layout_marginEnd="@dimen/_4hsdp"
             android:layout_marginBottom="@dimen/_4hsdp"
             android:text="12:00pm"
+            android:fontFamily="serif"
             android:textSize="@dimen/_10font_ssp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline2" />

@@ -78,6 +78,24 @@ public class CommentActivity extends AppCompatActivity {
                         post.setText(postModel.getPost());
                         likes.setText(postModel.getPostLikes()+ "");
                         comments.setText(postModel.getCommentCount()+"");
+                        FirebaseDatabase.getInstance().getReference()
+                                .child("Posts")
+                                .child(postId)
+                                .child("likes")
+                                .child(FirebaseAuth.getInstance().getUid())
+                                .addListenerForSingleValueEvent(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                        if(snapshot.exists()){
+                                            likes.setCompoundDrawablesWithIntrinsicBounds(R.drawable.liked_icon,0,0,0);
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError error) {
+
+                                    }
+                                });
                     }
 
                     @Override
@@ -113,8 +131,8 @@ public class CommentActivity extends AppCompatActivity {
 
                 CommentModel commentModel= new CommentModel();
                 commentModel.setComment(comment.getText().toString());
-//                commentModel.setCommentedAt(new Date().getTime());
-                commentModel.setCommentedAt(formatter.format(date));
+                commentModel.setCommentedAt(new Date().getTime());
+//                commentModel.setCommentedAt(formatter.format(date));
                 commentModel.setCommentedBy(FirebaseAuth.getInstance().getUid());
 
                 database.getReference().child("Posts")

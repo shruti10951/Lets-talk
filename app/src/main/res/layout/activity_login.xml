@@ -27,6 +27,7 @@
         android:drawableLeft="@drawable/email_icon"
         android:drawablePadding="10dp"
         android:hint="Email"
+        android:fontFamily="serif"
         android:inputType="textPersonName"
         android:textColor="#ffffff"
         android:textColorHighlight="#FFFFFF"
@@ -39,10 +40,11 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="#fff"
+        android:backgroundTint="#ffffff"
         android:drawableLeft="@drawable/password_lock_icon"
         android:drawablePadding="10dp"
         android:hint="Password"
+        android:fontFamily="serif"
         android:inputType="textPassword"
         android:textColor="#ffffff"
         android:textColorHighlight="#FFFFFF"
@@ -55,9 +57,10 @@
         android:layout_height="58dp"
         android:layout_marginTop="30dp"
         android:text="Log in"
+        android:fontFamily="serif"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="bold|italic"
+        android:textStyle="bold"
         app:backgroundTint="#000F3C" />
 
     <TextView
@@ -66,6 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
+        android:fontFamily="serif"
         android:text="Not a member? Sign up now!"
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
@@ -76,6 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
+        android:fontFamily="serif"
         android:text="Forgot Password?"
         android:textColor="#FDFDFD"
         android:textSize="20sp" />

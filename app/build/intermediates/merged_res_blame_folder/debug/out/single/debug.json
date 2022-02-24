@@ -8,10 +8,6 @@
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_notification.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_second.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_second.xml"
-    },
-    {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_shimmer_layout.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\shimmer_layout.xml"
     },
@@ -60,12 +56,12 @@
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_info_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\info_icon.xml"
-    },
-    {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_info_icon.xml.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\info_icon.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_profile.xml.flat",
@@ -428,10 +424,6 @@
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\play.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_first.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_first.xml"
-    },
-    {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_lets_talk_community_icon.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\lets_talk_community_icon.xml"
     },
@@ -510,6 +502,10 @@
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_registration.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_registration.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_user_profile.xml.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_user_profile.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",

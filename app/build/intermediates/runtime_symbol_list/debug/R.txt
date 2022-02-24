@@ -3693,8 +3693,6 @@ int id browser_actions_menu_item_text 0x7f080079
 int id browser_actions_menu_items 0x7f08007a
 int id browser_actions_menu_view 0x7f08007b
 int id buttonPanel 0x7f08007c
-int id button_first 0x7f08007d
-int id button_second 0x7f08007e
 int id buttons_container 0x7f08007f
 int id cache_measures 0x7f080080
 int id callMeasure 0x7f080081
@@ -4105,7 +4103,6 @@ int id row_index_key 0x7f080215
 int id rtl 0x7f080216
 int id save_non_transition_alpha 0x7f080217
 int id save_overlay_view 0x7f080218
-int id save_post_comment 0x7f080219
 int id sawtooth 0x7f08021a
 int id scale 0x7f08021b
 int id screen 0x7f08021c
@@ -4262,9 +4259,6 @@ int id textinput_helper_text 0x7f0802b2
 int id textinput_placeholder 0x7f0802b3
 int id textinput_prefix_text 0x7f0802b4
 int id textinput_suffix_text 0x7f0802b5
-int id textview_first 0x7f0802b6
-int id textview_second 0x7f0802b7
-int id three_dots_comment 0x7f0802b8
 int id time 0x7f0802b9
 int id title 0x7f0802ba
 int id titleDividerNoCustom 0x7f0802bb
@@ -4293,6 +4287,8 @@ int id up 0x7f0802d1
 int id useLogo 0x7f0802d2
 int id user_comments_comment 0x7f0802d3
 int id user_email_login 0x7f0802d4
+int id user_follower_count 0x7f08031c
+int id user_following_count 0x7f08031d
 int id user_mail_dash_nav 0x7f0802d5
 int id user_name_dash_nav 0x7f0802d6
 int id user_password_login 0x7f0802d7
@@ -4301,7 +4297,9 @@ int id user_profile_chat_activity 0x7f0802d9
 int id user_profile_comment 0x7f0802da
 int id user_profile_comment_rv 0x7f0802db
 int id user_profile_dash_nav 0x7f0802dc
+int id user_profile_image 0x7f08031a
 int id user_profile_post 0x7f0802dd
+int id user_profile_username 0x7f08031b
 int id user_reg_email 0x7f0802de
 int id user_reg_password 0x7f0802df
 int id user_reg_password_confirm 0x7f0802e0
@@ -4315,7 +4313,6 @@ int id usersFragment 0x7f0802e7
 int id users_show_rv 0x7f0802e8
 int id vertical_only 0x7f0802e9
 int id view 0x7f0802ea
-int id view3 0x7f0802eb
 int id view4 0x7f0802ec
 int id view6 0x7f0802ed
 int id view_offset_helper 0x7f0802ee
@@ -4496,7 +4493,6 @@ int layout fragment_calm_melodies 0x7f0b0047
 int layout fragment_chat 0x7f0b0048
 int layout fragment_counselling_help 0x7f0b0049
 int layout fragment_emergency_help 0x7f0b004a
-int layout fragment_first 0x7f0b004b
 int layout fragment_friends 0x7f0b004c
 int layout fragment_help_me_calm_down 0x7f0b004d
 int layout fragment_home 0x7f0b004e
@@ -4509,11 +4505,11 @@ int layout fragment_notification 0x7f0b0054
 int layout fragment_nutrition_options 0x7f0b0055
 int layout fragment_nutrition_wellness_center 0x7f0b0056
 int layout fragment_profile 0x7f0b0057
-int layout fragment_second 0x7f0b0058
 int layout fragment_sleep_options 0x7f0b0059
 int layout fragment_sleep_wellness_center 0x7f0b005a
 int layout fragment_stress_options 0x7f0b005b
 int layout fragment_stress_wellness_center 0x7f0b005c
+int layout fragment_user_profile 0x7f0b00bd
 int layout fragment_users 0x7f0b005d
 int layout fragment_wellness_center 0x7f0b005e
 int layout fragment_yoga_four 0x7f0b005f

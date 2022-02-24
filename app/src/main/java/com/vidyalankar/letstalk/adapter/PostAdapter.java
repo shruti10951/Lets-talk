@@ -2,6 +2,7 @@ package com.vidyalankar.letstalk.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,8 @@ import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.activities.CommentActivity;
+import com.vidyalankar.letstalk.activities.DashboardActivity;
+import com.vidyalankar.letstalk.fragments.UserProfileFragment;
 import com.vidyalankar.letstalk.model.NotificationModel;
 import com.vidyalankar.letstalk.model.PostModel;
 import com.vidyalankar.letstalk.model.UserModel;
@@ -138,6 +141,22 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
 
                     }
                 });
+
+        holder.profile_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                UserProfileFragment userProfileFragment= new UserProfileFragment();
+                Bundle args= new Bundle();
+                args.putString("userId", postModel.getPostedBy());
+                userProfileFragment.setArguments(args);
+                ((DashboardActivity)context)
+                        .getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fragmentContainerView2, userProfileFragment, "UserProfileFragment")
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
 
         holder.comment.setOnClickListener(new View.OnClickListener() {
             @Override
