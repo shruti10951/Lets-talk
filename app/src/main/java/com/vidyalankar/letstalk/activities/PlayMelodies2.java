@@ -146,16 +146,5 @@ public class PlayMelodies2 extends AppCompatActivity {
     }
 
 
-    ///beat2
-
-//    @SuppressLint("DefaultLocale")
-//    private String convertFormat(int duration2) {
-//        return String.format("%02d:%02d"
-//                , TimeUnit.MILLISECONDS.toMinutes(duration2)
-//                , TimeUnit.MILLISECONDS.toSeconds(duration2) -
-//                        TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration2)));
-//
-//
-//    }
 
 }
