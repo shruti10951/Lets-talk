@@ -43,17 +43,17 @@ public class PlayMelodies2 extends AppCompatActivity {
         song= intent.getStringExtra("songName");
 
         switch (song){
-            case "song 1":
-                mediaPlayer=MediaPlayer.create(this, R.raw.healing_aura);
+            case "Calm Mind":
+                mediaPlayer=MediaPlayer.create(this, R.raw.calm_mind);
                 break;
-            case "song 2":
-                mediaPlayer=MediaPlayer.create(this, R.raw.ground_air);
+            case "Morning Motivator":
+                mediaPlayer=MediaPlayer.create(this, R.raw.morning_motivator);
                 break;
-            case "song 3":
-                mediaPlayer=MediaPlayer.create(this, R.raw.deep_alpha);
+            case "Alpha Waves":
+                mediaPlayer=MediaPlayer.create(this, R.raw.alpha_waves );
                 break;
-            case "song 4":
-                mediaPlayer=MediaPlayer.create(this, R.raw.relaxing_waves);
+            case "Beta Swirl":
+                mediaPlayer=MediaPlayer.create(this, R.raw.beta_swirl);
                 break;
         }
 

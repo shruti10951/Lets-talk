@@ -13,7 +13,7 @@ import com.vidyalankar.letstalk.R;
 public class IsochronicActivity extends AppCompatActivity {
 
     String songName;
-    TextView binaural1, binaural2, binaural3, binaural4;
+    View isochronic1, isochronic2, isochronic3, isochronic4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,29 +24,29 @@ public class IsochronicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()){
-                    case R.id.binaural1:
-                        songName= "song 1";
+                    case R.id.isochronic1:
+                        songName= "Calm Mind";
                         forward();
                         break;
-                    case R.id.binaural2:
-                        songName= "song 2";
+                    case R.id.isochronic2:
+                        songName= "Morning Motivator";
                         forward();
                         break;
-                    case R.id.binaural3:
-                        songName= "song 3";
+                    case R.id.isochronic3:
+                        songName= "Alpha Waves";
                         forward();
                         break;
-                    case R.id.binaural4:
-                        songName= "song 4";
+                    case R.id.isochronic4:
+                        songName= "Beta Swirl";
                         forward();
                         break;
                 }
             }
         };
-        findViewById(R.id.binaural1).setOnClickListener(listener);
-        findViewById(R.id.binaural2).setOnClickListener(listener);
-        findViewById(R.id.binaural3).setOnClickListener(listener);
-        findViewById(R.id.binaural4).setOnClickListener(listener);
+        findViewById(R.id.isochronic1).setOnClickListener(listener);
+        findViewById(R.id.isochronic2).setOnClickListener(listener);
+        findViewById(R.id.isochronic3).setOnClickListener(listener);
+        findViewById(R.id.isochronic4).setOnClickListener(listener);
 
 
     }

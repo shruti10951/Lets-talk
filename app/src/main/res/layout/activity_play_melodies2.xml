@@ -3,23 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/dark_bg_talk_community"
+    android:background="@drawable/calm_melodies_cover"
     android:layout_height="match_parent"
     tools:context=".activities.PlayMelodies2">
 
     <LinearLayout
         android:id="@+id/linearLayoutCompat"
-        android:layout_width="414dp"
-        android:layout_height="184dp"
+        android:layout_width="409dp"
+        android:layout_height="181dp"
         android:orientation="horizontal"
         android:padding="12dp"
-        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.158">
+        app:layout_constraintVertical_bias="0.361">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -81,10 +80,10 @@
 
             <SeekBar
                 android:id="@+id/seek_bar1"
-                android:layout_width="348dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="52dp"
+                android:layout_width="355dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="68dp"
                 android:layout_weight="1"
                 app:layout_constraintBottom_toBottomOf="@+id/binaural_option_one"
                 app:layout_constraintEnd_toEndOf="@+id/binaural_option_one"

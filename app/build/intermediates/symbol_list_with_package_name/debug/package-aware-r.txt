@@ -3904,6 +3904,10 @@ id included
 id info
 id invisible
 id inward
+id isochronic1
+id isochronic2
+id isochronic3
+id isochronic4
 id italic
 id item1
 id item2
@@ -4358,6 +4362,7 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id warning_frame
+id webView1
 id wellnessCenterFragment
 id west
 id wide
@@ -4650,9 +4655,13 @@ navigation dashboard_menu
 navigation drawer_navigation
 navigation nav_graph
 plurals mtrl_badge_content_description
+raw alpha_waves
+raw beta_swirl
+raw calm_mind
 raw deep_alpha
 raw ground_air
 raw healing_aura
+raw morning_motivator
 raw relaxing_waves
 string LOADING
 string _6
