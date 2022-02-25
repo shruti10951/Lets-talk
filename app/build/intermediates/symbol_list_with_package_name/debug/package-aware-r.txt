@@ -799,10 +799,12 @@ attr maxActionInlineWidth
 attr maxButtonHeight
 attr maxCharacterCount
 attr maxHeight
+attr maxHeightPct
 attr maxImageSize
 attr maxLines
 attr maxVelocity
 attr maxWidth
+attr maxWidthPct
 attr measureWithLargestChild
 attr menu
 attr menuGravity
@@ -2798,6 +2800,8 @@ dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen alert_width
 dimen appcompat_dialog_background_inset
+dimen bannerContentWeight
+dimen bannerWeightSum
 dimen browser_actions_context_menu_max_width
 dimen browser_actions_context_menu_min_padding
 dimen buttons_stroke_width
@@ -2864,6 +2868,8 @@ dimen design_tab_scrollable_min_width
 dimen design_tab_text_size
 dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
+dimen dialogHeightPct
+dimen dialogWidthPct
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
 dimen fab_margin
@@ -3073,6 +3079,8 @@ dimen material_textinput_min_width
 dimen material_time_picker_minimum_screen_height
 dimen material_time_picker_minimum_screen_width
 dimen material_timepicker_dialog_buttons_margin_top
+dimen minImageHeight
+dimen minImageWidth
 dimen mtrl_alert_dialog_background_inset_bottom
 dimen mtrl_alert_dialog_background_inset_end
 dimen mtrl_alert_dialog_background_inset_start
@@ -3283,6 +3291,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen paddingSmall
 dimen progress_circle_radius
 dimen sliding_pane_detail_pane_width
 dimen subtitle_corner_radius
@@ -3410,6 +3419,7 @@ drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
+drawable btn_clear
 drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
@@ -3419,6 +3429,7 @@ drawable calm_melodies_cover
 drawable chat_background
 drawable chat_bg
 drawable chat_icon
+drawable collapse
 drawable color1
 drawable color2
 drawable color3
@@ -3482,6 +3493,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable image_placeholder
 drawable info_icon
 drawable isochronic_cover
 drawable layout_border
@@ -3552,6 +3564,7 @@ drawable post_wallpaper
 drawable profile_icon
 drawable receiver_bg
 drawable red_button_background
+drawable rounded_layout
 drawable search_icon
 drawable send_icon
 drawable sender_bg
@@ -3688,6 +3701,11 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id back_btn_chat_detailed
 id back_btn_grp_chat
+id banner_body
+id banner_content_root
+id banner_image
+id banner_root
+id banner_title
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3699,6 +3717,7 @@ id binaural3
 id binaural4
 id binaural_option_one
 id blocking
+id body_scroll
 id bottom
 id bottomNavigationView
 id bottom_to_top
@@ -3714,6 +3733,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id button
 id buttonPanel
 id buttons_container
 id cache_measures
@@ -3722,6 +3742,8 @@ id calmMelodiesFragment
 id cancel_action
 id cancel_button
 id cardView
+id card_content_root
+id card_root
 id carryVelocity
 id center
 id center_horizontal
@@ -3751,6 +3773,7 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id collapse_button
 id comment_body_rv
 id comment_rv
 id commentedAt
@@ -3847,6 +3870,7 @@ id follow_btn_user_rv
 id follower_count
 id following
 id following_count
+id following_rv
 id forever
 id forgot_pas_text
 id fragmentContainerView2
@@ -3862,6 +3886,7 @@ id give_us_a_review_landmine_button
 id give_us_a_review_landmine_main_layout
 id give_us_a_review_landmine_text_1
 id give_us_a_review_landmine_text_2
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3897,6 +3922,9 @@ id image
 id imageView
 id imageView3
 id imageView4
+id image_content_root
+id image_root
+id image_view
 id immediateStop
 id included
 id info
@@ -3966,6 +3994,8 @@ id melodies
 id melodies_one_option
 id melodies_two_option
 id message
+id message_body
+id message_title
 id middle
 id mindfulness_article_text
 id mindfulness_article_text1
@@ -3984,6 +4014,8 @@ id mindfulness_view3
 id minflness_textview
 id mini
 id mirror
+id modal_content_root
+id modal_root
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -4045,7 +4077,6 @@ id notification_open
 id notification_profile_user
 id notification_recycler
 id notification_time
-id nutrition_article_text
 id nutrition_article_text1
 id nutrition_article_text2
 id nutrition_article_text3
@@ -4086,6 +4117,7 @@ id position
 id postLayout
 id post_btn
 id post_comment_comment
+id primary_button
 id profileFragment
 id profileProgressBar
 id profileRV
@@ -4144,6 +4176,7 @@ id search_plate
 id search_src_text
 id search_user_et
 id search_voice_btn
+id secondary_button
 id seek_bar1
 id select_dialog_listview
 id selected
@@ -4302,6 +4335,7 @@ id title_text
 id toggle
 id toolbar
 id toolbar2
+id toolbar3
 id toolbar_group
 id top
 id topPanel
@@ -4495,8 +4529,12 @@ layout activity_play_melodies2
 layout activity_registration
 layout activity_splash_screen
 layout alert_dialog
+layout banner
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout card
+layout card_landscape_inner
+layout card_portrait_inner
 layout chat_users_recycler_view
 layout comment_recycler_view
 layout custom_dialog
@@ -4529,6 +4567,7 @@ layout fragment_calm_melodies
 layout fragment_chat
 layout fragment_counselling_help
 layout fragment_emergency_help
+layout fragment_following
 layout fragment_friends
 layout fragment_help_me_calm_down
 layout fragment_home
@@ -4538,7 +4577,6 @@ layout fragment_mindfulness_options
 layout fragment_mindfulness_wellness_center
 layout fragment_notification
 layout fragment_nutrition_options
-layout fragment_nutrition_wellness_center
 layout fragment_profile
 layout fragment_sleep_options
 layout fragment_sleep_wellness_center
@@ -4555,6 +4593,7 @@ layout fragment_yoga_two
 layout friends_recycler_view
 layout grp_receiver_recycler_view
 layout hsdp_layout
+layout image
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -4572,6 +4611,8 @@ layout material_time_input
 layout material_timepicker
 layout material_timepicker_dialog
 layout material_timepicker_textinput_display
+layout modal
+layout modal_portrait_inner
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -4694,6 +4735,7 @@ string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
+string card_content_descriptor
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -4798,6 +4840,8 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string modal_content_descriptor
+string modal_inner_content_descriptor
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_content_description
@@ -5130,6 +5174,21 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style EmptyTheme
+style FiamUI
+style FiamUI_Banner
+style FiamUI_Card
+style FiamUI_Card_ActionBar
+style FiamUI_Card_ActionBar_Button
+style FiamUI_Card_ImageView
+style FiamUI_Card_Scroll
+style FiamUI_CollapseButton
+style FiamUI_CollapseButtonBase
+style FiamUI_Modal
+style FiamUI_ModalBody
+style FiamUI_ModalImageView
+style FiamUI_ResizableImageView
+style FiamUI_Text_BannerTitle
+style FiamUI_Text_Title
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Body_Text
 style MaterialAlertDialog_Material3_Body_Text_CenterStacked
@@ -5987,6 +6046,7 @@ styleable MenuGroup android_enabled android_id android_visible android_menuCateg
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow
 styleable MockView mock_diagonalsColor mock_label mock_labelBackgroundColor mock_labelColor mock_showDiagonals mock_showLabel
+styleable ModalLayout maxHeightPct maxWidthPct
 styleable Motion animateCircleAngleTo animateRelativeTo drawPath motionPathRotate motionStagger pathMotionArc quantizeMotionInterpolator quantizeMotionPhase quantizeMotionSteps transitionEasing
 styleable MotionEffect motionEffect_alpha motionEffect_end motionEffect_move motionEffect_start motionEffect_strict motionEffect_translationX motionEffect_translationY motionEffect_viewTransition
 styleable MotionHelper onHide onShow
