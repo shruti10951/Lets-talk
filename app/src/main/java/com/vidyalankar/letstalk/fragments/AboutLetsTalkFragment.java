@@ -38,7 +38,7 @@ public class AboutLetsTalkFragment extends Fragment {
         webview.getSettings().setLoadWithOverviewMode(true);
         webview.getSettings().setUseWideViewPort(true);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://amritapawar2802.wixsite.com/lifemedical/about");
+        webView.loadUrl("https://adi2003rajchavan.wixsite.com/letstalkapp/about-us");
 
         return view;
     }

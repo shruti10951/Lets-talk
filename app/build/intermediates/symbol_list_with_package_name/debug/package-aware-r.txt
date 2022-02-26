@@ -4018,7 +4018,6 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id media_actions
-id melodies
 id melodies_one_option
 id melodies_two_option
 id message
@@ -4606,7 +4605,6 @@ layout fragment_about_lets_talk
 layout fragment_add_post
 layout fragment_all_notification
 layout fragment_binaural_calm_melodies
-layout fragment_brainwave_calm_melodies
 layout fragment_breathing_one
 layout fragment_breathing_option
 layout fragment_breathing_three
