@@ -33,49 +33,34 @@
         android:id="@+id/exit_chat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_15font_ssp"
-        android:text="Exit"
-        android:fontFamily="serif"
         android:background="@color/greyTrans"
+        android:fontFamily="serif"
         android:paddingStart="@dimen/_18hsdp"
+        android:paddingTop="@dimen/_3hsdp"
         android:paddingEnd="@dimen/_18hsdp"
         android:paddingBottom="@dimen/_3hsdp"
-        android:paddingTop="@dimen/_3hsdp"
-        app:layout_constraintBottom_toBottomOf="@+id/name_grp_chat_activity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.898"
-        app:layout_constraintStart_toEndOf="@+id/name_grp_chat_activity"
-        app:layout_constraintTop_toTopOf="@+id/name_grp_chat_activity"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_grp_chat_activity"
-        android:layout_width="@dimen/_35hsdp"
-        android:layout_height="@dimen/_35hsdp"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="@dimen/_8font_ssp"
-        app:civ_border_color="@color/black"
-        app:civ_border_width="1dp"
+        android:text="Exit"
+        android:layout_marginEnd="@dimen/_7hsdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar_group"
-        app:layout_constraintStart_toEndOf="@+id/back_btn_grp_chat"
-        app:layout_constraintTop_toTopOf="@+id/toolbar_group"
-        tools:src="@drawable/woman" />
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_group"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/name_grp_chat_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="@dimen/_8font_ssp"
         android:fontFamily="serif"
-        android:text="Name"
+        android:text="groupName"
         android:textColor="@color/black"
-        android:textSize="@dimen/_15font_ssp"
+        android:textSize="@dimen/_14hsdp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_4hsdp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar_group"
-        app:layout_constraintStart_toEndOf="@+id/profile_grp_chat_activity"
-        app:layout_constraintTop_toTopOf="@+id/toolbar_group"
-        app:layout_constraintVertical_bias="0.432" />
+        app:layout_constraintStart_toEndOf="@+id/back_btn_grp_chat"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_group" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/grp_chat_activity_rv"

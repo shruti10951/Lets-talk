@@ -39,25 +39,25 @@ public class NutritionOptionsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent httpIntent= new Intent(Intent.ACTION_VIEW);
-                httpIntent.setData(Uri.parse("https://medium.com/devceldoret/how-to-create-an-android-photo-blog-app-with-like-and-comment-features-using-firebase-e545f012dee2"));
+                httpIntent.setData(Uri.parse("https://adi2003rajchavan.wixsite.com/letstalkapp/general-3"));
                 startActivity(httpIntent);
-//                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new NutritionWellnessCenterFragment()).addToBackStack(null).commit();
             }
         });
+
         nutrition2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent= new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel: 9653188166"));
-                startActivity(intent);
+            public void onClick(View v) {
+                Intent httpIntent= new Intent(Intent.ACTION_VIEW);
+                httpIntent.setData(Uri.parse("https://adi2003rajchavan.wixsite.com/letstalkapp/team-3"));
+                startActivity(httpIntent);
             }
         });
 
         nutrition3.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent httpIntent= new Intent(Intent.ACTION_VIEW);
-                httpIntent.setData(Uri.parse("https://medium.com/devceldoret/how-to-create-an-android-photo-blog-app-with-like-and-comment-features-using-firebase-e545f012dee2"));
+                httpIntent.setData(Uri.parse("https://adi2003rajchavan.wixsite.com/letstalkapp/services-4"));
                 startActivity(httpIntent);
             }
         });

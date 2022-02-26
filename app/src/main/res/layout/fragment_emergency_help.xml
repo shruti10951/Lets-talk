@@ -7,46 +7,449 @@
     android:background="@color/beige"
     tools:context=".fragments.EmergencyHelpFragment">
 
-    <View
-        android:id="@+id/help1"
-        android:layout_width="414dp"
-        android:layout_height="208dp"
-        android:layout_marginStart="@dimen/_35hsdp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="@dimen/_35hsdp"
-        android:background="@drawable/emergency_cover"
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="390dp"
+        android:layout_height="610dp"
+        android:layout_marginTop="?attr/actionBarSize"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="208dp"
-        android:fontFamily="serif"
-        android:text="Emergency Numbers!"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_30font_ssp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/help1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/help1"
-        app:layout_constraintTop_toTopOf="@+id/help1" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="383dp"
-        android:layout_height="282dp"
-        android:layout_marginTop="380dp"
-        android:fontFamily="serif"
-        android:text="Text"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_20font_ssp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/help1"
+                    android:layout_width="414dp"
+                    android:layout_height="208dp"
+                    android:layout_marginStart="@dimen/_35hsdp"
+                    android:layout_marginEnd="@dimen/_35hsdp"
+                    android:background="@drawable/emergency_cover"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/Emergency_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="Emergency Numbers!"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_25font_ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/help1" />
+
+                <TextView
+                    android:id="@+id/Emergency_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="serif"
+                    android:text="Emergency Medical Services"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emergency_text" />
+
+                <TextView
+                    android:id="@+id/Contact1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoLink="phone"
+                    android:fontFamily="serif"
+                    android:text="911"
+                    android:textColor="@color/teal_200"
+                    android:textSize="@dimen/_16hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emergency_text1" />
+
+                <TextView
+                    android:id="@+id/Emergency_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="serif"
+                    android:text="National Suicide Prevention Lifeline"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Contact1" />
+
+                <TextView
+                    android:id="@+id/Contact2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoLink="phone"
+                    android:fontFamily="serif"
+                    android:text="1-800-273-TALK"
+                    android:textColor="@color/teal_200"
+                    android:textSize="@dimen/_16hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emergency_text2" />
+
+                <TextView
+                    android:id="@+id/Emergency_text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="serif"
+                    android:text="Or"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Contact2" />
+
+                <TextView
+                    android:id="@+id/Contact3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoLink="phone"
+                    android:fontFamily="serif"
+                    android:text="8255"
+                    android:textColor="@color/teal_200"
+                    android:textSize="@dimen/_16hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emergency_text3" />
+
+                <TextView
+                    android:id="@+id/Emergency_text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="serif"
+                    android:text="Helpline Kiran "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Contact3" />
+
+
+                <TextView
+                    android:id="@+id/Contact4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoLink="phone"
+                    android:fontFamily="serif"
+                    android:text="1800-599-0019"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emergency_text4" />
+
+                <TextView
+                    android:id="@+id/Emergency_text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="serif"
+                    android:text="MPOWER 1 ON 1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Contact4" />
+
+                <TextView
+                    android:id="@+id/Contact5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoLink="phone"
+                    android:fontFamily="serif"
+                    android:text="1800-599-0019"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emergency_text5" />
+
+                <TextView
+                    android:id="@+id/Emergency_text6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="serif"
+                    android:text="Hitguj help number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Contact5" />
+
+                <TextView
+                    android:id="@+id/Contact6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoLink="phone"
+                    android:fontFamily="serif"
+                    android:text="+91 022 24131212"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emergency_text6" />
+
+                <TextView
+                    android:id="@+id/Emergency_text7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="serif"
+                    android:text="Aasra "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Contact6" />
+
+                <TextView
+                    android:id="@+id/Contact7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoLink="phone"
+                    android:fontFamily="serif"
+                    android:text="+91 9820466726"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emergency_text7" />
+
+                <TextView
+                    android:id="@+id/Emergency_text8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="serif"
+                    android:text="Nagpur Suicide Prevention Helpline"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Contact7" />
+
+                <TextView
+                    android:id="@+id/Contact8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoLink="phone"
+                    android:fontFamily="serif"
+                    android:text="8888817666"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emergency_text8" />
+
+                <TextView
+                    android:id="@+id/Emergency_text9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="serif"
+                    android:text="Vandrevala Foundation"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Contact8" />
+
+                <TextView
+                    android:id="@+id/Contact9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoLink="phone"
+                    android:fontFamily="serif"
+                    android:text="1860-266-2345 "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emergency_text9" />
+
+                <TextView
+                    android:id="@+id/Emergency_text10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="serif"
+                    android:text="Or"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Contact9" />
+
+                <TextView
+                    android:id="@+id/Contact10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoLink="phone"
+                    android:fontFamily="serif"
+                    android:text="1800 233 3330"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emergency_text10" />
+
+                <TextView
+                    android:id="@+id/Emergency_text11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="serif"
+                    android:text="Shushrusha Counseling, Guidance and Training Institute"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Contact10" />
+
+                <TextView
+                    android:id="@+id/Contact11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoLink="phone"
+                    android:fontFamily="serif"
+                    android:text="+91 9422627571"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emergency_text11" />
+
+                <TextView
+                    android:id="@+id/Emergency_text12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="serif"
+                    android:text="Or"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Contact11" />
+
+                <TextView
+                    android:id="@+id/Contact12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoLink="phone"
+                    android:fontFamily="serif"
+                    android:text="+91 8275038382"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emergency_text12" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

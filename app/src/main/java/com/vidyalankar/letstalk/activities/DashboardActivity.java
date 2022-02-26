@@ -147,19 +147,38 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
 
     public void logoutUser()
     {
-        AlertDialog.Builder builder= new AlertDialog.Builder(DashboardActivity.this);
+//        AlertDialog.Builder builder= new AlertDialog.Builder(DashboardActivity.this);
 
-        builder.setMessage("Are you sure you want to log out?")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        new SweetAlertDialog(DashboardActivity.this, SweetAlertDialog.BUTTON_CONFIRM)
+                .setConfirmText("Yes")
+                .setTitleText("Log out?")
+                .setContentText("Are you sure you want to log out?")
+                .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sweetAlertDialog) {
+                        Toast.makeText(DashboardActivity.this, "Logging out successful...", Toast.LENGTH_LONG).show();
+                        FirebaseAuth.getInstance().signOut();
+                        startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
+                        sweetAlertDialog.dismissWithAnimation();
+                    }
+                }).setCancelButton("No", new SweetAlertDialog.OnSweetClickListener() {
             @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                Toast.makeText(DashboardActivity.this, "Logging out successful...", Toast.LENGTH_LONG).show();
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
+            public void onClick(SweetAlertDialog sweetAlertDialog) {
+                sweetAlertDialog.dismissWithAnimation();
             }
-        }).setNegativeButton("No",null);
-        AlertDialog alert= builder.create();
-        alert.show();
+        }).show();
+
+//        builder.setMessage("Are you sure you want to log out?")
+//                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialogInterface, int i) {
+//                Toast.makeText(DashboardActivity.this, "Logging out successful...", Toast.LENGTH_LONG).show();
+//                FirebaseAuth.getInstance().signOut();
+//                startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
+//            }
+//        }).setNegativeButton("No",null);
+//        AlertDialog alert= builder.create();
+//        alert.show();
     }
 
     @Override

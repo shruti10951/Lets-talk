@@ -1,5 +1,7 @@
 package com.vidyalankar.letstalk.fragments;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -35,30 +37,29 @@ public class SleepOptionsFragment extends Fragment {
         sleep1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new SleepWellnessCenterFragment()).addToBackStack(null).commit();
+                Intent httpIntent= new Intent(Intent.ACTION_VIEW);
+                httpIntent.setData(Uri.parse("https://adi2003rajchavan.wixsite.com/letstalkapp/copy-of-sleep"));
+                startActivity(httpIntent);
             }
         });
 
-//        yogaTwo.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new YogaTwoFragment()).addToBackStack(null).commit();
-//            }
-//        });
-//
-//        yogaThree.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new YogaThreeFragment()).addToBackStack(null).commit();
-//            }
-//        });
-//
-//        yogaFour.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new YogaFourFragment()).addToBackStack(null).commit();
-//            }
-//        });
+        sleep2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent httpIntent= new Intent(Intent.ACTION_VIEW);
+                httpIntent.setData(Uri.parse("https://adi2003rajchavan.wixsite.com/letstalkapp/sleep2"));
+                startActivity(httpIntent);
+            }
+        });
+
+        sleep3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent httpIntent= new Intent(Intent.ACTION_VIEW);
+                httpIntent.setData(Uri.parse("https://adi2003rajchavan.wixsite.com/letstalkapp/the-problem-they-caused-and-the-possible"));
+                startActivity(httpIntent);
+            }
+        });
 
         return view;
     }
