@@ -1,5 +1,7 @@
 package com.vidyalankar.letstalk.fragments;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -36,30 +38,29 @@ public class NutritionOptionsFragment extends Fragment {
         nutrition1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new NutritionWellnessCenterFragment()).addToBackStack(null).commit();
+                Intent httpIntent= new Intent(Intent.ACTION_VIEW);
+                httpIntent.setData(Uri.parse("https://adi2003rajchavan.wixsite.com/letstalkapp/general-3"));
+                startActivity(httpIntent);
             }
         });
 
-//        yogaTwo.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new YogaTwoFragment()).addToBackStack(null).commit();
-//            }
-//        });
-//
-//        yogaThree.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new YogaThreeFragment()).addToBackStack(null).commit();
-//            }
-//        });
-//
-//        yogaFour.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new YogaFourFragment()).addToBackStack(null).commit();
-//            }
-//        });
+        nutrition2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent httpIntent= new Intent(Intent.ACTION_VIEW);
+                httpIntent.setData(Uri.parse("https://adi2003rajchavan.wixsite.com/letstalkapp/team-3"));
+                startActivity(httpIntent);
+            }
+        });
+
+        nutrition3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent httpIntent= new Intent(Intent.ACTION_VIEW);
+                httpIntent.setData(Uri.parse("https://adi2003rajchavan.wixsite.com/letstalkapp/services-4"));
+                startActivity(httpIntent);
+            }
+        });
 
         return view;
     }

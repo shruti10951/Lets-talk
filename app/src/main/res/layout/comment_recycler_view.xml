@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginEnd="@dimen/_9font_ssp"
     android:layout_height="wrap_content">
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -32,35 +33,37 @@
         app:layout_constraintBottom_toBottomOf="@+id/user_profile_comment_rv"
         app:layout_constraintStart_toEndOf="@+id/user_profile_comment_rv"
         app:layout_constraintTop_toTopOf="@+id/user_profile_comment_rv"
-        app:layout_constraintVertical_bias="0.222" />
+        app:layout_constraintVertical_bias="0.050000012" />
 
     <TextView
         android:id="@+id/comment_body_rv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_5font_ssp"
-        android:layout_marginTop="1dp"
-        android:text="Comment Body"
-        android:inputType="textMultiLine"
-        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/_9font_ssp"
         android:fontFamily="serif"
+        android:inputType="textMultiLine"
+        android:paddingEnd="@dimen/_9hsdp"
+        android:text="Comment Body"
+        android:textColor="@color/black"
         android:textSize="@dimen/_13font_ssp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.008"
-        app:layout_constraintStart_toEndOf="@+id/username_post"
-        app:layout_constraintTop_toTopOf="@+id/username_post" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/user_profile_comment_rv"
+        app:layout_constraintTop_toBottomOf="@+id/username_post" />
 
     <TextView
         android:id="@+id/commentedAt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
-        android:text="time"
         android:fontFamily="serif"
+        android:text="time"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/comment_body_rv" />
+        app:layout_constraintTop_toBottomOf="@+id/comment_body_rv"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,7 +16,7 @@ import com.vidyalankar.letstalk.R;
 
 import java.util.concurrent.TimeUnit;
 
-public class PlayMelodies extends AppCompatActivity {
+public class PlayMelodies1 extends AppCompatActivity {
 
     TextView playerPosition1, playerDuration1;
     ImageView play1, pause1;
@@ -31,7 +31,8 @@ public class PlayMelodies extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_play_melodies);
+        setContentView(R.layout.activity_play_melodies1);
+
 
         playerPosition1 = findViewById(R.id.player_position1);
         playerDuration1 = findViewById(R.id.player_duration1);
@@ -43,17 +44,17 @@ public class PlayMelodies extends AppCompatActivity {
         song= intent.getStringExtra("songName");
 
         switch (song){
-            case "song 1":
-                mediaPlayer=MediaPlayer.create(this, R.raw.beat1);
+            case "Healing Aura":
+                mediaPlayer=MediaPlayer.create(this, R.raw.healing_aura);
                 break;
-            case "song 2":
-                mediaPlayer=MediaPlayer.create(this, R.raw.beat2);
+            case "Ground Air":
+                mediaPlayer=MediaPlayer.create(this, R.raw.ground_air);
                 break;
-            case "song 3":
-                mediaPlayer=MediaPlayer.create(this, R.raw.beat1);
+            case "Deep Alpha":
+                mediaPlayer=MediaPlayer.create(this, R.raw.deep_alpha);
                 break;
-            case "song 4":
-                mediaPlayer=MediaPlayer.create(this, R.raw.beat2);
+            case "Relaxing Waves":
+                mediaPlayer=MediaPlayer.create(this, R.raw.relaxing_waves);
                 break;
         }
 
@@ -144,18 +145,5 @@ public class PlayMelodies extends AppCompatActivity {
                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
 
     }
-
-
-    ///beat2
-
-//    @SuppressLint("DefaultLocale")
-//    private String convertFormat(int duration2) {
-//        return String.format("%02d:%02d"
-//                , TimeUnit.MILLISECONDS.toMinutes(duration2)
-//                , TimeUnit.MILLISECONDS.toSeconds(duration2) -
-//                        TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration2)));
-//
-//
-//    }
 
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mid_blue"
+    android:background="@color/white"
     tools:context=".fragments.StressOptionsFragment">
 
 
@@ -52,7 +52,7 @@
         android:layout_width="257dp"
         android:layout_height="74dp"
         android:fontFamily="serif"
-        android:text="What You Need to Know About Stress"
+        android:text="Physical effects of stress on us"
         android:textColor="@color/white"
         android:textSize="@dimen/_14font_ssp"
         app:layout_constraintBottom_toBottomOf="@id/stress_view1"
@@ -63,16 +63,16 @@
         app:layout_constraintVertical_bias="0.45" />
 
     <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="116dp"
-            android:layout_height="110dp"
-            android:src="@drawable/stress1"
-            app:layout_constraintBottom_toBottomOf="@id/stress_view1"
-            app:layout_constraintEnd_toStartOf="@+id/stress_article_text1"
-            app:layout_constraintHorizontal_bias="0.484"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/stress_view1"
-            app:layout_constraintVertical_bias="0.444" />
+        android:id="@+id/imageView4"
+        android:layout_width="116dp"
+        android:layout_height="110dp"
+        android:src="@drawable/stress1"
+        app:layout_constraintBottom_toBottomOf="@id/stress_view1"
+        app:layout_constraintEnd_toStartOf="@+id/stress_article_text1"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/stress_view1"
+        app:layout_constraintVertical_bias="0.444" />
 
 
     <View
@@ -94,7 +94,7 @@
         android:layout_width="257dp"
         android:layout_height="74dp"
         android:fontFamily="serif"
-        android:text="Types of Stress"
+        android:text="Is stress a mental health problem?"
         android:textColor="@color/white"
         android:textSize="@dimen/_14font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/stress_view2"
@@ -133,7 +133,7 @@
         android:layout_width="257dp"
         android:layout_height="74dp"
         android:fontFamily="serif"
-        android:text="How to manage Stress"
+        android:text="Act to manage stress"
         android:textColor="@color/white"
         android:textSize="@dimen/_14font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/stress_view3"
@@ -155,6 +155,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/stress_view3"
         app:layout_constraintVertical_bias="0.822" />
+
 
     <TextView
         android:id="@+id/textView13"

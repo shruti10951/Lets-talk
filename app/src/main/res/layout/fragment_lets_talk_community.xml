@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dark_bg_talk_community"
+    android:background="@color/white"
     tools:context=".fragments.LetsTalkCommunityFragment">
 
     <androidx.core.widget.NestedScrollView
@@ -22,75 +22,309 @@
                 android:layout_height="match_parent">
 
 
-                <TextView
-                    android:id="@+id/grp1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="84dp"
-                    android:fontFamily="serif"
-                    android:text="Group 1"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_25font_ssp"
+                <!--                <TextView-->
+                <!--                    android:id="@+id/grp1"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="84dp"-->
+                <!--                    android:fontFamily="serif"-->
+                <!--                    android:text="Group 1"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textSize="@dimen/_25font_ssp"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintHorizontal_bias="0.5"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/grp2"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:fontFamily="serif"-->
+                <!--                    android:text="Group 2"-->
+                <!--                    android:layout_marginTop="@dimen/_8font_ssp"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textSize="@dimen/_25font_ssp"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintHorizontal_bias="0.5"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/grp1" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/grp3"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:fontFamily="serif"-->
+                <!--                    android:text="Group 3"-->
+                <!--                    android:layout_marginTop="@dimen/_10font_ssp"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textSize="@dimen/_25font_ssp"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintHorizontal_bias="0.5"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/grp2" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/grp4"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:fontFamily="serif"-->
+                <!--                    android:text="Group 4"-->
+                <!--                    android:layout_marginTop="@dimen/_10font_ssp"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textSize="@dimen/_25font_ssp"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintHorizontal_bias="0.5"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/grp3" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/grp5"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:fontFamily="serif"-->
+                <!--                    android:text="Group 5"-->
+                <!--                    android:layout_marginTop="@dimen/_10font_ssp"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textSize="@dimen/_25font_ssp"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintHorizontal_bias="0.5"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/grp4" />-->
+
+
+                <View
+                    android:id="@+id/mindfulness_view"
+                    android:layout_width="411dp"
+                    android:layout_height="171dp"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:background="@drawable/group__cover"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/grp2"
+                    android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@color/greyTrans"
                     android:fontFamily="serif"
-                    android:text="Group 2"
-                    android:layout_marginTop="@dimen/_8font_ssp"
+                    android:text="Lets Talk Community"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_25font_ssp"
+                    android:textSize="@dimen/_20font_ssp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view"
+                    app:layout_constraintEnd_toEndOf="@+id/mindfulness_view"
+                    app:layout_constraintStart_toStartOf="@+id/mindfulness_view"
+                    app:layout_constraintTop_toTopOf="@+id/mindfulness_view" />
+
+
+                <View
+                    android:id="@+id/grp1"
+                    android:layout_width="416dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/greyTrans"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_bias="0.38"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mindfulness_view" />
+
+                <TextView
+                    android:id="@+id/mindfulness_article_text1"
+                    android:layout_width="257dp"
+                    android:layout_height="74dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Every Mind Matters"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15font_ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/grp1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/grp1" />
+
+                <View
+                    android:id="@+id/grp2"
+                    android:layout_width="416dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/greyTrans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.38"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/grp1" />
 
                 <TextView
-                    android:id="@+id/grp3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/mindfulness_article_text2"
+                    android:layout_width="257dp"
+                    android:layout_height="74dp"
                     android:fontFamily="serif"
-                    android:text="Group 3"
-                    android:layout_marginTop="@dimen/_10font_ssp"
+                    android:gravity="center"
+                    android:text="Rediscovering Ourselves"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_25font_ssp"
+                    android:textSize="@dimen/_15font_ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/grp2"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/grp2" />
+
+                <View
+                    android:id="@+id/grp3"
+                    android:layout_width="416dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/greyTrans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.523"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/grp2" />
 
                 <TextView
-                    android:id="@+id/grp4"
+                    android:id="@+id/mindfulness_article_text3"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="74dp"
                     android:fontFamily="serif"
-                    android:text="Group 4"
-                    android:layout_marginTop="@dimen/_10font_ssp"
+                    android:gravity="center"
+                    android:text="No Judgement, No Indifference"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_25font_ssp"
+                    android:textSize="@dimen/_15font_ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/grp3"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/grp3" />
+
+                <View
+                    android:id="@+id/grp4"
+                    android:layout_width="416dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/greyTrans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.38"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/grp3" />
 
                 <TextView
-                    android:id="@+id/grp5"
+                    android:id="@+id/mindfulness_article_text4"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="74dp"
                     android:fontFamily="serif"
-                    android:text="Group 5"
-                    android:layout_marginTop="@dimen/_10font_ssp"
+                    android:gravity="center"
+                    android:text="Working Productively, Coping Effectively"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_25font_ssp"
+                    android:textSize="@dimen/_15font_ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/grp4"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/grp4" />
+
+                <View
+                    android:id="@+id/grp5"
+                    android:layout_width="416dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/greyTrans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.619"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/grp4" />
+
+                <TextView
+                    android:id="@+id/mindfulness_article_text5"
+                    android:layout_width="257dp"
+                    android:layout_height="74dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Vanquishing Our Fears"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15font_ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/grp5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/grp5" />
+
+                <View
+                    android:id="@+id/grp6"
+                    android:layout_width="416dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/greyTrans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.38"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/grp5" />
+
+                <TextView
+                    android:id="@+id/mindfulness_article_text6"
+                    android:layout_width="257dp"
+                    android:layout_height="74dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="With Help Comes Hope"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15font_ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/grp6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/grp6" />
+
+                <View
+                    android:id="@+id/grp7"
+                    android:layout_width="416dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/greyTrans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.619"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/grp6" />
+
+                <TextView
+                    android:id="@+id/mindfulness_article_text7"
+                    android:layout_width="257dp"
+                    android:layout_height="74dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Finding a Purpose"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15font_ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/grp7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/grp7" />
+
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="108dp"
+                    android:layout_height="28dp"
+                    android:text="Communities"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/grp3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.059"
+                    app:layout_constraintStart_toStartOf="@+id/mindfulness_view"
+                    app:layout_constraintTop_toBottomOf="@+id/mindfulness_view"
+                    app:layout_constraintVertical_bias="0.04" />
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mid_blue"
+    android:background="@color/white"
     tools:context=".fragments.SleepOptionsFragment">
 
 
@@ -55,7 +55,7 @@
         android:layout_marginTop="74dp"
         android:layout_marginBottom="29dp"
         android:fontFamily="serif"
-        android:text="What You Need to Know About Stress"
+        android:text="The Importance of sleep"
         android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/sleep_view1"
@@ -66,16 +66,16 @@
         app:layout_constraintVertical_bias="0.862" />
 
     <ImageView
-            android:id="@+id/sleep_imageView4"
-            android:layout_width="116dp"
-            android:layout_height="110dp"
-            android:src="@drawable/sleep1"
-            app:layout_constraintBottom_toBottomOf="@id/sleep_view1"
-            app:layout_constraintEnd_toStartOf="@+id/sleep_article_text1"
-            app:layout_constraintHorizontal_bias="0.484"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/sleep_view1"
-            app:layout_constraintVertical_bias="0.444" />
+        android:id="@+id/sleep_imageView4"
+        android:layout_width="116dp"
+        android:layout_height="110dp"
+        android:src="@drawable/sleep1"
+        app:layout_constraintBottom_toBottomOf="@id/sleep_view1"
+        app:layout_constraintEnd_toStartOf="@+id/sleep_article_text1"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sleep_view1"
+        app:layout_constraintVertical_bias="0.444" />
 
 
     <View
@@ -98,7 +98,7 @@
         android:layout_height="47dp"
         android:layout_marginBottom="45dp"
         android:fontFamily="serif"
-        android:text="Types of Stress"
+        android:text="There are four simple things to consider you to help heal a period of poor sleep:"
         android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/sleep_view2"
@@ -136,10 +136,10 @@
 
     <TextView
         android:id="@+id/sleep_article_text3"
-        android:layout_width="257dp"
+        android:layout_width="250dp"
         android:layout_height="74dp"
         android:fontFamily="serif"
-        android:text="How to manage Stress"
+        android:text="The problem they caused and the possible solution"
         android:textColor="@color/white"
         android:textSize="@dimen/_14font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/sleep_view3"

@@ -35,7 +35,7 @@ public class LetsTalkCommunityFragment extends Fragment {
     }
 
 
-    TextView group1, group2, group3, group4, group5;
+    TextView group1, group2, group3, group4, group5, group6;
     String groupName;
     SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
     Date date= new Date();
@@ -50,34 +50,39 @@ public class LetsTalkCommunityFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_lets_talk_community, container, false);
-//        group1= view.findViewById(R.id.grp1);
-//        group2= view.findViewById(R.id.grp2);
-//        group3= view.findViewById(R.id.grp3);
-//        group4= view.findViewById(R.id.grp4);
-//        group5= view.findViewById(R.id.grp5);
+        group1= view.findViewById(R.id.mindfulness_article_text1);
+        group2= view.findViewById(R.id.mindfulness_article_text2);
+        group3= view.findViewById(R.id.mindfulness_article_text3);
+        group4= view.findViewById(R.id.mindfulness_article_text4);
+        group5= view.findViewById(R.id.mindfulness_article_text5);
+        group6= view.findViewById(R.id.mindfulness_article_text6);
 
         View.OnClickListener mListener= new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()){
                     case R.id.grp1:
-                        groupName="Group 1";
+                        groupName=group1.getText().toString();
                         openChat();
                         break;
                     case R.id.grp2:
-                        groupName="Group 2";
+                        groupName=group2.getText().toString();
                         openChat();
                         break;
                     case R.id.grp3:
-                        groupName= "Group 3";
+                        groupName= group3.getText().toString();
                         openChat();
                         break;
                     case R.id.grp4:
-                        groupName="Group 4";
+                        groupName=group4.getText().toString();
                         openChat();
                         break;
                     case R.id.grp5:
-                        groupName= "Group 5";
+                        groupName= group5.getText().toString();
+                        openChat();
+                        break;
+                    case R.id.grp6:
+                        groupName= group6.getText().toString();
                         openChat();
                         break;
                 }
@@ -89,7 +94,7 @@ public class LetsTalkCommunityFragment extends Fragment {
         view.findViewById(R.id.grp3).setOnClickListener(mListener);
         view.findViewById(R.id.grp4).setOnClickListener(mListener);
         view.findViewById(R.id.grp5).setOnClickListener(mListener);
-
+        view.findViewById(R.id.grp6).setOnClickListener(mListener);
         return view;
     }
 

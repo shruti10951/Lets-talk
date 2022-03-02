@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mid_blue"
+    android:background="@color/white"
     tools:context=".fragments.MindfulnessOptionsFragment">
 
 
@@ -52,7 +52,7 @@
         android:layout_width="257dp"
         android:layout_height="74dp"
         android:fontFamily="serif"
-        android:text="What is Mindfulness?"
+        android:text="Mindfulness meditation and other practices"
         android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view1"
@@ -93,7 +93,7 @@
         android:layout_width="257dp"
         android:layout_height="74dp"
         android:fontFamily="serif"
-        android:text="Types of Stress"
+        android:text="Ways Mindfulness Can Help Your Health!"
         android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view2"
@@ -129,10 +129,10 @@
 
     <TextView
         android:id="@+id/mindfulness_article_text3"
-        android:layout_width="257dp"
+        android:layout_width="250dp"
         android:layout_height="74dp"
         android:fontFamily="serif"
-        android:text="How to manage Stress"
+        android:text="How to achieve mindfulness?"
         android:textColor="@color/white"
         android:textSize="@dimen/_14font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view3"
