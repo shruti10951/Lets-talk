@@ -4151,6 +4151,7 @@ id profileProgressBar
 id profileRV
 id profile_email
 id profile_fragment_for_transaction
+id profile_grp_chat_activity
 id profile_username
 id progressBar
 id progressWheel

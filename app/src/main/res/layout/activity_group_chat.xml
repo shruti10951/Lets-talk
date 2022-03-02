@@ -47,6 +47,18 @@
         app:layout_constraintEnd_toEndOf="@+id/toolbar_group"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_grp_chat_activity"
+        android:layout_width="@dimen/_35hsdp"
+        android:layout_height="@dimen/_35hsdp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="@dimen/_8font_ssp"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_group"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_group"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/name_grp_chat_activity"

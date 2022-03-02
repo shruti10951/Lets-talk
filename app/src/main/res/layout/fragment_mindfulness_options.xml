@@ -162,6 +162,7 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:fontFamily="serif"
         app:layout_constraintBottom_toTopOf="@+id/mindfulness_view3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"

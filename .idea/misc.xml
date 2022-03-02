@@ -54,7 +54,11 @@
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_dashboard.xml" value="0.264" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_forgot_password.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_group_chat.xml" value="0.25" />
+<<<<<<< HEAD
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_isochronic.xml" value="0.4" />
+=======
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_isochronic.xml" value="0.2" />
+>>>>>>> 4093f47988452e84b3f4eaa1e703558999e2df8f
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_login.xml" value="0.16" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/activity_play_melodies.xml" value="0.21875" />
@@ -76,19 +80,30 @@
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_change_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_chat.xml" value="0.1828125" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_chat_list.xml" value="0.25416666666666665" />
+<<<<<<< HEAD
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_counselling_help.xml" value="0.25" />
+=======
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_counselling_help.xml" value="0.264" />
+>>>>>>> 4093f47988452e84b3f4eaa1e703558999e2df8f
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_detailed_chat.xml" value="0.176" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_edit_profile.xml" value="0.21693840579710144" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_emergency_help.xml" value="0.25" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_first.xml" value="0.25" />
+<<<<<<< HEAD
+=======
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_following.xml" value="0.25" />
+>>>>>>> 4093f47988452e84b3f4eaa1e703558999e2df8f
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_friends.xml" value="0.4" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_help_me_calm.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_help_me_calm_down.xml" value="0.2" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_i_need_help.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_isochronic_calm_melodies.xml" value="0.25" />
+<<<<<<< HEAD
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_lets_talk_community.xml" value="0.25" />
+=======
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_lets_talk_community.xml" value="0.2" />
+>>>>>>> 4093f47988452e84b3f4eaa1e703558999e2df8f
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_mindfulness_options.xml" value="0.25" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_mindfulness_wellness_center.xml" value="0.25" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_notification.xml" value="0.2" />
@@ -100,7 +115,11 @@
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_setting.xml" value="0.23385416666666667" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_sleep_options.xml" value="0.25" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_sleep_wellness_center.xml" value="0.264" />
+<<<<<<< HEAD
+        <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_stress_options.xml" value="0.25" />
+=======
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_stress_options.xml" value="0.264" />
+>>>>>>> 4093f47988452e84b3f4eaa1e703558999e2df8f
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_stress_wellness_center.xml" value="0.25" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_user_profile.xml" value="0.2" />
         <entry key="..\:/Users/Admin/Lets-talk/app/src/main/res/layout/fragment_users.xml" value="0.2" />
