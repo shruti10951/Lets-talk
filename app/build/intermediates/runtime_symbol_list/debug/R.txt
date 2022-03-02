@@ -4408,7 +4408,6 @@ int id usersFragment 0x7f080324
 int id users_show_rv 0x7f080325
 int id vertical_only 0x7f080326
 int id view4 0x7f080327
-int id view6 0x7f080328
 int id view_offset_helper 0x7f080329
 int id view_pager_notif 0x7f08032a
 int id view_transition 0x7f08032b
