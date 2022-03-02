@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.vidyalankar.letstalk.R;
 
 import java.util.concurrent.TimeUnit;
@@ -19,12 +20,12 @@ import java.util.concurrent.TimeUnit;
 public class PlayMelodies1 extends AppCompatActivity {
 
     TextView playerPosition1, playerDuration1;
-    ImageView play1, pause1;
+    ImageView play1, pause1,imageView;
     SeekBar seekBar1;
     Intent intent;
     String song;
 
-    MediaPlayer mediaPlayer;
+    MediaPlayer mediaPlayer, mediaPlayer1;
     Handler handler = new Handler();
     Runnable runnable;
 
@@ -39,21 +40,42 @@ public class PlayMelodies1 extends AppCompatActivity {
         play1 = findViewById(R.id.play1);
         pause1 = findViewById(R.id.pause1);
         seekBar1 = findViewById(R.id.seek_bar1);
+        imageView= findViewById(R.id.imageView);
 
         intent= getIntent();
         song= intent.getStringExtra("songName");
 
         switch (song){
             case "Healing Aura":
+                Glide.with(this)
+                        .asGif()
+                        .load("https://firebasestorage.googleapis.com/v0/b/let-s-talk-51904.appspot.com/o/Gifs%2Fcloud_gif.gif?alt=media&token=823913a6-0eb9-4055-a4d1-8c1aa79e9d45")
+                        .centerCrop()
+                        .into(imageView);
                 mediaPlayer=MediaPlayer.create(this, R.raw.healing_aura);
                 break;
             case "Ground Air":
+                Glide.with(this)
+                        .asGif()
+                        .load("https://firebasestorage.googleapis.com/v0/b/let-s-talk-51904.appspot.com/o/Gifs%2Frain_on_leaf_gif.gif?alt=media&token=b833a5fd-78c6-4584-9c3f-de4019cdc4ab")
+                        .centerCrop()
+                        .into(imageView);
                 mediaPlayer=MediaPlayer.create(this, R.raw.ground_air);
                 break;
             case "Deep Alpha":
+                Glide.with(this)
+                        .asGif()
+                        .load("https://firebasestorage.googleapis.com/v0/b/let-s-talk-51904.appspot.com/o/Gifs%2Fblue_gif.gif?alt=media&token=220876da-2bed-4d53-abd3-e764d5017475")
+                        .centerCrop()
+                        .into(imageView);
                 mediaPlayer=MediaPlayer.create(this, R.raw.deep_alpha);
                 break;
             case "Relaxing Waves":
+                Glide.with(this)
+                        .asGif()
+                        .load("https://firebasestorage.googleapis.com/v0/b/let-s-talk-51904.appspot.com/o/Gifs%2Fflowing_water_gif.gif?alt=media&token=78cdf82c-1018-4a6d-ba9d-c3df9f2c58dd")
+                        .centerCrop()
+                        .into(imageView);
                 mediaPlayer=MediaPlayer.create(this, R.raw.relaxing_waves);
                 break;
         }
