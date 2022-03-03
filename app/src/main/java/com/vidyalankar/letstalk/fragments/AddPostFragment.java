@@ -1,8 +1,10 @@
 package com.vidyalankar.letstalk.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
@@ -11,9 +13,13 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -21,20 +27,25 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 import com.vidyalankar.letstalk.R;
+import com.vidyalankar.letstalk.activities.TypePostActivity;
 import com.vidyalankar.letstalk.model.PostModel;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class AddPostFragment extends Fragment {
-
-    EditText textMessage;
-    Button post_btn;
-    ProgressBar progressBar;
-    Toolbar toolbar;
+public class AddPostFragment extends Fragment implements View.OnClickListener {
+    TextView family, selfHarm, friends,
+            hopes, bullying, health, work, parenting,
+            education, religion, lgbt, positive,
+            pregnancy, mentalHealth, addiction,
+            selfCare, grief, anxiety, disabilities,
+            depression, others;
+    TextView typeSelected;
+    Button okay;
 
     FirebaseAuth auth;
     FirebaseDatabase database;
+    String type = "Others";
 
     public AddPostFragment() {
         // Required empty public constructor
@@ -44,103 +55,143 @@ public class AddPostFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        auth= FirebaseAuth.getInstance();
-        database= FirebaseDatabase.getInstance();
-
+        auth = FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_add_post, container, false);
+        View view = inflater.inflate(R.layout.fragment_add_post, container, false);
 
-        post_btn= view.findViewById(R.id.post_btn);
-        textMessage= view.findViewById(R.id.user_text_post);
-        progressBar= view.findViewById(R.id.progressBar);
-        toolbar= view.findViewById(R.id.add_post_toolbar);
+        family = (TextView) view.findViewById(R.id.familyType);
+        selfHarm = (TextView) view.findViewById(R.id.selfHarmType);
+        friends = (TextView) view.findViewById(R.id.friendsType);
+        hopes = (TextView) view.findViewById(R.id.hopesType);
+        bullying = (TextView) view.findViewById(R.id.bullyingType);
+        health = (TextView) view.findViewById(R.id.healthType);
+        work = (TextView) view.findViewById(R.id.workType);
+        parenting = (TextView) view.findViewById(R.id.parentingType);
+        education = (TextView) view.findViewById(R.id.educationType);
+        religion = (TextView) view.findViewById(R.id.religionType);
+        lgbt = (TextView) view.findViewById(R.id.lgbtType);
+        positive = (TextView) view.findViewById(R.id.positiveType);
+        pregnancy = (TextView) view.findViewById(R.id.pregnancyType);
+        mentalHealth = (TextView) view.findViewById(R.id.mentalHealthType);
+        selfCare = (TextView) view.findViewById(R.id.selfCareType);
+        addiction = (TextView) view.findViewById(R.id.addictionType);
+        grief = (TextView) view.findViewById(R.id.griefType);
+        anxiety = (TextView) view.findViewById(R.id.anxietyType);
+        disabilities = (TextView) view.findViewById(R.id.disabilitiesType);
+        depression = (TextView) view.findViewById(R.id.depressionType);
+        others = (TextView) view.findViewById(R.id.othersType);
 
-//        database.getReference()
-//                .child("Users")
-//                .child(FirebaseAuth.getInstance().getUid())
-//                .addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                if(snapshot.exists())
-//                {
-//                    User user= snapshot.getValue(User.class);
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//
-//            }
-//        });
-        SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
-        Date date= new Date();
-        post_btn.setOnClickListener(new View.OnClickListener() {
+        typeSelected = view.findViewById(R.id.type_selected);
+        okay = view.findViewById(R.id.okay_selected);
+
+        family.setOnClickListener(this);
+        selfHarm.setOnClickListener(this);
+        friends.setOnClickListener(this);
+        hopes.setOnClickListener(this);
+        bullying.setOnClickListener(this);
+        health.setOnClickListener(this);
+        work.setOnClickListener(this);
+        parenting.setOnClickListener(this);
+        education.setOnClickListener(this);
+        religion.setOnClickListener(this);
+        lgbt.setOnClickListener(this);
+        positive.setOnClickListener(this);
+        pregnancy.setOnClickListener(this);
+        mentalHealth.setOnClickListener(this);
+        selfCare.setOnClickListener(this);
+        addiction.setOnClickListener(this);
+        grief.setOnClickListener(this);
+        anxiety.setOnClickListener(this);
+        disabilities.setOnClickListener(this);
+        depression.setOnClickListener(this);
+        others.setOnClickListener(this);
+
+        okay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                progressBar.setVisibility(View.VISIBLE);
-
-                PostModel postModel= new PostModel();
-                postModel.setPostedBy(FirebaseAuth.getInstance().getUid());
-                postModel.setPost(textMessage.getText().toString());
-//                Date date= new Date(postModel.getPostedAt());
-//                SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
-                postModel.setPostedAt(new Date().getTime());
-
-//                postModel.setPostedAt(formatter.format(date));
-
-                database.getReference()
-                        .child("Posts")
-                        .push()
-                        .setValue(postModel)
-                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void unused) {
-                        progressBar.setVisibility(View.GONE);
-                        Toast.makeText(getContext(), "Posted Successfully!", Toast.LENGTH_SHORT).show();
-                        getFragmentManager()
-                                .beginTransaction()
-                                .replace(R.id.fragmentContainerView2, new HomeFragment())
-                                .addToBackStack(null)
-                                .commit();
-                    }
-                });
-            }
-        });
-
-        textMessage.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                String text= textMessage.getText().toString();
-                if(!text.isEmpty())
-                {
-                    post_btn.setBackgroundDrawable(ContextCompat.getDrawable(getContext(), R.color.black));
-                    post_btn.setTextColor(getContext().getResources().getColor(R.color.white));
-                    post_btn.setEnabled(true);
-                }else{
-                    post_btn.setBackgroundDrawable(ContextCompat.getDrawable(getContext(), R.color.greyTrans));
-                    post_btn.setTextColor(getContext().getResources().getColor(R.color.white));
-                    post_btn.setEnabled(false);
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
+                Intent intent= new Intent(getActivity(), TypePostActivity.class);
+                intent.putExtra("type", type);
+                startActivity(intent);
 
             }
         });
-
-
         return view;
+    }
+
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.familyType:
+                type = "Family";
+                break;
+            case R.id.selfHarmType:
+                type = "Self Harm";
+                break;
+            case R.id.friendsType:
+                type = "Friends";
+                break;
+            case R.id.hopesType:
+                type = "Hopes";
+                break;
+            case R.id.bullyingType:
+                type = "Bullying";
+                break;
+            case R.id.healthType:
+                type = "Health";
+                break;
+            case R.id.workType:
+                type = "Work";
+                break;
+            case R.id.parentingType:
+                type = "Parenting";
+                break;
+            case R.id.educationType:
+                type = "Education";
+                break;
+            case R.id.religionType:
+                type = "Religion";
+                break;
+            case R.id.lgbtType:
+                type = "LGBT";
+                break;
+            case R.id.positiveType:
+                type = "Positive";
+                break;
+            case R.id.pregnancyType:
+                type = "Pregnancy";
+                break;
+            case R.id.mentalHealthType:
+                type = "Mental Health";
+                break;
+            case R.id.selfCareType:
+                type = "Self-care";
+                break;
+            case R.id.addictionType:
+                type = "Addiction";
+                break;
+            case R.id.griefType:
+                type = "Grief";
+                break;
+            case R.id.anxietyType:
+                type = "Anxiety";
+                break;
+            case R.id.disabilitiesType:
+                type = "Disabilities";
+                break;
+            case R.id.depressionType:
+                type = "Depression";
+                break;
+            case R.id.othersType:
+                type = "Others";
+                break;
+        }
+        typeSelected.setText(type);
     }
 }

@@ -10,6 +10,7 @@
         android:id="@+id/shimmer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,28 +22,537 @@
             android:orientation="vertical">
 
             <include layout="@layout/shimmer_layout"></include>
-            <include layout="@layout/shimmer_layout"></include>
-            <include layout="@layout/shimmer_layout"></include>
-            <include layout="@layout/shimmer_layout"></include>
+
             <include layout="@layout/shimmer_layout"></include>
 
+            <include layout="@layout/shimmer_layout"></include>
+
+            <include layout="@layout/shimmer_layout"></include>
+
+            <include layout="@layout/shimmer_layout"></include>
 
         </LinearLayout>
 
     </com.facebook.shimmer.ShimmerFrameLayout>
 
+    <HorizontalScrollView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/_4font_ssp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginEnd="@dimen/_4font_ssp"
+        android:layout_marginBottom="@dimen/_8font_ssp"
+        android:nestedScrollingEnabled="false"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="All"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.533" />
+
+                <TextView
+                    android:id="@+id/family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Family"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/all"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/selfHarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Self Harm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/family"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Friends"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/selfHarm"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/hopes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Hopes"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/friends"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/bullying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Bullying"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/hopes"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Health"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/bullying"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Work"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/health"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/parenting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Parenting"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/work"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Education"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/parenting"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/religion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Religion"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/education"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lgbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="LGBT"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/religion"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/positive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Positive"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/lgbt"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pregnancy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Pregnancy"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/positive"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/mentalHealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Mental Health"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/pregnancy"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/addiction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Addiction"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/mentalHealth"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/selfCare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Self-care"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/addiction"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/grief"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Grief"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/selfCare"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/anxiety"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Anxiety"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/grief"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/disabilities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Disabilities"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/anxiety"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/depression"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Depression"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/disabilities"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6font_ssp"
+                    android:background="@color/greyTrans"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_80font_ssp"
+                    android:paddingStart="@dimen/_4font_ssp"
+                    android:paddingTop="@dimen/_4font_ssp"
+                    android:paddingEnd="@dimen/_4font_ssp"
+                    android:paddingBottom="@dimen/_4font_ssp"
+                    android:text="Others"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14font_ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/depression"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/_90font_ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView">
+
+        <ImageView
+            android:id="@+id/image_error"
+            android:layout_width="@dimen/_80font_ssp"
+            android:layout_height="@dimen/_80font_ssp"
+            android:src="@drawable/nothing_found_icon"
+            app:layout_constraintEnd_toEndOf="@id/constraintLayout123"
+            app:layout_constraintStart_toStartOf="@id/constraintLayout123"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout123"
+            app:tint="@color/greyTrans" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/greyTrans"
+            android:layout_marginTop="@dimen/_30font_ssp"
+            android:text="Nothing to show here..."
+            android:textSize="@dimen/_20font_ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_error" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/homeRV"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/_3hsdp"
-        android:layout_marginTop="?android:attr/actionBarSize"
-        android:layout_marginRight="@dimen/_3hsdp"
+        android:layout_height="529dp"
+        android:layout_marginLeft="@dimen/_8hsdp"
+        android:layout_marginTop="@dimen/_8font_ssp"
+        android:layout_marginRight="@dimen/_8hsdp"
         android:nestedScrollingEnabled="false"
-        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,98 +7,448 @@
     android:background="@drawable/dark_nature_bg"
     tools:context=".fragments.AddPostFragment">
 
-    <Toolbar
-        android:id="@+id/add_post_toolbar"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:titleTextColor="@color/white"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_30font_ssp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="@dimen/_30font_ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/post_type_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15font_ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/type_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15font_ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintStart_toEndOf="@+id/textView9" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45font_ssp"
+            android:background="@color/blue_btn_bg_pressed_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10font_ssp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="Please choose a category of your post"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13font_ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_280hsdp"
+            android:layout_marginTop="17dp"
+            android:background="@color/blue_btn_bg_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="336dp"
+            android:layout_height="@dimen/_280hsdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_10font_ssp"
+                    android:layout_marginEnd="@dimen/_10font_ssp">
+
+                    <TextView
+                        android:id="@+id/familyType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10font_ssp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Family"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/selfHarmType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Self Harm"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/familyType" />
+
+                    <TextView
+                        android:id="@+id/friendsType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Friends"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/selfHarmType" />
+
+                    <TextView
+                        android:id="@+id/hopesType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Hopes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/friendsType" />
+
+                    <TextView
+                        android:id="@+id/bullyingType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Bullying"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/hopesType" />
+
+                    <TextView
+                        android:id="@+id/healthType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Health"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/bullyingType" />
+
+                    <TextView
+                        android:id="@+id/workType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Work"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/healthType" />
+
+                    <TextView
+                        android:id="@+id/parentingType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Parenting"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/workType" />
+
+                    <TextView
+                        android:id="@+id/educationType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Education"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/parentingType" />
+
+                    <TextView
+                        android:id="@+id/religionType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Religion"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/educationType" />
+
+                    <TextView
+                        android:id="@+id/lgbtType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="LGBT"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/religionType" />
+
+                    <TextView
+                        android:id="@+id/positiveType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Positive"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lgbtType" />
+
+                    <TextView
+                        android:id="@+id/pregnancyType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Pregnancy"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/positiveType" />
+
+                    <TextView
+                        android:id="@+id/mentalHealthType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Mental Health"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/pregnancyType" />
+
+                    <TextView
+                        android:id="@+id/addictionType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Addiction"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mentalHealthType" />
+
+                    <TextView
+                        android:id="@+id/selfCareType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Self Care"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/addictionType" />
+
+                    <TextView
+                        android:id="@+id/griefType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Grief"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/selfCareType" />
+
+                    <TextView
+                        android:id="@+id/anxietyType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Anxiety"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/griefType" />
+
+                    <TextView
+                        android:id="@+id/disabilitiesType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Disabilities"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/anxietyType" />
+
+                    <TextView
+                        android:id="@+id/depressionType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:text="Depression"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/disabilitiesType" />
+
+                    <TextView
+                        android:id="@+id/othersType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="@dimen/_10font_ssp"
+                        android:fontFamily="serif"
+                        android:paddingBottom="@dimen/_10font_ssp"
+                        android:text="Others"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.054"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/depressionType" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/okay_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/greyTrans"
+            android:text="Okay"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_15font_ssp"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.934"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <EditText
-        android:id="@+id/user_text_post"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
-        android:background="@android:color/transparent"
-        android:ems="10"
-        android:fontFamily="serif"
-        android:gravity="start|top"
-        android:hint="What's on your mind?"
-        android:inputType="textMultiLine"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_post_toolbar" />
 
-    <Button
-        android:id="@+id/post_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@color/greyTrans"
-        android:backgroundTint="@color/greyTrans"
-        android:enabled="false"
-        android:fontFamily="serif"
-        android:paddingStart="@dimen/_25font_ssp"
-        android:paddingTop="@dimen/_7font_ssp"
-        android:paddingEnd="@dimen/_25font_ssp"
-        android:paddingBottom="@dimen/_7font_ssp"
-        android:text="Post"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_15font_ssp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.89"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="176dp"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="serif"
-        android:text="You are not alone. We are here for you!"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_15font_ssp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_text_post" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Feel free to talk about anything!"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_15font_ssp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

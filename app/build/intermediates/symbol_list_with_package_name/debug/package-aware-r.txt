@@ -77,6 +77,7 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
+array postType
 attr SharedValue
 attr SharedValueId
 attr action
@@ -3456,7 +3457,6 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable counseling_cover
-drawable create_post_background
 drawable dark_bg_talk_community
 drawable dark_nature_bg
 drawable delete_icon
@@ -3472,6 +3472,7 @@ drawable email_icon
 drawable emergency_cover
 drawable error_center_x
 drawable error_circle
+drawable error_icon
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gray_button_background
@@ -3540,6 +3541,7 @@ drawable mtrl_popupmenu_background_overlay
 drawable mtrl_tabs_default_indicator
 drawable music_icon
 drawable navigation_empty_icon
+drawable nothing_found_icon
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3560,7 +3562,7 @@ drawable nutrition_drawer_option
 drawable password_lock_icon
 drawable pause
 drawable play
-drawable post_successful_background
+drawable post_type_header
 drawable post_wallpaper
 drawable profile_icon
 drawable receiver_bg
@@ -3705,7 +3707,8 @@ id actions
 id activity_chooser_view_content
 id add
 id addPostFragment
-id add_post_toolbar
+id addiction
+id addictionType
 id adjust_height
 id adjust_width
 id alertTitle
@@ -3718,6 +3721,8 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id anxiety
+id anxietyType
 id arc
 id asConfigured
 id async
@@ -3759,6 +3764,8 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id bullying
+id bullyingType
 id button
 id buttonPanel
 id buttons_container
@@ -3808,8 +3815,11 @@ id confirm_button
 id constraint
 id constraintLayout
 id constraintLayout1
+id constraintLayout123
 id constraintLayout2
 id constraintLayout3
+id constraintLayout4
+id constraintLayoutAddPost
 id container
 id content
 id contentPanel
@@ -3839,6 +3849,8 @@ id default_activity_button
 id delete_post
 id deltaRelative
 id dependency_ordering
+id depression
+id depressionType
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3847,6 +3859,8 @@ id design_navigation_view
 id dialog_button
 id dimensions
 id direct
+id disabilities
+id disabilitiesType
 id disableHome
 id disableIntraAutoTransition
 id disablePostScroll
@@ -3867,6 +3881,8 @@ id easeInOut
 id easeOut
 id east
 id edit_query
+id education
+id educationType
 id elastic
 id email_reset_password
 id end
@@ -3884,6 +3900,8 @@ id exit_chat
 id expand_activities_button
 id expanded_menu
 id fade
+id family
+id familyType
 id fill
 id fill_horizontal
 id fill_vertical
@@ -3902,6 +3920,8 @@ id forgot_pas_text
 id fragmentContainerView2
 id fragment_container_view_tag
 id friend_rv_username
+id friends
+id friendsType
 id friends_profile
 id friends_rv
 id friends_rv_profile
@@ -3916,6 +3936,8 @@ id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
+id grief
+id griefType
 id group_divider
 id grouping
 id groups
@@ -3930,6 +3952,8 @@ id grp_chat_activity_rv
 id guideline
 id guideline2
 id header_title
+id health
+id healthType
 id help1
 id help2
 id helpMeCalmDownFragment
@@ -3939,6 +3963,8 @@ id homeAsUp
 id homeFragment
 id homeRV
 id honorRequest
+id hopes
+id hopesType
 id horizontal_only
 id icon
 id icon_group
@@ -3948,9 +3974,11 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
 id imageView3
 id imageView4
 id image_content_root
+id image_error
 id image_root
 id image_view
 id immediateStop
@@ -3977,6 +4005,8 @@ id leftToRight
 id left_to_right
 id legacy
 id letsTalkCommunityFragment
+id lgbt
+id lgbtType
 id light
 id likes_comment
 id line1
@@ -4020,6 +4050,8 @@ id material_value_index
 id media_actions
 id melodies_one_option
 id melodies_two_option
+id mentalHealth
+id mentalHealthType
 id message
 id message_body
 id message_title
@@ -4118,8 +4150,11 @@ id nutrition_view1
 id nutrition_view2
 id nutrition_view3
 id off
+id okay_selected
 id on
 id onInterceptTouchReturnSwipe
+id others
+id othersType
 id outline
 id outward
 id overshoot
@@ -4129,6 +4164,8 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id parenting
+id parentingType
 id password_toggle
 id path
 id pathRelative
@@ -4142,9 +4179,13 @@ id player_duration1
 id player_position1
 id playnow
 id position
+id positive
+id positiveType
 id postLayout
 id post_btn
 id post_comment_comment
+id pregnancy
+id pregnancyType
 id primary_button
 id profileFragment
 id profileProgressBar
@@ -4168,8 +4209,11 @@ id receiver_text_grp
 id receiver_time
 id receiver_time_grp
 id rectangles
+id recyclerView
 id reg_progress_bar
 id reg_to_login_btn
+id religion
+id religionType
 id repeat
 id reset_password
 id restart
@@ -4209,6 +4253,10 @@ id seek_bar1
 id select_dialog_listview
 id selected
 id selection_type
+id selfCare
+id selfCareType
+id selfHarm
+id selfHarmType
 id send_message
 id send_message_grp
 id sender_text
@@ -4313,6 +4361,7 @@ id textView10
 id textView11
 id textView12
 id textView13
+id textView14
 id textView15
 id textView16
 id textView17
@@ -4345,6 +4394,8 @@ id textView40
 id textView5
 id textView6
 id textView7
+id textView8
+id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -4376,6 +4427,10 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id typeSelected
+id typeSelected1
+id type_post
+id type_selected
 id unchecked
 id uniform
 id unlabeled
@@ -4408,6 +4463,8 @@ id username_reg
 id usersFragment
 id users_show_rv
 id vertical_only
+id view
+id view2
 id view4
 id view_offset_helper
 id view_pager_notif
@@ -4446,6 +4503,8 @@ id west
 id wide
 id withText
 id withinBounds
+id work
+id workType
 id wrap
 id wrap_content
 id wrap_content_constrained
@@ -4575,6 +4634,7 @@ layout activity_play_melodies1
 layout activity_play_melodies2
 layout activity_registration
 layout activity_splash_screen
+layout activity_type_post
 layout alert_dialog
 layout banner
 layout browser_actions_context_menu_page
