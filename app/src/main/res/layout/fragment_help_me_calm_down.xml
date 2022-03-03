@@ -41,7 +41,7 @@
         android:layout_height="@dimen/_120hsdp"
         android:layout_marginStart="@dimen/_35hsdp"
         android:layout_marginTop="172dp"
-        android:layout_marginEnd="@dimen/_35hsdp"
+        android:layout_marginEnd="@dimen/_30hsdp"
         android:background="@color/greyTrans"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -61,6 +61,34 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="@+id/yoga_option"
         app:layout_constraintTop_toTopOf="@+id/yoga_option" />
+
+    <View
+        android:id="@+id/breath_now"
+        android:layout_width="304dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="@dimen/_35hsdp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="@dimen/_35hsdp"
+        android:background="@color/seed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yoga_one_option" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Let's breath together"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/yoga_option"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/yoga_option"
+        app:layout_constraintTop_toTopOf="@+id/breath_now" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

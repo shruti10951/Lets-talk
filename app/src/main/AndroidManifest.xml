@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LetsTalk">
         <activity
+            android:name=".activities.BreathNowActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.TypePostActivity"
             android:exported="false" />
         <activity
