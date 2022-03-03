@@ -54,8 +54,6 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         PostModel postModel = list.get(position);
 
-//        postModel.setPost(postModel.getPost());
-
         FirebaseDatabase.getInstance().getReference().child("Users")
                 .child(postModel.getPostedBy()).addValueEventListener(new ValueEventListener() {
             @Override
@@ -69,6 +67,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
                 holder.post.setText(postModel.getPost());
                 holder.like.setText(postModel.getPostLikes()+"");
                 holder.comment.setText(postModel.getCommentCount()+"");
+                holder.type.setText(postModel.getType());
             }
 
             @Override
@@ -179,9 +178,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
     public class viewHolder extends RecyclerView.ViewHolder {
 
         ImageView profile_image;
-        TextView username, like, comment, post;
-        //Recycler define
-
+        TextView username, like, comment, post, type;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
@@ -191,7 +188,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
             username= itemView.findViewById(R.id.username_comment);
             like= itemView.findViewById(R.id.likes_comment);
             comment= itemView.findViewById(R.id.user_comments_comment);
-            //id
+            type= itemView.findViewById(R.id.type_post);
 
         }
     }

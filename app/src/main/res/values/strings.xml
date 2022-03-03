@@ -22,4 +22,34 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    family, selfHarm, friends,
+    hopes, bullying, health, work, parenting,
+    education, religion, lgbt, positive,
+    pregnancy, mentalHealth, addiction,
+    selfCare, grief, anxiety, disabilities,
+    depression, others
+    <string-array name="postType">
+        <item>Family</item>
+        <item>Self Harm</item>
+        <item>Friends</item>
+        <item>Hopes</item>
+        <item>Bullying</item>
+        <item>Health</item>
+        <item>Work</item>
+        <item>Parenting</item>
+        <item>Education</item>
+        <item>Religion</item>
+        <item>LGBT</item>
+        <item>Positive</item>
+        <item>Pregnancy</item>
+        <item>Mental Health</item>
+        <item>Addiction</item>
+        <item>Self Care</item>
+        <item>Grief</item>
+        <item>Anxiety</item>
+        <item>Disabilities</item>
+        <item>Depression</item>
+        <item>Others</item>
+    </string-array>
 </resources>

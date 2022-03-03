@@ -9,14 +9,24 @@ public class PostModel {
     private int postLikes;
     private int commentCount;
     private Long postedAt;
+    private String type;
 
-    public PostModel(String postId, String post, String postedBy, int postLikes, int commentCount, Long postedAt) {
+    public PostModel(String postId, String post, String postedBy, int postLikes, int commentCount, Long postedAt, String type) {
         this.postId = postId;
         this.post = post;
         this.postedBy = postedBy;
         this.postLikes = postLikes;
         this.commentCount = commentCount;
         this.postedAt = postedAt;
+        this.type = type;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public Long getPostedAt() {
@@ -67,21 +77,6 @@ public class PostModel {
         this.postedBy = postedBy;
     }
 
-//    public String getPostedAt() {
-//        return postedAt;
-//    }
-//
-//    public void setPostedAt(String postedAt) {
-//        this.postedAt = postedAt;
-//    }
-
     public PostModel() {
     }
-
-//    public PostModel(String postId, String post, String postedBy, String postedAt) {
-//        this.postId = postId;
-//        this.post = post;
-//        this.postedBy = postedBy;
-//        this.postedAt = postedAt;
-//    }
 }
