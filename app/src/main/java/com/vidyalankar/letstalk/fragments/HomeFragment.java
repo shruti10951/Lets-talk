@@ -55,14 +55,15 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_home, container, false);
 
+        constraintLayout= view.findViewById(R.id.constraintLayout123);
+
+        constraintLayout.setVisibility(View.GONE);
         shimmerFrameLayout= view.findViewById(R.id.shimmer);
         shimmerFrameLayout.startShimmer();
         homeRV= view.findViewById(R.id.homeRV);
         postList= new ArrayList<>();
         database= FirebaseDatabase.getInstance();
         auth= FirebaseAuth.getInstance();
-
-        constraintLayout= view.findViewById(R.id.constraintLayout123);
 
         all= (TextView) view.findViewById(R.id.all);
         family= (TextView) view.findViewById(R.id.family);

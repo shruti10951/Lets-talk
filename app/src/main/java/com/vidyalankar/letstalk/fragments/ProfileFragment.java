@@ -129,8 +129,6 @@ public class ProfileFragment extends Fragment {
 
                 getActivity().getSupportFragmentManager().beginTransaction()
                         .replace(R.id.fragmentContainerView2, new FollowingFragment())
-                        .remove(ProfileFragment.this)
-                        //.replace(((ViewGroup)getView().getParent()).getId(), nextFrag, "findThisFragment")
                         .addToBackStack(null)
                         .commit();
                 Toast.makeText(getActivity(), "Your friends are here to help you!", Toast.LENGTH_SHORT).show();
@@ -145,8 +143,6 @@ public class ProfileFragment extends Fragment {
 
                 getActivity().getSupportFragmentManager().beginTransaction()
                         .replace(R.id.fragmentContainerView2, new FriendsFragment())
-                        .remove(ProfileFragment.this)
-                        //.replace(((ViewGroup)getView().getParent()).getId(), nextFrag, "findThisFragment")
                         .addToBackStack(null)
                         .commit();
                 Toast.makeText(getActivity(), "Your friends are here to help you!", Toast.LENGTH_SHORT).show();

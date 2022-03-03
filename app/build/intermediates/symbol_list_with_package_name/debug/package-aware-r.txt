@@ -3562,6 +3562,7 @@ drawable nutrition_drawer_option
 drawable password_lock_icon
 drawable pause
 drawable play
+drawable post_background
 drawable post_type_header
 drawable post_wallpaper
 drawable profile_icon

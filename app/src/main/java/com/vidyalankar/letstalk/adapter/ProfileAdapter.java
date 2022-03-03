@@ -62,6 +62,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
                 holder.post.setText(postModel.getPost());
                 holder.like.setText(postModel.getPostLikes()+"");
                 holder.comment.setText(postModel.getCommentCount()+"");
+                holder.type.setText(postModel.getType());
 
             }
 
@@ -106,17 +107,6 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
             }
         });
 
-//        holder.profileRV.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent= new Intent(context, CommentActivity.class);
-//                intent.putExtra("postId", postModel.getPostId());
-//                intent.putExtra("postedBy", postModel.getPostedBy());
-//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                context.startActivity(intent);
-//            }
-//        });
-
     }
 
     @Override
@@ -127,8 +117,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
     public class viewHolder extends RecyclerView.ViewHolder{
 
         ImageView profile_image, delete;
-        TextView username, like, comment, post;
-        RecyclerView profileRV;
+        TextView username, like, comment, post, type;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
@@ -140,12 +129,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
             like= itemView.findViewById(R.id.likes_comment);
             comment= itemView.findViewById(R.id.user_comments_comment);
             delete= itemView.findViewById(R.id.delete_post);
-//=======
-////            save= itemView.findViewById(R.id.save_post_comment);
-//            username= itemView.findViewById(R.id.username_comment);
-//            like= itemView.findViewById(R.id.likes_comment);
-//            comment= itemView.findViewById(R.id.user_comments_comment);
-////            profileRV=itemView.findViewById(R.id.profileRV);
+            type= itemView.findViewById(R.id.type_post);
 
             delete.setVisibility(View.VISIBLE);
         }
