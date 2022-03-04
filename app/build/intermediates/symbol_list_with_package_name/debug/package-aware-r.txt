@@ -3757,6 +3757,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id breath_now
 id breathing_one_option
 id breathing_three_option
 id breathing_two_option
@@ -4213,6 +4214,7 @@ id rectangles
 id recyclerView
 id reg_progress_bar
 id reg_to_login_btn
+id relax
 id religion
 id religionType
 id repeat
@@ -4392,6 +4394,7 @@ id textView38
 id textView39
 id textView4
 id textView40
+id textView41
 id textView5
 id textView6
 id textView7
@@ -4623,6 +4626,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_binaural
+layout activity_breath_now
 layout activity_chat
 layout activity_comment
 layout activity_dashboard
@@ -4800,6 +4804,7 @@ raw alpha_waves
 raw beta_swirl
 raw calm_mind
 raw deep_alpha
+raw forest_ambience
 raw ground_air
 raw healing_aura
 raw morning_motivator

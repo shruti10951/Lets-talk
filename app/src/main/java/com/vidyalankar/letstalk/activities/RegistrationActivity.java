@@ -1,10 +1,14 @@
 package com.vidyalankar.letstalk.activities;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +18,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -25,6 +31,8 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.model.UserModel;
+
+import cn.pedant.SweetAlert.SweetAlertDialog;
 
 
 public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener {
@@ -136,6 +144,40 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                 }
                 else{
 
+//                    mAuth.getCurrentUser().sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
+//                        @Override
+//                        public void onSuccess(Void unused) {
+//                            new SweetAlertDialog(RegistrationActivity.this)
+//                                    .setTitleText("Verify email")
+//                                    .setContentText("Verification email has been sent. Please Check")
+//                                    .show();
+//                            if(mAuth.getCurrentUser().isEmailVerified()){
+//                                mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+//                                    @Override
+//                                    public void onComplete(@NonNull Task<AuthResult> task) {
+//                                       if(task.isSuccessful()){
+//                                           UserModel userModel = new UserModel(username, email);
+//
+//                                           FirebaseDatabase.getInstance()
+//                                                   .getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+//                                                   .setValue(userModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+//                                               @Override
+//                                               public void onSuccess(Void unused) {
+//                                                   if(task.isSuccessful())
+//                                                   {
+//                                                       Toast.makeText(RegistrationActivity.this,"User has been registered successfully!", Toast.LENGTH_LONG).show();
+//                                                       mProgressBar.setVisibility(View.GONE);
+//                                                       startActivity(new Intent(RegistrationActivity.this, DashboardActivity.class));
+//                                                   }
+//                                               }
+//                                           });
+//                                       }
+//                                    }
+//                                });
+//                            }
+//                        }
+//                    });
+
                     mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
@@ -143,26 +185,59 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                             {
                                 UserModel userModel = new UserModel(username, email);
 
-                                FirebaseDatabase.getInstance()
-                                        .getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                        .setValue(userModel).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                //send verification link
+
+//                                FirebaseUser user= mAuth.getCurrentUser();
+                                FirebaseAuth.getInstance().getCurrentUser()
+                                .sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
-                                        if(task.isSuccessful())
-                                        {
-                                            Toast.makeText(RegistrationActivity.this,"User has been registered successfully!", Toast.LENGTH_LONG).show();
-                                            startActivity(new Intent(RegistrationActivity.this, DashboardActivity.class));
-                                        }else
-                                        {
-                                            Toast.makeText(RegistrationActivity.this, "Failed to register!", Toast.LENGTH_LONG).show();
+                                        //Toast.makeText(RegistrationActivity.this,"Verification Email has been sent.",Toast.LENGTH_LONG).show();
+                                        new SweetAlertDialog(RegistrationActivity.this)
+                                                .setTitleText("Verify email")
+                                                .setContentText("Verification email has been sent. Please Check")
+                                                .show();
+
+                                        //if verified
+//                                        if(mAuth.getCurrentUser().isEmailVerified()){
+                                                FirebaseDatabase.getInstance()
+                                                        .getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                                        .setValue(userModel).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                    @Override
+                                                    public void onComplete(@NonNull Task<Void> task) {
+                                                        if (task.isSuccessful()) {
+//                                                    if(FirebaseAuth.getInstance().getCurrentUser().isEmailVerified())
+//                                                if(FirebaseAuth.getInstance().getCurrentUser().isEmailVerified())
+//                                                    {
+                                                            startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
+                                                            Toast.makeText(RegistrationActivity.this, "User has been registered successfully!", Toast.LENGTH_LONG).show();
+                                                        } else {
+                                                            Toast.makeText(RegistrationActivity.this, "cfcfgvvbnbnbnmmnmnFailed to register!", Toast.LENGTH_LONG).show();
+                                                        }
+                                                        mProgressBar.setVisibility(View.GONE);
+//                                                }
+//                                                else
+//                                                {
+//                                                    Toast.makeText(RegistrationActivity.this, "Failed to register!", Toast.LENGTH_LONG).show();
+//                                                }
+//                                                mProgressBar.setVisibility(View.GONE);
+                                                    }
+                                                });
                                         }
-                                        mProgressBar.setVisibility(View.GONE);
+                                    //}
+
+                                }).addOnFailureListener(new OnFailureListener() {
+                                    @Override
+                                    public void onFailure(@NonNull Exception e) {
+                                        Log.d(TAG,"onFailure:Email not sent"+e.getMessage());
                                     }
                                 });
-                            }else{
-                                Toast.makeText(RegistrationActivity.this, "Failed to register user!", Toast.LENGTH_LONG).show();
-                                mProgressBar.setVisibility(View.GONE);
+
                             }
+//                                else{
+//                                Toast.makeText(RegistrationActivity.this, "tfgbnbnnmmnmnFailed to register user!", Toast.LENGTH_LONG).show();
+//                                mProgressBar.setVisibility(View.GONE);
+//                            }
                         }
                     });
 
