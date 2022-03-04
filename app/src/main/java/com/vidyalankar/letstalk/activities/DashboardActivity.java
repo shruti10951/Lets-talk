@@ -183,7 +183,6 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
 
     @Override
     public void onBackPressed() {
-        android.app.Fragment test= getFragmentManager().findFragmentById(R.id.fragmentContainerView2);
         if(dashboard_drawer.isDrawerOpen(GravityCompat.START))
         {
             dashboard_drawer.closeDrawer(GravityCompat.START);
