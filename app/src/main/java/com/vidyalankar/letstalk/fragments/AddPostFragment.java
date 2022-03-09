@@ -3,35 +3,18 @@ package com.vidyalankar.letstalk.fragments;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.Toolbar;
-
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.activities.TypePostActivity;
-import com.vidyalankar.letstalk.model.PostModel;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class AddPostFragment extends Fragment implements View.OnClickListener {
     TextView family, selfHarm, friends,
