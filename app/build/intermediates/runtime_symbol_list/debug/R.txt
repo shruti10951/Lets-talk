@@ -4214,6 +4214,8 @@ int id recyclerView 0x7f09025f
 int id reg_progress_bar 0x7f090260
 int id reg_to_login_btn 0x7f090261
 int id relax 0x7f0903a6
+int id relax1 0x7f0903a7
+int id relax2 0x7f0903a8
 int id religion 0x7f090262
 int id religionType 0x7f090263
 int id repeat 0x7f090264
