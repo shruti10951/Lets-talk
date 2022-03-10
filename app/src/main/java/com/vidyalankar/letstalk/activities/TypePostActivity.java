@@ -2,7 +2,6 @@ package com.vidyalankar.letstalk.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,8 +18,6 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 import com.vidyalankar.letstalk.R;
-import com.vidyalankar.letstalk.fragments.AddPostFragment;
-import com.vidyalankar.letstalk.fragments.HomeFragment;
 import com.vidyalankar.letstalk.model.PostModel;
 
 import java.text.SimpleDateFormat;

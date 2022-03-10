@@ -20,7 +20,6 @@ import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.activities.DashboardActivity;
 import com.vidyalankar.letstalk.fragments.UserProfileFragment;
 import com.vidyalankar.letstalk.model.FollowingModel;
-import com.vidyalankar.letstalk.model.FriendsModel;
 import com.vidyalankar.letstalk.model.UserModel;
 
 import java.util.ArrayList;

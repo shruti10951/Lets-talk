@@ -53,8 +53,6 @@ public class CalmMelodiesFragment extends Fragment {
             }
         });
 
-
-
         return view;
     }
 }

@@ -1,7 +1,5 @@
 package com.vidyalankar.letstalk.model;
 
-import android.net.Uri;
-
 public class UserModel {
 
     public String username, email, userID, profilePic;

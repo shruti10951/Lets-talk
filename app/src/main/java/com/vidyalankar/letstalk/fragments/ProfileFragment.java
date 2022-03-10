@@ -3,7 +3,6 @@ package com.vidyalankar.letstalk.fragments;
 import android.net.Uri;
 import android.os.Bundle;
 
-
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -37,7 +36,6 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
-import com.vidyalankar.letstalk.adapter.PostAdapter;
 import com.vidyalankar.letstalk.adapter.ProfileAdapter;
 import com.vidyalankar.letstalk.model.PostModel;
 import com.vidyalankar.letstalk.model.UserModel;

@@ -1,27 +1,19 @@
 package com.vidyalankar.letstalk.activities;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.messaging.FirebaseMessaging;
 import com.vidyalankar.letstalk.R;
 
 public class MainActivity extends AppCompatActivity {
 
     DrawerLayout mDrawerLayout;
     ActionBarDrawerToggle mActionDrawerToggle;
-
-    NavigationView mNavigationView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

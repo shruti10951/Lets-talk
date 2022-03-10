@@ -5,7 +5,6 @@ public class PostModel {
     private String postId;
     private String post;
     private String postedBy;
-   // private String postedAt;
     private int postLikes;
     private int commentCount;
     private Long postedAt;

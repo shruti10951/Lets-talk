@@ -3,7 +3,6 @@ package com.vidyalankar.letstalk.model;
 public class ChatModel {
 
     String userId, message;
-//    String time;
     Long time;
 
     public ChatModel(String userId, String message, Long time) {
@@ -28,12 +27,6 @@ public class ChatModel {
         this.message = message;
     }
 
-//    public ChatModel(String userId, String message, String time) {
-//        this.userId = userId;
-//        this.message = message;
-//        this.time = time;
-//    }
-
     public String getUserId() {
         return userId;
     }
@@ -50,11 +43,4 @@ public class ChatModel {
         this.message = message;
     }
 
-//    public String getTime() {
-//        return time;
-//    }
-//
-//    public void setTime(String time) {
-//        this.time = time;
-//    }
 }

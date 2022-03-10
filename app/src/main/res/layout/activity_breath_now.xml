@@ -7,6 +7,10 @@
     android:background="@drawable/breathing_option_background"
     tools:context=".activities.BreathNowActivity">
 
+<View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyTrans"/>
 
 
     <ImageView
@@ -21,42 +25,38 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/start"
-        android:layout_width="155dp"
-        android:layout_height="65dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Start"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="@dimen/_20font_ssp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:paddingEnd="@dimen/_10font_ssp"
+        android:paddingStart="@dimen/_10font_ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.975" />
 
-    <!--    <Button-->
-    <!--        android:id="@+id/stop"-->
-    <!--        android:layout_width="151dp"-->
-    <!--        android:layout_height="61dp"-->
-    <!--        android:text="stop"-->
-    <!--        android:visibility="gone"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.498"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        app:layout_constraintVertical_bias="0.976" />-->
 
     <TextView
         android:id="@+id/relax"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
-        android:background="@color/greyTrans"
+        android:background="@color/white"
         android:fontFamily="serif"
         android:text="Rest here"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/_27font_ssp"
         android:textStyle="bold|italic"
-
+        android:paddingEnd="@dimen/_10font_ssp"
+        android:paddingStart="@dimen/_10font_ssp"
         app:layout_constraintBottom_toTopOf="@+id/start"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,13 +68,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10font_ssp"
-        android:background="@color/greyTrans"
+        android:background="@color/white"
         android:fontFamily="serif"
         android:text="for a minute"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/_27font_ssp"
         android:textStyle="italic|bold"
-
+        android:paddingEnd="@dimen/_10font_ssp"
+        android:paddingStart="@dimen/_10font_ssp"
         app:layout_constraintBottom_toTopOf="@+id/start"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.556"
@@ -87,13 +88,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10font_ssp"
-        android:background="@color/greyTrans"
+        android:background="@color/white"
         android:fontFamily="serif"
         android:text="it is ok"
-        android:textColor="@color/white"
+        android:paddingEnd="@dimen/_10font_ssp"
+        android:paddingStart="@dimen/_10font_ssp"
+        android:textColor="@color/black"
         android:textSize="@dimen/_27font_ssp"
         android:textStyle="italic|bold"
-
         app:layout_constraintBottom_toTopOf="@+id/start"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
