@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.activities.BreathNowActivity;
-import com.vidyalankar.letstalk.activities.IsochronicActivity;
 
 public class HelpMeCalmDownFragment extends Fragment {
 

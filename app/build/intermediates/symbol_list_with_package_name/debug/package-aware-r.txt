@@ -4215,6 +4215,8 @@ id recyclerView
 id reg_progress_bar
 id reg_to_login_btn
 id relax
+id relax1
+id relax2
 id religion
 id religionType
 id repeat

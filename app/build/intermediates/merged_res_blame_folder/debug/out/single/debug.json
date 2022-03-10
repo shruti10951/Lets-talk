@@ -24,10 +24,6 @@
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_user_profile_default.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\user_profile_default.xml"
-    },
-    {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_all_notification.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_all_notification.xml"
     },
@@ -466,6 +462,10 @@
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_dark_bg_talk_community.png.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\dark_bg_talk_community.png"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_user_profile_default.png.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\user_profile_default.png"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_post_type_header.jpg.flat",

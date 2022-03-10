@@ -1,7 +1,6 @@
 package com.vidyalankar.letstalk.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +19,6 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
-import com.vidyalankar.letstalk.activities.CommentActivity;
 import com.vidyalankar.letstalk.model.PostModel;
 import com.vidyalankar.letstalk.model.UserModel;
 

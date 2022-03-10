@@ -19,7 +19,6 @@ import com.google.firebase.database.ValueEventListener;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.adapter.ChatListAdapter;
 import com.vidyalankar.letstalk.model.FollowingModel;
-import com.vidyalankar.letstalk.model.FriendsModel;
 
 import java.util.ArrayList;
 import java.util.Collections;

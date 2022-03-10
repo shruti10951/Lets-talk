@@ -21,7 +21,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.vidyalankar.letstalk.R;
-import com.vidyalankar.letstalk.adapter.ChatAdapter;
 import com.vidyalankar.letstalk.adapter.GroupChatAdapter;
 import com.vidyalankar.letstalk.model.ChatModel;
 
