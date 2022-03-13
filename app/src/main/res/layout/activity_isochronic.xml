@@ -37,10 +37,10 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@color/greyTrans"
                     android:fontFamily="serif"
                     android:text="Binaural Beats"
                     android:textColor="@color/white"
-                    android:background="@color/greyTrans"
                     android:textSize="@dimen/_20font_ssp"
                     android:textStyle="bold|italic"
                     app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view"
@@ -61,7 +61,6 @@
                     app:layout_constraintHorizontal_bias="0.6"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/mindfulness_view" />
-
 
 
                 <TextView

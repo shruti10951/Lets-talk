@@ -7,11 +7,10 @@
     android:background="@drawable/help_calm_down"
     tools:context=".fragments.HelpMeCalmDownFragment">
 
-
     <View
         android:id="@+id/yoga_one_option"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_120hsdp"
+        android:layout_height="@dimen/_80hsdp"
         android:layout_marginStart="@dimen/_35hsdp"
         android:layout_marginTop="116dp"
         android:layout_marginEnd="@dimen/_35hsdp"
@@ -24,7 +23,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="serif"
         android:text="Breathing"
         android:textColor="@color/white"
@@ -38,20 +37,20 @@
     <View
         android:id="@+id/yoga_option"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_120hsdp"
+        android:layout_height="@dimen/_80hsdp"
         android:layout_marginStart="@dimen/_35hsdp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="@dimen/_30hsdp"
         android:background="@color/greyTrans"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yoga_one_option" />
+        app:layout_constraintTop_toBottomOf="@+id/breath_now" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="serif"
         android:text="Yoga"
         android:textColor="@color/white"
@@ -64,12 +63,12 @@
 
     <View
         android:id="@+id/breath_now"
-        android:layout_width="304dp"
-        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80hsdp"
         android:layout_marginStart="@dimen/_35hsdp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="@dimen/_35hsdp"
-        android:background="@color/seed"
+        android:background="@color/greyTrans"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,18 +76,18 @@
 
     <TextView
         android:id="@+id/textView41"
-        android:layout_width="wrap_content"
+        android:layout_width="268dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="serif"
+        android:gravity="center"
         android:text="Let's breath together"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="@dimen/_25font_ssp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/yoga_option"
+        app:layout_constraintEnd_toEndOf="@+id/breath_now"
         app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="@+id/yoga_option"
+        app:layout_constraintStart_toStartOf="@+id/breath_now"
         app:layout_constraintTop_toTopOf="@+id/breath_now" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

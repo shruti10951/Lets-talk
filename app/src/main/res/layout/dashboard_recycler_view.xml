@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/_8font_ssp"
     android:layout_marginBottom="@dimen/_8font_ssp"
-    android:background="@drawable/post_wallpaper"
-    android:layout_height="wrap_content">
+    android:background="@drawable/post_wallpaper">
 
     <ImageView
         android:id="@+id/delete_post"
         android:layout_width="@dimen/_20font_ssp"
         android:layout_height="@dimen/_20font_ssp"
         android:src="@drawable/delete_icon"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/user_post_comment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.911"
         app:layout_constraintStart_toEndOf="@+id/username_comment"
         app:layout_constraintTop_toTopOf="parent"
-        android:visibility="gone"
         app:layout_constraintVertical_bias="0.369"
         app:tint="@color/white" />
 
@@ -92,13 +91,13 @@
         android:drawableLeft="@drawable/like_icon"
         android:drawablePadding="10dp"
         android:drawableTint="#FFFFFF"
-        android:textColor="@color/white"
-        android:gravity="center"
         android:fontFamily="serif"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_5font_ssp"
         android:text="234"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_post_comment"
-        android:paddingBottom="@dimen/_5font_ssp"/>
+        app:layout_constraintTop_toBottomOf="@+id/user_post_comment" />
 
     <TextView
         android:id="@+id/user_comments_comment"
@@ -109,13 +108,13 @@
         android:drawableLeft="@drawable/comment_icon"
         android:drawablePadding="10dp"
         android:drawableTint="#FFFFFF"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:text="52"
         android:fontFamily="serif"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_10font_ssp"
+        android:text="52"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@id/likes_comment"
-        app:layout_constraintTop_toBottomOf="@+id/user_post_comment"
-        android:paddingBottom="@dimen/_10font_ssp"/>
+        app:layout_constraintTop_toBottomOf="@+id/user_post_comment" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
