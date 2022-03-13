@@ -46,11 +46,11 @@
             android:id="@+id/dashboard_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:elevation="4dp"
-            app:titleTextColor="@color/black"
             android:background="@drawable/toolbar_bg"
+            android:elevation="4dp"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="@color/black">
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -66,8 +66,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:itemIconTint="@color/black"
         app:headerLayout="@layout/nav_header"
+        app:itemIconTint="@color/black"
         app:menu="@menu/nav_menu" />
 
 

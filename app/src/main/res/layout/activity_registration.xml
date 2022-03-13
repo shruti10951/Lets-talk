@@ -1,110 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:id="@+id/login_container"
-android:padding="40dp"
-android:background="@drawable/color1"
-tools:context=".activities.RegistrationActivity">
-
-
-<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="100dp"
-    android:src="@drawable/lets_talk_logo"
-    android:layout_marginBottom="20dp"
-    />
-
-<EditText
-    android:id="@+id/user_reg_email"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_container"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:layout_marginTop="10dp"
-    android:backgroundTint="#fff"
-    android:drawableLeft="@drawable/email_icon"
-    android:drawablePadding="10dp"
-    android:hint="Email"
-    android:fontFamily="serif"
-    android:inputType="textPersonName"
-    android:textColor="#ffffff"
-    android:textColorHighlight="#FFFFFF"
-    android:textColorHint="#FFFEFE"
-    android:textSize="20sp" />
-
-<EditText
-    android:id="@+id/username_reg"
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:layout_marginTop="20dp"
-    android:backgroundTint="#fff"
-    android:drawableLeft="@drawable/profile_icon"
-    android:drawablePadding="10dp"
-    android:hint="Username"
-    android:fontFamily="serif"
-    android:inputType="textPersonName"
-    android:textColor="#ffffff"
-    android:textColorHighlight="#FFFFFF"
-    android:textColorHint="#FFFEFE"
-    android:textSize="20sp" />
+    android:layout_height="match_parent"
+    android:background="@drawable/color1"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".activities.RegistrationActivity">
 
 
-<EditText
-    android:id="@+id/user_reg_password"
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:layout_marginTop="20dp"
-    android:backgroundTint="#fff"
-    android:fontFamily="serif"
-    android:drawableLeft="@drawable/password_lock_icon"
-    android:drawablePadding="10dp"
-    android:hint="Password"
-    android:inputType="textPassword"
-    android:textColor="#ffffff"
-    android:textColorHighlight="#FFFFFF"
-    android:textColorHint="#FFFFFF"
-    android:textSize="20sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/lets_talk_logo" />
 
-<EditText
-    android:id="@+id/user_reg_password_confirm"
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:layout_marginTop="20dp"
-    android:backgroundTint="#fff"
-    android:drawableLeft="@drawable/password_lock_icon"
-    android:drawablePadding="10dp"
-    android:fontFamily="serif"
-    android:hint="Confirm Password"
-    android:inputType="textPassword"
-    android:textColor="#ffffff"
-    android:textColorHighlight="#FFFFFF"
-    android:textColorHint="#FFFFFF"
-    android:textSize="20sp" />
+    <EditText
+        android:id="@+id/user_reg_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#fff"
+        android:drawableLeft="@drawable/email_icon"
+        android:drawablePadding="10dp"
+        android:fontFamily="serif"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFEFE"
+        android:textSize="20sp" />
 
-<Button
-    android:id="@+id/sign_up_reg_btn"
-    android:layout_width="match_parent"
-    android:layout_height="58dp"
-    android:layout_marginTop="30dp"
-    android:text="Sign Up"
-    android:fontFamily="serif"
-    android:textColor="#FFFFFF"
-    android:textSize="20sp"
-    android:textStyle="bold"
-    app:backgroundTint="#000F3C" />
+    <EditText
+        android:id="@+id/username_reg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fff"
+        android:drawableLeft="@drawable/profile_icon"
+        android:drawablePadding="10dp"
+        android:fontFamily="serif"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFEFE"
+        android:textSize="20sp" />
 
-<TextView
-    android:id="@+id/reg_to_login_btn"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:layout_marginTop="20dp"
-    android:fontFamily="serif"
-    android:text="Have account? Log in now!"
-    android:textColor="#FFFFFF"
-    android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/user_reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fff"
+        android:drawableLeft="@drawable/password_lock_icon"
+        android:drawablePadding="10dp"
+        android:fontFamily="serif"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/user_reg_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fff"
+        android:drawableLeft="@drawable/password_lock_icon"
+        android:drawablePadding="10dp"
+        android:fontFamily="serif"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/sign_up_reg_btn"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#000F3C" />
+
+    <TextView
+        android:id="@+id/reg_to_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Have account? Log in now!"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
 
     <ProgressBar
         android:id="@+id/reg_progress_bar"
@@ -113,9 +112,7 @@ tools:context=".activities.RegistrationActivity">
         android:layout_height="53dp"
         android:layout_centerInParent="true"
         android:visibility="gone"
-        tools:ignore="MissingConstraints">
-    </ProgressBar>
-
+        tools:ignore="MissingConstraints"></ProgressBar>
 
 
 </LinearLayout>

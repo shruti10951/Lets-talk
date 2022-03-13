@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/breathing_option_background"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.BreathingOptionFragment">
 
     <androidx.core.widget.NestedScrollView
@@ -16,7 +16,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -53,10 +53,10 @@
                     android:id="@+id/breathing_two_option"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_120hsdp"
-                    android:background="@color/greyTrans"
                     android:layout_marginStart="@dimen/_35hsdp"
-                    android:layout_marginEnd="@dimen/_35hsdp"
                     android:layout_marginTop="?android:attr/actionBarSize"
+                    android:layout_marginEnd="@dimen/_35hsdp"
+                    android:background="@color/greyTrans"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
@@ -68,11 +68,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="52dp"
                     android:fontFamily="serif"
+                    android:gravity="center"
                     android:text="Ujjayi breathing"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_25font_ssp"
                     android:textStyle="bold"
-                    android:gravity="center"
                     app:layout_constraintEnd_toEndOf="@+id/breathing_two_option"
                     app:layout_constraintStart_toStartOf="@+id/breathing_two_option"
                     app:layout_constraintTop_toTopOf="@+id/breathing_two_option" />
@@ -81,10 +81,10 @@
                     android:id="@+id/breathing_three_option"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_120hsdp"
-                    android:background="@color/greyTrans"
                     android:layout_marginStart="@dimen/_35hsdp"
-                    android:layout_marginEnd="@dimen/_35hsdp"
                     android:layout_marginTop="?android:attr/actionBarSize"
+                    android:layout_marginEnd="@dimen/_35hsdp"
+                    android:background="@color/greyTrans"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
@@ -96,10 +96,10 @@
                     android:layout_height="112dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="serif"
+                    android:gravity="center"
                     android:text="Humming bee breath"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_25font_ssp"
-                    android:gravity="center"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="@+id/breathing_three_option"
                     app:layout_constraintHorizontal_bias="0.492"
