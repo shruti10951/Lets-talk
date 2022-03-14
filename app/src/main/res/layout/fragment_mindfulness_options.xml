@@ -36,8 +36,8 @@
 
     <View
         android:id="@+id/mindfulness_view1"
-        android:layout_width="416dp"
-        android:layout_height="120dp"
+        android:layout_width="410dp"
+        android:layout_height="119dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="208dp"
         android:layout_marginEnd="8dp"
@@ -49,18 +49,17 @@
 
     <TextView
         android:id="@+id/mindfulness_article_text1"
-        android:layout_width="250dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="164dp"
+        android:layout_width="261dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="140dp"
         android:fontFamily="serif"
-        android:maxWidth="250dp"
         android:text="Mindfulness meditation and other practices"
         android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/mindfulness_view1"
-        app:layout_constraintVertical_bias="0.521" />
+        app:layout_constraintVertical_bias="0.363" />
 
     <ImageView
         android:id="@+id/mindfulness_imageView4"
@@ -69,16 +68,16 @@
         android:src="@drawable/mindfulness1"
         app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view1"
         app:layout_constraintEnd_toStartOf="@+id/mindfulness_article_text1"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/mindfulness_view1"
-        app:layout_constraintVertical_bias="0.412" />
+        app:layout_constraintVertical_bias="0.439" />
 
 
     <View
         android:id="@+id/mindfulness_view2"
-        android:layout_width="413dp"
-        android:layout_height="124dp"
+        android:layout_width="410dp"
+        android:layout_height="119dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="324dp"
         android:layout_marginEnd="8dp"
@@ -90,9 +89,9 @@
 
     <TextView
         android:id="@+id/mindfulness_article_text2"
-        android:layout_width="257dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="164dp"
+        android:layout_width="253dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="140dp"
         android:fontFamily="serif"
         android:text="Ways Mindfulness Can Help Your Health!"
         android:textColor="@color/white"
@@ -100,7 +99,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/mindfulness_view2"
-        app:layout_constraintVertical_bias="0.56" />
+        app:layout_constraintVertical_bias="0.522" />
 
     <ImageView
         android:id="@+id/mindfulness_imageView1"
@@ -109,7 +108,7 @@
         android:src="@drawable/mindfulness2"
         app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view2"
         app:layout_constraintEnd_toStartOf="@+id/mindfulness_article_text2"
-        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/mindfulness_view2"
         app:layout_constraintVertical_bias="0.611" />
@@ -119,18 +118,18 @@
         android:layout_width="416dp"
         android:layout_height="120dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="444dp"
+        android:layout_marginTop="440dp"
         android:background="@color/greyTrans"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/mindfulness_view" />
 
     <TextView
         android:id="@+id/mindfulness_article_text3"
-        android:layout_width="250dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="164dp"
+        android:layout_width="251dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="144dp"
         android:fontFamily="serif"
         android:text="How to achieve mindfulness?"
         android:textColor="@color/white"
@@ -138,7 +137,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/mindfulness_view3"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintVertical_bias="0.44" />
 
     <ImageView
         android:id="@+id/mindfulness_imageView3"
@@ -147,10 +146,10 @@
         android:src="@drawable/mindfulness3"
         app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view3"
         app:layout_constraintEnd_toStartOf="@+id/mindfulness_article_text3"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="0.23"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/mindfulness_view3"
-        app:layout_constraintVertical_bias="0.805" />
+        app:layout_constraintVertical_bias="0.79" />
 
     <TextView
         android:id="@+id/textView13"
@@ -163,9 +162,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/mindfulness_view3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="@+id/mindfulness_view"
         app:layout_constraintTop_toBottomOf="@+id/mindfulness_view"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.035" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

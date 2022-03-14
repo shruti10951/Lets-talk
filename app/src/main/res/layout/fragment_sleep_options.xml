@@ -14,7 +14,6 @@
         android:layout_height="171dp"
         android:layout_marginTop="?attr/actionBarSize"
         android:background="@drawable/sleep_drawer_option"
-        android:paddingTop="@dimen/_5font_ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,30 +39,27 @@
         android:layout_width="410dp"
         android:layout_height="119dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="208dp"
         android:layout_marginEnd="8dp"
         android:background="@color/greyTrans"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/sleep_view" />
 
     <TextView
         android:id="@+id/sleep_article_text1"
-        android:layout_width="257dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="74dp"
-        android:layout_marginBottom="29dp"
+        android:layout_width="261dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="140dp"
         android:fontFamily="serif"
         android:text="The Importance of sleep"
         android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/sleep_view1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/sleep_view1"
-        app:layout_constraintVertical_bias="0.862" />
+        app:layout_constraintVertical_bias="0.363" />
 
     <ImageView
         android:id="@+id/sleep_imageView4"
@@ -72,10 +68,10 @@
         android:src="@drawable/sleep1"
         app:layout_constraintBottom_toBottomOf="@id/sleep_view1"
         app:layout_constraintEnd_toStartOf="@+id/sleep_article_text1"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/sleep_view1"
-        app:layout_constraintVertical_bias="0.444" />
+        app:layout_constraintVertical_bias="0.439" />
 
 
     <View
@@ -83,30 +79,28 @@
         android:layout_width="410dp"
         android:layout_height="119dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="336dp"
+        android:layout_marginTop="324dp"
         android:layout_marginEnd="8dp"
         android:background="@color/greyTrans"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/sleep_view" />
 
 
     <TextView
         android:id="@+id/sleep_article_text2"
-        android:layout_width="257dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="45dp"
+        android:layout_width="253dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="140dp"
         android:fontFamily="serif"
         android:text="There are four simple things to consider you to help heal a period of poor sleep:"
         android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/sleep_view2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/sleep_view2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.522" />
 
     <ImageView
         android:id="@+id/sleep_imageView1"
@@ -115,39 +109,38 @@
         android:src="@drawable/sleep2"
         app:layout_constraintBottom_toBottomOf="@+id/sleep_view2"
         app:layout_constraintEnd_toStartOf="@+id/sleep_article_text2"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/sleep_view2"
-        app:layout_constraintVertical_bias="0.636" />
+        app:layout_constraintVertical_bias="0.611" />
 
     <View
         android:id="@+id/sleep_view3"
         android:layout_width="410dp"
         android:layout_height="119dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="452dp"
+        android:layout_marginTop="440dp"
         android:layout_marginEnd="8dp"
         android:background="@color/greyTrans"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/sleep_view" />
 
 
     <TextView
         android:id="@+id/sleep_article_text3"
-        android:layout_width="250dp"
-        android:layout_height="74dp"
+        android:layout_width="251dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="144dp"
         android:fontFamily="serif"
         android:text="The problem they caused and the possible solution"
         android:textColor="@color/white"
         android:textSize="@dimen/_14font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/sleep_view3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/sleep_view3"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintVertical_bias="0.44" />
 
     <ImageView
         android:id="@+id/sleep_imageView3"
@@ -156,10 +149,10 @@
         android:src="@drawable/sleep3"
         app:layout_constraintBottom_toBottomOf="@+id/sleep_view3"
         app:layout_constraintEnd_toStartOf="@+id/sleep_article_text3"
-        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintHorizontal_bias="0.23"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/sleep_view3"
-        app:layout_constraintVertical_bias="0.832" />
+        app:layout_constraintVertical_bias="0.79" />
 
     <TextView
         android:id="@+id/textView13"

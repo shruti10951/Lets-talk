@@ -10,8 +10,8 @@
 
     <View
         android:id="@+id/stress_view"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_150hsdp"
+        android:layout_width="411dp"
+        android:layout_height="171dp"
         android:layout_marginTop="?attr/actionBarSize"
         android:background="@drawable/stress_drawer_option"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,28 +39,27 @@
         android:layout_width="410dp"
         android:layout_height="119dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="208dp"
         android:layout_marginEnd="8dp"
         android:background="@color/greyTrans"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/stress_view" />
 
     <TextView
         android:id="@+id/stress_article_text1"
-        android:layout_width="257dp"
-        android:layout_height="74dp"
+        android:layout_width="261dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="140dp"
         android:fontFamily="serif"
         android:text="Physical effects of stress on us"
         android:textColor="@color/white"
         android:textSize="@dimen/_14font_ssp"
         app:layout_constraintBottom_toBottomOf="@id/stress_view1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/stress_view1"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.363" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -69,10 +68,10 @@
         android:src="@drawable/stress1"
         app:layout_constraintBottom_toBottomOf="@id/stress_view1"
         app:layout_constraintEnd_toStartOf="@+id/stress_article_text1"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/stress_view1"
-        app:layout_constraintVertical_bias="0.444" />
+        app:layout_constraintVertical_bias="0.439" />
 
 
     <View
@@ -80,29 +79,28 @@
         android:layout_width="410dp"
         android:layout_height="119dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="336dp"
+        android:layout_marginTop="324dp"
         android:layout_marginEnd="8dp"
         android:background="@color/greyTrans"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/stress_view" />
 
 
     <TextView
         android:id="@+id/stress_article_text2"
-        android:layout_width="257dp"
-        android:layout_height="74dp"
+        android:layout_width="253dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="140dp"
         android:fontFamily="serif"
         android:text="Is stress a mental health problem?"
         android:textColor="@color/white"
         android:textSize="@dimen/_14font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/stress_view2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/stress_view2"
-        app:layout_constraintVertical_bias="0.645" />
+        app:layout_constraintVertical_bias="0.522" />
 
     <ImageView
         android:id="@+id/stress_imageView1"
@@ -112,36 +110,36 @@
         app:layout_constraintBottom_toBottomOf="@+id/stress_view2"
         app:layout_constraintEnd_toStartOf="@+id/stress_article_text2"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintTop_toTopOf="@+id/stress_view2"
-        app:layout_constraintVertical_bias="0.64" />
+        app:layout_constraintVertical_bias="0.611" />
 
     <View
         android:id="@+id/stress_view3"
         android:layout_width="410dp"
         android:layout_height="119dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="452dp"
+        android:layout_marginTop="440dp"
         android:layout_marginEnd="8dp"
         android:background="@color/greyTrans"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/stress_view" />
 
     <TextView
         android:id="@+id/stress_article_text3"
-        android:layout_width="257dp"
-        android:layout_height="74dp"
+        android:layout_width="251dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="144dp"
         android:fontFamily="serif"
         android:text="Act to manage stress"
         android:textColor="@color/white"
         android:textSize="@dimen/_14font_ssp"
         app:layout_constraintBottom_toBottomOf="@+id/stress_view3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/stress_view3"
-        app:layout_constraintVertical_bias="0.817" />
+        app:layout_constraintVertical_bias="0.44" />
 
 
     <ImageView
@@ -151,10 +149,10 @@
         android:src="@drawable/stress3"
         app:layout_constraintBottom_toBottomOf="@+id/stress_view3"
         app:layout_constraintEnd_toStartOf="@+id/stress_article_text3"
-        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintHorizontal_bias="0.23"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/stress_view3"
-        app:layout_constraintVertical_bias="0.822" />
+        app:layout_constraintVertical_bias="0.79" />
 
 
     <TextView
@@ -171,6 +169,6 @@
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="@+id/stress_view"
         app:layout_constraintTop_toBottomOf="@+id/stress_view"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.035" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

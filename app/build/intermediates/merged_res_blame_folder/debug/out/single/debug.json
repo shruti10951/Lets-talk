@@ -1,734 +1,734 @@
 [
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_widgets.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\widgets.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_message_bg_chat.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\message_bg_chat.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_notification.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_notification.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_lets_talk_community.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_lets_talk_community.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_shimmer_layout.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\shimmer_layout.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_user_profile_default.png.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\user_profile_default.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo.jpeg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\logo.jpeg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_mindfulness1.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\mindfulness1.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_two_pose.png.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_two_pose.png"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_breathing_one_pose3.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\breathing_one_pose3.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_all_notification.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_all_notification.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_counseling_cover.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\counseling_cover.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_breathing_option_background.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\breathing_option_background.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_friends.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_friends.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_breathing_option.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_breathing_option.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_calm_melodies_cover.jpeg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\calm_melodies_cover.jpeg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_liked_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\liked_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\navigation_dashboard_menu.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\navigation\\dashboard_menu.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_friends.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_friends.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_option_background.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_option_background.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_breath_now.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_breath_now.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_chat_bg.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\chat_bg.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_breathing_cover.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\breathing_cover.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_beta_swirl.mp3.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\raw\\beta_swirl.mp3"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_calm_mind.m4a.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\raw\\calm_mind.m4a"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_morning_motivator.m4a.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\raw\\morning_motivator.m4a"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_widgets.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\widgets.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_info_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\info_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_password_lock_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\password_lock_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_option_background.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_option_background.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_profile.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_logout_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\logout_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_done_post.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\done_post.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_profile_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\profile_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_forgot_password.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_forgot_password.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_color2.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\color2.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_calm_mind.m4a.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\raw\\calm_mind.m4a"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_search_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\search_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_sender_recycler_view.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\sender_recycler_view.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_users_recycler_view.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\users_recycler_view.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_comment_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\comment_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_home_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\home_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_wellness_center_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\wellness_center_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_stress3.jpeg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\stress3.jpeg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_lets_talk_community.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_lets_talk_community.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_one_pose1.png.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_one_pose1.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_comment_recycler_view.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\comment_recycler_view.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_play_melodies2.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_play_melodies2.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_play_arrow_24.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\ic_baseline_play_arrow_24.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_yoga_option.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_yoga_option.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_sleep1.jpeg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\sleep1.jpeg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_dark_nature_bg.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\dark_nature_bg.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_yoga_one.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_yoga_one.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_receiver_bg.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\receiver_bg.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_breathing_two.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_breathing_two.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_splash_screen.jpeg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\splash_screen.jpeg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_chat.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_chat.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_receiver_recycler_view.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\receiver_recycler_view.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_error_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\error_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_emergency_help.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_emergency_help.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_sleep_drawer_option.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\sleep_drawer_option.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_sender_bg.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\sender_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_chat_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\chat_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_notification.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_notification.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_friends_recycler_view.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\friends_recycler_view.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo.jpeg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\logo.jpeg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_group__cover.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\group__cover.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_receiver_bg.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\receiver_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_group_chat.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_group_chat.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_calm_melodies.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_calm_melodies.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_sleep1.jpeg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\sleep1.jpeg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_emergency_help.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_emergency_help.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_message_bg_chat.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\message_bg_chat.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_color3.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\color3.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_sleep_options.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_sleep_options.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_beta_swirl.mp3.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\raw\\beta_swirl.mp3"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_cover_photo.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_cover_photo.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo_lets_talk.png.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\logo_lets_talk.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_stress2.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\stress2.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\menu_nav_menu.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\menu\\nav_menu.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_binaural.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_binaural.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_four_pose.png.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_four_pose.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_post_background.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\post_background.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_delete_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\delete_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_nothing_found_icon.png.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\nothing_found_icon.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_wellness_center.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_wellness_center.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_users.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_users.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_stress1.jpeg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\stress1.jpeg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\menu_dashboard_menu.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\menu\\dashboard_menu.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_forest_ambience.m4a.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\raw\\forest_ambience.m4a"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_comment.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_comment.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_color2.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\color2.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_relaxing_waves.m4a.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\raw\\relaxing_waves.m4a"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_breathing_cover.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\breathing_cover.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_yoga_two.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_yoga_two.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_comment_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\comment_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_mindfulness3.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\mindfulness3.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_ground_air.m4a.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\raw\\ground_air.m4a"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_stress_options.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_stress_options.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_one_pose2.png.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_one_pose2.png"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_home_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\home_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_logout_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\logout_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_sleep2.jpeg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\sleep2.jpeg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_woman.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\woman.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_like_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\like_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_mindfulness_options.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_mindfulness_options.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_toolbar_bg.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\toolbar_bg.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_stress2.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\stress2.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_layout_border.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\layout_border.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_stress3.jpeg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\stress3.jpeg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_wellness_center.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_wellness_center.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_sender_bg.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\sender_bg.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_stress_drawer_option.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\stress_drawer_option.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_nothing_found_icon.png.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\nothing_found_icon.png"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_comment_recycler_view.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\comment_recycler_view.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_breathing_one.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_breathing_one.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_isochronic_cover.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\isochronic_cover.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_isochronic.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_isochronic.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_calm_melodies_cover.jpeg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\calm_melodies_cover.jpeg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_binaural_cover.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\binaural_cover.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_add_a_photo_24.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\ic_baseline_add_a_photo_24.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_add_post_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\add_post_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_nutrition1.jpeg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\nutrition1.jpeg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_yoga_one.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_yoga_one.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_music_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\music_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_breathing_option_header.png.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\breathing_option_header.png"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_wallpaper_header.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\wallpaper_header.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_animation_colors.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\animation_colors.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_two_pose.png.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_two_pose.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_breathing_one_pose3.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\breathing_one_pose3.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_chat.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_chat.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_grp_receiver_recycler_view.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\grp_receiver_recycler_view.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_bookmark_saved.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\bookmark_saved.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_nutrition_options.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_nutrition_options.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_bookmark.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\bookmark.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_profile_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\profile_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_splash_screen.jpeg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\splash_screen.jpeg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_background_profile.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\background_profile.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_relaxing_waves.m4a.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\raw\\relaxing_waves.m4a"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_forgot_password.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_forgot_password.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo_lets_talk.png.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\logo_lets_talk.png"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_alpha_waves.mp3.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\raw\\alpha_waves.mp3"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_three_pose.png.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_three_pose.png"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_counseling_cover.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\counseling_cover.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_emergency_cover.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\emergency_cover.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_header.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_header.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\menu_nav_menu.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\menu\\nav_menu.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_mindfulness_drawer_option.jpeg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\mindfulness_drawer_option.jpeg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_binaural_calm_melodies.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_binaural_calm_melodies.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_post_wallpaper.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\post_wallpaper.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_play.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\play.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_error_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\error_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_color5.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\color5.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_nav_header.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\nav_header.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_alpha_waves.mp3.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\raw\\alpha_waves.mp3"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_calm_down_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\calm_down_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_type_post.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_type_post.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_chat_users_recycler_view.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\chat_users_recycler_view.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_yoga_two.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_yoga_two.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_nav_header.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\nav_header.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_binaural.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_binaural.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_breathing_option_background.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\breathing_option_background.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_play_melodies1.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_play_melodies1.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_pause.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\pause.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_like_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\like_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_breathing_three.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_breathing_three.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_bookmark.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\bookmark.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_following.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_following.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_background_profile.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\background_profile.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_liked_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\liked_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_delete_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\delete_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_chat_background.png.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\chat_background.png"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_dashboard_recycler_view.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\dashboard_recycler_view.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_color4.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\color4.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\navigation_dashboard_menu.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\navigation\\dashboard_menu.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_play_arrow_24.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\ic_baseline_play_arrow_24.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_color5.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\color5.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_grp_receiver_recycler_view.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\grp_receiver_recycler_view.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_group__cover.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\group__cover.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_add_photo_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\add_photo_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_nutrition2.jpeg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\nutrition2.jpeg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_dark_bg_talk_community.png.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\dark_bg_talk_community.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_lets_talk_logo_dark.png.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\lets_talk_logo_dark.png"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_receiver_recycler_view.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\receiver_recycler_view.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_sleep3.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\sleep3.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_yoga_option.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_yoga_option.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_notification_recycler_view.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\notification_recycler_view.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_binaural_calm_melodies.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_binaural_calm_melodies.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_chat_users_recycler_view.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\chat_users_recycler_view.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_mindfulness2.jpeg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\mindfulness2.jpeg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_dashboard_recycler_view.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\dashboard_recycler_view.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_type_post.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_type_post.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_nutrition3.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\nutrition3.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_yoga_four.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_yoga_four.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_add_post_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\add_post_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_breathing_one_pose2.png.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\breathing_one_pose2.png"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_about_lets_talk.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_about_lets_talk.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_lets_talk_logo.png.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\lets_talk_logo.png"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_users_recycler_view.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\users_recycler_view.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_breathing_two.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_breathing_two.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_binaural_cover.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\binaural_cover.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_morning_motivator.m4a.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\raw\\morning_motivator.m4a"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_color3.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\color3.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_all_notification.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_all_notification.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_calm_down_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\calm_down_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_registration.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_registration.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_dark_bg_talk_community.png.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\dark_bg_talk_community.png"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_bookmark_saved.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\bookmark_saved.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_user_profile_default.png.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\user_profile_default.png"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_cover_photo.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_cover_photo.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_post_type_header.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\post_type_header.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_counselling_help.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_counselling_help.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_header.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_header.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_isochronic.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_isochronic.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_stress_drawer_option.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\stress_drawer_option.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_search_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\search_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_deep_alpha.m4a.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\raw\\deep_alpha.m4a"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_setting_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\setting_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_layout_border.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\layout_border.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_play.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\play.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_add_photo_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\add_photo_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_lets_talk_community_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\lets_talk_community_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_breathing_one_pose2.png.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\breathing_one_pose2.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_password_lock_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\password_lock_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_animation_colors.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\animation_colors.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_chat.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_chat.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_arrow_back_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\arrow_back_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_breath_now.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_breath_now.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_more_three_dots.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\ic_more_three_dots.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_wellness_center_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\wellness_center_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_nutrition_drawer_option.jpeg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\nutrition_drawer_option.jpeg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_stress1.jpeg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\stress1.jpeg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_add_post.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_add_post.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_healing_aura.m4a.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\raw\\healing_aura.m4a"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_nutrition1.jpeg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\nutrition1.jpeg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_breathing_one.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_breathing_one.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\navigation\\nav_graph.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_email_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\email_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_post_wallpaper.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\post_wallpaper.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_mindfulness1.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\mindfulness1.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_info_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\info_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_dashboard.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_three_pose.png.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_three_pose.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_breathing_option.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_breathing_option.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_emergency_cover.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\emergency_cover.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_users.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_users.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_help_me_calm_down.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_help_me_calm_down.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_music_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\music_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_help_calm_down.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\help_calm_down.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\navigation_drawer_navigation.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\navigation\\drawer_navigation.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_isochronic_cover.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\isochronic_cover.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_send_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\send_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_sleep_drawer_option.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\sleep_drawer_option.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_chat_background.png.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\chat_background.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_sleep2.jpeg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\sleep2.jpeg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_group_chat.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_group_chat.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_nutrition2.jpeg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\nutrition2.jpeg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_forest_ambience.m4a.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\raw\\forest_ambience.m4a"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_user_profile.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_user_profile.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_registration.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_registration.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_help_calm_down.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\help_calm_down.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_one_pose2.png.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_one_pose2.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_mindfulness_options.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_mindfulness_options.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_toolbar_bg.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\toolbar_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_setting_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\setting_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_about_lets_talk.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_about_lets_talk.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_breathing_one_pose1.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\breathing_one_pose1.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_nutrition_options.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_nutrition_options.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_play_melodies2.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_play_melodies2.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_mindfulness2.jpeg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\mindfulness2.jpeg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_notification_recycler_view.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\notification_recycler_view.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_calm_melodies.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_calm_melodies.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_deep_alpha.m4a.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\raw\\deep_alpha.m4a"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_stress_options.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_stress_options.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_notification_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\notification_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_breathing_one_pose1.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\breathing_one_pose1.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_healing_aura.m4a.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\raw\\healing_aura.m4a"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_lets_talk_logo.png.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\lets_talk_logo.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_woman.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\woman.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_shimmer_layout.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\shimmer_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_i_need_help.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_i_need_help.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_post_type_header.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\post_type_header.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_counselling_help.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_counselling_help.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_sleep_options.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_sleep_options.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_more_three_dots.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\ic_more_three_dots.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_pause.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\pause.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_yoga_three.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_yoga_three.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_i_need_help.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_i_need_help.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash_screen.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_breathing_three.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_breathing_three.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_mindfulness_drawer_option.jpeg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\mindfulness_drawer_option.jpeg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_ground_air.m4a.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\raw\\ground_air.m4a"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_mindfulness3.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\mindfulness3.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_nutrition3.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\nutrition3.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_help_me_calm_down.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_help_me_calm_down.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_chat_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\chat_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_one_pose1.png.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_one_pose1.png"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_breathing_option_header.png.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\breathing_option_header.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_notification_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\notification_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_nutrition_drawer_option.jpeg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\nutrition_drawer_option.jpeg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_color1.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\color1.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_friends_recycler_view.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\friends_recycler_view.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_send_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\send_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_dashboard.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_post_background.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\post_background.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_yoga_three.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_yoga_three.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_yoga_four_pose.png.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_four_pose.png"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_color4.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\color4.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_user_profile.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_user_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_email_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\email_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_following.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_following.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\navigation_drawer_navigation.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\navigation\\drawer_navigation.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_lets_talk_community_icon.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\lets_talk_community_icon.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_add_a_photo_24.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\ic_baseline_add_a_photo_24.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_sender_recycler_view.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\sender_recycler_view.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_dark_nature_bg.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\dark_nature_bg.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_arrow_back_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\arrow_back_icon.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_yoga_four.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_yoga_four.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_done_post.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\done_post.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_chat.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_chat.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_color1.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\color1.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\menu_dashboard_menu.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\menu\\dashboard_menu.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_lets_talk_logo_dark.png.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\lets_talk_logo_dark.png"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_comment.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_comment.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_add_post.xml.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_add_post.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_wallpaper_header.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\wallpaper_header.jpg"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_chat_bg.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\chat_bg.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_play_melodies1.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_play_melodies1.xml"
+        "merged": "C:\\Users\\apurv\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_sleep3.jpg.flat",
+        "source": "C:\\Users\\apurv\\Lets-talk\\app\\src\\main\\res\\drawable\\sleep3.jpg"
     }
 ]
