@@ -2,6 +2,7 @@ package com.vidyalankar.letstalk.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,6 +20,8 @@ import com.vidyalankar.letstalk.model.UserModel;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -61,6 +64,29 @@ public class ChatActivity extends AppCompatActivity {
         auth= FirebaseAuth.getInstance();
         senderID= auth.getUid();
         receiverId= followedTo;
+
+        String text= message.getText().toString();
+        message.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                send.setEnabled(false);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if(!text.isEmpty())
+                {
+                    send.setEnabled(true);
+                }else{
+                    send.setEnabled(false);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
 
         database.getReference()
                 .child("Users")
@@ -121,39 +147,38 @@ public class ChatActivity extends AppCompatActivity {
         SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
         Date date= new Date();
 
-
-        send.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(!message.equals(null)) {
-                    String msg = message.getText().toString();
-                    ChatModel chatModel = new ChatModel(senderID, msg);
+            send.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(!message.equals(null)) {
+                        String msg = message.getText().toString();
+                        ChatModel chatModel = new ChatModel(senderID, msg);
 //                chatModel.setTime(formatter.format(date));
-                    chatModel.setTime(new Date().getTime());
-                    message.setText("");
+                        chatModel.setTime(new Date().getTime());
+                        message.setText("");
 
-                    FirebaseDatabase.getInstance().getReference()
-                            .child("Chats")
-                            .child(senderRoom)
-                            .push()
-                            .setValue(chatModel).addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(Void unused) {
-                            database.getReference().child("Chats")
-                                    .child(receiverRoom)
-                                    .push()
-                                    .setValue(chatModel).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                @Override
-                                public void onSuccess(Void unused) {
+                        FirebaseDatabase.getInstance().getReference()
+                                .child("Chats")
+                                .child(senderRoom)
+                                .push()
+                                .setValue(chatModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+                                database.getReference().child("Chats")
+                                        .child(receiverRoom)
+                                        .push()
+                                        .setValue(chatModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void unused) {
 
-                                }
-                            });
-                        }
-                    });
-                }else{
-                    Toast.makeText(ChatActivity.this, "Enter something...", Toast.LENGTH_SHORT).show();
+                                    }
+                                });
+                            }
+                        });
+                    }else{
+                        Toast.makeText(ChatActivity.this, "Enter something...", Toast.LENGTH_SHORT).show();
+                    }
                 }
-            }
-        });
+            });
     }
 }
