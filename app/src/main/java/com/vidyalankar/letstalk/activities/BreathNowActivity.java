@@ -58,7 +58,7 @@ public class BreathNowActivity extends AppCompatActivity {
                     handler.postDelayed(runnable, 0);
                     Glide.with(BreathNowActivity.this)
                             .asGif()
-                            .load("https://cdn.dribbble.com/users/1137657/screenshots/11205934/media/a443c887178b8b40acba4bd2a726d767.gif")
+                            .load("https://media.giphy.com/avatars/breathwrk/TSoeGvteuG0O.gif")
                             .centerCrop()
                             .into(imageView);
                     imageView.setVisibility(View.VISIBLE);

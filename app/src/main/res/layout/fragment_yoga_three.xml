@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".fragments.YogaOneFragment">
 
-
     <View
         android:id="@+id/sleep_diagonal_layout"
         android:layout_width="match_parent"
@@ -24,8 +23,8 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="422dp"
-        android:layout_height="64dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:fontFamily="serif"
         android:text="Legs-Up-the-Wall Pose"
         android:textAlignment="center"
@@ -38,9 +37,10 @@
         app:layout_constraintTop_toBottomOf="@+id/sleep_diagonal_layout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-
-        android:layout_width="405dp"
+        android:layout_width="match_parent"
         android:layout_height="425dp"
+        android:layout_marginStart="@dimen/_10hsdp"
+        android:layout_marginEnd="@dimen/_10hsdp"
         android:layout_marginTop="@dimen/_25font_ssp"
         android:layout_marginBottom="?attr/actionBarSize"
         app:layout_constraintBottom_toBottomOf="parent"

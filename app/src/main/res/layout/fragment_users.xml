@@ -30,10 +30,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/users_show_rv"
-        android:layout_width="380dp"
-        android:layout_height="536dp"
-        android:layout_marginStart="@dimen/_15font_ssp"
-        android:layout_marginEnd="@dimen/_15font_ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15hsdp"
+        android:layout_marginEnd="@dimen/_15hsdp"
         android:layout_marginTop="@dimen/_10hsdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"

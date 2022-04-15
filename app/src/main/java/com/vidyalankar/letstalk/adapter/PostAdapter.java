@@ -90,6 +90,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.viewHolder> {
                         if(snapshot.exists())
                         {
                             holder.like.setCompoundDrawablesWithIntrinsicBounds(R.drawable.liked_icon, 0,0,0);
+                            holder.like.setEnabled(false);
                         }else{
                             holder.like.setOnClickListener(new View.OnClickListener() {
                                 @Override

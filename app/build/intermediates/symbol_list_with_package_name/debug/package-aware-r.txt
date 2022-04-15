@@ -3406,6 +3406,7 @@ drawable arrow_back_icon
 drawable avd_hide_password
 drawable avd_show_password
 drawable background_profile
+drawable beach_for_chat
 drawable binaural_cover
 drawable blue_button_background
 drawable bookmark
@@ -3427,6 +3428,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable calm_down_icon
 drawable calm_melodies_cover
+drawable chat
 drawable chat_background
 drawable chat_bg
 drawable chat_icon
@@ -3590,10 +3592,12 @@ drawable toolbar_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user_profile_default
+drawable wallpaper_chat
 drawable wallpaper_header
 drawable warning_circle
 drawable warning_sigh
 drawable wellness_center_icon
+drawable whatsapp_wallpaper
 drawable widgets
 drawable woman
 drawable yoga_cover_photo
@@ -4470,7 +4474,6 @@ id usersFragment
 id users_show_rv
 id vertical_only
 id view
-id view2
 id view4
 id view_offset_helper
 id view_pager_notif
@@ -4668,6 +4671,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dummy
 layout fragment_about_lets_talk
 layout fragment_add_post
 layout fragment_all_notification

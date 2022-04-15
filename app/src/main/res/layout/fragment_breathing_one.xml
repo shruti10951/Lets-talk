@@ -23,8 +23,8 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="415dp"
-        android:layout_height="95dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:fontFamily="serif"
         android:text="Alternate Nostril Breathing"
         android:textAlignment="center"
@@ -37,10 +37,12 @@
         app:layout_constraintTop_toBottomOf="@+id/sleep_diagonal_layout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="408dp"
-        android:layout_height="351dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_25font_ssp"
-        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_marginStart="@dimen/_10hsdp"
+        android:layout_marginEnd="@dimen/_10hsdp"
+        android:layout_marginBottom="@dimen/_10hsdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -48,8 +50,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6">
 
         <androidx.core.widget.NestedScrollView
-            android:layout_width="385dp"
-            android:layout_height="412dp"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
             android:fillViewport="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -236,7 +238,6 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView24" />
-
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>

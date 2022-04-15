@@ -129,9 +129,7 @@
                     android:id="@+id/comment_rv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_6font_ssp"
                     android:layout_marginTop="@dimen/_10font_ssp"
-                    android:layout_marginEnd="@dimen/_9font_ssp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
@@ -146,7 +144,7 @@
     <EditText
         android:id="@+id/enter_comment_comment"
         android:layout_width="290dp"
-        android:layout_height="43dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:background="@drawable/layout_border"
         android:ems="10"
@@ -173,6 +171,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/enter_comment_comment"
         app:layout_constraintStart_toEndOf="@+id/enter_comment_comment"
         app:layout_constraintTop_toTopOf="@+id/enter_comment_comment"
-        app:tint="@color/black" />
+        app:tint="@color/black"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
