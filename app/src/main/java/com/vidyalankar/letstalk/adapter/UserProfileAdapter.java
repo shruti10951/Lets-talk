@@ -1,25 +1,32 @@
 package com.vidyalankar.letstalk.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
+import com.vidyalankar.letstalk.activities.CommentActivity;
+import com.vidyalankar.letstalk.model.NotificationModel;
 import com.vidyalankar.letstalk.model.PostModel;
 import com.vidyalankar.letstalk.model.UserModel;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class UserProfileAdapter extends RecyclerView.Adapter<UserProfileAdapter.viewHolder> {
 
@@ -63,6 +70,81 @@ public class UserProfileAdapter extends RecyclerView.Adapter<UserProfileAdapter.
 
             }
         });
+
+        holder.comment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(context, CommentActivity.class);
+                intent.putExtra("postId", postModel.getPostId());
+                intent.putExtra("postedBy", postModel.getPostedBy());
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
+        });
+
+        FirebaseDatabase.getInstance().getReference()
+                .child("Posts")
+                .child(postModel.getPostId())
+                .child("likes")
+                .child(FirebaseAuth.getInstance().getUid())
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if(snapshot.exists())
+                        {
+                            holder.like.setCompoundDrawablesWithIntrinsicBounds(R.drawable.liked_icon, 0,0,0);
+                            holder.like.setEnabled(false);
+                        }else{
+                            holder.like.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    FirebaseDatabase.getInstance().getReference()
+                                            .child("Posts")
+                                            .child(postModel.getPostId())
+                                            .child("likes")
+                                            .child(FirebaseAuth.getInstance().getUid())
+                                            .setValue(true)
+                                            .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                @Override
+                                                public void onSuccess(Void unused) {
+                                                    FirebaseDatabase.getInstance().getReference()
+                                                            .child("Posts")
+                                                            .child(postModel.getPostId())
+                                                            .child("postLikes")
+                                                            .setValue(postModel.getPostLikes()+1).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                        @Override
+                                                        public void onSuccess(Void unused) {
+                                                            holder.like.setCompoundDrawablesWithIntrinsicBounds(R.drawable.liked_icon, 0,0,0);
+                                                            Toast.makeText(view.getContext(), "You liked this post!", Toast.LENGTH_SHORT).show();
+
+                                                            NotificationModel notificationModel= new NotificationModel();
+
+                                                            notificationModel.setNotificationBy(FirebaseAuth.getInstance().getUid());
+                                                            notificationModel.setNotificationAt(new Date().getTime());
+                                                            notificationModel.setPostId(postModel.getPostId());
+                                                            notificationModel.setPostedBy(postModel.getPostedBy());
+                                                            notificationModel.setType("like");
+
+                                                            FirebaseDatabase.getInstance().getReference()
+                                                                    .child("Notification")
+                                                                    .child(postModel.getPostedBy())
+                                                                    .push()
+                                                                    .setValue(notificationModel);
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                }
+                            });
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
     }
 
     @Override

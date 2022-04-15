@@ -66,27 +66,6 @@ public class ChatActivity extends AppCompatActivity {
         receiverId= followedTo;
 
         String text= message.getText().toString();
-        message.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                send.setEnabled(false);
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if(!text.isEmpty())
-                {
-                    send.setEnabled(true);
-                }else{
-                    send.setEnabled(false);
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
-        });
 
         database.getReference()
                 .child("Users")

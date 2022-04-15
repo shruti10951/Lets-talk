@@ -42,7 +42,6 @@
         android:layout_marginStart="@dimen/_4font_ssp"
         android:layout_marginTop="?attr/actionBarSize"
         android:layout_marginEnd="@dimen/_4font_ssp"
-        android:layout_marginBottom="@dimen/_8font_ssp"
         android:nestedScrollingEnabled="false"
         android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
@@ -504,6 +503,24 @@
 
     </HorizontalScrollView>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="615dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homeRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginBottom="?attr/actionBarSize"/>
+
+    </LinearLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout123"
         android:layout_width="match_parent"
@@ -541,18 +558,5 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/homeRV"
-        android:layout_width="match_parent"
-        android:layout_height="529dp"
-        android:layout_marginLeft="@dimen/_8hsdp"
-        android:layout_marginTop="@dimen/_8font_ssp"
-        android:layout_marginRight="@dimen/_8hsdp"
-        android:nestedScrollingEnabled="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

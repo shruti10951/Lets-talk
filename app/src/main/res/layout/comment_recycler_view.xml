@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginEnd="@dimen/_20hsdp">
+    android:layout_marginEnd="@dimen/_10hsdp"
+    android:layout_marginStart="@dimen/_10hsdp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/user_profile_comment_rv"
         android:layout_width="@dimen/_35hsdp"
         android:layout_height="@dimen/_35hsdp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/woman"
         app:civ_border_color="@color/black"

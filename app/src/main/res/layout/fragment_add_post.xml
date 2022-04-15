@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/post_background"
     tools:context=".fragments.AddPostFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="@dimen/_30font_ssp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="@dimen/_30font_ssp"
+        android:layout_marginStart="@dimen/_10hsdp"
+        android:layout_marginTop="@dimen/_10hsdp"
+        android:layout_marginEnd="@dimen/_10hsdp"
         android:background="#FFF3F2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -36,6 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Selected:"
+            android:layout_marginStart="@dimen/_10hsdp"
             android:textColor="@color/black"
             android:textSize="@dimen/_15font_ssp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView2"
@@ -81,24 +81,11 @@
             app:layout_constraintStart_toStartOf="@+id/view"
             app:layout_constraintTop_toTopOf="@+id/view" />
 
-        <View
-            android:id="@+id/view2"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_280hsdp"
-            android:layout_marginTop="17dp"
-            android:background="#FEDEBE"
-            android:backgroundTint="@color/beige"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
         <androidx.core.widget.NestedScrollView
-            android:layout_width="336dp"
-            android:layout_height="@dimen/_280hsdp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="424dp"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view">
 
             <LinearLayout
@@ -110,7 +97,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="@dimen/_10font_ssp"
                     android:layout_marginEnd="@dimen/_10font_ssp"
-                    android:background="#F4CC8F">
+                    android:background="#F4DFB9">
 
                     <TextView
                         android:id="@+id/familyType"

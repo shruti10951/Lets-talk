@@ -48,16 +48,16 @@
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_option_background.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_chat_bg.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\chat_bg.jpg"
-    },
-    {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_beta_swirl.mp3.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\raw\\beta_swirl.mp3"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\raw_morning_motivator.m4a.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\raw\\morning_motivator.m4a"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_chat_bg.jpg.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable-v24\\chat_bg.jpg"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
@@ -176,6 +176,10 @@
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\yoga_cover_photo.jpg"
     },
     {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_wallpaper_chat.jpg.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable-v24\\wallpaper_chat.jpg"
+    },
+    {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
@@ -266,10 +270,6 @@
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_isochronic.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\activity_isochronic.xml"
-    },
-    {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_binaural_cover.jpg.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\binaural_cover.jpg"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_add_post_icon.xml.flat",
@@ -366,6 +366,10 @@
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_breathing_option_background.jpg.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\breathing_option_background.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_dummy.xml.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\dummy.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_pause.xml.flat",
@@ -572,6 +576,10 @@
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\nutrition2.jpeg"
     },
     {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_binaural_cover.jpg.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable-v24\\binaural_cover.jpg"
+    },
+    {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_user_profile.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_user_profile.xml"
     },
@@ -586,6 +594,10 @@
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_mindfulness_options.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_mindfulness_options.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_beach_for_chat.jpg.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable-v24\\beach_for_chat.jpg"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -622,6 +634,14 @@
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_woman.jpg.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\woman.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_chat.jpg.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable-v24\\chat.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_whatsapp_wallpaper.png.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable-v24\\whatsapp_wallpaper.png"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_i_need_help.xml.flat",

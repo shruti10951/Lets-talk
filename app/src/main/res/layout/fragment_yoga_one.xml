@@ -24,8 +24,8 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="407dp"
-        android:layout_height="64dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="serif"
         android:text="Cat-Cow Pose"
@@ -38,10 +38,12 @@
         app:layout_constraintTop_toBottomOf="@+id/sleep_diagonal_layout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="399dp"
+        android:layout_width="match_parent"
         android:layout_height="411dp"
         android:layout_marginTop="@dimen/_25font_ssp"
         android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_marginStart="@dimen/_10hsdp"
+        android:layout_marginEnd="@dimen/_10hsdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

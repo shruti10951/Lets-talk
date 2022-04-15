@@ -30,7 +30,7 @@
             android:layout_marginStart="@dimen/_8font_ssp"
             android:layout_marginTop="@dimen/_8font_ssp"
             android:layout_marginEnd="@dimen/_8font_ssp"
-            android:layout_marginBottom="@dimen/_8font_ssp"
+            android:layout_marginBottom="@dimen/_4font_ssp"
             android:fontFamily="serif"
             android:inputType="textLongMessage|textMultiLine"
             android:maxWidth="@dimen/_190hsdp"

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/breathing_option_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@color/greyTrans" />-->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ToggleButton
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:paddingStart="@dimen/_10font_ssp"
+        android:paddingEnd="@dimen/_10font_ssp"
+        android:text="Start"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20font_ssp"
+        android:textStyle="bold"
+        android:textOn="Stop"
+        android:textOff="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+
+    <TextView
+        android:id="@+id/relax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:background="@color/white"
+        android:fontFamily="serif"
+        android:paddingStart="@dimen/_10font_ssp"
+        android:paddingEnd="@dimen/_10font_ssp"
+        android:text="Rest here"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_27font_ssp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/relax1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10font_ssp"
+        android:background="@color/white"
+        android:fontFamily="serif"
+        android:paddingStart="@dimen/_10font_ssp"
+        android:paddingEnd="@dimen/_10font_ssp"
+        android:text="for a minute"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_27font_ssp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relax"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/relax2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10font_ssp"
+        android:background="@color/white"
+        android:fontFamily="serif"
+        android:paddingStart="@dimen/_10font_ssp"
+        android:paddingEnd="@dimen/_10font_ssp"
+        android:text="it is ok"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_27font_ssp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relax1"
+        app:layout_constraintVertical_bias="0.033"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

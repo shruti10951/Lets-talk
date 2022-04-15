@@ -50,17 +50,18 @@
 
     <TextView
         android:id="@+id/nutrition_article_text1"
-        android:layout_width="261dp"
+        android:layout_width="wrap_content"
         android:layout_height="53dp"
-        android:layout_marginStart="140dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="serif"
+        android:gravity="center"
+        android:maxWidth="250dp"
         android:text="Why Nutrition is an Important Part of Fitness?"
         android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
-        app:layout_constraintBottom_toBottomOf="@+id/nutrition_view1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nutrition_view1"
-        app:layout_constraintVertical_bias="0.363" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nutrition_imageView4"
+        app:layout_constraintTop_toTopOf="@+id/nutrition_view1" />
 
     <ImageView
         android:id="@+id/nutrition_imageView4"
@@ -90,17 +91,18 @@
 
     <TextView
         android:id="@+id/nutrition_article_text2"
-        android:layout_width="253dp"
+        android:layout_width="wrap_content"
         android:layout_height="52dp"
-        android:layout_marginStart="140dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="serif"
+        android:maxWidth="250dp"
+        android:gravity="center"
         android:text="What is the Impact of Nutrition on Your Health?"
         android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
-        app:layout_constraintBottom_toBottomOf="@+id/nutrition_view2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nutrition_view2"
-        app:layout_constraintVertical_bias="0.522" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nutrition_imageView1"
+        app:layout_constraintTop_toTopOf="@+id/nutrition_view2" />
 
     <ImageView
         android:id="@+id/nutrition_imageView1"
@@ -130,17 +132,18 @@
 
     <TextView
         android:id="@+id/nutrition_article_text3"
-        android:layout_width="251dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_marginStart="144dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="serif"
+        android:maxWidth="250dp"
+        android:gravity="center"
         android:text="How Can I Eat a Healthy Diet?"
         android:textColor="@color/white"
         android:textSize="@dimen/_14font_ssp"
-        app:layout_constraintBottom_toBottomOf="@+id/nutrition_view3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nutrition_view3"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nutrition_imageView3"
+        app:layout_constraintTop_toTopOf="@+id/nutrition_view3" />
 
     <ImageView
         android:id="@+id/nutrition_imageView3"
