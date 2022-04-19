@@ -38,7 +38,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="443dp"
+        android:layout_height="425dp"
         android:layout_marginEnd="@dimen/_10hsdp"
         android:layout_marginStart="@dimen/_10hsdp"
         android:layout_marginTop="@dimen/_25font_ssp"
@@ -71,7 +71,6 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:background="@drawable/yoga_four_pose"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/yoga_one_point_1" />
@@ -160,6 +159,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="@dimen/_10font_ssp"
                     android:text="6.	Stay in this pose for 10–20 minutes."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"

@@ -80,9 +80,8 @@
 
                 <ImageView
                     android:id="@+id/yoga_one_image_1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_180hsdp"
-                    android:src="@drawable/breathing_one_pose2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"

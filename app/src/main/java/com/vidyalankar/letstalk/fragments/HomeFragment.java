@@ -127,6 +127,8 @@ public class HomeFragment extends Fragment {
             }
         });
 
+
+
         family.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -1868,4 +1870,5 @@ public class HomeFragment extends Fragment {
 
         return view;
     }
+
 }

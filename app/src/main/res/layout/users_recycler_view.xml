@@ -10,7 +10,7 @@
         android:layout_height="@dimen/_40hsdp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="8dp"
-        android:src="@drawable/woman"
+        android:src="@drawable/user_profile_default"
         app:civ_border_color="@color/black"
         app:civ_border_width="@dimen/_1font_ssp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,19 +32,19 @@
         app:layout_constraintStart_toEndOf="@+id/user_profile_post"
         app:layout_constraintTop_toTopOf="@+id/user_profile_post" />
 
-    <Button
-        android:id="@+id/follow_btn_user_rv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/_5hsdp"
-        android:fontFamily="serif"
-        android:paddingStart="@dimen/_10hsdp"
-        android:paddingEnd="@dimen/_10hsdp"
-        android:text="Follow"
-        android:textAllCaps="false"
-        android:textSize="@dimen/_12font_ssp"
-        app:layout_constraintBottom_toBottomOf="@+id/user_profile_post"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/user_profile_post" />
+<!--    <Button-->
+<!--        android:id="@+id/follow_btn_user_rv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="@dimen/_5hsdp"-->
+<!--        android:fontFamily="serif"-->
+<!--        android:paddingStart="@dimen/_10hsdp"-->
+<!--        android:paddingEnd="@dimen/_10hsdp"-->
+<!--        android:text="Follow"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="@dimen/_12font_ssp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/user_profile_post"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/user_profile_post" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

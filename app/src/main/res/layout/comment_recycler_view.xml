@@ -11,7 +11,7 @@
         android:layout_width="@dimen/_35hsdp"
         android:layout_height="@dimen/_35hsdp"
         android:layout_marginTop="8dp"
-        android:src="@drawable/woman"
+        android:src="@drawable/user_profile_default"
         app:civ_border_color="@color/black"
         app:civ_border_width="@dimen/_1font_ssp"
         app:layout_constraintBottom_toBottomOf="parent"

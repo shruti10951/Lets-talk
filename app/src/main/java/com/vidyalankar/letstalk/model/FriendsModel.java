@@ -3,7 +3,7 @@ package com.vidyalankar.letstalk.model;
 public class FriendsModel {
 
     private String followedBy;
-    private String followedAt;
+    private Long followedAt;
 
     public FriendsModel() {
     }
@@ -16,11 +16,11 @@ public class FriendsModel {
         this.followedBy = followedBy;
     }
 
-    public String getFollowedAt() {
+    public Long getFollowedAt() {
         return followedAt;
     }
 
-    public void setFollowedAt(String followedAt) {
+    public void setFollowedAt(Long followedAt) {
         this.followedAt = followedAt;
     }
 }

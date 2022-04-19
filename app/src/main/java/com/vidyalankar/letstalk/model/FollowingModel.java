@@ -2,18 +2,18 @@ package com.vidyalankar.letstalk.model;
 
 public class FollowingModel {
 
-    String followedAt;
+    Long followedAt;
 
-    public FollowingModel(String followedAt, String followedTo) {
+    public FollowingModel(Long followedAt, String followedTo) {
         this.followedAt = followedAt;
         this.followedTo = followedTo;
     }
 
     String followedTo;
 
-    public String getFollowedAt() { return followedAt; }
+    public Long getFollowedAt() { return followedAt; }
 
-    public void setFollowedAt(String followedAt) { this.followedAt = followedAt; }
+    public void setFollowedAt(Long followedAt) { this.followedAt = followedAt; }
 
     public String getFollowedTo() { return followedTo; }
 

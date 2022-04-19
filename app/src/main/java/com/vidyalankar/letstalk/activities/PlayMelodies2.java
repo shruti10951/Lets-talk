@@ -1,9 +1,11 @@
 package com.vidyalankar.letstalk.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -48,6 +50,7 @@ public class PlayMelodies2 extends AppCompatActivity {
             case "Calm Mind":
                 Glide.with(this)
                         .asGif()
+                        .placeholder(R.drawable.loading_gif_wait)
                         .load("https://firebasestorage.googleapis.com/v0/b/let-s-talk-51904.appspot.com/o/Gifs%2Fsea_water_gif.gif?alt=media&token=af7cdd27-3b4f-407d-a0ba-3c691f3be13d")
                         .centerCrop()
                         .into(imageView);
@@ -56,6 +59,7 @@ public class PlayMelodies2 extends AppCompatActivity {
             case "Morning Motivator":
                 Glide.with(this)
                         .asGif()
+                        .placeholder(R.drawable.loading_gif_wait)
                         .load("https://firebasestorage.googleapis.com/v0/b/let-s-talk-51904.appspot.com/o/Gifs%2Fblue_gif.gif?alt=media&token=220876da-2bed-4d53-abd3-e764d5017475")
                         .centerCrop()
                         .into(imageView);
@@ -64,6 +68,7 @@ public class PlayMelodies2 extends AppCompatActivity {
             case "Alpha Waves":
                 Glide.with(this)
                         .asGif()
+                        .placeholder(R.drawable.loading_gif_wait)
                         .load("https://firebasestorage.googleapis.com/v0/b/let-s-talk-51904.appspot.com/o/Gifs%2Fflowing_water_2_gif.gif?alt=media&token=e7627e95-11f1-404f-a4e8-a30dbaffb7e8")
                         .centerCrop()
                         .into(imageView);
@@ -72,7 +77,8 @@ public class PlayMelodies2 extends AppCompatActivity {
             case "Beta Swirl":
                 Glide.with(this)
                         .asGif()
-                        .load("https://firebasestorage.googleapis.com/v0/b/let-s-talk-51904.appspot.com/o/Logo%2Fwaterfall_gif.gif?alt=media&token=49444cf3-2ed7-4f95-b726-2fcb22766990")
+                        .load("https://firebasestorage.googleapis.com/v0/b/let-s-talk-51904.appspot.com/o/Gifs%2Fwaterfall_gif.gif?alt=media&token=913ef412-9a4c-4f0a-99ec-058b64ee1dc4")
+                        .placeholder(R.drawable.loading_gif_wait)
                         .centerCrop()
                         .into(imageView);
                 mediaPlayer=MediaPlayer.create(this, R.raw.beta_swirl);

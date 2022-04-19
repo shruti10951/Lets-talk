@@ -50,9 +50,7 @@
         android:id="@+id/sleep_imageView4"
         android:layout_width="116dp"
         android:layout_height="110dp"
-        android:src="@drawable/sleep1"
         app:layout_constraintBottom_toBottomOf="@id/sleep_view1"
-        app:layout_constraintEnd_toStartOf="@+id/sleep_article_text1"
         app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/sleep_view1"
@@ -91,7 +89,6 @@
         android:id="@+id/sleep_imageView1"
         android:layout_width="116dp"
         android:layout_height="110dp"
-        android:src="@drawable/sleep2"
         app:layout_constraintBottom_toTopOf="@+id/sleep_view3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sleep_view1" />
@@ -128,7 +125,6 @@
         android:id="@+id/sleep_imageView3"
         android:layout_width="116dp"
         android:layout_height="110dp"
-        android:src="@drawable/sleep3"
         app:layout_constraintBottom_toBottomOf="@+id/sleep_view3"
         app:layout_constraintStart_toStartOf="@+id/sleep_view3"
         app:layout_constraintTop_toBottomOf="@+id/sleep_view2" />
