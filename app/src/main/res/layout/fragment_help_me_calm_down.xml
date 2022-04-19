@@ -82,7 +82,7 @@
         android:gravity="center"
         android:text="Let's breath together"
         android:textColor="@color/white"
-        android:textSize="@dimen/_20font_ssp"
+        android:textSize="@dimen/_25font_ssp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/breath_now"
         app:layout_constraintEnd_toEndOf="@+id/breath_now"

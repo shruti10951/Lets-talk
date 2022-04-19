@@ -49,6 +49,7 @@ public class PlayMelodies1 extends AppCompatActivity {
             case "Healing Aura":
                 Glide.with(this)
                         .asGif()
+                        .placeholder(R.drawable.loading_gif_wait)
                         .load("https://firebasestorage.googleapis.com/v0/b/let-s-talk-51904.appspot.com/o/Gifs%2Fcloud_gif.gif?alt=media&token=823913a6-0eb9-4055-a4d1-8c1aa79e9d45")
                         .centerCrop()
                         .into(imageView);
@@ -57,6 +58,7 @@ public class PlayMelodies1 extends AppCompatActivity {
             case "Ground Air":
                 Glide.with(this)
                         .asGif()
+                        .placeholder(R.drawable.loading_gif_wait)
                         .load("https://firebasestorage.googleapis.com/v0/b/let-s-talk-51904.appspot.com/o/Gifs%2Frain_on_leaf_gif.gif?alt=media&token=b833a5fd-78c6-4584-9c3f-de4019cdc4ab")
                         .centerCrop()
                         .into(imageView);
@@ -65,6 +67,7 @@ public class PlayMelodies1 extends AppCompatActivity {
             case "Deep Alpha":
                 Glide.with(this)
                         .asGif()
+                        .placeholder(R.drawable.loading_gif_wait)
                         .load("https://firebasestorage.googleapis.com/v0/b/let-s-talk-51904.appspot.com/o/Gifs%2Fblue_gif.gif?alt=media&token=220876da-2bed-4d53-abd3-e764d5017475")
                         .centerCrop()
                         .into(imageView);
@@ -73,6 +76,7 @@ public class PlayMelodies1 extends AppCompatActivity {
             case "Relaxing Waves":
                 Glide.with(this)
                         .asGif()
+                        .placeholder(R.drawable.loading_gif_wait)
                         .load("https://firebasestorage.googleapis.com/v0/b/let-s-talk-51904.appspot.com/o/Gifs%2Fflowing_water_gif.gif?alt=media&token=78cdf82c-1018-4a6d-ba9d-c3df9f2c58dd")
                         .centerCrop()
                         .into(imageView);
