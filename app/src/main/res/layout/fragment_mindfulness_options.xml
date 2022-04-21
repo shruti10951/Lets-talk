@@ -50,17 +50,17 @@
     <TextView
         android:id="@+id/mindfulness_article_text1"
         android:layout_width="261dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="140dp"
+        android:layout_height="119dp"
         android:fontFamily="serif"
         android:gravity="center"
         android:text="Mindfulness meditation and other practices"
         android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
-        app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view1"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mindfulness_view1"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toEndOf="@+id/mindfulness_imageView4"
         app:layout_constraintTop_toTopOf="@+id/mindfulness_view1"
-        app:layout_constraintVertical_bias="0.363" />
+        app:layout_constraintVertical_bias="0.53" />
 
     <ImageView
         android:id="@+id/mindfulness_imageView4"
@@ -89,29 +89,28 @@
 
     <TextView
         android:id="@+id/mindfulness_article_text2"
-        android:layout_width="253dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="140dp"
+        android:layout_width="261dp"
+        android:layout_height="119dp"
         android:fontFamily="serif"
+        android:gravity="center"
         android:text="Ways Mindfulness Can Help Your Health!"
         android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/mindfulness_view2"
-        app:layout_constraintVertical_bias="0.522" />
+        app:layout_constraintEnd_toEndOf="@+id/mindfulness_view2"
+        app:layout_constraintStart_toEndOf="@+id/mindfulness_imageView1"
+        app:layout_constraintTop_toTopOf="@+id/mindfulness_view2" />
 
     <ImageView
         android:id="@+id/mindfulness_imageView1"
         android:layout_width="116dp"
         android:layout_height="110dp"
+        android:layout_marginStart="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view2"
         app:layout_constraintEnd_toStartOf="@+id/mindfulness_article_text2"
         app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/mindfulness_view2"
-        app:layout_constraintVertical_bias="0.611" />
+        app:layout_constraintVertical_bias="0.666" />
 
     <View
         android:id="@+id/mindfulness_view3"
@@ -127,17 +126,15 @@
     <TextView
         android:id="@+id/mindfulness_article_text3"
         android:layout_width="251dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="144dp"
+        android:layout_height="119dp"
         android:fontFamily="serif"
+        android:gravity="center"
         android:text="How to achieve mindfulness?"
         android:textColor="@color/white"
-        android:textSize="@dimen/_14font_ssp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="@+id/mindfulness_view3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/mindfulness_view3"
-        app:layout_constraintVertical_bias="0.44" />
+        android:textSize="@dimen/_15font_ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mindfulness_imageView3"
+        app:layout_constraintTop_toTopOf="@+id/mindfulness_view3" />
 
     <ImageView
         android:id="@+id/mindfulness_imageView3"
@@ -156,7 +153,7 @@
         android:layout_height="28dp"
         android:fontFamily="serif"
         android:text="Articles"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/mindfulness_view3"

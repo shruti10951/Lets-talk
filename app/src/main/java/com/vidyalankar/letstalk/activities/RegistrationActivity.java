@@ -134,7 +134,7 @@ public class  RegistrationActivity extends AppCompatActivity implements View.OnC
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.getChildrenCount()>0)
                 {
-                    Toast.makeText(RegistrationActivity.this, "choose a different username", Toast.LENGTH_LONG).show();
+                    Toast.makeText(RegistrationActivity.this, "Username Already exists! Choose a different username", Toast.LENGTH_LONG).show();
                     mProgressBar.setVisibility(View.GONE);
                 }
                 else{
