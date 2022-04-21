@@ -62,6 +62,7 @@ public class UserProfileAdapter extends RecyclerView.Adapter<UserProfileAdapter.
                 holder.post.setText(postModel.getPost());
                 holder.like.setText(postModel.getPostLikes()+"");
                 holder.comment.setText(postModel.getCommentCount()+"");
+                holder.type.setText(postModel.getType());
 
             }
 
@@ -156,7 +157,7 @@ public class UserProfileAdapter extends RecyclerView.Adapter<UserProfileAdapter.
     public class viewHolder extends RecyclerView.ViewHolder{
 
         ImageView profile_image;
-        TextView username, like, comment, post;
+        TextView username, like, comment, post, type;
         RecyclerView profileRV;
 
         public viewHolder(@NonNull View itemView) {
@@ -168,6 +169,7 @@ public class UserProfileAdapter extends RecyclerView.Adapter<UserProfileAdapter.
             username= itemView.findViewById(R.id.username_comment);
             like= itemView.findViewById(R.id.likes_comment);
             comment= itemView.findViewById(R.id.user_comments_comment);
+            type= itemView.findViewById(R.id.type_post);
 
         }
     }

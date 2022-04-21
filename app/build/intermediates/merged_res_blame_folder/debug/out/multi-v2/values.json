@@ -366,7 +366,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\c59dc1b7c7ca6a890516f6792fe16a07\\transformed\\recyclerview-1.1.0\\res\\values\\values.xml",
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-3\\6aec57bcb40af71147b81a782b2a6dba\\transformed\\recyclerview-1.2.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
