@@ -3421,6 +3421,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable calm_down_icon
+drawable calm_melodies2_cover
 drawable calm_melodies_cover
 drawable chat_bg
 drawable chat_icon
@@ -3487,6 +3488,7 @@ drawable ic_mtrl_chip_close_circle
 drawable image_placeholder
 drawable info_icon
 drawable isochronic_cover
+drawable isochronic_cover1
 drawable layout_border
 drawable lets_talk_community_icon
 drawable lets_talk_logo
@@ -3949,7 +3951,6 @@ id image
 id imageView
 id imageView2
 id imageView3
-id imageView4
 id image_content_root
 id image_error
 id image_root
@@ -4294,6 +4295,7 @@ id stress_article_text3
 id stress_diagonal_layout
 id stress_imageView1
 id stress_imageView3
+id stress_imageView4
 id stress_textview
 id stress_view
 id stress_view1
@@ -4369,7 +4371,6 @@ id textView40
 id textView41
 id textView5
 id textView6
-id textView7
 id textView8
 id textView9
 id text_input_end_icon
