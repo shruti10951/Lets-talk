@@ -13,10 +13,3 @@ The Features Provided by this application achieve the following functionalities:
 • With that, another feature of our app is we are providing some soothing melodies which will help them to calm down. 
 • The app will also have an article tab where there will be some useful article which may act as a boost to their confidence. Also with that this app will suggest some small yoga & exercises which will help the users to slowly calm their anxiety or depression.
 
-
-
-
-
-
-
-
