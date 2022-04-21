@@ -68,6 +68,7 @@ public class GroupChatAdapter extends RecyclerView.Adapter {
             SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
             ((SenderViewHolder)holder).senderTime.setText(formatter.format(date));
 
+            //date
             SimpleDateFormat formatter1 = new SimpleDateFormat("dd MMM yyyy HH:mm");
             ((SenderViewHolder)holder).timeText.setText(formatter1.format(date));
         }else{
@@ -83,6 +84,7 @@ public class GroupChatAdapter extends RecyclerView.Adapter {
                             SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
                             ((ReceiverViewHolder)holder).receiverTime.setText(formatter.format(date));
 
+                            //date
                             SimpleDateFormat formatter1 = new SimpleDateFormat("dd MMM yyyy HH:mm");
                             ((SenderViewHolder)holder).timeText.setText(formatter1.format(date));
                         }
