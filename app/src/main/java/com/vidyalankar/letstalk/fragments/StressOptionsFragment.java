@@ -36,7 +36,7 @@ public class StressOptionsFragment extends Fragment {
         stress1= view.findViewById(R.id.stress_view1);
         stress2= view.findViewById(R.id.stress_view2);
         stress3= view.findViewById(R.id.stress_view3);
-        option1= view.findViewById(R.id.imageView4);
+        option1= view.findViewById(R.id.stress_imageView4);
         option2= view.findViewById(R.id.stress_imageView1);
         option3= view.findViewById(R.id.stress_imageView3);
 

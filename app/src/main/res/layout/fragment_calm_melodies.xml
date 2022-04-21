@@ -55,7 +55,7 @@
         android:text="Isochronic Tones"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="@dimen/_25font_ssp"
+        android:textSize="@dimen/_23font_ssp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/melodies_two_option"
         app:layout_constraintEnd_toEndOf="@+id/melodies_two_option"
