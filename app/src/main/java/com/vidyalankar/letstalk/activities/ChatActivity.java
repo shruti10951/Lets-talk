@@ -98,9 +98,6 @@ public class ChatActivity extends AppCompatActivity {
         final ChatAdapter chatAdapter= new ChatAdapter(chatModels, this);
         LinearLayoutManager layoutManager= new LinearLayoutManager(this);
 
-        //check
-        layoutManager.setReverseLayout(true);
-
         chatRv.setLayoutManager(layoutManager);
         chatRv.setNestedScrollingEnabled(false);
         chatRv.setAdapter(chatAdapter);

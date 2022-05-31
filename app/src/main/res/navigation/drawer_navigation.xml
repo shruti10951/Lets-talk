@@ -35,4 +35,9 @@
         android:name="com.vidyalankar.letstalk.fragments.INeedHelpFragment"
         android:label="fragment_i_need_help"
         tools:layout="@layout/fragment_i_need_help" />
+    <fragment
+        android:id="@+id/yourThoughtsFragment2"
+        android:name="com.vidyalankar.letstalk.fragments.YourThoughtsFragment"
+        android:label="fragment_your_thoughts"
+        tools:layout="@layout/fragment_your_thoughts" />
 </navigation>

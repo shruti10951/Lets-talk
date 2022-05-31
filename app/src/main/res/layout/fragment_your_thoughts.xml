@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.YourThoughtsFragment">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We want to \n     hear from you!"
+        android:textSize="@dimen/_28font_ssp"
+        android:fontFamily="cursive"
+        android:shadowColor="@color/red_btn_bg_color"
+        android:shadowRadius="15"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_20hsdp"
+        android:layout_marginTop="@dimen/_50hsdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/thoughts_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_25hsdp"
+        android:layout_marginTop="@dimen/_10hsdp"
+        android:layout_marginEnd="@dimen/_25hsdp"
+        android:fontFamily="serif"
+        android:hint="Your Experience?"
+        android:minLines="2"
+        android:maxLines="3"
+        android:paddingStart="@dimen/_10hsdp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+
+    <Button
+        android:id="@+id/submit_thoughts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15hsdp"
+        android:fontFamily="serif"
+        android:paddingStart="@dimen/_15hsdp"
+        android:paddingTop="@dimen/_5hsdp"
+        android:paddingEnd="@dimen/_15hsdp"
+        android:paddingBottom="@dimen/_5hsdp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thoughts_et" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15hsdp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit_thoughts">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/view_card1"
+                    android:layout_width="@dimen/_250hsdp"
+                    android:layout_height="@dimen/_300hsdp"
+                    android:layout_marginStart="@dimen/_30hsdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card_bg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.686" />
+
+                <ImageView
+                    android:id="@+id/view_card2"
+                    android:layout_width="@dimen/_250hsdp"
+                    android:layout_height="@dimen/_300hsdp"
+                    android:layout_marginStart="@dimen/_20hsdp"
+                    android:src="@drawable/card_bg"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/view_card1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/view_card3"
+                    android:layout_width="@dimen/_250hsdp"
+                    android:layout_height="@dimen/_300hsdp"
+                    android:layout_marginStart="@dimen/_20hsdp"
+                    android:src="@drawable/card_bg"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/view_card2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/view_card4"
+                    android:layout_width="@dimen/_250hsdp"
+                    android:layout_height="@dimen/_300hsdp"
+                    android:layout_marginStart="@dimen/_20hsdp"
+                    android:src="@drawable/card_1_bg"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/view_card3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view_card5"
+                    android:layout_width="@dimen/_10hsdp"
+                    android:layout_height="@dimen/_300hsdp"
+                    android:layout_marginStart="@dimen/_10hsdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/view_card4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_profile_card1"
+                    android:layout_width="@dimen/_100hsdp"
+                    android:layout_height="@dimen/_100hsdp"
+                    android:layout_marginTop="@dimen/_20hsdp"
+                    android:scaleType="centerCrop"
+                    android:src="@color/black"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="@dimen/_1hsdp"
+                    app:layout_constraintEnd_toEndOf="@+id/view_card1"
+                    app:layout_constraintStart_toStartOf="@+id/view_card1"
+                    app:layout_constraintTop_toTopOf="@+id/view_card1" />
+
+                <TextView
+                    android:id="@+id/username_card1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10hsdp"
+                    android:fontFamily="serif"
+                    android:text="username"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/view_card1"
+                    app:layout_constraintStart_toStartOf="@+id/view_card1"
+                    app:layout_constraintTop_toBottomOf="@+id/user_profile_card1" />
+
+                <TextView
+                    android:id="@+id/feedback_card1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="serif"
+                    android:text="Feedback"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/view_card1"
+                    app:layout_constraintStart_toStartOf="@+id/view_card1"
+                    app:layout_constraintTop_toBottomOf="@+id/username_card1" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_profile_card2"
+                    android:layout_width="@dimen/_100hsdp"
+                    android:layout_height="@dimen/_100hsdp"
+                    android:layout_marginTop="@dimen/_20hsdp"
+                    android:src="@color/black"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="@dimen/_1hsdp"
+                    app:layout_constraintEnd_toEndOf="@+id/view_card2"
+                    app:layout_constraintStart_toStartOf="@+id/view_card2"
+                    app:layout_constraintTop_toTopOf="@+id/view_card2" />
+
+                <TextView
+                    android:id="@+id/username_card2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10hsdp"
+                    android:fontFamily="serif"
+                    android:text="username"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/view_card2"
+                    app:layout_constraintStart_toStartOf="@+id/view_card2"
+                    app:layout_constraintTop_toBottomOf="@+id/user_profile_card2" />
+
+                <TextView
+                    android:id="@+id/feedback_card2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="serif"
+                    android:text="Feedback"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/view_card2"
+                    app:layout_constraintStart_toStartOf="@+id/view_card2"
+                    app:layout_constraintTop_toBottomOf="@+id/username_card2" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_profile_card3"
+                    android:layout_width="@dimen/_100hsdp"
+                    android:layout_height="@dimen/_100hsdp"
+                    android:layout_marginTop="@dimen/_20hsdp"
+                    android:src="@color/black"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="@dimen/_1hsdp"
+                    app:layout_constraintEnd_toEndOf="@+id/view_card3"
+                    app:layout_constraintStart_toStartOf="@+id/view_card3"
+                    app:layout_constraintTop_toTopOf="@+id/view_card3" />
+
+                <TextView
+                    android:id="@+id/username_card3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10hsdp"
+                    android:fontFamily="serif"
+                    android:text="username"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/view_card3"
+                    app:layout_constraintStart_toStartOf="@+id/view_card3"
+                    app:layout_constraintTop_toBottomOf="@+id/user_profile_card3" />
+
+                <TextView
+                    android:id="@+id/feedback_card3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="serif"
+                    android:text="Feedback"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/view_card3"
+                    app:layout_constraintStart_toStartOf="@+id/view_card3"
+                    app:layout_constraintTop_toBottomOf="@+id/username_card3" />
+
+                <TextView
+                    android:id="@+id/more_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="20+"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25font_ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/view_card4"
+                    app:layout_constraintEnd_toEndOf="@+id/view_card4"
+                    app:layout_constraintStart_toStartOf="@+id/view_card4"
+                    app:layout_constraintTop_toTopOf="@+id/view_card4" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

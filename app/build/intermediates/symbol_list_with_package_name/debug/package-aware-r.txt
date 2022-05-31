@@ -3423,6 +3423,8 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable calm_down_icon
 drawable calm_melodies2_cover
 drawable calm_melodies_cover
+drawable card_1_bg
+drawable card_bg
 drawable chat_bg
 drawable chat_icon
 drawable collapse
@@ -3463,6 +3465,7 @@ drawable emergency_cover
 drawable error_center_x
 drawable error_circle
 drawable error_icon
+drawable feedback_icon
 drawable following_btn_bg
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -3877,6 +3880,9 @@ id expanded_menu
 id fade
 id family
 id familyType
+id feedback_card1
+id feedback_card2
+id feedback_card3
 id fill
 id fill_horizontal
 id fill_vertical
@@ -4055,6 +4061,7 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
+id more_text
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
@@ -4304,6 +4311,7 @@ id stress_view3
 id stretch
 id submenuarrow
 id submit_area
+id submit_thoughts
 id success_frame
 id success_tick
 id supportScrollUp
@@ -4383,6 +4391,7 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id thoughts_et
 id time
 id time_text
 id time_text2
@@ -4424,6 +4433,9 @@ id user_mail_dash_nav
 id user_name_dash_nav
 id user_password_login
 id user_post_comment
+id user_profile_card1
+id user_profile_card2
+id user_profile_card3
 id user_profile_chat_activity
 id user_profile_comment
 id user_profile_comment_rv
@@ -4435,6 +4447,9 @@ id user_reg_email
 id user_reg_password
 id user_reg_password_confirm
 id user_text_post
+id username_card1
+id username_card2
+id username_card3
 id username_chat_activity
 id username_comment
 id username_grp
@@ -4446,6 +4461,11 @@ id vertical_only
 id view
 id view1
 id view4
+id view_card1
+id view_card2
+id view_card3
+id view_card4
+id view_card5
 id view_offset_helper
 id view_pager_notif
 id view_transition
@@ -4512,6 +4532,8 @@ id yoga_two_point_5
 id yoga_two_point_6
 id yoga_two_point_7
 id yoga_two_pose_1
+id yourThoughtsFragment
+id yourThoughtsFragment2
 id z
 id zero_corner_chip
 integer abc_config_activityDefaultDur
@@ -4674,6 +4696,7 @@ layout fragment_yoga_one
 layout fragment_yoga_option
 layout fragment_yoga_three
 layout fragment_yoga_two
+layout fragment_your_thoughts
 layout friends_recycler_view
 layout grp_receiver_recycler_view
 layout hsdp_layout
