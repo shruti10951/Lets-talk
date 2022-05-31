@@ -26,6 +26,10 @@
             android:icon="@drawable/widgets"
             android:title="I Need Help!" />
         <item
+            android:id="@+id/yourThoughtsFragment"
+            android:icon="@drawable/feedback_icon"
+            android:title="Your Thoughts?" />
+        <item
             android:id="@+id/aboutLetsTalkFragment"
             android:icon="@drawable/info_icon"
             android:title="About Let's Talk" />

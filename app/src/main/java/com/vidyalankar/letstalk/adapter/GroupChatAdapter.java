@@ -86,7 +86,7 @@ public class GroupChatAdapter extends RecyclerView.Adapter {
 
                             //date
                             SimpleDateFormat formatter1 = new SimpleDateFormat("dd MMM yyyy HH:mm");
-                            ((SenderViewHolder)holder).timeText.setText(formatter1.format(date));
+                            ((ReceiverViewHolder)holder).timeText2.setText(formatter1.format(date));
                         }
 
                         @Override

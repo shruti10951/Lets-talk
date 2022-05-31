@@ -27,6 +27,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
+import com.vidyalankar.letstalk.fragments.YourThoughtsFragment;
 import com.vidyalankar.letstalk.fragments.AboutLetsTalkFragment;
 import com.vidyalankar.letstalk.fragments.AddPostFragment;
 import com.vidyalankar.letstalk.fragments.CalmMelodiesFragment;
@@ -130,6 +131,9 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
                 break;
             case R.id.INeedHelpFragment:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new INeedHelpFragment()).addToBackStack(null).commit();
+                break;
+            case R.id.yourThoughtsFragment:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new YourThoughtsFragment()).addToBackStack(null).commit();
                 break;
             case R.id.aboutLetsTalkFragment:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new AboutLetsTalkFragment()).addToBackStack(null).commit();
