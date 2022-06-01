@@ -95,6 +95,7 @@ public class YourThoughtsFragment extends Fragment {
                                         UserModel userModel = snapshot.getValue(UserModel.class);
                                         Picasso.get()
                                                 .load(userModel.getProfilePic())
+                                                .placeholder(R.drawable.user_profile_default)
                                                 .into(image1);
                                         username1.setText(userModel.getUsername());
                                     }
@@ -115,6 +116,7 @@ public class YourThoughtsFragment extends Fragment {
                                         UserModel userModel = snapshot.getValue(UserModel.class);
                                         Picasso.get()
                                                 .load(userModel.getProfilePic())
+                                                .placeholder(R.drawable.user_profile_default)
                                                 .into(image2);
                                         username2.setText(userModel.getUsername());
                                     }
@@ -135,6 +137,7 @@ public class YourThoughtsFragment extends Fragment {
                                         UserModel userModel = snapshot.getValue(UserModel.class);
                                         Picasso.get()
                                                 .load(userModel.getProfilePic())
+                                                .placeholder(R.drawable.user_profile_default)
                                                 .into(image3);
                                         username3.setText(userModel.getUsername());
                                     }

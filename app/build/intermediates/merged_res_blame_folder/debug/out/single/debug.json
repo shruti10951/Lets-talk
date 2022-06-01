@@ -28,12 +28,12 @@
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\counseling_cover.jpg"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_friends.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_friends.xml"
-    },
-    {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_loading_gif_wait.jpg.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable-v24\\loading_gif_wait.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_friends.xml.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\fragment_friends.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_calm_melodies_cover.jpeg.flat",
@@ -84,12 +84,12 @@
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\raw\\calm_mind.m4a"
     },
     {
-        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_search_icon.xml.flat",
-        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\search_icon.xml"
-    },
-    {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\layout_users_recycler_view.xml.flat",
         "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\layout\\users_recycler_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_search_icon.xml.flat",
+        "source": "C:\\Users\\Admin\\Lets-talk\\app\\src\\main\\res\\drawable\\search_icon.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\merged_res\\debug\\drawable_home_icon.xml.flat",

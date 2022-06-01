@@ -10366,7 +10366,7 @@
         <item>Disabilities</item>
         <item>Depression</item>
         <item>Others</item>
-    </string-array></file><file path="C:\Users\Admin\Lets-talk\app\src\main\res\values\themes.xml" qualifiers=""><style name="Theme.LetsTalk" parent="Theme.MaterialComponents.Light.NoActionBar">
+    </string-array></file><file path="C:\Users\Admin\Lets-talk\app\src\main\res\values\themes.xml" qualifiers=""><style name="Theme.LetsTalk" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/black</item>
         <item name="colorPrimaryVariant">@color/black</item>
