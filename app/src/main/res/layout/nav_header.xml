@@ -1,45 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="@dimen/_170hsdp"
-    android:gravity="bottom"
     android:background="@drawable/wallpaper_header"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark"
-    android:padding="16dp">
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/user_profile_dash_nav"
         android:layout_width="@dimen/_65hsdp"
         android:layout_height="@dimen/_65hsdp"
-        app:civ_border_width="@dimen/_2font_ssp"
+        android:layout_below="@+id/user_profile_dash_nav"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/user_profile_default"
         app:civ_border_color="@color/black"
-        android:layout_marginLeft="4dp"
-        android:src="@drawable/woman"
-        android:layout_below="@+id/user_profile_dash_nav" />
+        app:civ_border_width="@dimen/_1font_ssp" />
 
     <TextView
+        android:id="@+id/user_name_dash_nav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:fontFamily="serif"
+        android:layout_marginLeft="4dp"
         android:layout_marginTop="8dp"
-        android:layout_marginLeft="4dp"
+        android:fontFamily="serif"
         android:text="userName"
-        android:id="@+id/user_name_dash_nav">
-    </TextView>
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
 
     <TextView
+        android:id="@+id/user_mail_dash_nav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:fontFamily="serif"
         android:layout_marginLeft="4dp"
+        android:fontFamily="serif"
         android:text="name@gmail.com"
-        android:id="@+id/user_mail_dash_nav">
-    </TextView>
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
 
 </LinearLayout>

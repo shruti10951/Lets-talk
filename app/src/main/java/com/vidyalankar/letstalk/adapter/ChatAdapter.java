@@ -63,11 +63,15 @@ public class ChatAdapter extends RecyclerView.Adapter{
             Date date= new Date(chatModel.getTime());
             SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
             ((SenderViewHolder)holder).senderTime.setText(formatter.format(date));
+            SimpleDateFormat formatter1 = new SimpleDateFormat("dd MMM yyyy HH:mm");
+            ((SenderViewHolder)holder).timeText.setText(formatter1.format(date));
         }else{
             ((ReceiverViewHolder)holder).receiverMsg.setText(chatModel.getMessage());
             Date date= new Date(chatModel.getTime());
             SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
             ((ReceiverViewHolder)holder).receiverTime.setText(formatter.format(date));
+            SimpleDateFormat formatter1 = new SimpleDateFormat("dd MMM yyyy HH:mm");
+            ((ReceiverViewHolder)holder).timeText2.setText(formatter1.format(date));
         }
 
     }
@@ -79,22 +83,24 @@ public class ChatAdapter extends RecyclerView.Adapter{
 
     public class ReceiverViewHolder extends RecyclerView.ViewHolder{
 
-        TextView receiverMsg, receiverTime;
+        TextView receiverMsg, receiverTime, timeText2;
         public ReceiverViewHolder(@NonNull View itemView) {
             super(itemView);
             receiverMsg= itemView.findViewById(R.id.receiver_text);
             receiverTime= itemView.findViewById(R.id.receiver_time);
+            timeText2= itemView.findViewById(R.id.time_text2);
         }
     }
 
     public class SenderViewHolder extends RecyclerView.ViewHolder{
 
-        TextView senderMsg, senderTime;
+        TextView senderMsg, senderTime, timeText;
 
         public SenderViewHolder(@NonNull View itemView) {
             super(itemView);
             senderMsg= itemView.findViewById(R.id.sender_text);
             senderTime= itemView.findViewById(R.id.sender_time);
+            timeText= itemView.findViewById(R.id.time_text);
         }
     }
 

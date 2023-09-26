@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_marginTop="@dimen/_15font_ssp"
-    android:layout_marginBottom="@dimen/_15font_ssp"
-    android:background="@drawable/post_wallpaper"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8font_ssp"
+    android:layout_marginBottom="@dimen/_8font_ssp"
+    android:background="@drawable/post_wallpaper">
 
     <ImageView
         android:id="@+id/delete_post"
         android:layout_width="@dimen/_20font_ssp"
         android:layout_height="@dimen/_20font_ssp"
         android:src="@drawable/delete_icon"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/user_post_comment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.911"
         app:layout_constraintStart_toEndOf="@+id/username_comment"
         app:layout_constraintTop_toTopOf="parent"
-        android:visibility="gone"
         app:layout_constraintVertical_bias="0.369"
         app:tint="@color/white" />
 
@@ -28,9 +27,9 @@
         android:layout_height="@dimen/_40hsdp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/woman"
-        app:civ_border_color="@color/white"
-        app:civ_border_width="@dimen/_2font_ssp"
+        android:src="@drawable/user_profile_default"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="@dimen/_1font_ssp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,15 +38,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:fontFamily="serif"
         android:text="Amrita2004"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:fontFamily="serif"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/user_profile_comment"
         app:layout_constraintStart_toEndOf="@+id/user_profile_comment"
-        app:layout_constraintTop_toTopOf="@+id/user_profile_comment" />
+        app:layout_constraintTop_toTopOf="@+id/user_profile_comment"
+        app:layout_constraintVertical_bias="0.17000002" />
 
+    <TextView
+        android:id="@+id/type_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="type"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/username_comment"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toEndOf="@+id/user_profile_comment"
+        app:layout_constraintTop_toBottomOf="@+id/username_comment" />
 
     <TextView
         android:id="@+id/user_post_comment"
@@ -79,13 +91,13 @@
         android:drawableLeft="@drawable/like_icon"
         android:drawablePadding="10dp"
         android:drawableTint="#FFFFFF"
-        android:textColor="@color/white"
-        android:gravity="center"
         android:fontFamily="serif"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_5font_ssp"
         android:text="234"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_post_comment"
-        android:paddingBottom="@dimen/_5font_ssp"/>
+        app:layout_constraintTop_toBottomOf="@+id/user_post_comment" />
 
     <TextView
         android:id="@+id/user_comments_comment"
@@ -96,13 +108,13 @@
         android:drawableLeft="@drawable/comment_icon"
         android:drawablePadding="10dp"
         android:drawableTint="#FFFFFF"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:text="52"
         android:fontFamily="serif"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_10font_ssp"
+        android:text="52"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@id/likes_comment"
-        app:layout_constraintTop_toBottomOf="@+id/user_post_comment"
-        android:paddingBottom="@dimen/_10font_ssp"/>
+        app:layout_constraintTop_toBottomOf="@+id/user_post_comment" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,37 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/calm_melodies_cover"
     android:layout_height="match_parent"
     tools:context=".activities.PlayMelodies2">
 
-    <LinearLayout
-        android:id="@+id/linearLayoutCompat"
-        android:layout_width="409dp"
-        android:layout_height="181dp"
-        android:orientation="horizontal"
-        android:padding="12dp"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
+        app:layout_constraintTop_toTopOf="parent" />
 
             <View
                 android:id="@+id/binaural_option_one"
-                android:layout_width="410dp"
+                android:layout_width="match_parent"
                 android:layout_height="108dp"
-                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_marginBottom="5dp"
                 android:background="@color/greyTrans"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent" />
 
 
             <ImageView
@@ -80,15 +71,15 @@
 
             <SeekBar
                 android:id="@+id/seek_bar1"
-                android:layout_width="355dp"
+                android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginBottom="68dp"
                 android:layout_weight="1"
-                app:layout_constraintBottom_toBottomOf="@+id/binaural_option_one"
-                app:layout_constraintEnd_toEndOf="@+id/binaural_option_one"
+                android:layout_marginStart="@dimen/_10hsdp"
+                android:layout_marginEnd="@dimen/_10hsdp"
+                app:layout_constraintTop_toTopOf="@+id/binaural_option_one"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/play1" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/player_duration1"
@@ -104,9 +95,5 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/binaural_option_one"
                 app:layout_constraintVertical_bias="0.616" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

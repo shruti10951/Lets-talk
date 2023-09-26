@@ -5,15 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginStart="4dp"
-    android:layout_marginEnd="4dp"
     android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
     tools:context=".activities.CommentActivity">
 
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
         android:fillViewport="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -29,110 +30,110 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <View
-                    android:id="@+id/view6"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_170hsdp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/post_wallpaper"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/user_profile_comment"
-                    android:layout_width="@dimen/_40hsdp"
-                    android:layout_height="@dimen/_40hsdp"
-                    android:layout_marginTop="12dp"
-                    android:src="@drawable/woman"
-                    app:civ_border_color="@color/white"
-                    app:civ_border_width="@dimen/_2font_ssp"
-                    app:layout_constraintEnd_toEndOf="@+id/view6"
-                    app:layout_constraintHorizontal_bias="0.044"
-                    app:layout_constraintStart_toStartOf="@+id/user_post_comment"
-                    app:layout_constraintTop_toTopOf="@+id/view6" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_profile_comment"
+                        android:layout_width="@dimen/_40hsdp"
+                        android:layout_height="@dimen/_40hsdp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/user_profile_default"
+                        app:civ_border_color="@color/black"
+                        app:civ_border_width="@dimen/_1font_ssp"
+                        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+                        app:layout_constraintHorizontal_bias="0.044"
+                        app:layout_constraintStart_toStartOf="@+id/user_post_comment"
+                        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
 
-                <TextView
-                    android:id="@+id/username_comment"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:text="Amrita2004"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:fontFamily="serif"
-                    app:layout_constraintBottom_toBottomOf="@+id/user_profile_comment"
-                    app:layout_constraintStart_toEndOf="@+id/user_profile_comment"
-                    app:layout_constraintTop_toTopOf="@+id/user_profile_comment" />
+                    <TextView
+                        android:id="@+id/username_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="serif"
+                        android:text="Amrita2004"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/user_profile_comment"
+                        app:layout_constraintStart_toEndOf="@+id/user_profile_comment"
+                        app:layout_constraintTop_toTopOf="@+id/user_profile_comment" />
 
 
-                <TextView
-                    android:id="@+id/user_post_comment"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:paddingStart="@dimen/_20font_ssp"
-                    android:paddingTop="@dimen/_20font_ssp"
-                    android:paddingEnd="@dimen/_20font_ssp"
-                    android:paddingBottom="@dimen/_20font_ssp"
-                    android:scaleType="centerCrop"
-                    android:text="Hello This is a post!"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_15font_ssp"
-                    android:fontFamily="serif"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/user_profile_comment"
-                    app:riv_corner_radius="10dip"
-                    app:riv_mutate_background="true" />
+                    <TextView
+                        android:id="@+id/user_post_comment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="serif"
+                        android:paddingStart="@dimen/_20font_ssp"
+                        android:paddingTop="@dimen/_20font_ssp"
+                        android:paddingEnd="@dimen/_20font_ssp"
+                        android:paddingBottom="@dimen/_20font_ssp"
+                        android:scaleType="centerCrop"
+                        android:text="Hello This is a post!"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15font_ssp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/user_profile_comment"
+                        app:riv_corner_radius="10dip"
+                        app:riv_mutate_background="true" />
 
-                <TextView
-                    android:id="@+id/likes_comment"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp"
-                    android:layout_marginTop="12dp"
-                    android:drawableLeft="@drawable/like_icon"
-                    android:drawablePadding="10dp"
-                    android:drawableTint="#FFFFFF"
-                    android:gravity="center"
-                    android:paddingBottom="@dimen/_10font_ssp"
-                    android:text="234"
-                    android:fontFamily="serif"
-                    android:textColor="@color/white"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/user_post_comment" />
+                    <TextView
+                        android:id="@+id/likes_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="12dp"
+                        android:drawableLeft="@drawable/like_icon"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="#FFFFFF"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/_10font_ssp"
+                        android:text="234"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/user_post_comment" />
 
-                <TextView
-                    android:id="@+id/user_comments_comment"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="12dp"
-                    android:drawableLeft="@drawable/comment_icon"
-                    android:drawablePadding="10dp"
-                    android:drawableTint="#FFFFFF"
-                    android:fontFamily="serif"
-                    android:gravity="center"
-                    android:paddingBottom="@dimen/_10font_ssp"
-                    android:text="52"
-                    android:textColor="@color/white"
-                    app:layout_constraintStart_toEndOf="@+id/likes_comment"
-                    app:layout_constraintTop_toBottomOf="@+id/user_post_comment" />
+                    <TextView
+                        android:id="@+id/user_comments_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="12dp"
+                        android:drawableLeft="@drawable/comment_icon"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="#FFFFFF"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/_10font_ssp"
+                        android:text="52"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toEndOf="@+id/likes_comment"
+                        app:layout_constraintTop_toBottomOf="@+id/user_post_comment" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/comment_rv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10font_ssp"
-                    android:layout_marginStart="@dimen/_15font_ssp"
-                    android:layout_marginEnd="@dimen/_15font_ssp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/view6" />
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -143,10 +144,11 @@
     <EditText
         android:id="@+id/enter_comment_comment"
         android:layout_width="290dp"
-        android:layout_height="43dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:background="@drawable/layout_border"
         android:ems="10"
+        android:fontFamily="serif"
         android:hint="Enter your comment"
         android:inputType="textMultiLine"
         android:maxLines="3"
@@ -155,7 +157,6 @@
         android:paddingBottom="@dimen/_6font_ssp"
         android:textColor="@color/black"
         android:textSize="@dimen/_16font_ssp"
-        android:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.183"
@@ -165,11 +166,11 @@
         android:id="@+id/post_comment_comment"
         android:layout_width="39dp"
         android:layout_height="38dp"
-        android:src="@drawable/send_icon"
         android:layout_marginStart="@dimen/_10font_ssp"
+        android:src="@drawable/send_icon"
         app:layout_constraintBottom_toBottomOf="@+id/enter_comment_comment"
         app:layout_constraintStart_toEndOf="@+id/enter_comment_comment"
         app:layout_constraintTop_toTopOf="@+id/enter_comment_comment"
-        app:tint="@color/black" />
+        app:tint="@color/black"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

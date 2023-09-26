@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:diagonal="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.YogaOneFragment">
-
 
     <View
         android:id="@+id/sleep_diagonal_layout"
@@ -25,8 +23,8 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="422dp"
-        android:layout_height="64dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:fontFamily="serif"
         android:text="Legs-Up-the-Wall Pose"
         android:textAlignment="center"
@@ -39,9 +37,10 @@
         app:layout_constraintTop_toBottomOf="@+id/sleep_diagonal_layout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-
-        android:layout_width="405dp"
+        android:layout_width="match_parent"
         android:layout_height="425dp"
+        android:layout_marginStart="@dimen/_10hsdp"
+        android:layout_marginEnd="@dimen/_10hsdp"
         android:layout_marginTop="@dimen/_25font_ssp"
         android:layout_marginBottom="?attr/actionBarSize"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -87,7 +86,6 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:background="@drawable/yoga_three_pose"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/yoga_one_point_1" />
@@ -124,7 +122,6 @@
 
                 <TextView
                     android:id="@+id/textView12"
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -139,8 +136,6 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
                 <TextView
-
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"

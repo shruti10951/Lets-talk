@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/friends_rv_profile"
@@ -11,7 +10,7 @@
         android:layout_height="@dimen/_40hsdp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:src="@drawable/woman"
+        android:src="@drawable/user_profile_default"
         app:civ_border_color="@color/black"
         app:civ_border_width="@dimen/_1font_ssp"
         app:layout_constraintBottom_toBottomOf="parent"

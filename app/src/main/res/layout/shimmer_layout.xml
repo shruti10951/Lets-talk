@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginTop="?attr/actionBarSize"
-    android:layout_marginBottom="@dimen/_15font_ssp"
-    android:layout_height="wrap_content">
+    android:layout_marginBottom="@dimen/_8font_ssp">
 
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -38,13 +37,13 @@
         android:id="@+id/user_post_comment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginStart="4dp"
+        android:background="@color/shimmer_color"
         android:paddingTop="@dimen/_20font_ssp"
         android:paddingBottom="@dimen/_20font_ssp"
         android:scaleType="centerCrop"
-        android:background="@color/shimmer_color"
         android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
         android:typeface="serif"
@@ -62,16 +61,14 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="4dp"
+        android:background="@color/shimmer_color"
         android:drawablePadding="10dp"
         android:drawableTint="#FFFFFF"
-        android:textColor="@color/white"
         android:gravity="center"
-        android:background="@color/shimmer_color"
+        android:paddingBottom="@dimen/_5font_ssp"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_post_comment"
-        android:paddingBottom="@dimen/_5font_ssp"/>
-
-
+        app:layout_constraintTop_toBottomOf="@+id/user_post_comment" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

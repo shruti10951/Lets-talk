@@ -1,5 +1,6 @@
 package com.vidyalankar.letstalk.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,10 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.vidyalankar.letstalk.R;
+import com.vidyalankar.letstalk.activities.Binaural1Activity;
+import com.vidyalankar.letstalk.activities.IsochronicActivity;
 
 public class CalmMelodiesFragment extends Fragment {
 
-    View brainwave_option;
+    View binaural, isochronic;
 
     public CalmMelodiesFragment() {
         // Required empty public constructor
@@ -30,15 +33,25 @@ public class CalmMelodiesFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_calm_melodies, container, false);
 
-        brainwave_option= view.findViewById(R.id.melodies);
+        binaural= view.findViewById(R.id.melodies_one_option);
+        isochronic= view.findViewById(R.id.melodies_two_option);
 
-        brainwave_option.setOnClickListener(new View.OnClickListener() {
+
+        binaural.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new BrainwaveCalmMelodiesFragment()).addToBackStack(null).commit();
+                Intent intent=new Intent(getActivity(), Binaural1Activity.class);
+                startActivity(intent);
             }
         });
 
+        isochronic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(), IsochronicActivity.class);
+                startActivity(intent);
+            }
+        });
 
         return view;
     }

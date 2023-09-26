@@ -93,12 +93,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful())
                 {
+                    if(mAuth.getCurrentUser().isEmailVerified()) {
+                        Toast.makeText(LoginActivity.this, "Login successfull!", Toast.LENGTH_LONG).show();
+                        //redirect to dashboard
+                        startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
+                        finish();
+                    }else {
+                        Toast.makeText(LoginActivity.this, "Failed to Login! Please verify your account!", Toast.LENGTH_LONG).show();
 
-                    Toast.makeText(LoginActivity.this, "Login successfull!", Toast.LENGTH_LONG).show();
-
-                    //redirect to dashboard
-                    startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
-                    finish();
+                    }
                 }else{
                     Toast.makeText(LoginActivity.this, "Failed to Login! Please check your credentials!", Toast.LENGTH_LONG).show();
                 }

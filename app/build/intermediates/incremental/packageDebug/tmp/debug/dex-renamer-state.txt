@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-#Thu Feb 24 20:08:35 IST 2022
-=======
-#Thu Feb 24 21:31:40 IST 2022
->>>>>>> 118ab107c9b89cad00c2a12ed0d26c3d146d4e6b
+#Wed Jun 01 10:11:09 IST 2022
 path.4=1/classes.dex
 path.3=13/classes.dex
 path.2=11/classes.dex
+renamed.9=classes10.dex
 path.1=0/classes.dex
 renamed.8=classes9.dex
 path.8=classes2.dex
@@ -22,6 +19,8 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
+base.9=C\:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+path.9=classes3.dex
 renamed.7=classes8.dex
 base.8=C\:\\Users\\Admin\\Lets-talk\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 renamed.6=classes7.dex

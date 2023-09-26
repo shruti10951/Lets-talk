@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey_green"
+    android:background="@color/white"
     tools:context=".fragments.SleepOptionsFragment">
-
-
     <View
         android:id="@+id/sleep_view"
         android:layout_width="411dp"
         android:layout_height="171dp"
         android:layout_marginTop="?attr/actionBarSize"
         android:background="@drawable/sleep_drawer_option"
-        android:paddingTop="@dimen/_5font_ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,11 +19,12 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
         android:fontFamily="serif"
         android:text="Sleep"
-        android:textColor="@color/black"
+        android:gravity="center"
+        android:textColor="@color/white"
         android:textSize="@dimen/_20font_ssp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="@+id/sleep_view"
@@ -34,146 +32,303 @@
         app:layout_constraintStart_toStartOf="@+id/sleep_view"
         app:layout_constraintTop_toTopOf="@+id/sleep_view" />
 
-
-    <View
-        android:id="@+id/sleep_view1"
-        android:layout_width="410dp"
-        android:layout_height="119dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/greyTrans"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sleep_view" />
-
     <TextView
-        android:id="@+id/sleep_article_text1"
-        android:layout_width="257dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="74dp"
-        android:layout_marginBottom="29dp"
+        android:id="@+id/textView13"
+        android:layout_width="108dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
         android:fontFamily="serif"
-        android:text="What You Need to Know About Stress"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_15font_ssp"
-        app:layout_constraintBottom_toBottomOf="@+id/sleep_view1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:text="Articles"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sleep_view1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sleep_view1"
-        app:layout_constraintVertical_bias="0.862" />
-
-    <ImageView
-            android:id="@+id/sleep_imageView4"
-            android:layout_width="116dp"
-            android:layout_height="110dp"
-            android:src="@drawable/sleep1"
-            app:layout_constraintBottom_toBottomOf="@id/sleep_view1"
-            app:layout_constraintEnd_toStartOf="@+id/sleep_article_text1"
-            app:layout_constraintHorizontal_bias="0.484"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/sleep_view1"
-            app:layout_constraintVertical_bias="0.444" />
-
+        app:layout_constraintTop_toBottomOf="@+id/sleep_view" />
 
     <View
         android:id="@+id/sleep_view2"
-        android:layout_width="410dp"
+        android:layout_width="match_parent"
         android:layout_height="119dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="8dp"
         android:background="@color/greyTrans"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sleep_view" />
-
+        app:layout_constraintTop_toBottomOf="@+id/sleep_view1" />
 
     <TextView
         android:id="@+id/sleep_article_text2"
-        android:layout_width="257dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="119dp"
+        android:layout_marginStart="@dimen/_5hsdp"
+        android:layout_marginEnd="@dimen/_5hsdp"
         android:fontFamily="serif"
-        android:text="Types of Stress"
+        android:gravity="center"
+        android:maxWidth="@dimen/_200hsdp"
+        android:text="There are four simple things to consider you to help heal a period of poor sleep"
         android:textColor="@color/white"
         android:textSize="@dimen/_15font_ssp"
-        app:layout_constraintBottom_toBottomOf="@+id/sleep_view2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sleep_view2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toEndOf="@+id/sleep_view2"
+        app:layout_constraintStart_toEndOf="@+id/sleep_imageView4"
+        app:layout_constraintTop_toTopOf="@+id/sleep_view2" />
 
     <ImageView
         android:id="@+id/sleep_imageView1"
         android:layout_width="116dp"
         android:layout_height="110dp"
-        android:src="@drawable/sleep2"
+        android:layout_marginStart="@dimen/_5hsdp"
         app:layout_constraintBottom_toBottomOf="@+id/sleep_view2"
-        app:layout_constraintEnd_toStartOf="@+id/sleep_article_text2"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/sleep_view2"
+        app:layout_constraintTop_toTopOf="@+id/sleep_view2" />
+
+
+    <View
+        android:id="@+id/sleep_view1"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:layout_marginTop="@dimen/_40hsdp"
+        android:background="@color/greyTrans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sleep_view2"
-        app:layout_constraintVertical_bias="0.636" />
+        app:layout_constraintTop_toBottomOf="@+id/sleep_view" />
+
+    <TextView
+        android:id="@+id/sleep_article_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="119dp"
+        android:layout_marginStart="@dimen/_5hsdp"
+        android:layout_marginEnd="@dimen/_5hsdp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:maxWidth="@dimen/_200hsdp"
+        android:text="The Importance of sleep in our life"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15font_ssp"
+        app:layout_constraintEnd_toEndOf="@+id/sleep_view1"
+        app:layout_constraintStart_toEndOf="@+id/sleep_imageView4"
+        app:layout_constraintTop_toTopOf="@+id/sleep_view1" />
+
+    <ImageView
+        android:id="@+id/sleep_imageView4"
+        android:layout_width="116dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="@dimen/_5hsdp"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_view1"
+        app:layout_constraintStart_toStartOf="@+id/sleep_view1"
+        app:layout_constraintTop_toTopOf="@+id/sleep_view1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/greyTrans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_view1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/greyTrans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_view2"/>
 
     <View
         android:id="@+id/sleep_view3"
-        android:layout_width="410dp"
+        android:layout_width="match_parent"
         android:layout_height="119dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="452dp"
-        android:layout_marginEnd="8dp"
         android:background="@color/greyTrans"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sleep_view" />
-
+        app:layout_constraintTop_toBottomOf="@+id/sleep_view2" />
 
     <TextView
         android:id="@+id/sleep_article_text3"
-        android:layout_width="257dp"
-        android:layout_height="74dp"
+        android:layout_width="wrap_content"
+        android:layout_height="119dp"
+        android:layout_marginStart="@dimen/_5hsdp"
+        android:layout_marginEnd="@dimen/_5hsdp"
         android:fontFamily="serif"
-        android:text="How to manage Stress"
+        android:gravity="center"
+        android:maxWidth="@dimen/_200hsdp"
+        android:text="The problem they caused and the possible solution"
         android:textColor="@color/white"
-        android:textSize="@dimen/_14font_ssp"
-        app:layout_constraintBottom_toBottomOf="@+id/sleep_view3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sleep_view3"
-        app:layout_constraintVertical_bias="0.555" />
+        android:textSize="@dimen/_15font_ssp"
+        app:layout_constraintEnd_toEndOf="@+id/sleep_view3"
+        app:layout_constraintStart_toEndOf="@+id/sleep_imageView3"
+        app:layout_constraintTop_toTopOf="@+id/sleep_view3" />
 
     <ImageView
         android:id="@+id/sleep_imageView3"
         android:layout_width="116dp"
         android:layout_height="110dp"
-        android:src="@drawable/sleep3"
+        android:layout_marginStart="@dimen/_5hsdp"
         app:layout_constraintBottom_toBottomOf="@+id/sleep_view3"
-        app:layout_constraintEnd_toStartOf="@+id/sleep_article_text3"
-        app:layout_constraintHorizontal_bias="0.421"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sleep_view3"
-        app:layout_constraintVertical_bias="0.832" />
+        app:layout_constraintStart_toStartOf="@+id/sleep_view3"
+        app:layout_constraintTop_toTopOf="@+id/sleep_view3" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="108dp"
-        android:layout_height="28dp"
-        android:text="Articles"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/sleep_view3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="@+id/sleep_view"
-        app:layout_constraintTop_toBottomOf="@+id/sleep_view"
-        app:layout_constraintVertical_bias="0.035" />
+
+<!--    <View-->
+<!--        android:id="@+id/sleep_view"-->
+<!--        android:layout_width="411dp"-->
+<!--        android:layout_height="171dp"-->
+<!--        android:layout_marginTop="?attr/actionBarSize"-->
+<!--        android:background="@drawable/sleep_drawer_option"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="serif"-->
+<!--        android:text="Sleep"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/_20font_ssp"-->
+<!--        android:textStyle="bold|italic"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/sleep_view"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/sleep_view"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/sleep_view"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/sleep_view" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/sleep_view1"-->
+<!--        android:layout_width="410dp"-->
+<!--        android:layout_height="119dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="208dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:background="@color/greyTrans"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.6"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/sleep_view" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/sleep_imageView4"-->
+<!--        android:layout_width="116dp"-->
+<!--        android:layout_height="110dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/sleep_view1"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/sleep_article_text1"-->
+<!--        app:layout_constraintHorizontal_bias="0.235"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/sleep_view1"-->
+<!--        app:layout_constraintVertical_bias="0.439" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/sleep_article_text1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="53dp"-->
+<!--        android:fontFamily="serif"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:maxWidth="250dp"-->
+<!--        android:text="The Importance of sleep in our life"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/_15font_ssp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/sleep_imageView4"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/sleep_view1" />-->
+
+
+<!--    <View-->
+<!--        android:id="@+id/sleep_view2"-->
+<!--        android:layout_width="410dp"-->
+<!--        android:layout_height="119dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="324dp"-->
+<!--        android:background="@color/greyTrans"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.533"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/sleep_view" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/sleep_imageView1"-->
+<!--        android:layout_width="116dp"-->
+<!--        android:layout_height="110dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/sleep_view2"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/sleep_article_text2"-->
+<!--        app:layout_constraintVertical_bias="0.611"-->
+<!--        app:layout_constraintHorizontal_bias="0.205"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/sleep_view2" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/sleep_article_text2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="52dp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="36dp"-->
+<!--        android:fontFamily="serif"-->
+<!--        android:maxWidth="250dp"-->
+<!--        android:text="There are four simple things to consider you to help heal a period of poor sleep"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/_15font_ssp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/sleep_imageView1"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/sleep_view2" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/sleep_view3"-->
+<!--        android:layout_width="410dp"-->
+<!--        android:layout_height="119dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginTop="440dp"-->
+<!--        android:background="@color/greyTrans"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.533"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/sleep_view" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/sleep_imageView3"-->
+<!--        android:layout_width="116dp"-->
+<!--        android:layout_height="110dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/sleep_view3"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/sleep_article_text3"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.23"-->
+<!--        app:layout_constraintVertical_bias="0.79"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/sleep_view3" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/sleep_article_text3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:fontFamily="serif"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:gravity="center"-->
+<!--        android:maxWidth="250dp"-->
+<!--        android:text="The problem they caused and the possible solution"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/_14font_ssp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/sleep_imageView3"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/sleep_view3" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView13"-->
+<!--        android:layout_width="108dp"-->
+<!--        android:layout_height="28dp"-->
+<!--        android:text="Articles"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/sleep_view3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.052"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/sleep_view"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/sleep_view"-->
+<!--        app:layout_constraintVertical_bias="0.035" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

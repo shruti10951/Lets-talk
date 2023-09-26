@@ -7,59 +7,395 @@
     android:background="@color/beige"
     tools:context=".fragments.CounsellingHelpFragment">
 
-    <View
-        android:id="@+id/help1"
-        android:layout_width="414dp"
-        android:layout_height="208dp"
-        android:layout_marginStart="@dimen/_35hsdp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="@dimen/_35hsdp"
-        android:background="@drawable/counseling_cover"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="610dp"
+        android:layout_marginTop="?attr/actionBarSize"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/help1">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.core.widget.NestedScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fillViewport="true">
+            android:layout_height="match_parent">
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="match_parent">
 
-            <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="208dp"
-        android:fontFamily="serif"
-        android:text="Free Counselling Websites"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_30font_ssp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/help1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/help1"
-        app:layout_constraintTop_toTopOf="@+id/help1" />
+                <View
+                    android:id="@+id/help1"
+                    android:layout_width="414dp"
+                    android:layout_height="208dp"
+                    android:layout_marginStart="@dimen/_35hsdp"
+                    android:layout_marginEnd="@dimen/_35hsdp"
+                    android:background="@drawable/counseling_cover"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/website_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25hsdp"
+                    android:layout_marginEnd="@dimen/_25hsdp"
+                    android:fontFamily="serif"
+                    android:text="Free Counselling Websites"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_22font_ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/help1" />
+
+                <TextView
+                    android:id="@+id/website_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="MannTalks"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toStartOf="@+id/help1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/help1"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text" />
+
+                <TextView
+                    android:id="@+id/website_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="Mann Talks are offering free online mental and psychological consultations with trained professionals, where they tackle anxiety, depression, panic attacks, loneliness and more."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toStartOf="@+id/help1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/help1"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text1" />
+
+                <TextView
+                    android:id="@+id/website_text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="You can call on the given helpline number and they’ll give you free and holistic mental health solutions that you can follow to feel better and have a support system that doesn’t discriminate! Call them now and set your worries to rest!"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text2" />
+
+                <TextView
+                    android:id="@+id/website_text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="Contact Their Helpline:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text3" />
+
+                <TextView
+                    android:id="@+id/website_text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:layout_marginTop="5dp"
+                    android:autoLink="phone"
+                    android:fontFamily="serif"
+                    android:text="+91 8686 139 139"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text4" />
 
 
-            </LinearLayout>
-        </androidx.core.widget.NestedScrollView>
+                <TextView
+                    android:id="@+id/website_text6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="Here’s Their Website:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text5" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/website_text7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:linksClickable="true"
+                    android:text="https://www.manntalks.org/"
+                    android:textColor="@color/teal_200"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text6" />
+
+
+                <TextView
+                    android:id="@+id/website_text8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="Therapize"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text7" />
+
+                <TextView
+                    android:id="@+id/website_text9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="Therapize is providing free 1:1 mental health care sessions with over 80+ therapists and experts. So go ahead and book your slots soon and get the help you need! "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text8" />
+
+                <TextView
+                    android:id="@+id/website_text10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="Book Your Session Here:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text9" />
+
+                <TextView
+                    android:id="@+id/website_text11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="https://linktr.ee/therapize"
+                    android:textColor="@color/teal_200"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text10" />
+
+                <TextView
+                    android:id="@+id/website_text12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="Here’s Their Website:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text11" />
+
+                <TextView
+                    android:id="@+id/website_text13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="https://www.therapizeindia.com/"
+                    android:textColor="@color/teal_200"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text12" />
+
+                <TextView
+                    android:id="@+id/website_text14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="Bliss"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text13" />
+
+                <TextView
+                    android:id="@+id/website_text15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="Bliss is an 8 session interactive therapy program for depression that you complete on your own. The program is based on psychotherapy treatment called cognitive behavioural therapy or CBT for short. CBT has been shown to be effective treatment for depression. The program is designed to teach you techniques that have been shown to be effective at improving your mood and mental health."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text14" />
+
+                <TextView
+                    android:id="@+id/website_text16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="Here’s Their Website:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text15" />
+
+                <TextView
+                    android:id="@+id/website_text17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="https://cimhs.com/bliss-free-online-therapy-for-depression.html"
+                    android:textColor="@color/teal_200"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text16" />
+
+                <TextView
+                    android:id="@+id/website_text18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="BetterHelp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18hsdp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text17" />
+
+                <TextView
+                    android:id="@+id/website_text19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="BetterHelp is an online portal that provides direct-to-consumer access to mental health services. The online counseling and therapy services are provided through web-based interaction as well as phone and text communication"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text18" />
+
+                <TextView
+                    android:id="@+id/website_text20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="Here’s Their Website:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text19" />
+
+                <TextView
+                    android:id="@+id/website_text21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="@dimen/_15hsdp"
+                    android:layout_marginEnd="@dimen/_15hsdp"
+                    android:fontFamily="serif"
+                    android:text="https://www.betterhelp.com/"
+                    android:textColor="@color/teal_200"
+                    android:textSize="@dimen/_14hsdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/website_text20" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

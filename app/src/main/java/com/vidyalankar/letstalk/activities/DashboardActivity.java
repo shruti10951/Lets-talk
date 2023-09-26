@@ -2,15 +2,12 @@ package com.vidyalankar.letstalk.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -30,6 +27,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
+import com.vidyalankar.letstalk.fragments.YourThoughtsFragment;
 import com.vidyalankar.letstalk.fragments.AboutLetsTalkFragment;
 import com.vidyalankar.letstalk.fragments.AddPostFragment;
 import com.vidyalankar.letstalk.fragments.CalmMelodiesFragment;
@@ -134,6 +132,9 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
             case R.id.INeedHelpFragment:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new INeedHelpFragment()).addToBackStack(null).commit();
                 break;
+            case R.id.yourThoughtsFragment:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new YourThoughtsFragment()).addToBackStack(null).commit();
+                break;
             case R.id.aboutLetsTalkFragment:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView2, new AboutLetsTalkFragment()).addToBackStack(null).commit();
                 break;
@@ -147,24 +148,42 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
 
     public void logoutUser()
     {
-        AlertDialog.Builder builder= new AlertDialog.Builder(DashboardActivity.this);
+//        AlertDialog.Builder builder= new AlertDialog.Builder(DashboardActivity.this);
 
-        builder.setMessage("Are you sure you want to log out?")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        new SweetAlertDialog(DashboardActivity.this, SweetAlertDialog.BUTTON_CONFIRM)
+                .setConfirmText("Yes")
+                .setTitleText("Log out?")
+                .setContentText("Are you sure you want to log out?")
+                .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sweetAlertDialog) {
+                        Toast.makeText(DashboardActivity.this, "Logging out successful...", Toast.LENGTH_LONG).show();
+                        FirebaseAuth.getInstance().signOut();
+                        startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
+                        sweetAlertDialog.dismissWithAnimation();
+                    }
+                }).setCancelButton("No", new SweetAlertDialog.OnSweetClickListener() {
             @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                Toast.makeText(DashboardActivity.this, "Logging out successful...", Toast.LENGTH_LONG).show();
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
+            public void onClick(SweetAlertDialog sweetAlertDialog) {
+                sweetAlertDialog.dismissWithAnimation();
             }
-        }).setNegativeButton("No",null);
-        AlertDialog alert= builder.create();
-        alert.show();
+        }).show();
+
+//        builder.setMessage("Are you sure you want to log out?")
+//                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialogInterface, int i) {
+//                Toast.makeText(DashboardActivity.this, "Logging out successful...", Toast.LENGTH_LONG).show();
+//                FirebaseAuth.getInstance().signOut();
+//                startActivity(new Intent(DashboardActivity.this, LoginActivity.class));
+//            }
+//        }).setNegativeButton("No",null);
+//        AlertDialog alert= builder.create();
+//        alert.show();
     }
 
     @Override
     public void onBackPressed() {
-        android.app.Fragment test= getFragmentManager().findFragmentById(R.id.fragmentContainerView2);
         if(dashboard_drawer.isDrawerOpen(GravityCompat.START))
         {
             dashboard_drawer.closeDrawer(GravityCompat.START);

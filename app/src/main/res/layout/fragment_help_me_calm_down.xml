@@ -7,15 +7,14 @@
     android:background="@drawable/help_calm_down"
     tools:context=".fragments.HelpMeCalmDownFragment">
 
-
     <View
         android:id="@+id/yoga_one_option"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_120hsdp"
+        android:layout_height="@dimen/_80hsdp"
         android:layout_marginStart="@dimen/_35hsdp"
         android:layout_marginTop="116dp"
         android:layout_marginEnd="@dimen/_35hsdp"
-        android:background="@color/greyTrans"
+        android:background="#D7000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,12 +23,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
         android:fontFamily="serif"
         android:text="Breathing"
         android:textColor="@color/white"
-        android:textSize="@dimen/_30font_ssp"
+        android:textSize="@dimen/_25font_ssp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/yoga_one_option"
         app:layout_constraintEnd_toEndOf="@+id/yoga_one_option"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/yoga_one_option"
@@ -38,29 +37,57 @@
     <View
         android:id="@+id/yoga_option"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_120hsdp"
+        android:layout_height="@dimen/_80hsdp"
         android:layout_marginStart="@dimen/_35hsdp"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="@dimen/_35hsdp"
-        android:background="@color/greyTrans"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="@dimen/_30hsdp"
+        android:background="#D7000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yoga_one_option" />
+        app:layout_constraintTop_toBottomOf="@+id/breath_now" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
         android:fontFamily="serif"
         android:text="Yoga"
         android:textColor="@color/white"
-        android:textSize="@dimen/_30font_ssp"
+        android:textSize="@dimen/_25font_ssp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/yoga_option"
         app:layout_constraintEnd_toEndOf="@+id/yoga_option"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="@+id/yoga_option"
         app:layout_constraintTop_toTopOf="@+id/yoga_option" />
 
+    <View
+        android:id="@+id/breath_now"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130hsdp"
+        android:layout_marginStart="@dimen/_35hsdp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="@dimen/_35hsdp"
+        android:background="#D7000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yoga_one_option" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Let's breath together"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25font_ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/breath_now"
+        app:layout_constraintEnd_toEndOf="@+id/breath_now"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/breath_now"
+        app:layout_constraintTop_toTopOf="@+id/breath_now" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

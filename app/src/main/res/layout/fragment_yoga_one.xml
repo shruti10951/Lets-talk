@@ -24,8 +24,8 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="407dp"
-        android:layout_height="64dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="serif"
         android:text="Cat-Cow Pose"
@@ -38,10 +38,12 @@
         app:layout_constraintTop_toBottomOf="@+id/sleep_diagonal_layout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="399dp"
+        android:layout_width="match_parent"
         android:layout_height="411dp"
         android:layout_marginTop="@dimen/_25font_ssp"
         android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_marginStart="@dimen/_10hsdp"
+        android:layout_marginEnd="@dimen/_10hsdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -68,7 +70,6 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="8dp"
-                    android:text="1.Begin in a tabletop position."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +84,6 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:text="2.	Place your wrists underneath your shoulders and your knees underneath your hips."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -98,7 +98,6 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:text="3.	As you inhale, turn your gaze toward the ceiling and allow your belly to move toward your mat, arching your back. This is Cow Pose."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -110,7 +109,6 @@
                     android:id="@+id/yoga_one_image_1"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_180hsdp"
-                    android:src="@drawable/yoga_one_pose1"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
@@ -123,7 +121,6 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:text="4.	As you exhale, draw your chin in toward your chest and bend your spine toward the ceiling, like a cat."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -135,7 +132,6 @@
                     android:id="@+id/yoga_one_image_2"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_180hsdp"
-                    android:src="@drawable/yoga_one_pose2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
@@ -145,7 +141,6 @@
                     android:id="@+id/yoga_one_point_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="5.	Continue to flow between these two positions for 1 minute."
                     android:textColor="@color/black"
                     android:textSize="@dimen/_16hsdp" />
 

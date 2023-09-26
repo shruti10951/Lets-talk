@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/chat_background"
+    android:background="@drawable/chat_bg"
     tools:context=".activities.GroupChatActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -33,21 +33,19 @@
         android:id="@+id/exit_chat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_15font_ssp"
-        android:text="Exit"
-        android:fontFamily="serif"
+        android:layout_marginEnd="@dimen/_7hsdp"
         android:background="@color/greyTrans"
+        android:fontFamily="serif"
         android:paddingStart="@dimen/_18hsdp"
+        android:paddingTop="@dimen/_3hsdp"
         android:paddingEnd="@dimen/_18hsdp"
         android:paddingBottom="@dimen/_3hsdp"
-        android:paddingTop="@dimen/_3hsdp"
-        app:layout_constraintBottom_toBottomOf="@+id/name_grp_chat_activity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.898"
-        app:layout_constraintStart_toEndOf="@+id/name_grp_chat_activity"
-        app:layout_constraintTop_toTopOf="@+id/name_grp_chat_activity"
-        app:layout_constraintVertical_bias="1.0" />
+        android:text="Exit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15font_ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_group"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_group"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_grp_chat_activity"
@@ -58,24 +56,23 @@
         app:civ_border_color="@color/black"
         app:civ_border_width="1dp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar_group"
-        app:layout_constraintStart_toEndOf="@+id/back_btn_grp_chat"
-        app:layout_constraintTop_toTopOf="@+id/toolbar_group"
-        tools:src="@drawable/woman" />
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_group"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/name_grp_chat_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="@dimen/_8font_ssp"
+        android:layout_marginStart="@dimen/_4hsdp"
         android:fontFamily="serif"
-        android:text="Name"
+        android:text="groupName"
         android:textColor="@color/black"
-        android:textSize="@dimen/_15font_ssp"
+        android:textSize="@dimen/_14hsdp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar_group"
-        app:layout_constraintStart_toEndOf="@+id/profile_grp_chat_activity"
-        app:layout_constraintTop_toTopOf="@+id/toolbar_group"
-        app:layout_constraintVertical_bias="0.432" />
+        app:layout_constraintStart_toEndOf="@+id/back_btn_grp_chat"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_group" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/grp_chat_activity_rv"
@@ -110,10 +107,10 @@
             android:background="@drawable/layout_border"
             android:backgroundTint="#7F7C7B7B"
             android:ems="10"
+            android:fontFamily="serif"
             android:hint="Enter your message"
             android:inputType="textMultiLine"
             android:maxLines="3"
-            android:fontFamily="serif"
             android:paddingStart="@dimen/_20font_ssp"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
@@ -128,8 +125,8 @@
             android:id="@+id/send_message_grp"
             android:layout_width="39dp"
             android:layout_height="38dp"
-            android:src="@drawable/send_icon"
             android:layout_marginStart="@dimen/_8font_ssp"
+            android:src="@drawable/send_icon"
             app:layout_constraintBottom_toBottomOf="@+id/enter_message_grp"
             app:layout_constraintStart_toEndOf="@+id/enter_message_grp"
             app:layout_constraintTop_toTopOf="@+id/enter_message_grp"

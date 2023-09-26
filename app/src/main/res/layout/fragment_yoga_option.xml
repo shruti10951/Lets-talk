@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/help_calm_down"
     tools:context=".fragments.YogaOptionFragment">
 
@@ -16,7 +16,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -25,25 +25,25 @@
                 <View
                     android:id="@+id/yoga_one_option"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_120hsdp"
+                    android:layout_height="@dimen/_80hsdp"
                     android:layout_marginStart="@dimen/_35hsdp"
                     android:layout_marginEnd="@dimen/_35hsdp"
-                    android:background="@color/greyTrans"
+                    android:background="#D7000000"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/yoga_one_point_2"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/yoga_one_point_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="64dp"
                     android:fontFamily="serif"
                     android:text="Cat-Cow Pose"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_25font_ssp"
+                    android:textSize="@dimen/_22font_ssp"
                     android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/yoga_one_option"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
@@ -52,11 +52,11 @@
                 <View
                     android:id="@+id/yoga_two_option"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_120hsdp"
-                    android:background="@color/greyTrans"
+                    android:layout_height="@dimen/_80hsdp"
                     android:layout_marginStart="@dimen/_35hsdp"
-                    android:layout_marginEnd="@dimen/_35hsdp"
                     android:layout_marginTop="?android:attr/actionBarSize"
+                    android:layout_marginEnd="@dimen/_35hsdp"
+                    android:background="#D7000000"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
@@ -66,25 +66,27 @@
                     android:id="@+id/yoga_one_point_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="52dp"
+                    android:layout_marginBottom="21dp"
                     android:fontFamily="serif"
+                    android:gravity="center"
                     android:text="Child’s Pose"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_25font_ssp"
+                    android:textSize="@dimen/_22font_ssp"
                     android:textStyle="bold"
-                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/yoga_two_option"
                     app:layout_constraintEnd_toEndOf="@+id/yoga_two_option"
                     app:layout_constraintStart_toStartOf="@+id/yoga_two_option"
-                    app:layout_constraintTop_toTopOf="@+id/yoga_two_option" />
+                    app:layout_constraintTop_toTopOf="@+id/yoga_two_option"
+                    app:layout_constraintVertical_bias="0.666" />
 
                 <View
                     android:id="@+id/yoga_three_option"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_120hsdp"
-                    android:background="@color/greyTrans"
+                    android:layout_height="@dimen/_80hsdp"
                     android:layout_marginStart="@dimen/_35hsdp"
-                    android:layout_marginEnd="@dimen/_35hsdp"
                     android:layout_marginTop="?android:attr/actionBarSize"
+                    android:layout_marginEnd="@dimen/_35hsdp"
+                    android:background="#D7000000"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
@@ -94,26 +96,26 @@
                     android:id="@+id/yoga_one_point_4"
                     android:layout_width="258dp"
                     android:layout_height="112dp"
-                    android:layout_marginTop="16dp"
                     android:fontFamily="serif"
+                    android:gravity="center"
                     android:text="Legs-Up-the-Wall Pose "
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_25font_ssp"
-                    android:gravity="center"
+                    android:textSize="@dimen/_21font_ssp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="@+id/yoga_three_option"
                     app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintBottom_toBottomOf="@+id/yoga_three_option"
                     app:layout_constraintStart_toStartOf="@+id/yoga_three_option"
                     app:layout_constraintTop_toTopOf="@+id/yoga_three_option" />
 
                 <View
                     android:id="@+id/yoga_four_option"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_120hsdp"
+                    android:layout_height="@dimen/_80hsdp"
                     android:layout_marginStart="@dimen/_35hsdp"
-                    android:layout_marginEnd="@dimen/_35hsdp"
                     android:layout_marginTop="?android:attr/actionBarSize"
-                    android:background="@color/greyTrans"
+                    android:layout_marginEnd="@dimen/_35hsdp"
+                    android:background="#D7000000"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
@@ -123,13 +125,13 @@
                     android:id="@+id/yoga_one_point_5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="60dp"
                     android:fontFamily="serif"
+                    android:gravity="center"
                     android:text="Corpse Pose"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_25font_ssp"
+                    android:textSize="@dimen/_22font_ssp"
                     android:textStyle="bold"
-                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/yoga_four_option"
                     app:layout_constraintEnd_toEndOf="@+id/yoga_four_option"
                     app:layout_constraintHorizontal_bias="0.637"
                     app:layout_constraintStart_toStartOf="parent"
@@ -140,7 +142,6 @@
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

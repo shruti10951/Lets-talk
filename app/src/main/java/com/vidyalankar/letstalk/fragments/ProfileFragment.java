@@ -3,7 +3,6 @@ package com.vidyalankar.letstalk.fragments;
 import android.net.Uri;
 import android.os.Bundle;
 
-
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -37,7 +36,6 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
-import com.vidyalankar.letstalk.adapter.PostAdapter;
 import com.vidyalankar.letstalk.adapter.ProfileAdapter;
 import com.vidyalankar.letstalk.model.PostModel;
 import com.vidyalankar.letstalk.model.UserModel;
@@ -49,7 +47,7 @@ import java.util.Collections;
 public class ProfileFragment extends Fragment {
 
     ImageView profilePic;
-    TextView userNameTextView, userEmailTextView, friendsTextView, followerCount, followingCount;
+    TextView userNameTextView, userEmailTextView, friendsTextView, followingTextView, followerCount, followingCount;
     ImageView editProfile;
     ProgressBar progressBar;
 
@@ -82,6 +80,7 @@ public class ProfileFragment extends Fragment {
         followerCount= (TextView) view.findViewById(R.id.follower_count);
         progressBar= (ProgressBar) view.findViewById(R.id.profileProgressBar);
         followingCount= (TextView) view.findViewById(R.id.following_count);
+        followingTextView= (TextView) view.findViewById(R.id.following);
 
         user= FirebaseAuth.getInstance().getCurrentUser();
         userID= user.getUid();
@@ -120,6 +119,20 @@ public class ProfileFragment extends Fragment {
             }
         });
 
+        followingTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FriendsFragment nextFrag= new FriendsFragment();
+
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragmentContainerView2, new FollowingFragment())
+                        .addToBackStack(null)
+                        .commit();
+                Toast.makeText(getActivity(), "Your friends are here to help you!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         friendsTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -128,8 +141,6 @@ public class ProfileFragment extends Fragment {
 
                 getActivity().getSupportFragmentManager().beginTransaction()
                         .replace(R.id.fragmentContainerView2, new FriendsFragment())
-                        .remove(ProfileFragment.this)
-                        //.replace(((ViewGroup)getView().getParent()).getId(), nextFrag, "findThisFragment")
                         .addToBackStack(null)
                         .commit();
                 Toast.makeText(getActivity(), "Your friends are here to help you!", Toast.LENGTH_SHORT).show();

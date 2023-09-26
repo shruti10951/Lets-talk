@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,8 +27,10 @@ import com.google.firebase.database.ValueEventListener;
 import com.vidyalankar.letstalk.R;
 import com.vidyalankar.letstalk.model.UserModel;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
 
-public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener {
+
+public class  RegistrationActivity extends AppCompatActivity implements View.OnClickListener {
 
     EditText user_mail_reg, username_et, user_reg_password, user_reg_password_confirm;
     Button sign_up_reg_btn;
@@ -131,41 +134,46 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.getChildrenCount()>0)
                 {
-                    Toast.makeText(RegistrationActivity.this, "choose a different username", Toast.LENGTH_LONG).show();
+                    Toast.makeText(RegistrationActivity.this, "Username Already exists! Choose a different username", Toast.LENGTH_LONG).show();
                     mProgressBar.setVisibility(View.GONE);
                 }
                 else{
-
                     mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            if(task.isSuccessful())
-                            {
-                                UserModel userModel = new UserModel(username, email);
-
-                                FirebaseDatabase.getInstance()
-                                        .getReference("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                        .setValue(userModel).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                    @Override
-                                    public void onComplete(@NonNull Task<Void> task) {
-                                        if(task.isSuccessful())
-                                        {
-                                            Toast.makeText(RegistrationActivity.this,"User has been registered successfully!", Toast.LENGTH_LONG).show();
-                                            startActivity(new Intent(RegistrationActivity.this, DashboardActivity.class));
-                                        }else
-                                        {
-                                            Toast.makeText(RegistrationActivity.this, "Failed to register!", Toast.LENGTH_LONG).show();
+                            mAuth.getCurrentUser().sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    mProgressBar.setVisibility(View.GONE);
+                                    UserModel userModel= new UserModel(username, email);
+                                    FirebaseDatabase.getInstance().getReference()
+                                            .child("Users")
+                                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                            .setValue(userModel).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
+//                                            confirm_email.setVisibility(View.VISIBLE);
+                                            new SweetAlertDialog(RegistrationActivity.this)
+                                                    .setTitleText("Verify email")
+                                                    .setContentText("Verification email has been sent. Please Check")
+                                                    .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                                                        @Override
+                                                        public void onClick(SweetAlertDialog sweetAlertDialog) {
+                                                            startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
+                                                        }
+                                                    })
+                                                    .show();
                                         }
-                                        mProgressBar.setVisibility(View.GONE);
-                                    }
-                                });
-                            }else{
-                                Toast.makeText(RegistrationActivity.this, "Failed to register user!", Toast.LENGTH_LONG).show();
-                                mProgressBar.setVisibility(View.GONE);
-                            }
+                                    });
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Toast.makeText(RegistrationActivity.this, "Failed to send email!", Toast.LENGTH_LONG).show();
+                                }
+                            });
                         }
                     });
-
                 }
             }
             @Override

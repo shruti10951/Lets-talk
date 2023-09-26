@@ -7,13 +7,16 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
 
 public class YogaTwoFragment extends Fragment {
 
     TextView pointOne, pointTwo, pointThree, pointFour, pointFive, pointSix, pointSeven;
+    ImageView imageView1;
 
     public YogaTwoFragment() {
         // Required empty public constructor
@@ -37,6 +40,12 @@ public class YogaTwoFragment extends Fragment {
         pointFive= view.findViewById(R.id.yoga_two_point_5);
         pointSix= view.findViewById(R.id.yoga_two_point_6);
         pointSeven= view.findViewById(R.id.yoga_two_point_7);
+        imageView1= view.findViewById(R.id.yoga_two_pose_1);
+
+        Picasso.get()
+                .load("https://firebasestorage.googleapis.com/v0/b/let-s-talk-51904.appspot.com/o/Images%2Fyoga_two_pose.png?alt=media&token=9fe07c28-8e48-4b2e-886b-031aeadeca6e")
+                .placeholder(R.drawable.loading_img)
+                .into(imageView1);
 
 
         pointOne.setText("1. From a kneeling position, place your knees together or slightly apart.");

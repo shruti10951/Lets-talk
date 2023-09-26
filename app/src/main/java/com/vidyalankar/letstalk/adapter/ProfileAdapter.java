@@ -1,7 +1,6 @@
 package com.vidyalankar.letstalk.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -20,7 +20,6 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.vidyalankar.letstalk.R;
-import com.vidyalankar.letstalk.activities.CommentActivity;
 import com.vidyalankar.letstalk.model.PostModel;
 import com.vidyalankar.letstalk.model.UserModel;
 
@@ -62,6 +61,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
                 holder.post.setText(postModel.getPost());
                 holder.like.setText(postModel.getPostLikes()+"");
                 holder.comment.setText(postModel.getCommentCount()+"");
+                holder.type.setText(postModel.getType());
 
             }
 
@@ -70,6 +70,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
 
             }
         });
+
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -106,17 +107,6 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
             }
         });
 
-//        holder.profileRV.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent= new Intent(context, CommentActivity.class);
-//                intent.putExtra("postId", postModel.getPostId());
-//                intent.putExtra("postedBy", postModel.getPostedBy());
-//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                context.startActivity(intent);
-//            }
-//        });
-
     }
 
     @Override
@@ -127,8 +117,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
     public class viewHolder extends RecyclerView.ViewHolder{
 
         ImageView profile_image, delete;
-        TextView username, like, comment, post;
-        RecyclerView profileRV;
+        TextView username, like, comment, post, type;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
@@ -140,12 +129,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.viewHold
             like= itemView.findViewById(R.id.likes_comment);
             comment= itemView.findViewById(R.id.user_comments_comment);
             delete= itemView.findViewById(R.id.delete_post);
-//=======
-////            save= itemView.findViewById(R.id.save_post_comment);
-//            username= itemView.findViewById(R.id.username_comment);
-//            like= itemView.findViewById(R.id.likes_comment);
-//            comment= itemView.findViewById(R.id.user_comments_comment);
-////            profileRV=itemView.findViewById(R.id.profileRV);
+            type= itemView.findViewById(R.id.type_post);
 
             delete.setVisibility(View.VISIBLE);
         }
